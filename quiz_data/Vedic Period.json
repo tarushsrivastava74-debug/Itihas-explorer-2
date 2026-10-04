@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are King Sudas of the Bharata tribe, dwelling along the sacred rivers of the Sapta Sindhu. A grand confederation of ten powerful tribes, guided by the sage Vishwamitra and led by the Purus, marches to crush your kingdom and claim your fertile pastures. Your chief priest, the venerable sage Vasishtha, chants hymns to Indra and Varuna on the banks of the swollen Ravi River (Parushni).",
+      "options": {
+        "A": {
+          "text": "Breach the River Dykes (Historical): Lure the allied confederation into the shallows of the Parushni River, then breach the earthen dykes upstream to sweep their chariot vanguard away in the floodwaters.",
+          "consequence": "The rushing torrent drowns the enemy ranks; King Purukutsa falls, and the Bharatas establish undisputed supremacy over the Punjab plains, laying the foundations of the Vedic political order.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Chariot Line Clash (Alternate): Refuse nature’s aid; array your bronze-tipped spoked-wheel war chariots in an open spearhead formation on the dry river flats to meet the ten tribes in direct combat.",
+          "consequence": "A grueling chariot melee erupts; both armies take heavy casualties, resulting in an indecisive, bloody stalemate that leaves your western borders vulnerable to frontier raiders.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "The Bharatas unite with the defeated Purus to forge the mighty Kuru kingdom under King Parikshit and his successor Janamejaya. Centered at Asandhivat and Hastinapura, iron weapons (syama ayas) are cleared through the dense doab forests.",
+      "options": {
+        "A": {
+          "text": "Codify the Four Vedas & State Sacrifices (Historical): Commission the priesthood to systematize the Rig, Sama, Yajur, and Atharva Vedas, institutionalizing grand royal rituals like the Rajasuya and Ashvamedha to legitimize centralized monarchical power.",
+          "consequence": "The Kuru kingdom transforms into the first complex state in South Asia, setting up standardized sacrificial rites and a hierarchical social order.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "The Sovereign Sabha & Samiti (Alternate): Limit the power of the priesthood and hereditary monarch; empower the popular tribal assemblies (Sabha and Samiti) to elect chiefs and distribute conquered agricultural lands equally.",
+          "consequence": "The Kuru territory evolves into an egalitarian republican confederacy (gana-sangha), dampening royal ritualism while fostering fierce tribal autonomy.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "The indecisive war leaves northern India fractured into warring clans, constantly raiding each other's cattle herds (gavishti).",
+      "options": {
+        "A": {
+          "text": "Establish Fortified Cattle Enclaves (Alternate): Build deep moat-and-timber stockades around pastoral enclosures, stationing permanent horse-mounted archers to repel cattle raiders.",
+          "consequence": "Cattle wealth is preserved, but constant fortification drains pastoral reserves, slowing territorial expansion eastward.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Expand Eastward into the Yamuna Valley (Alternate): Migrate your clan wholesale into the forested Yamuna-Ganga doab, clearing dense monsoon jungle with fire and primitive bronze axes.",
+          "consequence": "Your people settle fertile virgin river soil, but face fierce clashes with indigenous forest-dwelling Nishada tribes.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "As the Vedic sphere expands east into Bihar and the Terai, King Janaka of Videha establishes a glittering court at Mithila, questioning the ultimate efficacy of mechanical ritual sacrifices.",
+      "options": {
+        "A": {
+          "text": "Convene the Great Upanishadic Debates (Historical): Host a magnificent assembly of philosophers, offering 1,000 cows with gold-gilded horns to the wisest; sage Yajnavalkya debates Gargi Vachaknavi and establishes the doctrine of Brahman and Atman.",
+          "consequence": "The profound philosophical revolution of the Upanishads is born, turning Vedic intellectual culture from external ritual slaughter toward interior spiritual realization.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Mandate Supreme Sacrificial Supremacy (Alternate): Ban speculative philosophical debates; decree that only literal, punctilious animal and soma sacrifices can sustain cosmic and imperial order (Rta).",
+          "consequence": "The Brahminical priestly class tightens its monopolistic grip over state treasuries, stoking deep intellectual unrest among kshatriyas and urban merchants.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "The republican institutions of the Samiti prevent the concentration of royal wealth, spreading the use of Painted Grey Ware (PGW) pottery across self-governing village clusters.",
+      "options": {
+        "A": {
+          "text": "Institutionalize Universal Assembly Suffrage (Alternate): Expand voting rights in the central assembly to all clan heads, agricultural householders (grihapatis), and artisans.",
+          "consequence": "The republic achieves broad civic cohesion and loyalty, making its citizen militias nearly invincible against invading warlords.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Centralize Military Command (Alternate): Appoint a permanent wartime general (Senapati) with executive emergency decrees to override assembly votes during foreign crises.",
+          "consequence": "Military efficiency spikes, but the Senapati slowly amasses private bodyguards, threatening the survival of assembly democracy.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Your fortified cattle towns must procure superior warhorses from the northwestern trade routes passing through Gandhara and Central Asia.",
+      "options": {
+        "A": {
+          "text": "Found the Iron Trading Route through Taxila (Alternate): Establish a permanent fortified trade emporium at Taxila to monopolize Central Asian horse imports and iron mining tools.",
+          "consequence": "Taxila flourishes into an elite intellectual and mercantile gateway, flooding the Punjab with superior cavalry mounts.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Domesticate Local Wild Herds (Alternate): Forbid foreign currency outflows; attempt to capture and breed local wild steeds in the salt ranges of western Punjab.",
+          "consequence": "Breeding programs yield sturdy pack animals, but fail to produce the swift, elite chariot steeds needed to hold off steppe raiders.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "In the Gangetic forests, deep deposits of iron ore are discovered in the hills of Magadha, offering tools to tame the dense sal jungles.",
+      "options": {
+        "A": {
+          "text": "Mass Iron Tool Production (Historical Path): Forge heavy iron axes and iron-tipped plowshares, systematically felling the Gangetic jungle and producing immense surpluses of wet-rice paddy crops.",
+          "consequence": "Massive food surpluses trigger rapid demographic booms and early urban market towns (nagarams), paving the way for large territorial empires.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Sacred Forest Reserves (Alternate): Issue royal decrees preserving the ancient monsoonal sal groves, restricting farming solely to natural river meadows and alluvial sandbars.",
+          "consequence": "Ecology and wild game remain untouched, but limited agricultural yield restricts your clan to modest pastoralism.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "The speculative breakthroughs of the Upanishads open the floodgates of spiritual questioning. Wandering ascetics (Sramanas) renounce worldly society, challenging ritual authority and hereditary privilege.",
+      "options": {
+        "A": {
+          "text": "The Royal Patronage of Renouncers (Historical Pathway): Welcome wandering teachers like Gautama Buddha and Vardhamana Mahavira into your royal parks, providing groves for discourse on ahimsa, karma, and liberation.",
+          "consequence": "Buddhism and Jainism take deep root alongside the Upanishadic traditions, sparking a golden age of intellectual freedom and non-violent ethics across the northern plains.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "The Orthodoxy Inquisition (Alternate): Issue imperial edicts declaring wandering ascetics vagrants and outlawing all non-Vedic ascetic orders under penalty of exile.",
+          "consequence": "The sramanic movement is driven into remote forests, turning underground monastic orders into hotbeds of radical social resistance against urban kings.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Merchant guilds and provincial artisans refuse to pay extortionate sacrificial taxes levied by the royal court and high priests.",
+      "options": {
+        "A": {
+          "text": "Merchant Tax Strike (Alternate): Guild leaders of Rajagriha and Varanasi lock up wholesale bazaars and refuse to extend gold credit to the royal court.",
+          "consequence": "Deprived of funds for state sacrifices, the royal treasury collapses, forcing the monarch to dismantle ritual taxation.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Armed Suppression of the Guilds (Alternate): Deploy the royal chariot guard to seize merchant warehouses and execute prominent guild masters.",
+          "consequence": "Merchants flee with their capital and records to southern ports, turning once-bustling northern trading hubs into desolate outposts.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "The republican confederacy faces growing pressure from monarchical neighbors seeking territorial annexation.",
+      "options": {
+        "A": {
+          "text": "Form the Great Vajjian League (Historical Precedent): Unite nine Lichchhavi and nine Malla clans into an unshakeable republican confederacy governed by an elected assembly of 7,707 rajas.",
+          "consequence": "The united republic repels expansionist monarchs for generations through democratic consensus and civic discipline.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Construct the Earthen Ringwalls (Alternate): Direct all public labor toward constructing massive rammed-earth ramparts around every confederate town.",
+          "consequence": "The towns become secure against sudden chariot blitzes, but heavy construction labor exhausts rural farming households.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "The Senapati stages a palace coup, dissolving the tribal Samiti and declaring absolute hereditary monarchy over the realm.",
+      "options": {
+        "A": {
+          "text": "Popular Counter-Insurrection (Alternate): The armed householders and youth assemblies storm the royal citadel with bows and spears to reinstate the republic.",
+          "consequence": "The usurper is driven out, and the assemblies carve their republican charters permanently into stone pillars.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Accept the Autocracy for Stability (Alternate): Swear fealty to the new king in exchange for guaranteed protections against external frontier invasions.",
+          "consequence": "The republican spirit is extinguished, transforming the clan into an aggressive, centralized militaristic kingdom.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Taxila's marketplace blossoms into the premier intellectual center of the ancient world, attracting scholars from across the northwest.",
+      "options": {
+        "A": {
+          "text": "Universal Curriculum of Arts and Statecraft (Historical): Open royal academies teaching medicine (Ayurveda), military archery, Paninian Sanskrit grammar, and Arthashastra diplomacy to international students.",
+          "consequence": "Taxila becomes an unassailable lighthouse of universal learning, educating future imperial counselors like Chanakya.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Strict Military Spartanism (Alternate): Transform Taxila into an exclusive military barrack town dedicated solely to equestrian drill and weapons manufacturing.",
+          "consequence": "You breed formidable cavalry regiments, but the city becomes an intellectual desert devoid of arts, literature, and diplomacy.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Lacking elite warhorses, your pastoral clan struggles to defend its grazing grounds from advancing eastern monarchs.",
+      "options": {
+        "A": {
+          "text": "Retreat into the Thar Desert Margins (Alternate): Move your pastoral cattle herds into the semi-arid grasslands of Rajasthan and Sindh, living as nomadic desert wanderers.",
+          "consequence": "You preserve your ancestral pastoral freedom and folk poetry, but remain permanently disconnected from northern urban development.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Hire Steppe Mercenary Cavalry (Alternate): Pay annual tributes of butter and wool to nomadic horse-archers to serve as your frontier guard.",
+          "consequence": "Steppe horsemen protect your cattle, but slowly usurp your clan's administrative councils from within.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Heavy iron agriculture produces immense surplus grain, turning rural villages into flourishing, fortified cities (Maha-janapadas) like Rajagriha, Kashi, and Shravasti.",
+      "options": {
+        "A": {
+          "text": "Fortify the Iron Throne of Magadha (Historical): Use the iron mines of southern Bihar and the wild war-elephants of the eastern jungles to build a massive standing army under Bimbisara.",
+          "consequence": "Magadha emerges as the supreme imperial powerhouse of India, initiating a century of pan-subcontinental unification.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Decentralize into Autonomous City-States (Alternate): Guarantee independent municipal charters to each river town, avoiding centralized imperial rule in favor of a commercial Hanseatic-style league.",
+          "consequence": "River commerce flourishes along the Ganges, but the fragmented cities prove vulnerable to foreign imperial conquerors.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Living in harmony with the ancient sal forests, your clan preserves the primordial ecology of the Gangetic valley.",
+      "options": {
+        "A": {
+          "text": "Found the Hermitage of Forest Sages (Alternate): Establish tranquil tapovanas (forest hermitages) along the river clearings, dedicating your society to Vedic nature hymns and botanical medicine.",
+          "consequence": "Your hermitages become sacred sanctuaries of spiritual wisdom and plant pharmacology, visited by seekers across the continent.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "The Clashing Frontiers (Alternate): Fight off expanding iron-axe wielding farmers from neighboring kingdoms attempting to clear your sacred woods.",
+          "consequence": "Primitive bows and arrows prove ineffective against iron-armored imperial foot-soldiers, resulting in the forced clearance of your forest sanctuary.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Golden Age of Inward Light (Historical)",
+      "story": "The fusion of Vedic philosophical questing with the moral ethics of the Buddha and Mahavira inaugurates the classical era of Indian civilization. The search for ultimate truth (Brahman) and the ethics of compassion (Ahimsa) become the defining hallmarks of Indian thought, inspiring the world for millennia."
+    },
+    "ending_2": {
+      "title": "The Forest Monasteries",
+      "story": "Suppressed in the royal capitals, the Sramana renouncers retreat deep into mountain caves and dense jungles. Their teachings take on an unyielding, revolutionary fervor, laying the groundwork for radical ascetic traditions that periodically sweep through society to challenge royal tyranny."
+    },
+    "ending_3": {
+      "title": "The Guild Commonwealth",
+      "story": "The economic triumph of the merchant strike permanently limits royal absolutism in northern India. Power shifts from hereditary warlords to elected guild masters (sreshthis), turning the Gangetic basin into a flourishing mercantile empire where enterprise and trade reign supreme."
+    },
+    "ending_4": {
+      "title": "The Silent Bazaars",
+      "story": "Seizing the warehouses destroys the economic fabric of the middle Gangetic plain. Deprived of commerce, the great cities decay back into agrarian villages, leaving northern India isolated from global trade for centuries."
+    },
+    "ending_5": {
+      "title": "The Shield of the Vajjis",
+      "story": "The grand confederacy of republics stands unbroken against all royal sieges. Governed by debate, assembly votes, and the collective wisdom of thousands of elected citizens, the republic proves that democracy can endure alongside mighty empires."
+    },
+    "ending_6": {
+      "title": "The Walled Enclaves",
+      "story": "Massive earthen ramparts preserve the independence of the republican towns, but the relentless burden of defensive labor leaves the citizenry impoverished and weary. The republics survive as inward-looking fortress sanctuaries, surviving but uninspired."
+    },
+    "ending_7": {
+      "title": "The Charter of Assemblies",
+      "story": "Overthrowing the military despot cements the sanctity of democratic assemblies. The revived republics carve their constitution onto stone slabs, establishing rule of law, habeas corpus, and collective debate centuries before the assemblies of ancient Athens."
+    },
+    "ending_8": {
+      "title": "The Despot’s March",
+      "story": "Sacrificing democracy for military order turns the former republic into a ruthless war machine. The new kingdom expands rapidly across the plains, trading the freedom of its citizens for territorial conquests and royal monuments."
+    },
+    "ending_9": {
+      "title": "The Beacon of Taxila (Historical)",
+      "story": "Taxila endures for centuries as the intellectual capital of the ancient world. From Panini's groundbreaking linguistic grammar to Charaka's medical treatises and Chanakya's ruthless political science, its lecture halls train the architects of India's classical golden age."
+    },
+    "ending_10": {
+      "title": "The Iron Barracks",
+      "story": "Taxila's relentless militarism produces some of the most dreaded heavy cavalry regiments of antiquity. However, without philosophy, drama, and literature to accompany its lances, its fame fades into history as a forgotten frontier garrison."
+    },
+    "ending_11": {
+      "title": "The Nomads of the Sands",
+      "story": "Retreating into the Thar desert preserves the ancient, uncorrupted cattle songs of the Rigveda. Your descendants live as proud, nomadic bards and camel herders, gazing at the desert stars and singing hymns untouched by the passage of empires."
+    },
+    "ending_12": {
+      "title": "The Steppe Vassals",
+      "story": "Hiring steppe mercenaries proves fatal to tribal autonomy. Within three generations, the mercenary chieftains crown themselves kings, blending horse-nomad steppe customs into the Vedic social order and reducing the original clans to commoners."
+    },
+    "ending_13": {
+      "title": "The Colossus of Magadha (Historical)",
+      "story": "Magadha's unmatched combination of rich iron mines, elephant corps, and rice surpluses transforms it into an unshakeable imperial juggernaut. From the Haryankas to the Nandas and the mighty Mauryan Empire of Ashoka, the kingdom creates the first pan-Indian empire in history."
+    },
+    "ending_14": {
+      "title": "The League of River Cities",
+      "story": "The decentralized league of free cities turns the Ganges into the richest trade artery on earth. Merchant galleys carry silk, spices, and pottery between independent city-states, creating vibrant, cosmopolitan hubs that rival the Renaissance merchant cities of Italy."
+    },
+    "ending_15": {
+      "title": "The Forest Sanctuary",
+      "story": "The tapovanas become legendary spiritual sanctuaries insulated from the violence of rising kingdoms. The forest treatises (Aranyakas) and natural herbal systems created beneath the sal canopy become an eternal spiritual treasure for Indian seekers across generations."
+    },
+    "ending_16": {
+      "title": "The Cleared Canopy",
+      "story": "The ancient forest is steadily felled by the march of iron axes and imperial expansion. While the primordial trees vanish beneath endless fields of green rice paddy, the ancient forest spirits survive in folklore and rural village worship, forever woven into the fabric of local folk culture."
+    }
+  }
+}

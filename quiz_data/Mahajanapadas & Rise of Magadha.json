@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Bimbisara, founder of the Haryanka dynasty of Magadha. Your capital at Rajagriha is ringed by five natural hills of cyclopean stone, and your realm sits upon rich iron deposits in the forests of Chota Nagpur. Across the northern plains, sixteen great realms (Mahajanapadas) vie for supremacy. The wealthy kingdom of Anga controls the river trade routes along the lower Ganges to the eastern sea.",
+      "options": {
+        "A": {
+          "text": "The Annexation of Anga & Matrimonial Diplomacy (Historical): Conquer Anga and seize its thriving river port of Champa, while cementing protective matrimonial alliances with Kosala (securing Kashi as dowry) and the Lichchhavis of Vaishali.",
+          "consequence": "Champa’s coastal and overseas trade fills your treasury, your diplomatic marriages safeguard your northern and western borders, and Magadha emerges as the dominant power of the eastern Gangetic plain.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Direct March on Avanti (Alternate): Ignore eastern trade and launch a direct preemptive strike against your fiercest western rival, King Pradyota Mahasena of Avanti, before his iron foundries in Ujjain can match your own.",
+          "consequence": "Your expeditionary force gets drawn into a grueling campaign in the Malwa plateau, leaving your home territories exposed to surprise raids from Anga.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Your ambitious son, Ajatashatru, imprisons you to seize the throne. King Pasenadi of Kosala revokes the revenues of Kashi in outrage, while the powerful Vajjian Confederacy (Lichchhavis) mobilizes north of the Ganges. Ajatashatru turns to you for tactical guidance from your cell.",
+      "options": {
+        "A": {
+          "text": "Sowing Dissension & Innovative Siegecraft (Historical): Dispatch your minister Vassakara to infiltrate and sow three years of internal discord among the Vajjian clans; then deploy revolutionary siege engines—the stone-hurling catapult (Mahashilakantaka) and the scythed war-chariot (Rathamusala)—while fortifying the river village of Pataligrama.",
+          "consequence": "The divided Lichchhavis are broken in their forest redoubts; Vaishali and Kashi are permanently annexed into Magadha, establishing the strategic foundation for the future imperial capital of Pataliputra.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Immediate Open Chariot Assault (Alternate): Reject espionage and lead your traditional chariot brigades straight across the swollen Ganges to assault Vaishali’s wooden ramparts in broad daylight.",
+          "consequence": "The unified Lichchhavi archers rain fire down from their palisades, forcing your army into a chaotic, bloody retreat back across the river.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Trapped on the Malwa frontier, your divisions face Pradyota’s seasoned war-elephants along the Betwa River.",
+      "options": {
+        "A": {
+          "text": "Encircle the Elephant Wings with Iron Pikemen (Alternate): Anchor your flanks against rocky hillocks and use long iron-tipped pikes to panic the enemy elephants into their own infantry ranks.",
+          "consequence": "Avanti’s center shatters in panic; you secure Ujjain, but Magadha’s heartland suffers extensive looting from Anga’s raiders in your absence.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Tactical Night Withdrawal (Alternate): Extinguish campfires and execute an orderly night retreat to preserve your core veteran divisions for home defense.",
+          "consequence": "You save your army and relieve Rajagriha, but Avanti claims uncontested supremacy over the central trade routes.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Ajatashatru’s successors prove incompetent and cruel; the populace rises, expels the last parricide king, and places the capable minister Shishunaga on the throne. Meanwhile, Avanti remains a standing military threat.",
+      "options": {
+        "A": {
+          "text": "Relocate Capital to Pataliputra & Crush Avanti (Historical): Permanently shift the royal capital to Pataliputra at the confluence of four sacred rivers, and mobilize Magadha’s colossal standing elephant divisions to crush Avanti and annex Malwa once and for all.",
+          "consequence": "The century-old rivalry ends in total Magadhan triumph; with Avanti, Vatsa, and Kosala integrated, Magadha controls virtually the entire Gangetic basin.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Maintain Rajagriha & Adopt Defensive Neutrality (Alternate): Keep the court within the mountain fortress of Rajagriha, fortifying its stone walls and signing a non-aggression pact with Avanti.",
+          "consequence": "Peace allows domestic agriculture to boom, but Magadha surrenders control of western river shipping to independent merchant guilds.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Having failed to storm Vaishali, your borders along the Ganges are under constant threat of northern counter-raids.",
+      "options": {
+        "A": {
+          "text": "Construct the Pataligrama Water Fort (Alternate): Mobilize river boatmen and timber workers to construct a fortified river bastion at Pataligrama to block northern war-canoes.",
+          "consequence": "The river fort secures your northern frontier, giving your reorganized legions a forward base to launch sustained counter-offensives.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Entrench behind the Rajagriha Walls (Alternate): Pull all forces south into the hills of Rajagriha, leaving the river plains to the mercy of the Vajjis.",
+          "consequence": "The capital remains unassailable, but the surrounding agricultural peasantry is starved of grain by enemy foraging parties.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "You hold Ujjain, but Anga's forces occupy the lower Ganges. You must choose how to divide your remaining resources.",
+      "options": {
+        "A": {
+          "text": "River Fleet Counter-Stroke (Alternate): Build a dedicated fleet of armed river galleys to sweep Anga's garrisons out of the Gangetic corridor.",
+          "consequence": "Champa falls under your naval guns, re-linking Magadha’s trade to the eastern sea while your western outposts remain on edge.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Cede Western Lands for Eastern Peace (Alternate): Sign a treaty ceding western Malwa back to local chiefs to concentrate all imperial strength eastward.",
+          "consequence": "Your eastern territories are completely secured, but you forfeit direct access to the rich ports of the Arabian Sea.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "With Avanti dominant in the west, they push outward toward Kashi and the Vatsa kingdom (Kaushambi).",
+      "options": {
+        "A": {
+          "text": "Form a Triple Defensive League (Alternate): Form an alliance with Vatsa and Kosala to build a buffer wall against Avanti’s eastern expansion.",
+          "consequence": "The balance of power stabilizes across northern India, preventing any single Mahajanapada from achieving total hegemony.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Mercenary Infiltration (Alternate): Hire Saka and Gandharan horse-archers from the northwest to harass Avanti’s supply lines through constant asymmetric warfare.",
+          "consequence": "Avanti's expansion slows, but foreign mercenary chiefs begin demanding fertile crown lands as payment.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Mahapadma Nanda usurps the throne, destroying the old Kshatriya dynasties and establishing the centralized Nanda Empire. By 326 BCE, King Dhana Nanda commands an army of 200,000 infantry, 20,000 cavalry, 2,000 chariots, and 3,000 war-elephants at Pataliputra. Word arrives that Alexander the Great has crossed the Indus and defeated Porus at the Hydaspes.",
+      "options": {
+        "A": {
+          "text": "The Terrifying Eastern Deployment (Historical): Mobilize your colossal elephant army along the Hyphasis (Beas) River; let rumors of your monstrous military machine reach Alexander’s war-weary Macedonian phalanxes.",
+          "consequence": "Alexander’s soldiers mutiny in dread of your elephant corps and refuse to cross the Beas; Alexander turns south, leaving the northwest open to the rising ambitions of Chandragupta Maurya and Chanakya.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "March West to Engage Alexander in Pitched Battle (Alternate): Lead your 200,000-man grand army across the Punjab plains to meet the Macedonian phalanx and Companion cavalry in open combat.",
+          "consequence": "A monumental clash of empires erupts on the banks of the Ravi, pitting Indian war-elephants against Greek sarissas.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Secure within Rajagriha, Magadha operates as a commercial trading powerhouse without territorial overreach.",
+      "options": {
+        "A": {
+          "text": "Guild Charter of Free Trade (Alternate): Grant absolute self-governing charters to the merchant guilds (srenis), abolishing internal tolls along the Ganges.",
+          "consequence": "Wealth accumulates rapidly in private hands, transforming Magadha into a peaceful, affluent merchant republic.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Royal Monopoly on Iron Mines (Alternate): Reassert state ownership over all iron mines, leasing extraction rights to foreign traders for massive rents.",
+          "consequence": "The royal vaults overflow, but neighboring realms use your iron to modernize their own standing armies.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Operating from the fortified river base of Pataligrama, your army mounts a decisive amphibious campaign against the Vajjian shores.",
+      "options": {
+        "A": {
+          "text": "The Night Landing at Vaishali (Alternate): Land your river transports behind Vaishali under cover of a torrential thunderstorm, breaching their palisades from the rear.",
+          "consequence": "Vaishali is taken with minimal siege losses, securing northern Bihar and creating an unshakeable river kingdom.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Prolonged Naval Blockade (Alternate): Use armed river galleys to seal every tributary feeding into the Ganges, cutting off food supplies to the northern clans.",
+          "consequence": "The northern republics surrender after a grueling siege, though their agricultural hinterlands are left heavily depopulated.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Pinned behind the cyclopean walls of Rajagriha, your troops watch rival Mahajanapadas partition the plains.",
+      "options": {
+        "A": {
+          "text": "Sapper Tunnel Counter-Strike (Alternate): Dig subterranean tunnels beneath the mountain passes to strike the enemy siege camps from below.",
+          "consequence": "The enemy besiegers are routed in panic, lifting the siege and restoring access to your immediate valley fields.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Surrender Sovereignty to Kosala (Alternate): Open the gates and accept tributary status under the King of Kosala in exchange for regional autonomy.",
+          "consequence": "The ancient Haryanka dynasty is reduced to regional vassals, ending Magadha's bid for subcontinental supremacy.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Having liberated Champa and rebuilt your fleet, your merchant navies look across the Bay of Bengal.",
+      "options": {
+        "A": {
+          "text": "Found Overseas Colonies in Suvarnabhumi (Alternate): Dispatch expeditionary fleets to establish trading emporia across Southeast Asia (modern Myanmar and Sumatra).",
+          "consequence": "Magadha becomes the hub of an expansive maritime trade network, funneling exotic spices and gold back to Pataliputra.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Fortify the Delta Shoreline (Alternate): Construct stone forts along the delta of Bengal to guard against piracy and maritime incursions.",
+          "consequence": "River commerce enjoys complete safety, but high garrison expenditures drain naval profits.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Confined to the eastern Gangetic plains, you turn inward to maximize internal agricultural and metallurgical output.",
+      "options": {
+        "A": {
+          "text": "Clear the Southern Tribal Forests (Alternate): Deploy thousands of iron-axe laborers into the southern plateau to establish agrarian settlements.",
+          "consequence": "Huge new tracts of arable land double imperial grain reserves, supporting a self-sufficient domestic economy.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Tax the Buddhist and Jain Monasteries (Alternate): Impose a land and wealth tax on wealthy sramanic monasteries dotting the countryside.",
+          "consequence": "Immediate tax revenues surge, but monastic orders stir popular civil unrest among the devout urban middle classes.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The coalition between Magadha, Kosala, and Vatsa maintains an equilibrium across northern India.",
+      "options": {
+        "A": {
+          "text": "Institutionalize the Pan-Gangetic Assembly (Alternate): Formalize an annual diplomatic conference of kings at Varanasi to arbitrate border disputes peacefully.",
+          "consequence": "Decades of destructive inter-kingdom wars are averted, ushering in an era of cultural and philosophical flourishing.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Betray the League at Varanasi (Alternate): Spring a surprise military trap on the allied kings during the annual festival gathering to annex Kosala.",
+          "consequence": "You capture Kosala’s royalty, but provoke an eternal blood-feud with every remaining Mahajanapada in India.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Northwestern horse-archers demand land grants and political representation inside Magadha’s high councils.",
+      "options": {
+        "A": {
+          "text": "Integrate Mercenary Chiefs as Feudal Lords (Alternate): Grant extensive border estates along the Son River to mercenary captains in exchange for hereditary military service.",
+          "consequence": "A formidable martial aristocracy takes root, but these militarized estates gradually break away from royal administrative control.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Disarm the Mercenaries by Treachery (Alternate): Invite the mercenary chiefs to a royal banquet at Rajagriha and eliminate them with palace guards.",
+          "consequence": "You avert a military coup, but alienate northern trade guilds and cut off your kingdom's supply of elite cavalry mounts.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Imperial Threshold (Historical)",
+      "story": "The sheer terror of the Nanda elephant army turns Alexander's phalanxes back to Babylon, preserving India from Hellenistic conquest. Soon after, Chandragupta Maurya and the philosopher Chanakya overthrow the corrupt Dhana Nanda, inheriting Magadha’s vast territorial and military apparatus to forge the pan-Indian Mauryan Empire."
+    },
+    "ending_2": {
+      "title": "The Clash of Kings",
+      "story": "On the plains of Punjab, thousands of armored war-elephants crash into the bristling Macedonian sarissa wall. While the Greek phalanx inflicts severe casualties, the sheer weight of Indian manpower overruns Alexander's lines, mortally wounding the conqueror and throwing the Mediterranean world into premature chaos."
+    },
+    "ending_3": {
+      "title": "The Merchant Republic",
+      "story": "Magadha evolves into an aristocratic, merchant-dominated federation akin to ancient Carthage. Without an aggressive standing military, civic life centers on vibrant river bazaars, artistic guilds, and philosophical debating halls, leaving northern India a patchwork of thriving commercial city-states."
+    },
+    "ending_4": {
+      "title": "The Armament Trap",
+      "story": "Selling iron freely turns northern India into an armed camp. Rival Mahajanapadas modernize their forces with Magadhan ore, locking the Gangetic plain in a bloody, century-long war of attrition where no single power can achieve lasting dominance."
+    },
+    "ending_5": {
+      "title": "The Master of the Rivers",
+      "story": "The amphibious capture of Vaishali consolidates Magadha’s absolute command over the Ganges water network. Operating from the majestic citadel of Pataliputra, the kingdom controls the arterial heartbeat of Indian trade, laying an unbroken foundation for centuries of imperial rule."
+    },
+    "ending_6": {
+      "title": "The Desolate North",
+      "story": "The starvation siege breaks the Vajjian spirit, but leaves northern Bihar depopulated and desolate. It takes three generations of costly imperial subsidies to restore agriculture and trade to the ruined orchards of Vaishali."
+    },
+    "ending_7": {
+      "title": "The Mountain Redoubt",
+      "story": "The sapper counter-strike preserves the freedom of Rajagriha, but confines Magadha to its valley walls. The kingdom remains an impregnable mountain redoubt, fiercely autonomous but permanently sidelined from the grand political contests of the Gangetic plains."
+    },
+    "ending_8": {
+      "title": "The Shadow of Kosala",
+      "story": "Submitting to Kosala extinguishes Magadha’s imperial destiny. The riches of its iron mines flow into the treasury of Shravasti, ensuring that Kosala, rather than Magadha, becomes the master of northern India."
+    },
+    "ending_9": {
+      "title": "The Golden Delta",
+      "story": "Champa’s maritime docks transform Magadha into Asia's premier sea power. Fleets of ocean-going galleys trade across Southeast Asia, establishing an eastern maritime trade empire centuries before the rise of the Cholas."
+    },
+    "ending_10": {
+      "title": "The Walled Coast",
+      "story": "Fortifying the Bengal delta wards off sea raiders, but the astronomical cost of maintaining coastal fortresses consumes imperial revenue. Pataliputra stagnates under oppressive taxation, sparking civil revolts among urban artisans."
+    },
+    "ending_11": {
+      "title": "The Granary of the South",
+      "story": "Transforming the southern forests into lush agricultural terraces yields unprecedented grain reserves. Magadha becomes a self-contained agrarian titan, impervious to drought and famine, though culturally isolated from the wider world."
+    },
+    "ending_12": {
+      "title": "The Secular Rupture",
+      "story": "Taxing the sramanic orders alienates the ascetics, monks, and the urban merchant guilds who revere them. Boycotts of royal markets bring imperial commerce to a halt, forcing the monarch to repeal the decrees under humiliating public circumstances."
+    },
+    "ending_13": {
+      "title": "The Pax Gangetica",
+      "story": "The Pan-Gangetic Assembly ushers in two centuries of unbroken peace across northern India. Without the draining expenses of massive standing armies, resources flow into universal education, grand universities, and the patronage of arts, creating a classical golden age of intellectual freedom."
+    },
+    "ending_14": {
+      "title": "The Ring of Enemies",
+      "story": "The treachery at Varanasi permanently shatters diplomatic trust across the subcontinent. A grand coalition of surviving kings unites against Magadha, burning Pataliputra to the ground and partitioning its iron mines among the allied kingdoms."
+    },
+    "ending_15": {
+      "title": "The Feudal Fracture",
+      "story": "Granting landed estates to foreign mercenaries plants the seeds of feudal fragmentation. Within a century, independent warrior barons carve the empire into warring principalities, disintegrating the centralized administrative machinery of the state."
+    },
+    "ending_16": {
+      "title": "The Paralyzed Cavalry",
+      "story": "Eliminating the mercenaries saves the monarchy from an immediate coup, but leaves Magadha's cavalry completely depleted. Unable to source high-bred mounts or mounted archers, imperial armies are easily flanked and outmaneuvered by frontier invaders."
+    }
+  }
+}

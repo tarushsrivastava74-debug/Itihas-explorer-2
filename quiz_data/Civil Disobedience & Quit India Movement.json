@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Mahatma Gandhi. After the 1929 Lahore Congress declares Purna Swaraj (Complete Independence), you issue an 11-point ultimatum to Viceroy Lord Irwin. When he ignores your demands, you decide to challenge the British salt monopoly, a direct tax crushing the poorest citizens of the subcontinent?",
+      "options": {
+        "A": {
+          "text": "The Dandi March (Historical): March 240 miles on foot from Sabarmati Ashram to the Arabian Sea at Dandi with 78 chosen satyagrahis, defying the Salt Laws by boiling seawater before the global press.",
+          "consequence": "Defying the Salt Act sparks a national firestorm; millions make contraband salt, boycott foreign cloth, and pick up the mantle as tens of thousands of satyagrahis, including yourself, are arrested.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Direct March on the Viceroy's House (Alternate): Bypass coastal salt pans entirely; organize 50,000 volunteers to march straight down the Rajpath in New Delhi to encircle the Viceroy's residence and demand immediate transfer of power.",
+          "consequence": "Colonial police and military cavalry form iron cordons, using mass arrests and tear gas to disperse the march before it reaches the capital's heart.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Following your arrest, Sarojini Naidu, Imam Saheb, and Manilal Gandhi lead an unarmed raid on the Dharasana Salt Works, where volunteers calmly absorb brutal lathi charges from steel-shod police batons without raising a hand?",
+      "options": {
+        "A": {
+          "text": "Sign the Gandhi-Irwin Pact (Historical): Agree to suspend the Civil Disobedience Movement in exchange for the release of political prisoners, permission for coastal residents to make salt, and participation as sole Congress representative at the Second Round Table Conference in London.",
+          "consequence": "The pact validates Congress as an equal negotiating power with the British Crown, but young radicals are furious that the death sentences of Bhagat Singh, Sukhdev, and Rajguru are not commuted.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Reject Negotiations and Escalate Tax Defiance (Alternate): Refuse Irwin’s invitation to talk; escalate into a no-revenue, no-rent campaign across the United Provinces and Gujarat.",
+          "consequence": "Provincial authorities confiscate family farmlands and livestock, pushing peasant households into profound hardship while radicalizing agrarian committees.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "The Delhi march is broken, but industrial towns across the north explode in sympathy strikes, especially in the textile hubs of Kanpur and Sholapur?",
+      "options": {
+        "A": {
+          "text": "The Sholapur Commune (Alternate): Workers in Sholapur seize government buildings, burn liquor shops, and establish a four-day self-governing municipal council before troops arrive.",
+          "consequence": "The defiance proves workers can govern urban spaces, but the colonial state deploys heavy infantry under martial law, hanging strike leaders.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Nationwide Legislative Boycott (Alternate): Instruct all sympathetic Indian members to resign en masse from the Central Legislative Assembly, leaving imperial councils vacant.",
+          "consequence": "The British fill vacant seats with appointed loyalists, passing emergency ordinances without any domestic opposition on the floor.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "The London Round Table Conference collapses due to colonial stonewalling on real federation. Prime Minister Ramsay MacDonald announces the Communal Award, granting separate electorates to the Depressed Classes, which you fear will permanently divide Hindu society?",
+      "options": {
+        "A": {
+          "text": "The Epic Fast at Yerwada & Poona Pact (Historical): Launch a fast unto death in Yerwada Central Jail to oppose separate electorates; negotiate the historic Poona Pact with Dr. B. R. Ambedkar, replacing separate electorates with reserved seats.",
+          "consequence": "The compromise preserves joint electorates while doubling reserved representation for the Depressed Classes, directing your primary focus toward Harijan welfare and social reform.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Unconditional Re-launch of Civil Disobedience (Alternate): Ignore the Communal Award; immediately restart aggressive civil disobedience the moment you disembark in Bombay.",
+          "consequence": "Viceroy Willingdon unleashes pre-emptive emergency ordinances, jailing the entire Congress leadership within forty-eight hours.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "The no-rent agitation takes deep root in eastern India, where peasant unions form armed defense rings around village granaries?",
+      "options": {
+        "A": {
+          "text": "Formalize Parallel Kisan Panchayats (Alternate): Convert no-rent committees into autonomous rural courts to resolve agrarian debts and redistribute seized grain.",
+          "consequence": "British revenue collection collapses across several districts, leaving rural administrations virtually cut off from provincial capitals.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "March of the Landless (Alternate): Mobilize landless laborers to occupy uncultivated government forest tracts and plant communal crops.",
+          "consequence": "Clashes erupt with colonial forest rangers, drawing police garrisons away from municipal centers to the hill frontiers.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Sholapur's martyrdom galvanizes trade unions in Bombay, Calcutta, and Madras into coordinated resistance?",
+      "options": {
+        "A": {
+          "text": "Nationwide Port & Railway Stoppage (Alternate): Coordinate with maritime dockers and rail workers to freeze the export of Indian raw materials to Britain.",
+          "consequence": "British shipping houses suffer severe losses, prompting the London Board of Trade to lobby the British Cabinet for conciliation.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Underground Industrial Sabotage (Alternate): Form secret squads to cut railway signal cables and immobilize locomotive sheds at night.",
+          "consequence": "Rail traffic slows, but the state invokes draconian railway defense acts, bringing armed troops into every depot.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Without Indian representatives in the assemblies, the British unilateralize constitutional drafting, leading up to the Government of India Act 1935.",
+      "options": {
+        "A": {
+          "text": "Contest Provincial Autonomy (Historical Precedent): Formally enter the 1937 provincial elections under the 1935 Act, sweeping general constituencies and forming Congress ministries across seven provinces.",
+          "consequence": "Congress demonstrates administrative competence, expanding civil liberties and agrarian tenancy reforms from within the state structure.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Boycott the 1935 Act Completely (Alternate): Refuse all office acceptance, declaring the provincial assemblies puppets of British governors.",
+          "consequence": "Non-Congress regional parties form provincial ministries, weakening the national party's institutional leverage.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Britain drags India into World War II without consulting its leaders. The Cripps Mission fails to offer immediate self-government, while Imperial Japan stands at the gates of Burma. At the Gowalia Tank Maidan in Bombay on August 8, 1942, you address the nation.",
+      "options": {
+        "A": {
+          "text": "The \"Do or Die\" Quit India Resolution (Historical): Issue the mantra \"Karo ya Maro\" (Do or Die), demanding an immediate, orderly British withdrawal from India through total non-violent defiance.",
+          "consequence": "You and the entire Congress Working Committee are arrested before dawn; a leaderless mass revolution breaks out as millions strike, derail troop trains, set up parallel governments, and raise the tricolor.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Conditional War Support (Alternate): Offer complete military and economic cooperation for the Allied war effort in exchange for an ironclad post-war independence guarantee backed by the United States.",
+          "consequence": "India becomes the primary Allied logistics springboard in Asia; Churchill concedes a post-war constituent assembly, avoiding internal insurrection during wartime.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "With top leaders locked in prison, young socialist firebrands like Jayaprakash Narayan, Ram Manohar Lohia, and Aruna Asaf Ali take command from the underground.",
+      "options": {
+        "A": {
+          "text": "The Secret Congress Radio (Historical Action): Operate the clandestine \"Congress Radio\" under Usha Mehta from shifting locations across Bombay, broadcasting real news of the revolution.",
+          "consequence": "British censors are baffled as uncensored reports of strikes and police atrocities galvanize students and workers nationwide.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "The Hazaribagh Prison Break & Guerrilla Front (Historical Action): Jayaprakash Narayan scales the high walls of Hazaribagh Jail during Diwali, fleeing into the Nepal Terai to train the armed \"Azad Dasta\" guerrilla squad.",
+          "consequence": "Guerrilla raiders attack imperial police stations and border outposts along the Nepal frontier, tying down British regiments during crucial war months.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "The revolution drives British authorities out of several rural districts, creating power vacuums across Maharashtra, Bengal, and Uttar Pradesh.",
+      "options": {
+        "A": {
+          "text": "The Prati Sarkar of Satara (Historical Action): Nana Patil establishes the revolutionary \"Prati Sarkar\" (Parallel Government) in Satara, running volunteer village militias (Toofan Sena), fair grain shops, and people's arbitration courts.",
+          "consequence": "Colonial rule ceases to exist across hundreds of villages in Satara for years; the underground network remains unbroken until 1946.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "The Tamluk Jatiya Sarkar (Historical Action): In Midnapore, Bengal, the \"Tamluk National Government\" sets up an autonomous administration, complete with an armed volunteer corps (Vidyut Vahini) and cyclone relief depots.",
+          "consequence": "The local parallel government coordinates relief despite harsh colonial grain requisitions, standing as an unassailable bastion of local self-rule.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Wartime boat denial policies, crop failures, and British imperial food exports trigger the catastrophic Bengal Famine of 1943, claiming over three million lives.",
+      "options": {
+        "A": {
+          "text": "Mass Grain Seizure & People's Kitchens (Alternate): Direct underground volunteer brigades to seize black-market hoards from imperial contractors and open thousands of community kitchens.",
+          "consequence": "Millions of starving peasants are fed by underground volunteers, stripping the colonial administration of its administrative moral ground.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "International Appeal to Washington (Alternate): Smuggle photographs of famine victims out to American newspapers, petitioning President Roosevelt to divert merchant ships carrying Australian wheat.",
+          "consequence": "Intense diplomatic pressure from Washington forces Winston Churchill to permit emergency grain shipments, breaking the famine's stranglehold.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Steel and textile workers respond to the Quit India call by launching sweeping political strikes across key industries.",
+      "options": {
+        "A": {
+          "text": "The Jamshedpur Steel Walkout (Historical Action): Workers at the Tata Iron and Steel Company down tools for thirteen straight days, refusing to produce steel for Allied munitions until a national government is formed.",
+          "consequence": "Munitions output halts abruptly, shocking imperial military planners and demonstrating the formidable power of organized Indian labor.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "The Ahmedabad Textile Shutdown (Historical Action): Mill hands in the \"Manchester of India\" strike for over three and a half months, completely halting cotton cloth production for the army.",
+          "consequence": "The prolonged industrial shutdown drains the local economy, but solidifies the city's reputation as the unshakeable capital of non-violent resistance.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Sabotage squads prioritize blinding imperial military communications across northern India.",
+      "options": {
+        "A": {
+          "text": "Total Wire & Line Destruction (Historical Action): Tear down thousands of miles of telegraph wires and blast railway tracks throughout Bihar and Uttar Pradesh.",
+          "consequence": "General Headquarters in Delhi loses touch with the eastern front against Japan, forcing the British to divert entire army divisions to clear the train lines.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Hijack Imperial Supply Convoys (Alternate): Intercept military supply trucks on the Grand Trunk Road to redirect provisions and medicines to rural clinics.",
+          "consequence": "Underground clinics save countless lives, but British armored columns turn roads into contested military corridors.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "In eastern Uttar Pradesh, Chittu Pandey leads an armed crowd to break open the district jail, liberating prisoners and taking control of the district.",
+      "options": {
+        "A": {
+          "text": "The Independent Republic of Ballia (Historical Action): Declare the total overthrow of the British Raj in Ballia, appointing Chittu Pandey as the district magistrate and governing freely for a week.",
+          "consequence": "The independent administration rules for days before colonial forces reoccupy the town, becoming an enduring legend of sovereign courage.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Regional Union with Azamgarh (Alternate): Immediately march out of Ballia to liberate neighboring Azamgarh and Ghazipur, forging a sprawling liberated territory.",
+          "consequence": "An entire zone of eastern UP is liberated, forcing the British into a major military offensive with heavy artillery to retake the towns.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Left without legislative representation or recognized leaders, rural students take over the movement.",
+      "options": {
+        "A": {
+          "text": "Hoist the Tricolor on Kutcheries (Historical Action): Thousands of unarmed students march onto colonial collectorates and police stations to hoist the national flag, facing point-blank gunfire.",
+          "consequence": "Young martyrs like Matangini Hazra and Kanaklata Barua fall holding the tricolor, writing immortal pages of supreme sacrifice.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Non-Violent Encirclement of Barracks (Alternate): Encircle military garrisons with hundreds of thousands of unarmed villagers singing patriotic anthems to prevent troops from leaving.",
+          "consequence": "Soldiers refuse to fire on the massive, peaceful crowd, prompting widespread administrative deadlock in several districts.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Sovereign Threshold (Historical)",
+      "story": "The Quit India Movement shakes the foundations of the British Empire to its core. Although brutally suppressed with over 100,000 arrests and machine-gun fire from the air, the uprising proves that the Indian masses are no longer governable by colonial force. Combined with the trials of the Indian National Army and the 1946 Royal Indian Navy Mutiny, it makes the transfer of power an absolute historical inevitability."
+    },
+    "ending_2": {
+      "title": "The Wartime Pact",
+      "story": "India achieves Dominion Status through wartime diplomacy rather than mass rebellion. While millions of lives and infrastructure are spared wartime devastation, the absence of a fierce grassroots struggle leaves colonial administrative institutions intact, slowing down progressive post-independence social reforms."
+    },
+    "ending_3": {
+      "title": "The Voice of the Underground",
+      "story": "The clandestine Congress Radio breaks the iron curtain of imperial wartime censorship. By relaying the truth of the struggle directly into homes, it keeps national morale blazing through the darkest months of wartime suppression."
+    },
+    "ending_4": {
+      "title": "The Azad Dasta Vanguard",
+      "story": "Jayaprakash Narayan’s guerrillas in the Nepal hills lay the foundation for modern socialist and revolutionary activism. Their heroic ambushes show that young Indians can wage sophisticated asymmetric campaigns against regular armed forces."
+    },
+    "ending_5": {
+      "title": "The Unbroken Prati Sarkar",
+      "story": "The parallel government of Satara runs uninterrupted through the end of World War II. Its innovative people's courts and volunteer militias provide a working model of bottom-up democracy and rural self-governance that inspires democratic institutions across free India."
+    },
+    "ending_6": {
+      "title": "The Citadel of Midnapore",
+      "story": "The Tamluk Jatiya Sarkar endures catastrophic floods, famines, and police brutality without wavering. Its community-centered cyclone relief establishes an immortal legacy of civil discipline, proving that Indian leadership can protect its people when the colonial state fails them entirely."
+    },
+    "ending_7": {
+      "title": "The Bread of Freedom",
+      "story": "By wresting hoarded grain from corrupt contractors and feeding the destitute, underground volunteers expose the moral illegitimacy of colonial wartime administration. The grassroots effort saves countless lives and elevates humanitarian relief into an act of patriotic duty."
+    },
+    "ending_8": {
+      "title": "The Relief Flotilla",
+      "story": "American diplomatic intervention forces Churchill to divert food ships to the Bay of Bengal, halting the famine before it consumes millions more. The episode internationalizes India's plight, isolating Britain's imperial policy in the eyes of world opinion."
+    },
+    "ending_9": {
+      "title": "The Steel Standstill",
+      "story": "The thirteen-day strike at Jamshedpur delivers a catastrophic blow to British war logistics in the eastern theater. It proves that India's industrial proletariat holds the ultimate veto over imperial governance and economic exploitation."
+    },
+    "ending_10": {
+      "title": "The Ahmedabad Commune",
+      "story": "Three and a half months of silent looms in Ahmedabad turn the textile center into an impenetrable fortress of non-violent industrial resistance. The sacrifice of its mill hands demonstrates that economic defiance can withstand any amount of administrative intimidation."
+    },
+    "ending_11": {
+      "title": "The Severed Arteries",
+      "story": "Blasting train tracks and cutting telegraph lines across Bihar and UP completely isolates British armed forces from the Burmese front. The strategic disruption shows that the Raj cannot defend its imperial borders without the consent of its domestic population."
+    },
+    "ending_12": {
+      "title": "The Robin Hood Convoy",
+      "story": "Diverting military trucks to deliver medicines and food directly to impoverished villages wins unconditional rural loyalty for the national cause. The movement establishes deep humanitarian bonds across the countryside that outlast colonial rule."
+    },
+    "ending_13": {
+      "title": "The Pride of Ballia",
+      "story": "Though its sovereign independence lasted only a week, the \"Republic of Ballia\" remains an eternal symbol of defiance. It proves that ordinary peasants, when pushed to their limits, can tear down foreign authority in a single afternoon."
+    },
+    "ending_14": {
+      "title": "The Liberated Belt of Awadh",
+      "story": "Forging an entire liberated zone across eastern Uttar Pradesh forces the British to divert front-line divisions from World War II to wage internal counter-insurgency. The cost in military resources forces London to accept that its empire in India is militarily untenable."
+    },
+    "ending_15": {
+      "title": "The Immortal Tricolor",
+      "story": "The martyrdom of teenage flag-bearers like Kanaklata Barua and aged elders like Matangini Hazra moves an entire nation to tears and righteous pride. Their fearlessness in the face of colonial rifle fire deprives the British Raj of any remaining claim to moral legitimacy."
+    },
+    "ending_16": {
+      "title": "The Fraternization of the Ranks",
+      "story": "Enclosing barracks with peaceful, singing crowds sparks moral hesitation within Indian military detachments. Recognizing that Indian soldiers will no longer fire upon their own kin, British commanders warn the War Cabinet that the instrument of colonial coercion has broken forever."
+    }
+  }
+}

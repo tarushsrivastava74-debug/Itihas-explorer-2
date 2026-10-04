@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Maharaja Ranjit Singh, the 19-year-old chief of the Sukerchakia Misl. The historic walled capital of Lahore is locked under the corrupt, mismanaged rule of three rival Bhangi Misl sardars. A secret petition arrives from a coalition of Hindu, Muslim, and Sikh citizens of Lahore begging you to liberate the city. Afghan invader Zaman Shah Durrani has temporarily pulled back north, but his garrisons remain close.",
+      "options": {
+        "A": {
+          "text": "The Citizen's Gate Infiltration (Historical): Coordinate secretly with the city elders to unbolt the Lohari and Delhi Gates at dawn, marching your cavalry in without plundering the bazaars.",
+          "consequence": "The city falls with almost zero bloodshed. You forbid looting, win the hearts of all communities, and proclaim Lahore the sovereign seat of the united Khalsa, drawing the fury of rival Sikh chiefs.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The River Assault & Demolition (Alternate): Refuse to trust the secret petition; roll up heavy siege mortars to breach the outer brick walls along the Ravi River by force.",
+          "consequence": "The bombardment shatters the water gates and sparks panic; the garrison fires back, burning portions of the bazaars and turning the city's merchant guilds hostile to your conquest.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Terrified by your capture of Lahore, a coalition of rival Sikh misldars, allied with the Afghan Nawab of Kasur, gathers an army of 20,000 at Bhasin to crush you before you can be crowned.",
+      "options": {
+        "A": {
+          "text": "The Cold Stand-Off (Historical): Entrench your disciplined regiments, cut their supply convoys, and wait out their divided leadership until their coalition implodes.",
+          "consequence": "The allied sardars bicker, run out of wine and grain, and their top general dies of excess. The rival army scatters without a pitched battle. You are formally crowned Maharaja in 1801.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Preemptive Dawn Blitz (Alternate): Launch an all-out cavalry charge straight into their command tents on the morning of their arrival.",
+          "consequence": "You cut down the Nawab of Kasur, but your vanguard suffers heavy officer losses from their entrenched musketeers, leaving your eastern flank exposed to British scouts.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "You hold a scarred Lahore, but the merchant guilds refuse loans, and Afghan raiders strike your supply lines outside the ruins.",
+      "options": {
+        "A": {
+          "text": "Rebuild and Subsidize (Alternate): Empty your personal family vaults to rebuild the ruined markets, offering tax-free trade charters to Hindu and Muslim merchant bankers.",
+          "consequence": "Trade resumes rapidly. Grateful trading houses extend you low-interest credit to enlist veteran horsemen.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Impose Martial Requisitions (Alternate): Levy a compulsory wartime indemnity on every estate in the Lahore district to fund border defense.",
+          "consequence": "You quickly raise a mercenary army, but underground partisan cells begin sabotaging your outposts.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "The British East India Company expands to the Sutlej River. To deter them, you sign the Treaty of Amritsar establishing the river border, giving you freedom to expand west and north. French Napoleonic veterans (Allard and Court) arrive seeking employment.",
+      "options": {
+        "A": {
+          "text": "Hire the European Generals (Historical): Appoint Napoleonic officers to modernize the Fauj-i-Khas with European drill, combined-arms tactics, and standardized bronze horse-artillery.",
+          "consequence": "You build the most formidable and disciplined indigenous standing army in Asia, terrifying both the British and the Afghan tribes.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Stick to Pure Khalsa Cavalry (Alternate): Reject foreign officers and Western drill; invest entirely in traditional, high-mobility Akali-Nihang shock cavalry and mobile swivel guns (zamburaks).",
+          "consequence": "Your horsemen remain fiercely devoted and fast, but lack the rigid defensive square formations required to repel modern line-infantry fire.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "The British dispatch Charles Metcalfe with an ultimatum: abandon all claims east of the Sutlej River or face Company battalions.",
+      "options": {
+        "A": {
+          "text": "Sign the River Boundary (Alternate): Sign the border treaty and direct all your military aggression toward the mountain valleys of Kashmir and Multan.",
+          "consequence": "The Sutlej becomes a peaceful frontier; you expand north into the mountains without risking a catastrophic, premature clash with the Company.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Cross the Sutlej in Defiance (Alternate): Cross the Sutlej with 40,000 horsemen and challenge the British East India Company to open war in the Malwa plains.",
+          "consequence": "A brutal clash of empires erupts decades early across the Punjab plains.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Funded by Lahore's restored bankers, you assemble an army to wrest the prosperous valley of Kashmir from its brutal Afghan governor, Jabbar Khan.",
+      "options": {
+        "A": {
+          "text": "Battle of Shopian (Alternate): Divide your army into three columns, using Akali Phula Singh's shock troops to assault the Afghan mountain passes.",
+          "consequence": "Jabbar Khan's forces break and flee; the emerald valley of Kashmir is annexed into the Sarkar-i-Khalsa, securing vast shawl revenues.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "The Valley Blockade (Alternate): Seal the Pir Panjal passes with forts to starve the Afghan garrisons through the harsh Himalayan winter.",
+          "consequence": "The Afghan garrison is starved into surrender by spring, preserving the valley's towns and workshops from battle damage.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Dealing with partisan unrest at home, you send a punitive expedition to capture the strategic Attock Fort on the Indus River before the Kabul monarchy can react.",
+      "options": {
+        "A": {
+          "text": "Ambush at Haidaru (Alternate): Let the Afghan relief army cross the Indus shallows, then encircle them on the rocky plains of Haidaru with your field guns.",
+          "consequence": "The Afghan army is shattered; you secure Attock Fort, planting the Khalsa flag beyond the Indus for the first time in centuries.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Buy the Citadel (Alternate): Offer Jahandad Khan, the disgruntled Afghan governor of Attock, a secret cash bribe of one lakh rupees to hand over the keys.",
+          "consequence": "You take the fortress without firing a single musket, but the furious Durrani vizier in Kabul declares a total holy war to reclaim it.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Your legendary commander, Hari Singh Nalwa, has driven deep into the Khyber Pass, constructing Jamrud Fort. Afghan Emir Dost Mohammad Khan sends an army of 30,000 to destroy the fort while Nalwa lies sick with fever inside.",
+      "options": {
+        "A": {
+          "text": "Nalwa's Death Ride (Historical): Hari Singh Nalwa rises from his sickbed, dons his armor, and leads a ferocious counter-charge to hold the pass until Lahore's artillery arrives.",
+          "consequence": "Nalwa is mortally wounded, but his men keep his body propped up on the ramparts to deceive the enemy until the relief columns arrive. The Khyber is sealed forever.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Tactical Withdrawal to Peshawar (Alternate): Order the Jamrud garrison to fall back into the massive stone walls of Bala Hissar Fort in Peshawar and deploy the artillery parks.",
+          "consequence": "You preserve the life of Hari Singh Nalwa and save your elite troops, but the Khyber Pass slips back into tribal hands.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "At Nowshera, 20,000 tribal warriors assemble on the Pir Sabak hill. Without European-style drill, your traditional cavalry must take the heights under fire.",
+      "options": {
+        "A": {
+          "text": "The Akali Martyr Charge (Alternate): Akali Phula Singh leads his dismounted Nihangs up the steep hill with bare swords and war cries into point-blank musket fire.",
+          "consequence": "The heights are captured at a terrible human cost, wiping out the old guard of your most loyal warriors.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Feigned Cavalry Retreat (Alternate): Order your light horsemen to pretend to flee, baiting the tribal defenders down into the open plains.",
+          "consequence": "The defenders break their high-ground formation and charge down, where your cavalry circles and cuts them to pieces.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "With the British border calm, your trusted general Zorawar Singh marches deep into the frozen heights of Ladakh and Baltistan.",
+      "options": {
+        "A": {
+          "text": "March to Western Tibet (Alternate): Cross the high Himalayan passes at 15,000 feet to seize the holy trade routes of Mount Kailash and Lake Manasarovar from the Qing Empire.",
+          "consequence": "You invade the roof of the world, provoking the imperial court of the Qing Dynasty in Beijing.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Consolidate the Ladakh Passes (Alternate): Halt at Leh, construct mountain stone citadels, and monopolize the lucrative high-altitude pashmina wool trade.",
+          "consequence": "You secure an impenetrable northern boundary and reap immense textile revenues without provoking China.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Your defiance of the British brings Lord Minto's Company regiments marching into central Punjab.",
+      "options": {
+        "A": {
+          "text": "The Battle of the Sutlej River (Alternate): Entrench your artillery along the Sutlej riverbank and engage the British in a duel of heavy field ordnance.",
+          "consequence": "A bloody, drawn-out slugfest where both sides suffer devastating casualties on the riverbanks.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Scorched Plains & Guerrilla Raids (Alternate): Evacuate the border towns, strip the plains of grain, and unleash 30,000 light horsemen to sever British communication lines to Delhi.",
+          "consequence": "The British columns are starved of food and ammunition, forcing them to negotiate a respectful truce.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Kashmir is firmly under your control. The local population suffers from generations of famine and misrule under the previous Afghan lords.",
+      "options": {
+        "A": {
+          "text": "Administrative Relief & Public Works (Alternate): Appoint a benevolent governor, cancel agricultural debts, and fund the expansion of traditional saffron and shawl industries.",
+          "consequence": "Kashmir flourishes into an economic jewel, integrating harmoniously into the empire's northern administrative tier.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Militarize the Mountain Valley (Alternate): Turn Kashmir into a giant forward military depot to stage invasions into Central Asia.",
+          "consequence": "Heavy war taxes spark local resistance, turning a peaceful valley into an occupied military zone.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Having bloodlessly absorbed Kashmir, your generals urge you to push west into Gilgit and Chitral to dominate the Pamir mountain passes.",
+      "options": {
+        "A": {
+          "text": "Seal the Pamir Gorges (Alternate): Fortify the narrow northern defiles, shutting out all Russian and Central Asian expansionists.",
+          "consequence": "You create a natural alpine rampart that protects the northern borders of India from all foreign empires.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Trade Treaties with Bukhara (Alternate): Send diplomatic caravans through the mountain passes to establish direct, duty-free silk trade with the Emirate of Bukhara.",
+          "consequence": "Merchants from Samarkand and Bukhara fill the bazaars of Lahore with northern goods and horses.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "With Attock secured, the frontier tribes across the Indus invite you to act as arbiter over their trade passes.",
+      "options": {
+        "A": {
+          "text": "The Trans-Indus Protectorate (Alternate): Guarantee tribal customs and local self-rule in exchange for military loyalty and safe passage through the hills.",
+          "consequence": "The fierce frontier tribes become staunch defenders of the Khalsa border, creating a loyal buffer barrier.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Disarm the Frontier (Alternate): Issue strict decrees demanding all frontier clans surrender their matchlocks and pay tax in weapons.",
+          "consequence": "The tribes take up arms in an unending, brutal mountain guerrilla war that bleeds your western outposts.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The Durrani army arrives in full force to retake Attock Fort, surrounding your newly purchased stone citadel.",
+      "options": {
+        "A": {
+          "text": "Sortie from the Water Gate (Alternate): Launch a midnight counter-strike out of the river gate to set fire to the Afghan powder magazines.",
+          "consequence": "The explosion throws the besiegers into pandemonium; their army retreats in disorder toward Kabul.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Static Artillery Defense (Alternate): Keep the gates sealed and rely entirely on your heavy wall guns to break their infantry charges.",
+          "consequence": "You hold the fort, but the surrounding farmlands are burned to ash, leaving the garrison isolated.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Lion of Punjab (Historical)",
+      "story": "Hari Singh Nalwa's stand seals the Khyber Pass, permanently checking centuries of northwest invasions. You reign over a multi-religious, prosperous empire stretching from the Khyber to Tibet. The Golden Temple gleams with gold leaf, and your rule is remembered as the golden age of the Khalsa."
+    },
+    "ending_2": {
+      "title": "The Frontier Bastion",
+      "story": "Nalwa survives to lead your armies, and Peshawar is transformed into a modern artillery citadel. While the high passes remain lawless, your empire holds an unshakeable frontier line along the foothills, deterring all foreign aggression."
+    },
+    "ending_3": {
+      "title": "The Martyr's Victory",
+      "story": "Nowshera is won, but the death of your most fanatically loyal Akali shock troops leaves the army reliant on ambitious mercenaries. Your borders are secure, but the spiritual core of the army is permanently weakened."
+    },
+    "ending_4": {
+      "title": "Master of the Plains",
+      "story": "The tactical feint destroys the tribal alliance with minimal losses. Peshawar submits peacefully, and your army secures the western frontier with its full operational strength intact."
+    },
+    "ending_5": {
+      "title": "The Snow-Blind Campaign",
+      "story": "General Zorawar Singh pushes toward Lhasa, but winter blizzards at 15,000 feet freeze your supply lines. Facing an imperial Qing counter-offensive, the expedition perishes in the snows, leaving the northern border overextended."
+    },
+    "ending_6": {
+      "title": "The Roof of the World",
+      "story": "By fortifying Ladakh and securing the pashmina routes, you create a self-sustaining alpine realm. The trade revenues from Tibetan wool enrich the Lahore treasury without embroiling the empire in a conflict with China."
+    },
+    "ending_7": {
+      "title": "The Bloody Stalemate",
+      "story": "The early battle along the Sutlej results in horrific losses for both sides. The British withdraw to Delhi to rethink their strategy, leaving the Sikh Empire bloodied but fiercely independent and recognized as an equal military power."
+    },
+    "ending_8": {
+      "title": "The Desolate Border",
+      "story": "Your scorched-earth guerrilla tactics humiliate the British supply columns. The East India Company sues for peace, signing a non-aggression pact that keeps British influence out of Punjab for half a century."
+    },
+    "ending_9": {
+      "title": "The Valley of Peace",
+      "story": "Your humane administration heals the scars of Afghan misrule in Kashmir. The valley becomes a center of global textile trade, generating immense wealth and earning your throne the deep loyalty of its diverse populations."
+    },
+    "ending_10": {
+      "title": "The Occupied Valley",
+      "story": "Turning Kashmir into a forward military base ruins its delicate cottage economy. Constant local insurrections tie down valuable divisions that are desperately needed to guard the southern plains."
+    },
+    "ending_11": {
+      "title": "The Northern Bastion",
+      "story": "The sealed Pamir gorges block the path of Russian and Central Asian expansionists. The northern border of India remains completely impregnable, insulated from the imperial geopolitical machinations of the \"Great Game.\""
+    },
+    "ending_12": {
+      "title": "The Silk Corridor",
+      "story": "Bazaars in Lahore, Amritsar, and Multan overflow with merchants from Samarkand, Bukhara, and Persia. Your empire becomes the undisputed financial crossway of Central and South Asia, rivaling the great Silk Road hubs of antiquity."
+    },
+    "ending_13": {
+      "title": "The Tribal Confederation",
+      "story": "Treaties with the frontier clans create an unbreachable living buffer. Bound by honor and mutual respect, the hill warriors defend the mountain passes as staunch allies of the Sarkar-i-Khalsa against all foreign incursions."
+    },
+    "ending_14": {
+      "title": "The Bleeding Frontier",
+      "story": "Attempting to forcibly disarm the mountain tribes sparks decades of bitter guerrilla insurgency. The western frontier drains your treasury and kills your best officers in unending, inconclusive canyon ambushes."
+    },
+    "ending_15": {
+      "title": "The Unbroken Gate",
+      "story": "The midnight strike at Attock shatters the last major Afghan invasion army. The Durrani dynasty disintegrates into civil war, leaving the Sikh Empire as the sole, unchallenged superpower of the northwest."
+    },
+    "ending_16": {
+      "title": "The Lonely Garrison",
+      "story": "Attock Fort holds against all assaults, but the surrounding plains are devastated. Your western outpost survives as a heavily armed island in a sea of hostile wasteland, requiring constant, expensive relief convoys from Lahore."
+    }
+  }
+}

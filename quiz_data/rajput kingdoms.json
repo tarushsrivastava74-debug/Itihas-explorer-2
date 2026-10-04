@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Maharana Pratap of Mewar. Emperor Akbar demands your submission to Mughal suzerainty, offering you wealth and royal court titles. When you refuse, Akbar dispatches Raja Man Singh of Amber with a 10,000-man Mughal army equipped with artillery, musketeers, and heavy cavalry. You hold the narrow, yellow-clay pass of Haldighati with 3,000 Rajput warriors and loyal Bhil archers.",
+      "options": {
+        "A": {
+          "text": "The Narrow Pass Cavalry Charge (Historical): Lure Man Singh's vanguard into the narrow pass where Mughal cannons cannot deploy, and charge his center astride your warhorse Chetak.",
+          "consequence": "Your charge inflicts catastrophic shock; Chetak plants his hooves on Man Singh’s war elephant. Though wounded, you survive the bloody melee and retreat into the Aravalli hills to wage decades of guerrilla war.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Mountain Defense & Archer Wall (Alternate): Refuse a direct cavalry charge; stay anchored on the high cliffs and let Bhil poison-tipped archers rain down fire while blocking all exits.",
+          "consequence": "The Mughal vanguard is shredded in the bottleneck without reaching your line. Man Singh is forced to withdraw his battered army back to Ajmer to regroup.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Akbar personally enters Mewar, capturing your capital at Kumbhalgarh and your ancestral fortress of Chittor. You and your family live in the dense wilderness, eating grass bread (ghas ki roti) while your treasury dries up.",
+      "options": {
+        "A": {
+          "text": "Accept the Gift of Bhamashah (Historical): Accept the life savings of your loyal minister Bhamashah—enough gold and jewels to maintain 25,000 warriors for 12 years—to rearm your army.",
+          "consequence": "Freshly funded and equipped, your soldiers take heart; you begin systematic counter-offensives across western Mewar.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Seek Royal Asylum in Gujarat (Alternate): Leave the barren hills of Mewar and take your surviving guard south to build a fresh resistance base in the Sultanate of Gujarat.",
+          "consequence": "Gujarat’s regional sultans welcome your sword, but Mewar’s ancestral forts are left garrisoned under Mughal commanders.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Man Singh's retreat leaves you in full control of southern Rajasthan. Other Rajput kings who previously submitted to Akbar begin questioning their Mughal treaties.",
+      "options": {
+        "A": {
+          "text": "The Grand Rajput Coalition (Alternate): Send emissaries to Marwar (Jodhpur) and Bikaner, urging the clans to break their Mughal marriage treaties and unite under Mewar's saffron banner.",
+          "consequence": "Rao Chandrasen of Marwar joins your cause, forming a united desert front that expels imperial tax collectors.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Fortify the Hill Citadels (Alternate): Use the breathing room to stockpile years of grain and melt down temple copper to cast your own field artillery across Mewar's forts.",
+          "consequence": "Mewar transforms into an unbreachable mountain bastion, though you remain isolated from trade along the plains.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "With Bhamashah’s gold, your revitalized guerrilla army surrounds the strategic Mughal imperial outpost at Dewair, commanded by Akbar's uncle, Sultan Khan.",
+      "options": {
+        "A": {
+          "text": "The Lightning Assault (Historical): Launch a simultaneous, multi-directional mountain charge against the Dewair garrison during the Dussehra festival.",
+          "consequence": "The garrison is routed; your son Amar Singh slays the Mughal commander in single combat. The victory sets off a chain reaction, liberating 36 Mughal posts across Mewar.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Starvation Siege (Alternate): Cut off Dewair’s water supply from the nearby mountain springs and wait for the Mughal garrison to surrender peacefully.",
+          "consequence": "Relieving Mughal reinforcements arrive from Agra before the well runs dry, catching your besieging force in a pincer trap.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Operating from northern Gujarat, your cavalry protects coastal trade caravans, amassing considerable wealth from port duties.",
+      "options": {
+        "A": {
+          "text": "Purchase Portuguese Muskets (Alternate): Use coastal gold to buy matchlocks, gunpowder, and modern iron cannon from Portuguese traders in Daman and Diu.",
+          "consequence": "You train an elite regiment of Rajput musketeers, giving your mountain warriors unprecedented modern firepower.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Invade Malwa (Alternate): Lead your seasoned cavalry east into the rich central plains of Malwa to plunder imperial Mughal supply trains.",
+          "consequence": "You capture massive stores of warhorses and grain, but provoke Akbar into mobilizing a 50,000-man grand expedition against you.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "The alliance between Mewar and Marwar severs the vital Mughal trade corridor linking Delhi and the ports of Gujarat.",
+      "options": {
+        "A": {
+          "text": "Ambush the Imperial Gold Caravan (Alternate): Intercept the annual imperial revenue caravan carrying Gujarat's customs taxes to the treasury at Agra.",
+          "consequence": "You seize millions in gold coin, stripping Akbar of the funds needed to finance his southern campaigns.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Reclaim Chittorgarh (Alternate): March your united coalition army to liberate the holy ancestral fortress of Chittor from its Mughal garrison.",
+          "consequence": "The siege turns into a bloody, protracted war of attrition against Chittor’s modernized artillery bastions.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Your forts bristle with cannon, but a devastating drought sweeps across southern Rajasthan, parching your hillside reservoirs.",
+      "options": {
+        "A": {
+          "text": "Open Granaries and Siphon Rivers (Alternate): Open the royal emergency vaults to feed the peasantry and construct check-dams across the Banas River.",
+          "consequence": "The civilian population survives intact and fiercely loyal, turning every farmer into an armed scout for your army.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Raid the Plains for Grain (Alternate): Send your mobile horsemen to raid Mughal-held grain depots in the plains of Ajmer.",
+          "consequence": "You secure enough food for the hill citadels, but leave a trail of burning border outposts that draws imperial scouts directly to your mountain trails.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Dewair has fallen, and Akbar shifts his focus to rebellions in the northwest frontier. You liberate almost all of Mewar except Chittor and Mandalgarh.",
+      "options": {
+        "A": {
+          "text": "Establish Chavand & Cultivate the Arts (Historical): Build a new capital at Chavand, construct water reservoirs, patronize classical painting (Chavand Ragamala), and secure your borders.",
+          "consequence": "Mewar enters an era of sovereignty and cultural resurgence, proving that an independent kingdom can stand toe-to-toe with an imperial superpower.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Final Storming of Chittorgarh (Alternate): Marshall every surviving soldier in an all-or-nothing offensive to tear down the Mughal banners from the ramparts of Chittor.",
+          "consequence": "A desperate clash against heavy imperial cannons; you risk everything you built on a single fortress wall.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Caught outside Dewair by relieving imperial cavalry, your back is pinned against steep rock cliffs.",
+      "options": {
+        "A": {
+          "text": "The Night Breakout (Alternate): Order your soldiers to extinguish all torches and slip silently through the rocky scree under cover of darkness.",
+          "consequence": "You escape with most of your forces intact, but your heavy supply train and mountain guns must be abandoned.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "The Final Stand of the Sisodias (Alternate): Don the saffron robes (kesariya) and lead a glorious death charge into the Mughal ranks.",
+          "consequence": "You fall in battle wielding your heavy spear, immortalizing your sacrifice across centuries of Rajput legend.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Armed with Portuguese guns, your soldiers establish an impenetrable ring around the southern passes into Gujarat.",
+      "options": {
+        "A": {
+          "text": "Guerrilla Gunpowder Network (Alternate): Disperse your riflemen across every high ridge, turning every canyon into a sniper's crossfire.",
+          "consequence": "Imperial armies suffer devastating losses in every canyon, forcing the Mughals to abandon operations in southern Rajasthan.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Challenge the Mughals on the Plains (Alternate): Deploy your rifle regiments into disciplined European-style firing squares on the open plains of Malwa.",
+          "consequence": "Massive imperial heavy cavalry charges flank your lines before your men can reload their matchlocks.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Akbar’s grand army traps your raiders on the banks of the Chambal River in central India.",
+      "options": {
+        "A": {
+          "text": "Divert the River Dams (Alternate): Breach upstream earthen dams to flood the river plain and wash away the Mughal artillery trains.",
+          "consequence": "The flood waters mire the heavy imperial cannons in mud, allowing your cavalry to rout the disorganized imperial ranks.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Cavalry Counter-Flank (Alternate): Ride through the river shallows to strike the Mughal headquarters directly.",
+          "consequence": "Your riders are pinned down by concentrated imperial swivel-gun fire in the water.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Having seized the imperial gold, Delhi is starved of western customs money, and trade grinds to a halt.",
+      "options": {
+        "A": {
+          "text": "Demand Sovereign Independence (Alternate): Send terms to Agra demanding total Mughal recognition of an independent Rajput federation in exchange for reopening the trade roads.",
+          "consequence": "Akbar accepts the terms to save the empire's commercial lifeblood, sealing a lasting peace.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Sack the Imperial Base at Ajmer (Alternate): Use your captured gold to finance an assault on Akbar's primary administrative capital in Rajasthan.",
+          "consequence": "You capture Ajmer, but ignite an all-out holy war with the entire military might of Delhi.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Your united Rajput army lays siege to the massive plateau walls of Chittorgarh, held by entrenched Mughal musketeers.",
+      "options": {
+        "A": {
+          "text": "Mine the Bastions (Alternate): Dig deep gunpowder tunnels under the fortress gates to shatter the stone ramparts.",
+          "consequence": "The walls collapse inward, allowing your warriors to reclaim their ancestral home in an emotional victory.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Starve the Garrison (Alternate): Surround the base of the plateau and seal every mountain goat trail leading to the summit.",
+          "consequence": "The long siege drains your alliance; rival clans quarrel over plunder and abandon the lines.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Your well-fed peasant militia transforms every village in Mewar into a fortified observation outpost.",
+      "options": {
+        "A": {
+          "text": "The Border Treaty (Alternate): Consolidate your borders, offering a permanent ceasefire to imperial governors while keeping Mewar free.",
+          "consequence": "Mewar stands as an unassailable mountain sanctuary, independent and debt-free.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Liberate Northern Rajasthan (Alternate): Mobilize your civilian militia to push imperial garrisons out of Jaipur and Amber.",
+          "consequence": "The civilian militia is cut down in open country by seasoned imperial heavy horsemen.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Imperial hunting detachments follow the smoke of your raids directly to your secret hill settlements.",
+      "options": {
+        "A": {
+          "text": "Lead a Forest Ambush (Alternate): Lure the pursuers deep into the ravine forests of Gogunda and spring a night trap.",
+          "consequence": "The imperial detachments are annihilated, preserving the secrecy of your hideouts.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Stand at the Village Gates (Alternate): Make a stand at the entrances of the hill settlements to protect the fleeing civilians.",
+          "consequence": "You buy time for your people to escape, but take grievous wounds that break your fighting strength.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Pride of Mewar (Historical)",
+      "story": "You rule peacefully from your capital at Chavand until your passing in 1597. You never bowed your head to the Mughal throne, reclaimed nearly all your ancestral lands, and your unyielding stand for freedom becomes an eternal symbol of Indian defiance."
+    },
+    "ending_2": {
+      "title": "The Red Ramparts",
+      "story": "Your desperate assault on Chittor fails against heavy cannon fire. You die on the slope of your ancestral home, leaving Mewar leaderless and forced into an unconditional treaty of surrender."
+    },
+    "ending_3": {
+      "title": "The Shadow King",
+      "story": "Having escaped the trap at Dewair, you survive in the deepest jungles of the Aravallis. You preserve your life, but Mewar remains a depopulated buffer zone garrisoned by foreign troops."
+    },
+    "ending_4": {
+      "title": "The Immortal Saffron",
+      "story": "Your sacrificial charge at Dewair becomes a legendary saga sung by bards across generations. Though you perish, your martyrdom sparks a nationwide insurrection that drains imperial resources for decades."
+    },
+    "ending_5": {
+      "title": "The Mountain Marksmen",
+      "story": "Armed with modern firearms, your mountain infantry creates an impassable barrier in the Aravallis. European travelers record Mewar as an impenetrable fortress state where even imperial armies dare not tread."
+    },
+    "ending_6": {
+      "title": "The Crushed Square",
+      "story": "European-style infantry tactics fail against the sheer weight of imperial cavalry in the plains. Your musketeers are overrun, leaving you with neither mountain forts nor an army to defend them."
+    },
+    "ending_7": {
+      "title": "Masters of Central India",
+      "story": "The flash flood wipes out the imperial war machine, letting you annex parts of Malwa. You transform Mewar from a beleaguered mountain enclave into a major central Indian power."
+    },
+    "ending_8": {
+      "title": "The Silt of the Chambal",
+      "story": "Swivel-gun fire decimates your cavalry in the river crossing. You are captured and brought before Akbar in chains, ending the independent line of the Sisodia kings."
+    },
+    "ending_9": {
+      "title": "The Sovereign Federation",
+      "story": "Akbar formally signs a treaty recognizing a sovereign Rajput Confederacy. Mewar and Marwar govern the desert corridors as equal equals to Agra, ushering in decades of peace and flourishing trade."
+    },
+    "ending_10": {
+      "title": "The Conflagration",
+      "story": "Taking Ajmer incites the full fury of the Mughal Empire. Akbar mobilizes an overwhelming army that lays waste to northern Rajasthan, wiping out your coalition in an unwinnable war."
+    },
+    "ending_11": {
+      "title": "The Reclaimed Citadel",
+      "story": "The saffron banner waves once more over the ramparts of Chittorgarh. Reclaiming the historic heart of your ancestors restores the pride of the Rajputs and seals your place in history as the Great Liberator."
+    },
+    "ending_12": {
+      "title": "The Deserting Clans",
+      "story": "Internal feuds tear your coalition apart during the drawn-out siege. The clan chieftains return home, leaving you alone to face an inevitable imperial counter-attack."
+    },
+    "ending_13": {
+      "title": "The Unbroken Sanctuary",
+      "story": "Mewar thrives as an independent, agrarian commonwealth. Your sustainable dams, self-sufficient villages, and loyal mountain scouts protect your borders from external interference for generations."
+    },
+    "ending_14": {
+      "title": "The Slaughter of the Militia",
+      "story": "Untrained civilian levies stand no chance in the open plains against armored imperial veterans. The slaughter destroys Mewar’s working population, leaving the kingdom desolate for decades."
+    },
+    "ending_15": {
+      "title": "The Vanishing Army",
+      "story": "Your night ambush wipes out the imperial scouts, keeping your hidden valleys completely concealed. Mewar remains an invisible mountain redoubt, striking from the shadows at will."
+    },
+    "ending_16": {
+      "title": "The Shield of the People",
+      "story": "You take nine arrow wounds defending the civilian evacuees. You survive, but are permanently crippled, spending your remaining years watching your commanders slowly negotiate peace from a position of weakness."
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Rajendra Chola I. Having just succeeded your father, Rajaraja Chola I, you inherit the mastery of southern India and Ceylon (Sri Lanka). Word arrives that the powerful maritime Empire of Srivijaya (modern Indonesia and Malaysia) is harassing Tamil merchant ships passing through the vital Strait of Malacca and imposing punishing tolls on trade bound for Song-dynasty China?",
+      "options": {
+        "A": {
+          "text": "Build the Imperial Armada (Historical): Construct a colossal, ocean-going blue-water naval fleet armed with catapults, fire-pots, and elite marine battalions to contest the Malacca Straits.",
+          "consequence": "You construct Asia's most formidable naval fleet, securing trade dominance, but naval shipyards swallow immense timber and treasury resources while northern Indian kingdoms begin arming their borders.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The Land Hegemon (Alternate): Focus entirely on the Indian mainland: ignore the distant sea routes, fortify the Kaveri delta, and double the size of your armored war-elephant corps.",
+          "consequence": "The Indian mainland is locked down under iron Chola control, but Srivijayan privateers completely choke out Tamil merchant guilds from the eastern spice routes.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "With your grand fleet under construction along the Coromandel coast, you turn north to establish your supremacy over the mainland before setting sail. Your army marches across Kalinga toward the sacred waters of the Ganga. Mahipala, King of the Pala Empire of Bengal, forms a battle line along the riverbanks?",
+      "options": {
+        "A": {
+          "text": "Crossing of the Ganga (Historical): Launch an all-out frontal infantry and war-elephant amphibious assault across the river to shatter the Pala army.",
+          "consequence": "Mahipala's forces are routed. You force defeated kings to carry golden pots of holy Ganga water on their heads back to Tamil country, founding your grand new capital: Gangaikonda Cholapuram.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Siege and Starve (Alternate): Avoid a bloody river assault; cut Pala grain supplies and establish fortified camps along their southern supply lines.",
+          "consequence": "Mahipala withdraws north without a decisive clash; you return south with plunder, but your troops grumble that the northern expedition achieved no lasting glory or legendary mandate.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Tamil merchant guilds like the Ayyavole 500 beg you to act as Srivijaya's embargo drains coastal treasuries?",
+      "options": {
+        "A": {
+          "text": "Embassies to Song China (Alternate): Send massive diplomatic and gift-laden trade delegations directly to the Song Emperor in Kaifeng to bypass Srivijaya via Chinese ships.",
+          "consequence": "China opens special trade ports for your goods, but Srivijayan fleets seize your diplomatic ships on their return journey, igniting open hostilities.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Western Ports Expansion (Alternate): Pivot the entire empire's commerce west toward Arabia and the Persian Gulf through the ports of Malabar (Kerala).",
+          "consequence": "Arabian horse traders and Gulf merchants flood your western ports with silver, but eastern spice and silk trade routes are abandoned entirely.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Crowned Gangaikonda Chola (Conqueror of the Ganga), your finished armada stands ready. The Srivijayan Maharaja Sangrama-Vijayottungavarman believes your land armies are too exhausted to mount a sea invasion?",
+      "options": {
+        "A": {
+          "text": "Surprise Monsoon Strike (Historical): Sail across the Indian Ocean using the monsoon winds, launching surprise multi-pronged amphibious landings directly on Kedah, Sumatra, and the capital of Palembang.",
+          "consequence": "You capture the Srivijayan King, seize his golden jeweled gates, and establish complete naval hegemony over the Strait of Malacca and the Sunda Strait.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Island Blockade (Alternate): Anchor your battleships in the Nicobar Islands to starve Srivijaya into submission without attacking their fortified ports.",
+          "consequence": "Srivijaya's maritime economy collapses, but deadly tropical fevers ravage your stranded fleet, depleting your seasoned rowers and marine warriors.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Your inconclusive northern march emboldens your arch-rivals, the Western Chalukyas of Kalyani. King Jayasimha II marches south with 50,000 veterans to reclaim the Tungabhadra river frontier?",
+      "options": {
+        "A": {
+          "text": "Decisive Clash at Maski (Alternate): March your elite spear-corps north to engage Jayasimha in a pitched field battle at Maski.",
+          "consequence": "A brutal clash of shields leaves the Chalukyan army broken, securing the northern border, though the heavy casualties leave your coastal shipyards unmanned.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Border Demarcation Treaty (Alternate): Offer a peace treaty recognizing Chalukya influence north of the Krishna River in exchange for a permanent non-aggression pact.",
+          "consequence": "The border stabilizes into an uneasy peace, allowing you to refocus on expanding the great irrigation works of the Kaveri delta.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Srivijayan raiders intercept your merchant fleets near the Andaman Islands. Your merchant guilds demand protection?",
+      "options": {
+        "A": {
+          "text": "Merchant Armada (Alternate): Arm your merchant ships with heavy crossbows, flame-siphon tubes, and mercenary sailors to fight their way through.",
+          "consequence": "Armed convoys smash through pirate blockades, transforming your merchant guilds into independent maritime military corporations.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Abandon Far-East Trade (Alternate): Issue a royal edict banning all Chola vessels from sailing east of the Bay of Bengal to avoid further losses.",
+          "consequence": "Royal ships stay safe in harbor, but coastal trading towns collapse into economic ruin and social unrest.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "The Arabian trade creates unprecedented wealth on the Malabar coast, but local Chera chieftains begin withholding customs dues from the Chola throne?",
+      "options": {
+        "A": {
+          "text": "Royal Fleet Crackdown (Alternate): Dispatch your river patrols and coastal vessels to sack rebel ports and enforce direct imperial customs control.",
+          "consequence": "You break the insubordination and channel Arabian silver directly into the imperial treasury at Thanjavur.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Commercial Charter (Alternate): Grant the Chera ports commercial charters in exchange for a fixed 20% annual tribute of Arabian warhorses.",
+          "consequence": "Malabar thrives as a self-governing trade hub, but builds its own independent mercenary forces beyond imperial control.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "You hold the undisputed naval crown of Asia. The defeated Srivijayan princes pledge fealty, and the road to China is open?",
+      "options": {
+        "A": {
+          "text": "The Chola Lake (Historical): Establish permanent vassal protectorates in Southeast Asia, turn the Bay of Bengal into a protected Chola trade lake, and construct the grand irrigation reservoir Cholaganga.",
+          "consequence": "Tamil merchants, scholars, and architects spread across Southeast Asia, founding an era of unmatched commercial and cultural glory.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Permanent Territorial Colonization (Alternate): Annex Sumatra and the Malay Peninsula directly, installing Chola royal princes as provincial governors and posting permanent garrisons abroad.",
+          "consequence": "You attempt to govern an empire across thousands of miles of open sea, provoking fierce local rebellions that pin down your elite legions.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Trapped in the Nicobars by scurvy and malaria, your weakened fleet captures Srivijaya's outer islands, but cannot push into their capital?",
+      "options": {
+        "A": {
+          "text": "Desperate Beach Assault (Alternate): Order your remaining, fever-stricken marines to make a landing on the beaches of Palembang.",
+          "consequence": "Your soldiers are overwhelmed in the mangrove swamps by fresh Srivijayan forces.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Withdrawal with Ransom (Alternate): Sign an emergency armistice accepting an enormous silver payoff from Srivijaya before sailing home.",
+          "consequence": "You return to Thanjavur with gold, but the legendary myth of Chola naval invincibility is broken.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Maski is won, but your veterans are scarred and weary. The tributary kings of Lanka (Sri Lanka) sense weakness and stage an island-wide revolt.",
+      "options": {
+        "A": {
+          "text": "The Iron Crusade (Alternate): Lead your surviving veteran divisions across the Palk Strait to ruthlessly pacify the southern island.",
+          "consequence": "Lanka is completely subdued under a centralized martial governor, securing your southern flank permanently.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Crown a Puppet King (Alternate): Install a pliable native Sinhala prince in Anuradhapura under the protection of a light Chola garrison.",
+          "consequence": "The prince surreptitiously aligns with southern rival clans, plotting to sever Lanka from Chola influence.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "The northern peace holds. You focus entirely on building stone temples, giant sluice gates, and granaries across Tamil Nadu.",
+      "options": {
+        "A": {
+          "text": "Grand Irrigation Networks (Alternate): Direct all state gold into cutting thousands of new canal networks across the Kaveri and Vaigai basins.",
+          "consequence": "Southern India transforms into an agricultural paradise, producing three rice harvests a year with unshakeable stability.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "The Monumental Zenith (Alternate): Divert the agrarian surplus into constructing monumental granite temple towers rivaling the Brihadisvara Temple across every district.",
+          "consequence": "Dravidian art and bronze casting reach their absolute historical peak, but the treasury is hollowed out of liquid gold.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The Ayyavole 500 and Manigramam guilds now command fleets of private warships along the eastern coast.",
+      "options": {
+        "A": {
+          "text": "Nationalize Guild Fleets (Alternate): Subordinate all merchant warships directly under the command of royal Chola admirals.",
+          "consequence": "You regain absolute naval authority, though disgruntled merchant oligarchs begin moving their operations overseas.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Privatized Trade Hegemony (Alternate): Grant the merchant guilds sovereign military charters to wage their own private wars in the eastern seas.",
+          "consequence": "Merchant fleets carve out private trade monopolies, transforming the Chola Empire into a mercantile plutocracy.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "The ban on eastern voyages chokes off the Coromandel coast; your sailors and shipwrights are destitute.",
+      "options": {
+        "A": {
+          "text": "Land Resettlement (Alternate): Reallocate abandoned coastal populations into interior forest lands to clear new agricultural settlements.",
+          "consequence": "You expand the agrarian tax base, but forever erase southern India's seafaring tradition.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Pirate Mercenaries (Alternate): Secretly hire coastal mariners as state-sanctioned corsairs to plunder passing foreign ships.",
+          "consequence": "Your corsairs enrich the treasury, but turn the Bay of Bengal into a lawless den of piracy that drives away all legitimate trade.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Sacking the insubordinate ports brings vast Arabian silver into the royal vaults at Thanjavur.",
+      "options": {
+        "A": {
+          "text": "Found Royal Mint (Alternate): Establish standardized high-purity gold and silver Kasu coinage, dominating South Asian finance.",
+          "consequence": "The Chola currency becomes the undisputed international medium of exchange from the Persian Gulf to the South China Sea.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Build Western Fortress Line (Alternate): Fortify the Western Ghat mountain passes with stone citadels to keep the Malabar coast locked down.",
+          "consequence": "The passes are secured against invasion, but land trade between the coasts becomes slow and heavily taxed.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The autonomous Malabar ports thrive, importing thousands of elite Arabian warhorses and hiring Gulf crossbowmen.",
+      "options": {
+        "A": {
+          "text": "Integrate Horse Guards (Alternate): Buy up the mercenary cavalry to form an elite royal mounted guard directly protecting your person.",
+          "consequence": "You command an invincible personal strike force, securing your crown against all internal rebellions.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Rely on Feudal Levies (Alternate): Allow regional governors to hire the cavalry directly to defend their own borders.",
+          "consequence": "Ambitious local feudatories use their foreign cavalry to challenge imperial authority, fracturing the realm.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Ocean Empire (Historical)",
+      "story": "The Bay of Bengal becomes the \"Chola Lake.\" With Srivijaya pacified, direct trade with Song China flourishes, and Tamil culture, scripts, and temple architecture leave an indelible mark across Southeast Asia, cementing Rajendra Chola's legacy as India's greatest naval emperor."
+    },
+    "ending_2": {
+      "title": "The Trans-Oceanic Trap",
+      "story": "Holding overseas colonies across the open ocean drains the Chola heartland. Disease, tropical typhoons, and unrelenting guerrilla warfare bleed your elite regiments dry, leaving your home territories defenseless against mainland rivals."
+    },
+    "ending_3": {
+      "title": "Bones in the Mangroves",
+      "story": "Your fever-stricken marines are slaughtered on the beaches of Sumatra. Srivijaya retaliates by wiping out Tamil trade colonies across the archipelago, breaking the naval might of the Cholas in a single disastrous day."
+    },
+    "ending_4": {
+      "title": "The Tarnished Silver",
+      "story": "You return to Gangaikonda Cholapuram with heavy chests of Srivijayan ransom silver, but your naval supremacy is broken. Foreign merchant fleets bypass your ports, remembering that your navy backed down when tested."
+    },
+    "ending_5": {
+      "title": "Sovereign of the South",
+      "story": "The total subjugation of Lanka cements your absolute authority over the southern seas. With your rear flank unassailable, your empire stands as a rock of stability, holding the entire peninsula in an iron grip of peace and law."
+    },
+    "ending_6": {
+      "title": "The Sinhala Betrayal",
+      "story": "Your puppet king defects, uniting with the southern Pandya clans in a surprise rebellion. You spend your twilight years pinned down in bitter counter-insurgency warfare, losing all the territorial gains your father fought for."
+    },
+    "ending_7": {
+      "title": "The Granary of the World",
+      "story": "Your sprawling stone sluice gates, grand artificial lakes, and stone-banked canals make the Kaveri delta the richest agricultural heartland on earth. Famine is eradicated from your realm for two centuries."
+    },
+    "ending_8": {
+      "title": "Monuments of Granite",
+      "story": "Immense stone temples, soaring gopurams, and exquisite bronze sculptures of Nataraja rise across every district. The realm is a breathtaking jewel of religious art, but its empty treasury leaves it unable to field armies against future invaders."
+    },
+    "ending_9": {
+      "title": "The Royal Navy Sovereign",
+      "story": "By taking control of the merchant warships, you create the world's first state-owned national battle fleet. Imperial warships patrol the sea lanes with ruthless efficiency, making piracy extinct along the Indian coast."
+    },
+    "ending_10": {
+      "title": "The Merchant Oligarchy",
+      "story": "The merchant guilds grow more powerful than the imperial crown itself. Wealthy guild masters dictate royal tax policy, shifting the empire's purpose from dynastic glory to the pursuit of private commercial profit."
+    },
+    "ending_11": {
+      "title": "The Landlocked Realm",
+      "story": "Tamil Nadu turns inward into a quiet agrarian realm. The roaring shipyards rot away, the secret arts of oceanic navigation are forgotten, and your people surrender the seas to foreign merchant fleets forever."
+    },
+    "ending_12": {
+      "title": "The Pirate Coast",
+      "story": "Your corsairs turn rogue, plundering allied and enemy vessels alike. Foreign monarchs slap an absolute trade embargo on all Chola harbors, reducing your legendary ports to lawless smuggling dens."
+    },
+    "ending_13": {
+      "title": "Master of Asian Coin",
+      "story": "The gold and silver Chola Kasu becomes the universal currency of the Indian Ocean. Thanjavur functions as the supreme banking hub of the eastern world, collecting interest from princes and traders across Asia."
+    },
+    "ending_14": {
+      "title": "The Stone Divide",
+      "story": "The fortified mountain passes turn the Western Ghats into an impassable stone curtain. While western raiders are shut out forever, internal commerce grinds to a halt, leaving the eastern and western coasts estranged."
+    },
+    "ending_15": {
+      "title": "The Invincible Sovereign",
+      "story": "Guarded by thousands of elite mounted cavalry and Persian crossbowmen, your royal palace is unassailable. Internal rebellions are extinguished before they can ignite, granting you decades of supreme, unchallenged authority."
+    },
+    "ending_16": {
+      "title": "The Shattered Mandate",
+      "story": "Armed with foreign horses and seasoned mercenaries, ambitious feudatories carve your empire into rival warlord domains. The grand legacy of the Chola emperors fractures into a chaotic civil war of ambitious princes."
+    }
+  }
+}

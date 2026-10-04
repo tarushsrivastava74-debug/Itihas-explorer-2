@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Mangal Pandey, a sepoy of the 34th Bengal Native Infantry stationed at Barrackpore in March 1857. Rumors have spread that the cartridges for the new Enfield rifle are greased with cow and pig fat, defiling both Hindu and Muslim faiths. British officers order your regiment to parade and bite the cartridges.",
+      "options": {
+        "A": {
+          "text": "The Open Mutiny at Barrackpore (Historical): Refuse orders, take up your musket, and call upon your comrades to rise against the British officers on the parade ground.",
+          "consequence": "You shoot at the British officers and attempt martyrdom; your arrest, trial, and execution trigger a wave of anti-British fury across military cantonments in northern India.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The Underground Chapatis Network (Alternate): Pretend compliance on the parade ground, but secretly distribute symbolic chapatis and red lotuses to coordinate a simultaneous, planned revolt across all cantonments.",
+          "consequence": "British commanders suspect nothing while the conspiracy matures, setting up a synchronized pan-India strike for late summer.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Following your defiance, the Meerut garrison breaks into open revolt in May 1857, breaks jail to free chained sepoys, and rides straight for Delhi.",
+      "options": {
+        "A": {
+          "text": "Crown the Mughal Emperor (Historical): Enter Delhi, seize the Red Fort, and proclaim the octogenarian Mughal Emperor Bahadur Shah Zafar as the Shahenshah-e-Hindustan.",
+          "consequence": "Delhi becomes the political center of the uprising, uniting disparate rebel forces under an imperial banner, but invites a massive British counter-siege on the Ridge.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Seize the Delhi Magazine Arsenal (Alternate): Direct your forces immediately to secure the colossal imperial gunpowder and ammunition magazines before British lieutenants can blow them up.",
+          "consequence": "You capture millions of percussion caps and endless powder barrels, arming an insurgent army of 80,000 fighters with modern firepower.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "The synchronized uprising launches simultaneously from Peshawar to Calcutta, catching British garrisons completely off guard.",
+      "options": {
+        "A": {
+          "text": "The Grand Council of Kanpur (Alternate): Gather Nana Sahib, Tatya Tope, and Kunwar Singh at Kanpur to establish a supreme military directorate.",
+          "consequence": "A centralized military command emerges, coordinating guerrilla fronts across Awadh, Bundelkhand, and Bihar.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Cut the Grand Trunk Road (Alternate): Prioritize severing all telegraph wires and railway arteries connecting Calcutta to the Punjab and Gangetic plains.",
+          "consequence": "Company forces are split into isolated island outposts without communication or logistics.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Under Bahadur Shah Zafar's court, British relief columns arrive from Punjab and dig in on the Delhi Ridge, bombarding the northern bastions.",
+      "options": {
+        "A": {
+          "text": "General Bakht Khan's Counter-Offensive (Historical): Appoint Subedar Bakht Khan commander-in-chief to launch multi-pronged night raids against the British battery positions.",
+          "consequence": "Bakht Khan inflicts heavy losses, but factional feuds among royal princes and lack of funds undermine coordination inside the city.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Fortify the Kashmiri Gate (Alternate): Reinforce the northern walls with earthen bastions and heavy brass mortars, transforming Delhi into an impenetrable urban trap.",
+          "consequence": "British assault parties are repeatedly slaughtered in the dry ditches, stalling Company hopes of taking the capital.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Armed with Delhi's intact arsenal, rebel divisions sweep through the Doab and surround the British residency in Lucknow.",
+      "options": {
+        "A": {
+          "text": "Begum Hazrat Mahal's Siege (Alternate): Encircle the Lucknow Residency under Begum Hazrat Mahal, utilizing elite sharpshooters and underground mine galleries.",
+          "consequence": "The Residency defenders are pinned beneath rubble, tying down Company forces attempting to relieve Henry Lawrence.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "March to the Punjab Frontier (Alternate): Dispatch an armed expedition to incite rebellion among the Sikh and Pashtun regiments before John Lawrence can recruit them.",
+          "consequence": "Rebel agitators attempt to disrupt British recruitment in the northwest, risking a clash with loyalist irregulars.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Rani Lakshmibai of Jhansi breaks the British encirclement of her citadel with Tatya Tope, seeking to rally central India.",
+      "options": {
+        "A": {
+          "text": "The Capture of Gwalior (Historical): March to Gwalior, win over Scindia's troops, and seize the legendary rock fortress of Gwalior as your war citadel.",
+          "consequence": "The insurgent army gains immense gold, heavy artillery, and an unbreachable fort, provoking an immediate counter-strike by Sir Hugh Rose.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Guerrilla War in the Bundelkhand Jungles (Alternate): Refuse conventional siege warfare; disperse your cavalry into mobile squads to wage unending guerrilla raids.",
+          "consequence": "British columns exhaust themselves in the blistering Deccan heat chasing shadows through the hills.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "With British communication lines severed, Kunwar Singh leads 4,000 veterans out of Jagdishpur to liberate Bihar and threaten Bengal.",
+      "options": {
+        "A": {
+          "text": "Assault on Fort William (Alternate): Push east down the Ganges to strike at the Company's seat of government in Calcutta before overseas reinforcements arrive.",
+          "consequence": "Panic grips the British mercantile elite in Bengal as insurgent banners appear along the river delta.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Defend the Grand Trunk Chokeholds (Alternate): Dig in along the Son River passes and slaughter advancing relief columns from Calcutta.",
+          "consequence": "British columns led by Outram and Havelock are checked repeatedly in the marshes.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "British forces under John Nicholson breach the Kashmiri Gate with powder bags and engage in desperate street fighting toward the Red Fort.",
+      "options": {
+        "A": {
+          "text": "The Surrender at Humayun's Tomb (Historical): Evacuate the Red Fort and seek terms with Major Hodson at Humayun's Tomb to protect the imperial household.",
+          "consequence": "Delhi falls to sack and plunder; Bahadur Shah Zafar is exiled to Rangoon, and Hodson executes the royal princes in cold blood.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "The Narrow Alleys Counter-Ambush (Alternate): Funnel Nicholson's assault columns into the narrow lanes of Chandni Chowk and open fire from every rooftop.",
+          "consequence": "Nicholson falls mortally wounded in the alley, turning the British assault into a disastrous retreat back to the Ridge.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Delhi's reinforced walls hold firm, and torrential monsoons bring cholera to the British camps on the Ridge.",
+      "options": {
+        "A": {
+          "text": "The Great Sortie (Alternate): Lead the entire garrison out through the Ajmeri Gate in a massive twilight assault on the disease-weakened British camps.",
+          "consequence": "The British siege line is shattered, forcing the survivors into a retreat toward Ambala.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Imperial Terms of Coexistence (Alternate): Propose terms from the Mughal throne offering British coastal trade in exchange for total territorial withdrawal.",
+          "consequence": "British authorities reject sovereign negotiations, digging in for an ideological war of attrition.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Colin Campbell's relief force reaches the outskirts of Lucknow, battling toward the Sikandar Bagh.",
+      "options": {
+        "A": {
+          "text": "The Sikandar Bagh Trap (Alternate): Evacuate the compound, lace the interior with gunpowder mines, and detonate them when British Highlanders storm inside.",
+          "consequence": "The massive detonation decimates Campbell's vanguard, breaking the back of the British relief effort.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "The Retreat to the Tarai (Alternate): Pull rebel divisions out into the dense, malarial Terai forests along the Nepal border to conduct indefinite war.",
+          "consequence": "The army preserves its numbers in the jungle, but loses its urban bases and artillery parks.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Your expedition arrives in Punjab, where British commanders have disarmed native units at gunpoint.",
+      "options": {
+        "A": {
+          "text": "The Frontier Uprising (Alternate): Forge an alliance with frontier tribes to storm the disarmed British depots across the Indus.",
+          "consequence": "A massive northwestern rebellion erupts, severing British access to vital Pashtun levies.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Assassination of the Commissioner (Alternate): Launch a strike squad to eliminate the colonial leadership in Lahore.",
+          "consequence": "The raid fails, triggering brutal martial law that pacifies the Punjab completely.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Sir Hugh Rose's cavalry charges the plains of Kotah-ki-Serai outside Gwalior; Rani Lakshmibai commands the rearguard in full warrior armor.",
+      "options": {
+        "A": {
+          "text": "The Last Charge of Jhansi (Historical): Lead a sword-in-hand cavalry charge against the 8th Hussars to protect the army's retreat, refusing capture.",
+          "consequence": "Lakshmibai falls in combat and is cremated on the field; her martyrdom cements her immortal legacy as the supreme warrior of Indian independence.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "The Fortress Stand of Gwalior (Alternate): Pull all forces inside the rock fortress of Gwalior and fight an entrenched siege from the heights.",
+          "consequence": "Heavy siege cannons keep Rose at bay, converting Gwalior into an enduring center of liberation.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Tatya Tope's guerrilla cavalry leads British forces on an exhausting, months-long chase across the Narmada River and Malwa.",
+      "options": {
+        "A": {
+          "text": "Incite the Maratha Heartland (Alternate): Cross south into the Deccan to raise the banner of the Peshwa among millions of Maratha farmers.",
+          "consequence": "The Deccan rises in widespread revolt, threatening Bombay and opening a massive second front.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Trust the Chieftain Man Singh (Historical): Seek refuge in the forests of Paron with local raja Man Singh to rest your cavalry.",
+          "consequence": "Man Singh betrays your location to the British for titles; you are captured and executed by military tribunal.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Kunwar Singh's forces approach the defenses of Calcutta, sparking mass evacuations among British merchants.",
+      "options": {
+        "A": {
+          "text": "Storm the Commercial Quarter (Alternate): Launch a dawn assault on the Company warehouses and shipping wharves along the Hooghly.",
+          "consequence": "Company shipping is burned and the treasury seized, paralyzing British financial power in Asia.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Demand Total Capitulation (Alternate): Encircle the city and deliver an ultimatum for the unconditional departure of all East India Company personnel.",
+          "consequence": "Royal Navy frigates arrive in the river, sparking a catastrophic artillery duel on the waterfront.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "At the Son River crossing, Kunwar Singh ambushes Captain Le Grand's British detachment with deadly volley fire.",
+      "options": {
+        "A": {
+          "text": "Annihilation of Le Grand (Alternate): Press the encirclement to wipe out the detachment and reclaim the ancestral stronghold of Jagdishpur.",
+          "consequence": "The British force is destroyed, and western Bihar becomes an independent liberated republic under Kunwar Singh.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "March North to Awadh (Alternate): Abandon Bihar to unite your veteran regiments with Begum Hazrat Mahal's forces in Lucknow.",
+          "consequence": "Rebel forces achieve tactical concentration in the north, but leave eastern provinces exposed to recapture.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The End of the Mughals (Historical)",
+      "story": "The fall of Delhi breaks the uprising's political spine. Bahadur Shah Zafar is exiled to Rangoon, his dynasty extinguished forever. The British Crown dissolves the East India Company via the Government of India Act 1858, ushering in the direct rule of the British Raj beneath Queen Victoria."
+    },
+    "ending_2": {
+      "title": "The Shield of Delhi",
+      "story": "The defeat and death of John Nicholson breaks the British siege of Delhi. Company forces withdraw in disarray to the Punjab border, leaving the historic capital free and solidifying the Mughal Emperor's rebirth as the true sovereign head of India."
+    },
+    "ending_3": {
+      "title": "The Rout on the Ridge",
+      "story": "The massive twilight sortie sweeps the British completely off the Ridge. With their siege equipment captured and ranks decimated by disease, the Company's northern army dissolves, liberating the upper Gangetic plain from colonial rule."
+    },
+    "ending_4": {
+      "title": "The Grinding War of Attrition",
+      "story": "Rejecting peace terms, the British pour reinforcements from overseas into a years-long siege. Delhi becomes a city of trenches, draining the subcontinent's wealth and leaving northern India scarred by endless trench warfare."
+    },
+    "ending_5": {
+      "title": "The Deliverance of Awadh",
+      "story": "The mine trap at Sikandar Bagh wipes out the British relief vanguard. Lucknow stands unbreached, and Begum Hazrat Mahal consolidates Awadh as a sovereign, self-governing kingdom free from foreign taxation."
+    },
+    "ending_6": {
+      "title": "Guerrillas of the Terai",
+      "story": "Retreating into the dense foothills of Nepal, your forces wage decades of mountain guerrilla warfare. Though the cities fall, the border forests remain an ungovernable sanctuary that keeps the spark of armed defiance alive."
+    },
+    "ending_7": {
+      "title": "The Frontier Storm",
+      "story": "By uniting disarmed sepoys with the fierce frontier tribes of the northwest, the Punjab is torn from British control. Starved of troop levies from the west, Company rule in northern India completely collapses."
+    },
+    "ending_8": {
+      "title": "The Iron Grip of Punjab",
+      "story": "The assassination attempt fails, prompting brutal reprisal disarmaments across Lahore and Peshawar. Punjab remains a secure staging ground for British battalions to steadily reconquer the rebel provinces."
+    },
+    "ending_9": {
+      "title": "The Flame of Jhansi (Historical)",
+      "story": "Rani Lakshmibai dies a warrior's death at Kotah-ki-Serai, sword in hand and immortalized by both friend and foe. Her fearless stand transforms her into India's most enduring icon of resistance against colonial subjugation."
+    },
+    "ending_10": {
+      "title": "The Rock of Central India",
+      "story": "Holding Gwalior proves an unassailable strategic masterstroke. With its deep wells and endless armories, the fortress repulses every imperial siege, turning central India into an unbreachable bastion of independence."
+    },
+    "ending_11": {
+      "title": "The Deccan Resurrection",
+      "story": "Crossing the Narmada ignites a wildfire uprising across Maharashtra. The resurrection of the Maratha cause opens a massive southern front, breaking the British Empire's hold on western India."
+    },
+    "ending_12": {
+      "title": "The Betrayed Commander (Historical)",
+      "story": "Betrayed in his sleep in the forests of Paron, Tatya Tope faces the British gallows with stoic defiance. His execution ends the greatest guerrilla campaign of the war, leaving the insurgent bands scattered and leaderless."
+    },
+    "ending_13": {
+      "title": "The Fall of Calcutta",
+      "story": "The seizure of Calcutta cuts off the Company's maritime trade artery. Bankrupt and deprived of their imperial headquarters, British administrators are forced to evacuate Bengal on merchant ships."
+    },
+    "ending_14": {
+      "title": "Waterfront Under Fire",
+      "story": "The arrival of Royal Navy gunboats turns Calcutta into a smoking battleground. A bitter urban stalemate leaves the trading metropolis in ruins, destroying centuries of accumulated trade wealth."
+    },
+    "ending_15": {
+      "title": "The Republic of Bihar",
+      "story": "Kunwar Singh's complete victory over Le Grand secures western Bihar. Despite his eighty years and severe battle wounds, his leadership establishes a defiant, liberated agrarian state centered in Jagdishpur."
+    },
+    "ending_16": {
+      "title": "The Northern Coalition",
+      "story": "Joining forces with Awadh creates an unstoppable army of veteran sepoys in Lucknow. While Bihar is reoccupied by British naval divisions, the combined northern army stands undefeated in the Gangetic plains."
+    }
+  }
+}

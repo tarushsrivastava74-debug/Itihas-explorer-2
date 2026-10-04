@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are the Chief Architect and Elder of Mohenjo-daro, standing upon the elevated mud-brick Citadel overlooking the Indus River. The river’s annual floods bring fertile silt, but seasonal swelling threatens the lower residential districts. Meanwhile, maritime trading ships arrive from the Persian Gulf, demanding standardization of trade goods and grain storage.",
+      "options": {
+        "A": {
+          "text": "The Great Bath & Hydraulic Grid (Historical): Prioritize building baked-brick embankments, covered street drainage systems, the central Great Bath for public rituals, and a fortified granary.",
+          "consequence": "Your city becomes a masterpiece of civic sanitation, urban planning, and brick engineering, attracting merchants and artisans from across the ancient world.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The River Redirection Canal (Alternate): Mobilize thousands of workers to carve a permanent diversion canal inland, shifting the river's main channel away from the city entirely to secure permanent farmland.",
+          "consequence": "The massive construction reduces immediate flood risk, but cuts off deep-draft boat docking along the western quays, forcing traders to unload miles downstream.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Standardized weights and measures spread across Harappa, Kalibangan, and Lothal. Lothal’s dockyard on the Gulf of Khambhat handles vast shipments of carnelian beads, copper ingots, and lapis lazuli bound for the ports of Dilmun and Mesopotamia (Akkad).",
+      "options": {
+        "A": {
+          "text": "The Mesopotamian Trade Compact (Historical): Expand maritime exports of etched carnelian beads, shell ornaments, and cotton textiles to Ur and Kish in exchange for silver, tin, and wool.",
+          "consequence": "Wealth floods into coastal hubs; your steatite seals and standardized cubic chert weights become recognized legal tenders across Western Asia.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Militarize the Coastal Enclaves (Alternate): Construct stone walls, watchtowers, and war galleys around Lothal to monopolize the Gulf routes and levy heavy tolls on foreign merchants.",
+          "consequence": "Coastal revenues surge from enforced tariffs, but Mesopotamian merchants begin exploring alternative overland trade routes through Elam.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "The inland canal supports massive barley and wheat harvests, turning the hinterland into a granary, but water rights cause disputes between neighboring settlements.",
+      "options": {
+        "A": {
+          "text": "Establish Standardized Granary Courts (Alternate): Build regional collection granaries governed by merchant elders who distribute grain shares based on uniform weight stones.",
+          "consequence": "Famine risks vanish across the basin, forging a harmonious, decentralized federation of agrarian towns.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Centralize Power under a Priest-King (Alternate): Unify the irrigation canal networks under a single sacred monarch with a standing palace guard to enforce labor levies.",
+          "consequence": "Civic construction accelerates, but the egalitarian character of the town assemblies is replaced by rigid social stratification.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Trade flourishes across the northern river systems. At Harappa, copper smelters and bead workshops expand rapidly, requiring steady supplies of raw metals from the Khetri mines of Rajasthan and lapis from Shortugai in Central Asia.",
+      "options": {
+        "A": {
+          "text": "Establish the Northern Outpost at Shortugai (Historical): Found a dedicated trading colony on the Oxus River (Amu Darya) to secure direct access to the rich lapis lazuli and tin deposits of Badakhshan.",
+          "consequence": "You secure an unbroken monopoly on the northern luxury trade, cementing trade connections spanning thousands of miles.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Direct Annexation of the Khetri Hills (Alternate): Send expeditionary forces into Rajasthan to build permanent garrison forts over the copper mines.",
+          "consequence": "Copper production stabilizes, but friction develops with indigenous hunter-gatherer communities in the Aravalli hills.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "With sea merchants wary of coastal tolls, your traders must secure the land routes running west through Balochistan to the Iranian plateau.",
+      "options": {
+        "A": {
+          "text": "Fortify the Bolan Pass Outposts (Alternate): Construct defensive stone caravanserais at Mehrgarh and along the Bolan Pass to safeguard camel convoys.",
+          "consequence": "Overland caravans move securely through the mountain defiles, reviving flow to the central Iranian markets.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Shift to Inland River Tolls (Alternate): Station river-barge collectors along the Indus and Chenab rivers to tax domestic produce moving between cities.",
+          "consequence": "City treasuries remain full, but internal trade slows as river merchants bypass the toll stations along tributary streams.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Tectonic shifts begin redirecting glacial tributaries, causing the perennial Ghaggar-Hakra (Saraswati) River system to slowly desiccate, threatening cities like Kalibangan and Banawali.",
+      "options": {
+        "A": {
+          "text": "Rainwater Harvesting & Stone Reservoirs (Historical Precedent): Follow the engineering model of Dholavira, carving deep stone cisterns and stepped reservoirs to catch every drop of seasonal rainwater runoff.",
+          "consequence": "The city survives dry seasons intact, proving that sophisticated water management can outlast shifting river courses.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Relocate East to the Gangetic Plains (Historical Trend): Abandon the dry riverbeds and lead coordinated migrations eastward toward the fertile, rain-drenched Yamuna and Ganga basins.",
+          "consequence": "Settlements along the dry channels are deserted, planting the seeds of agriculture across the dense northern river valleys.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "The Priest-King demands colossal stone monuments and palace citadels to project imperial authority across the five rivers.",
+      "options": {
+        "A": {
+          "text": "Construct the Great Pyramid Citadel (Alternate): Divert municipal resources to build an immense stepped stone ziggurat above Mohenjo-daro to honor the sacred river.",
+          "consequence": "A monumental marvel rises above the plains, but neglected drainage systems and granary roofs fall into disrepair.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Reform the Guild Councils (Alternate): Dismantle royal overreach by organizing the merchant bead-makers and bronze-smiths into an autonomous administrative council.",
+          "consequence": "Power returns to civic guilds, reviving high-quality craft standardization across urban workshops.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Weakening monsoon patterns across South Asia cause widespread crop failures and river channel migrations. Mesopotamia's trade collapases amidst regional wars.",
+      "options": {
+        "A": {
+          "text": "Decentralize into Rural Agrarian Clusters (Historical): De-urbanize peacefully; dismantle the dense brick cities and disperse populations into smaller, resilient farming villages across Gujarat, Punjab, and western Uttar Pradesh (Late Harappan phase).",
+          "consequence": "The grand brick citadels are left to the sands, but the population, agriculture, and pottery traditions endure through the centuries.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Build Mega-Dams across the Lower Indus (Alternate): Consolidate all remaining resources to construct massive earth-and-timber barrage dams across the Indus to trap dwindling floodwaters.",
+          "consequence": "A single torrential flash flood bursts through the weakened wooden barrages, inundating the lower city under feet of silt and mud.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Frontier tensions in the Aravalli hills threaten the flow of copper and tin as bronze weapons become scarce.",
+      "options": {
+        "A": {
+          "text": "Adopt Iron Metallurgy (Alternate): Experiment with high-heat kilns to smelt local iron ores found along the edges of the Thar Desert, leaping into the Iron Age centuries ahead of time.",
+          "consequence": "Harappan blacksmiths forge revolutionary, durable iron farming plowshares and axes, opening dense inland jungles to settlement.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Seek Copper from Oman (Alternate): Reorient trade entirely toward the seafaring merchants of Magan (modern Oman) for raw copper supplies.",
+          "consequence": "The maritime lifeline keeps urban bronze production alive, but leaves city workshops vulnerable to disruptions on the Arabian Sea.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Pastoral steppe nomads begin migrating through the northern mountain passes with horse-drawn chariots and pastoral herds.",
+      "options": {
+        "A": {
+          "text": "The Commercial Integration Treaty (Alternate): Greet the incoming pastoral groups with trade caravans, offering painted pottery, salt, and grain in exchange for horses and pastoral cattle.",
+          "consequence": "The steppe pastoralists merge peacefully with Harappan urban centers, creating a rich cultural synthesis without military destruction.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Seal the Mountain Fortresses (Alternate): Deploy archers and slingers to barricade the Bolan and Khyber passes against migrating pastoralists.",
+          "consequence": "The mountain defiles turn into long-term military skirmish zones, severing northern overland trade routes entirely.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "The Indus River changes its course, swinging miles away from Mohenjo-daro’s docks and leaving city canals choked with dry silt.",
+      "options": {
+        "A": {
+          "text": "Construct the Grand Sluice Gates (Alternate): Dig an artificial feeder canal lined with kiln-burnt bricks to reconnect the new river course to the urban street drains.",
+          "consequence": "Water flows back into the residential streets, keeping the ancient metropolis functional for another century.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Evacuate to Rakhigarhi (Alternate): Order the peaceful evacuation of the citizenry to Rakhigarhi, transforming it into the new supreme capital of the civilization.",
+          "consequence": "Rakhigarhi expands into the largest urban metropolis of the ancient bronze world, anchoring the eastern plains.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Dholavira’s stone reservoirs capture enough seasonal rainwater to sustain the city during consecutive dry years.",
+      "options": {
+        "A": {
+          "text": "Expand Deep Groundwater Wells (Alternate): Excavate deep stepped wells down through bedrock to tap ancient artesian aquifers under the Rann of Kutch.",
+          "consequence": "Dholavira becomes an unassailable oasis metropolis, insulated from climate instability for generations.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Build an Export Salt Monarchy (Alternate): Exploit the receding waters of the Rann to establish a vast industrial sea-salt harvesting network.",
+          "consequence": "Salt exports enrich the southern cities, though extreme soil salinity gradually stunts local grain production.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Migrating communities arrive in the dense, forested plains along the Yamuna and Ganga rivers.",
+      "options": {
+        "A": {
+          "text": "Establish Grid-Planned River Cities (Alternate): Lay out new cities along the Yamuna with identical baked-brick street grids, drainage channels, and standardized weights.",
+          "consequence": "The urban Harappan blueprint takes root across northern India a millennium earlier than in history.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Transition to Forest Agrarianism (Historical Path): Adapt to the heavy monsoon forests by clearing small hamlets with fire and cultivating rice and pulses (Ochre Coloured Pottery culture).",
+          "consequence": "The urban grid fades into rural village cultures, laying the agricultural bedrock for the subsequent Vedic and Gangetic civilizations.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Neglected urban infrastructure collapses during an earthquake, toppling the colossal stone ziggurat into the residential quarters.",
+      "options": {
+        "A": {
+          "text": "The Great Municipal Rebuilding (Alternate): Overthrow the Priest-King's dynasty, clear the rubble, and restore the historic egalitarian drainage network.",
+          "consequence": "Civic democracy returns to Mohenjo-daro, though the city's depleted treasury prevents full reconstruction.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Abandon the Ruins (Alternate): Declare the fallen city cursed by the river gods and disperse the surviving populace into the Balochistan hills.",
+          "consequence": "The legendary city is buried beneath desert sands, becoming an archaeological memory for four thousand years.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Autonomous artisan guilds take control of trade, standardizing production from Lothal to Chanhudaro.",
+      "options": {
+        "A": {
+          "text": "Universalize the Harappan Script (Alternate): Transcribe spoken language into formal written legal treaties, carving inscriptions into copper tablets distributed to every guildhall.",
+          "consequence": "The Harappan script becomes fully deciphered and adopted across ancient trade routes as the world's primary commercial writing system.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Guard the Craft Secrets (Alternate): Restrict metallurgical and bead-drilling techniques to closed, hereditary caste-like artisan fraternities.",
+          "consequence": "The specialized knowledge survives within secret family lines, preserving exquisite craftsmanship while limiting broader technological diffusion.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Enduring Seeds (Historical)",
+      "story": "The brick citadels of Mohenjo-daro and Harappa are abandoned as monsoons weaken and river channels drift. However, the civilization does not truly vanish; its urban populations disperse into the rural villages of Punjab, Gujarat, and the Doab. Their agricultural wisdom, terracotta arts, sanitation ethos, and weights quietly lay the enduring cultural foundation for all subsequent Indian civilizations."
+    },
+    "ending_2": {
+      "title": "The Silt of Mohenjo-daro",
+      "story": "The burst earthen barrage unleashes a catastrophic wall of water and river mud that smothers Mohenjo-daro's residential quarters. The great brick marvel is buried beneath ten feet of dense silt, abruptly ending centuries of urban continuity along the lower Indus."
+    },
+    "ending_3": {
+      "title": "The Iron Age of Harappa",
+      "story": "Smelting iron centuries before the rest of the world transforms the Indus valley into an unstoppable technological power. Equipped with iron axes and deep-cutting plows, Harappan farmers tame the dense forests of the subcontinent, forging the ancient world's first industrial superpower."
+    },
+    "ending_4": {
+      "title": "The Fragile Maritime Lifeline",
+      "story": "Relying entirely on Arabian Sea copper convoys leaves your bronze foundries vulnerable to coastal pirates and marine storms. When monsoon seasons turn unpredictable, metal production collapses, reducing the great workshop cities to regional agricultural hubs."
+    },
+    "ending_5": {
+      "title": "The Pastoral Synthesis",
+      "story": "Peaceful trade and intermarriage integrate incoming horse-riding pastoralists into Harappan society. The fusion of urban hydraulic engineering with equestrian mobility creates an unbroken, vibrant civilization bridging Central Asia and the Indian subcontinent."
+    },
+    "ending_6": {
+      "title": "The Walled Defiles",
+      "story": "Barricading the mountain passes turns your northwestern borders into a perpetual war zone. The heavy cost of maintaining garrison armies drains municipal treasuries, leading to the gradual decay of domestic public health and civic drainage systems."
+    },
+    "ending_7": {
+      "title": "The Sluice of Eternity",
+      "story": "The great brick sluice successfully reconnects Mohenjo-daro to the wandering Indus River. The ancient metropolis flourishes for another two centuries, defying climatic desiccation through unmatched hydraulic ingenuity."
+    },
+    "ending_8": {
+      "title": "The Colossus of Rakhigarhi",
+      "story": "Rakhigarhi absorbs the wealth, artisans, and populations of the western river basins. Sprawling across hundreds of hectares with massive granaries and residential wards, it stands as the undisputed imperial capital of the Bronze Age world."
+    },
+    "ending_9": {
+      "title": "The Oasis of the White Desert",
+      "story": "Dholavira's masterful stone cisterns and bedrock stepwells insulate the city from the worst regional droughts. While neighboring river towns dry up, the stone fortress city endures as an unbreachable oasis of craft and maritime commerce in the Rann."
+    },
+    "ending_10": {
+      "title": "The Salt Desolation",
+      "story": "Industrial salt harvesting brings immediate mercantile fortunes, but relentless salt dust ruins the surrounding farmlands. Deprived of local grain crops, Dholavira becomes entirely dependent on expensive food shipments from the plains, slowly starving during regional trade slumps."
+    },
+    "ending_11": {
+      "title": "The Gangetic Harappa",
+      "story": "Transporting the Harappan grid system to the Yamuna and Ganga basins ignites the Second Urbanization a thousand years ahead of historical time. Dense brick cities with covered drains and public baths line the Gangetic plains, transforming northern India into a sprawling urban network."
+    },
+    "ending_12": {
+      "title": "The Forest Settlement (Historical)",
+      "story": "Adapting to the dense monsoonal forests, migrating families replace geometric brick planning with simple mud-plastered timber dwellings and rich Ochre Coloured Pottery. While the monumental baths disappear, their agricultural resilience nurtures the heartland of future classical India."
+    },
+    "ending_13": {
+      "title": "The Resilient Commune",
+      "story": "Dismantling royal autocracy restores civic pride to the survivors of Mohenjo-daro. Though monumental stone monuments are abandoned, the community restores functioning brick drains and communal wells, preserving a modest, egalitarian urban lifestyle."
+    },
+    "ending_14": {
+      "title": "The Deserted Mound",
+      "story": "Believing the fallen ruins are cursed, the citizens scatter into the western mountains, leaving the Great Bath and Citadel empty. Centuries of desert winds sweep over the baked bricks, burying the ancient metropolis until British and Indian archaeologists excavate the mound thousands of years later."
+    },
+    "ending_15": {
+      "title": "The Deciphered World",
+      "story": "Carving written trade codes on durable copper plates spreads literacy across the ancient world. The Harappan script becomes the universal lingua franca of Bronze Age diplomacy and commerce, leaving behind an open, readable library that demystifies every aspect of Indus life."
+    },
+    "ending_16": {
+      "title": "The Secret Artisans",
+      "story": "Locking bead-drilling, bronze casting, and carnelian etching within secretive family guilds preserves Harappan craftsmanship in stunning detail. While the broad urban centers decline, these tight-knit artisan clans pass their specialized technical wizardry down through generations of Indian craft traditions."
+    }
+  }
+}

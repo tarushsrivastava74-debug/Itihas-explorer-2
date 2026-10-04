@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Prince Siddhartha Gautama of the Shakya clan of Kapilavastu. Shaken by the Four Sights—an old man, a diseased person, a corpse, and an ascetic—you realize the pervasive nature of suffering (dukkha). Nearby, Prince Vardhamana of the Jnatrika clan (Mahavira) has likewise renounced worldly wealth to seek spiritual release. You depart the palace into the forest to find an end to suffering?",
+      "options": {
+        "A": {
+          "text": "The Path of Severe Asceticism (Historical Dilemma): Join harsh ascetic sects; subject your body to extreme fasting and physical mortification along the bank of the Niranjana River for six grueling years.",
+          "consequence": "Your body emaciates to the brink of death without attaining enlightenment; you realize extreme self-torture clouds the mind just as much as luxury, prompting your turn toward the Middle Way (Majjhima Patipada).",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The Royal Hermitage of Reason (Alternate): Reject both physical mortification and renunciation; remain within a quiet Shakya grove, gathering royal scholars to solve social suffering purely through philosophical debate and legal reform.",
+          "consequence": "Your discourses formulate wise civic codes for Kapilavastu, but fail to provide a radical path beyond existential suffering, keeping the spiritual quest tied to clan politics.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Under the Bodhi tree at Bodh Gaya, you attain supreme enlightenment, becoming the Buddha. At the Deer Park in Sarnath, you preach the Dhammacakkappavattana Sutta (The Four Noble Truths and the Noble Eightfold Path). Meanwhile, Mahavira achieves Kevala Jnana (omniscience), preaching the Five Great Vows (Ahimsa, Satya, Asteya, Brahmacharya, Aparigraha) and Anekantavada (the relativity of truth)?",
+      "options": {
+        "A": {
+          "text": "Establish the Democratic Sangha & Open Monasteries (Historical): Form an open monastic community (Sangha) governed by democratic consensus, admitting seekers across all varnas, while establishing the Bhikkhuni Sangha for women following Mahapajapati Gotami's plea.",
+          "consequence": "The Sangha spreads across Magadha and Kosala; merchants (setthis) like Anathapindika donate vast groves (Jetavana), turning monasticism into an egalitarian spiritual force.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Restrict Teachings to Royal Patrons (Alternate): Focus your teachings exclusively on kings like Bimbisara and Prasenajit to reform society from the top down through imperial decree.",
+          "consequence": "Monasteries receive immense royal gold, but commoners view the doctrine as an aristocratic court religion, alienating rural masses.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Your philosophical council drafts civic laws to ease class tensions, but neighboring kingdoms of Kosala and Magadha threaten to annex the Shakya lands?",
+      "options": {
+        "A": {
+          "text": "Found the Non-Violent Diplomatic League (Alternate): Dispatch envoys preaching universal compassion and ahimsa to convince Kosalan generals to abandon war.",
+          "consequence": "Moral suasion softens Kosalan aggression temporarily, but leaves your town without military fortifications.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Construct Defensive Earthworks (Alternate): Mobilize citizens to fortify Kapilavastu with deep moats and timber ramparts against imperial armies.",
+          "consequence": "The city stands secure against siege, but your spiritual council transforms into a military garrison.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Following the Mahaparinirvana of the Buddha at Kushinagar, the First Buddhist Council meets at the Sattapanni Cave in Rajagriha to compile the Sutta and Vinaya Pitakas under Ananda and Upali. Decades later, disputes over monastic discipline (Vinaya) arise at Vaishali?",
+      "options": {
+        "A": {
+          "text": "Convene the Vaishali Council & Permit Factional Pluralism (Historical): Allow the Second Buddhist Council to deliberate on monastic rules; accept the natural divergence between the orthodox Sthaviravadins (Elders) and the liberal, populist Mahasanghikas.",
+          "consequence": "The Mahasanghika tradition democratizes doctrine, planting the doctrinal seeds for the future rise of the Mahayana tradition and broad popular reach across Asia.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Enforce Rigid Orthodoxy by Royal Decree (Alternate): Request King Kalashoka to exile any monk who advocates relaxing minor monastic rules, enforcing strict standardization.",
+          "consequence": "The Sangha maintains rigid uniform discipline, but thousands of dissident monks migrate south, splitting the community into hostile sects.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Royal monasteries amass immense wealth, land grants, and grain warehouses, drawing criticism from wandering Jain ascetics who practice radical non-possession (Aparigraha)?",
+      "options": {
+        "A": {
+          "text": "Adopt Jain Vows of Radical Renunciation (Alternate): Adopt strict non-possession, divesting the monasteries of all landed property and requiring monks to beg daily for single meals.",
+          "consequence": "The monks regain moral prestige among the public, but the Sangha loses the institutional wealth needed to maintain large colleges.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Establish Monastic Banking Guilds (Alternate): Use monastic gold reserves to establish low-interest grain-loan banks for local farmers and caravans.",
+          "consequence": "Monasteries become vital economic engines along trade routes, but blur the line between spiritual liberation and commercial enterprise.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Your peaceful envoys make contact with Mahavira’s followers in Vaishali, who advocate complete non-violence even toward microscopic life?",
+      "options": {
+        "A": {
+          "text": "The Universal Ahimsa Charter (Alternate): Unite Jain, Buddhist, and Shramana thinkers to sign a joint ethical charter declaring state warfare an absolute spiritual crime.",
+          "consequence": "The charter spreads across the merchant class, prompting major guilds to refuse financing offensive wars.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Confine Non-Violence to Personal Conduct (Alternate): Preach ahimsa purely as an inward individual virtue while allowing kings to maintain defensive standing armies.",
+          "consequence": "Kings embrace the teachings without disbanding their legions, creating a pragmatic balance between spiritual ethics and state power.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Kapilavastu withstands initial assaults, but becomes an island in a sea of aggressive monarchies?",
+      "options": {
+        "A": {
+          "text": "Open the Gates as a Demilitarized Sanctuary (Alternate): Surrender weapons, declare the city a neutral holy haven for all ascetics, and open gates to the invaders.",
+          "consequence": "Kosalan troops spare the city out of reverence, turning Kapilavastu into an international center for contemplative arts.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Lead a Chariot Counter-Attack (Alternate): Lead the Shakya citizen militia in an all-out chariot sally against the besieging Kosalan camp.",
+          "consequence": "The assault breaks the siege, but the slaughter of thousands of soldiers leaves the Shakya leadership spiritually broken.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Emperor Ashoka embraces the Dhamma after the Kalinga war, carving edicts of compassion across the subcontinent and dispatching his children Mahendra and Sanghamitta to Sri Lanka. Centuries later, Kanishka the Great convenes the Fourth Buddhist Council in Kashmir?",
+      "options": {
+        "A": {
+          "text": "The Tripartite Path & Global Dispersal (Historical): Codify the Mahayana and Theravada scriptures, patronize the art of Gandhara and Mathura, and support monastic travelers carrying texts along the Silk Road to China and across the sea to Southeast Asia.",
+          "consequence": "Buddhism transforms into a vibrant world religion; monumental stupas rise from Sanchi to Bamiyan, while Jainism flourishes among trading communities under kings like Kharavela of Kalinga.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Institutionalize Buddhism as a State Religion (Alternate): Declare Buddhism the sole state religion of the empire, barring all non-Buddhist shrines and directing imperial taxes exclusively to stupas.",
+          "consequence": "Monasteries dominate state administration, but the move provokes deep resentment among orthodox Vedic communities and rival ascetic traditions.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Exiled monks travel south across the Deccan, arriving in the Tamil kingdoms of the Cholas, Cheras, and Pandyas alongside Digambara Jain ascetics led by Acharya Bhadrabahu?",
+      "options": {
+        "A": {
+          "text": "The Sangam Cultural Synthesis (Historical Precedent): Integrate Shramanic thought into classical Tamil literature, composing epic masterpieces like the Silappadikaram, Manimekalai, and Tirukkural.",
+          "consequence": "Buddhism and Jainism take deep root in southern India, creating a classical golden age of poetry, ethics, and grammar that shapes Tamil culture for a millennium.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Isolate Monasteries on Mountain Crags (Alternate): Restrict ascetic life to remote, inaccessible hill caves, refusing all engagement with urban royal courts.",
+          "consequence": "Monks achieve deep meditative solitude, but the sects fail to build a lasting popular base in the southern cities.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Embracing complete non-possession, the white-clad (Svetambara) and sky-clad (Digambara) orders establish an unassailable moral reputation across western India?",
+      "options": {
+        "A": {
+          "text": "The Royal Patronage of Kharavela (Historical Pathway): King Kharavela of Kalinga carves the Hathigumpha inscription, building rock shelters for Jain ascetics on Udayagiri hills while observing vows of personal piety.",
+          "consequence": "Jainism reaches its political and architectural zenith on the eastern coast, balancing royal defense with deep personal ahimsa.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "The Great Famine Migration (Historical Precedent): Facing a 12-year drought in Magadha, lead thousands of Jain monks south to Shravanabelagola in Karnataka under Bhadrabahu, accompanied by Chandragupta Maurya.",
+          "consequence": "Jainism establishes its permanent spiritual citadel in Karnataka, culminating in the carving of the colossal Gommateshwara statue centuries later.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Monasteries acting as economic banking houses evolve into sprawling, wealthy university campuses?",
+      "options": {
+        "A": {
+          "text": "Build the University of Taxila & Nalanda (Historical Synthesis): Channel mercantile wealth into grand residential universities teaching logic (Nyaya), medicine (Ayurveda), grammar, and metaphysics.",
+          "consequence": "Indian monastic universities become the intellectual beacon of the ancient world, attracting scholars like Xuanzang from across Asia.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Secure Royal Commercial Monopolies (Alternate): Demand exclusive royal charters over the Silk Road jade and lapis lazuli trade to fund monastic expansion.",
+          "consequence": "Monasteries amass unprecedented material luxury, but lose their spiritual authority as corruption seeps into the halls.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The Ahimsa Charter leads wealthy merchant guilds (shrenis) to withhold gold from warmongering kings?",
+      "options": {
+        "A": {
+          "text": "Guild-Governed Trade Republics (Alternate): Expand guild authority to govern western Indian coastal ports, outlawing animal slaughter and funding animal hospitals (Pinjrapoles).",
+          "consequence": "Gujarat and Saurashtra transform into peaceful, prosperous commercial republics anchored by Jain and Buddhist mercantile ethics.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Imperial Crackdown on the Guilds (Alternate): Militarist kings confiscate guild assets by force, executing merchants who refuse to pay war levies.",
+          "consequence": "The financial engine of the subcontinent collapses, plunging northern India into a century of economic depression.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Kings adopt Buddhist and Jain personal ethics while maintaining standing armies to defend borders against frontier raids?",
+      "options": {
+        "A": {
+          "text": "Carve the Rock-Cut Cave Complexes (Historical Precedent): Direct royal and merchant funds toward carving magnificent rock-cut chaityas and viharas at Karle, Kanheri, and Ajanta.",
+          "consequence": "Breathtaking architectural sanctuaries emerge along western trade passes, preserving sublime Buddhist art and scripture for millennia.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Deploy Non-Violent Envoys to Bactria (Alternate): Dispatch ascetic philosophers to the Greco-Bactrian courts to convert Hellenistic kings through debate.",
+          "consequence": "King Menander (Milinda) engages in philosophical dialogue with the monk Nagasena, composing the famous Milinda Panha and embracing the Dhamma.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Kapilavastu flourishes as a demilitarized holy city open to seekers of all traditions?",
+      "options": {
+        "A": {
+          "text": "Found the Universal Assembly of Truth (Alternate): Establish an annual inter-faith convocation where Vedic sages, Jain ascetics, and Buddhist monks debate metaphysics.",
+          "consequence": "India becomes a world pioneer in comparative philosophy and peaceful pluralism, setting a precedent of debate over conflict.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Ban Vedic Sacrifices by Municipal Law (Alternate): Pass municipal edicts banning animal sacrifices within twenty miles of the city perimeter.",
+          "consequence": "Surrounding Vedic priests lead protests against the ban, creating communal friction between urban ascetics and rural ritualists.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The bloody counter-offensive leaves the Shakya republic traumatized by the horrors of warfare?",
+      "options": {
+        "A": {
+          "text": "Mass Ordination of the Surviving Warriors (Alternate): Lay down all remaining swords and ordain the surviving Shakya veterans en masse as Buddhist monks.",
+          "consequence": "The Shakya clan dissolves into the monastic order, leaving behind an immortal legend of warriors renouncing steel for spiritual victory.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Rebuild as a Militarized Frontier Guard (Alternate): Swear an oath of eternal vengeance and convert the city into a Spartan-style martial clan.",
+          "consequence": "The Shakyas are slowly worn down and wiped out in subsequent imperial campaigns, leaving only ruins behind.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Wheel Across the World (Historical)",
+      "story": "The Middle Path and the Five Vows spread across continents. While Buddhism travels across Central Asia, China, Japan, and Southeast Asia to become a universal world faith, Jainism maintains its steadfast, unbroken tradition of radical non-violence and ethical truth within India. The stupas of Sanchi, the cave paintings of Ajanta, and the stone edicts of Ashoka stand as eternal monuments to this spiritual revolution."
+    },
+    "ending_2": {
+      "title": "The Stifled Orthodoxy",
+      "story": "Imposing Buddhism as a coercive state religion destroys its egalitarian charm. The monastic hierarchy becomes an arm of imperial bureaucracy, provoking a massive internal counter-revolution that banishes Buddhist institutions from the subcontinent centuries ahead of schedule."
+    },
+    "ending_3": {
+      "title": "The Tamil Renaissance (Historical Cultural Peak)",
+      "story": "The arrival of Buddhist and Jain teachers in the south enriches Tamil literature with profound philosophical depths. Works like the Silappadikaram and Manimekalai immortalize the doctrines of karma, renunciation, and compassion, weaving them deeply into the Dravidian cultural fabric."
+    },
+    "ending_4": {
+      "title": "The Forgotten Hermits",
+      "story": "Confining ascetic practice to mountain crags preserves pristine monastic discipline, but severs the sects from society. As kings and merchants turn toward revived temple worship, the hill hermitages are steadily forgotten, fading into archaeological curiosities."
+    },
+    "ending_5": {
+      "title": "The Splendor of Kalinga (Historical Precedent)",
+      "story": "King Kharavela’s patronage establishes Jainism as a major cultural power on the Bay of Bengal. The cave dwellings of Udayagiri and Khandagiri echo with the chants of ascetics, proving that non-violence and civic prosperity can flourish side by side."
+    },
+    "ending_6": {
+      "title": "The Southern Citadel (Historical)",
+      "story": "The great migration under Bhadrabahu and Chandragupta Maurya roots Jainism firmly in southern soil. Shravanabelagola becomes the eternal spiritual axis of the faith, where the colossal monolithic statue of Bahubali rises to proclaim peace and detachment across the centuries."
+    },
+    "ending_7": {
+      "title": "The Universities of the Dhamma (Historical)",
+      "story": "Channeling mercantile wealth into monastic universities creates the greatest educational centers of the ancient world. At Nalanda, Valabhi, and Vikramashila, thousands of scholars study logic, medicine, astronomy, and philosophy, preserving ancient wisdom and drawing seekers from all over Asia."
+    },
+    "ending_8": {
+      "title": "The Corrupt Cloister",
+      "story": "Turning monasteries into corporate trading syndicates corrupts the core teachings of the Buddha. The viharas amass gold, silks, and land titles, provoking widespread public disgust that discredits monastic life and leads to the abandonment of the shrines."
+    },
+    "ending_9": {
+      "title": "The Republics of Compassion",
+      "story": "The coastal merchant republics transform western India into an unassailable sanctuary of non-violence. Animal slaughter is abolished, vegetarianism becomes the cultural norm, and merchant councils demonstrate that ethical commerce can create unmatched societal prosperity."
+    },
+    "ending_10": {
+      "title": "The Crushed Treasury",
+      "story": "Militaristic suppression of the merchant guilds destroys the financial backbone of northern India. Bazaars empty, credit collapses, and the great cities decay into impoverished garrison towns, illustrating that empires cannot survive without economic trust."
+    },
+    "ending_11": {
+      "title": "The Sanctuaries of Stone (Historical Peak)",
+      "story": "The rock-cut chaityas and viharas carved along the Western Ghats become immortal masterpieces of human creativity. Monks meditate in serene rock halls as trade caravans pass through mountain gorges, creating an enduring legacy of peace and art."
+    },
+    "ending_12": {
+      "title": "The Questions of King Menander (Historical)",
+      "story": "The intellectual encounter between Greek rationalism and Buddhist philosophy produces the Milinda Panha, one of the greatest philosophical texts of antiquity. Greek kings embrace the Dhamma, minting bilingual coins featuring the Wheel of Law and merging Hellenistic and Indian civilizations."
+    },
+    "ending_13": {
+      "title": "The Oasis of Philosophy",
+      "story": "Kapilavastu’s universal debating halls turn the town into the world's first open parliament of ideas. The tradition of intellectual tolerance and mutual respect established in its groves insulates northern India from religious wars for centuries."
+    },
+    "ending_14": {
+      "title": "The Bitter Bazaars",
+      "story": "Enforcing vegetarianism and ascetic bans by municipal decree fractures urban society. Riots break out between ritualists and monks, proving that spiritual ethics cannot be successfully imposed through administrative force."
+    },
+    "ending_15": {
+      "title": "The Robes of Kapilavastu",
+      "story": "The collective ordination of the Shakya army becomes an enduring legend of spiritual awakening. The battlefield weapons are beaten into begging bowls, inspiring generations of warriors across Asia to seek moral victory over military conquest."
+    },
+    "ending_16": {
+      "title": "The Dust of the Shakyas",
+      "story": "Choosing militarized vengeance destroys the Shakya clan. Trapped in an unwinnable war against imperial superpowers, the city is razed to the ground, leaving behind a cautionary tale of the destructive cycle of violence."
+    }
+  }
+}

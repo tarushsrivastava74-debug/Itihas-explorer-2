@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Alauddin Khalji. Your aging uncle, Sultan Jalaluddin, approaches your camp at Kara with an unarmed royal retinue to embrace you after your victorious southern expedition. You crave the throne of Delhi.",
+      "options": {
+        "A": {
+          "text": "Assassination on the Sands (Historical): Signal your assassins to strike down Jalaluddin during the embrace and seize the imperial treasury.",
+          "consequence": "Jalaluddin is decapitated on the riverbank. You scatter gold to buy off the commoners, marching into Delhi as Sultan, but the Mongol hordes immediately mobilize to test the new usurper.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Loyal Submission (Alternate): Hand over all southern gold, jewels, and war elephants to win Jalaluddin's complete trust.",
+          "consequence": "Jalaluddin names you his undisputed Supreme General, but jealous court aristocrats plot to poison the Sultan and frame you for high treason.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "You claim the crown in Delhi, but 200,000 Mongols under Qutlugh Khwaja surround the city walls.",
+      "options": {
+        "A": {
+          "text": "Pitched Battle at Kili (Historical): March your army outside the fortifications and meet the horde in open combat.",
+          "consequence": "General Zafar Khan shatters the Mongol center at the cost of his own life. Delhi is saved, but maintaining this massive standing army threatens to empty your treasury.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Shield of Siri (Alternate): Lock the gates of Siri Fort and force the steppe riders into a grinding siege.",
+          "consequence": "The Mongols cannot breach the stone walls, but they burn every farm and granary across Punjab, leaving northern India in famine.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Palace spies warn you that the Kotwal and royal ministers plan to poison Jalaluddin's cup tonight and blame your guards.",
+      "options": {
+        "A": {
+          "text": "Purge the Conspirators (Alternate): Storm the royal banqueting hall with your elite soldiers and execute the plotting ministers.",
+          "consequence": "You save the Sultan. The shaken Jalaluddin abdicates his daily duties, making you co-ruler and military dictator of the realm.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Flee to the East (Alternate): Slip out of Delhi before midnight with your loyal cavalry to raise an independent army in Awadh.",
+          "consequence": "Jalaluddin dies from poison, the nobles seize Delhi, and you are declared an outlaw prince across northern India.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Delhi is secure, but paying hundreds of thousands of full-time soldiers will bankrupt the empire within months.",
+      "options": {
+        "A": {
+          "text": "The Market Decrees (Historical): Fix the prices of all grain, cloth, and horses, enforcing them with state spies and royal granaries.",
+          "consequence": "Prices stabilize, soldiers live well on low salaries, and you assemble the deadliest standing army in Asia.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Debased Currency (Alternate): Melt the gold reserves and issue copper and bronze tokens to pay the legions.",
+          "consequence": "Counterfeit coins flood the markets, honest merchants hoard grain, and rural farmers rise in open revolt.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "The Mongols left, but north India's blackened fields mean Delhi faces catastrophic starvation.",
+      "options": {
+        "A": {
+          "text": "Plunder of the Coast (Alternate): Lead a lightning blitz to conquer the wealthy ports and warehouses of Gujarat.",
+          "consequence": "You secure immense grain stores and capture the rich Arabian Sea trade hubs, but foreign merchants threaten retaliation.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Confiscate Noble Estates (Alternate): Seize the land grants, pensions, and private properties of the Delhi aristocracy.",
+          "consequence": "The state granaries are refilled, but dispossessed aristocrats and clerics begin planning an armed palace mutiny.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "As military co-ruler of Delhi, you command absolute control over foreign policy and state investment.",
+      "options": {
+        "A": {
+          "text": "The Rajput Campaign (Alternate): March your imperial forces south to reduce the mountain fortress of Ranthambore.",
+          "consequence": "You corner the proud Chauhan warriors, but their fortress defenses turn the campaign into a grueling siege.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Agrarian Modernization (Alternate): Use the royal treasury to dig a grand network of irrigation canals across the Yamuna and Ganges basins.",
+          "consequence": "Crop yields double across northern India, but an unprovoked Mongol raiding army approaches an undefended frontier.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Operating from Awadh, your rebel forces take control of the eastern river trade, but Delhi's army marches east to crush you.",
+      "options": {
+        "A": {
+          "text": "Bengal Alliance (Alternate): Sign an alliance with the independent Sultans of Bengal for armored riverboats and 500 war elephants.",
+          "consequence": "You build a devastating eastern coalition force, meeting Delhi's vanguard at the swollen Yamuna River.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Midnight Forced March (Alternate): Bypass Delhi's advancing forces entirely and ride directly for the unguarded capital.",
+          "consequence": "You slip past their vanguard and breach Delhi's outer walls, but the loyalist elite guard holds the inner palace.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Your price-controlled army is disciplined, armed, and eager for war. General Malik Kafur awaits your strategic orders.",
+      "options": {
+        "A": {
+          "text": "Southern Conquest (Historical): Dispatch Malik Kafur south to subjugate Warangal, the Hoysalas, and the Pandya kingdom.",
+          "consequence": "Southern kingdoms fall one after another, funneling centuries of hoarded gold and diamonds back to Delhi.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Central Asian Expedition (Alternate): March your legions north through Afghanistan to conquer Khorasan and Persia.",
+          "consequence": "Your supply lines stretch across freezing mountain passes, surrounded by hostile mountain tribes.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "The Doab farmers refuse your copper coins and take up arms, cutting food supplies off from Delhi.",
+      "options": {
+        "A": {
+          "text": "Iron Suppression (Alternate): Send heavy cavalry to burn insurgent villages and execute rebel ringleaders.",
+          "consequence": "The revolt is stamped out, but the agricultural heartland is left scorched and depopulated.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Royal Pardon and Gold (Alternate): Repeal the token currency and open the royal vaults to give emergency gold relief to the farmers.",
+          "consequence": "The rebellion dissolves into cheers, but Delhi's state treasury is left almost completely empty.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "You hold Surat and Cambay, but foreign merchants refuse to dock while your tax fleets patrol the waters.",
+      "options": {
+        "A": {
+          "text": "Imperial Navy (Alternate): Construct an imperial war fleet to control trade routes from Gujarat to the Persian Gulf.",
+          "consequence": "You crush sea raiders and enforce tariffs, transforming Delhi into a naval superpower.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "The Warhorse Concession (Alternate): Grant foreign merchants duty-free trade in exchange for exclusive deliveries of Arabian warhorses.",
+          "consequence": "Merchant fleets crowd your ports, landing thousands of high-bred war mounts every month.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Displaced aristocrats stage a midnight revolt inside the corridors of Siri Fort while you are inspecting the armory.",
+      "options": {
+        "A": {
+          "text": "Stand and Fight (Alternate): Barricade the armory doors with your bodyguards and fight until daybreak.",
+          "consequence": "You take on waves of rebel retainers in hand-to-hand combat under dim torchlight.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Secret Escape (Alternate): Escape through the hidden sewer grates and ride to the barracks outside the city to rally the field army.",
+          "consequence": "You muster thousands of loyal regular troops and turn your siege engines onto the traitor-occupied palace.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The desert heat parches your troops outside Ranthambore; the Rajput defenders offer a conditional alliance.",
+      "options": {
+        "A": {
+          "text": "Honorable Confederation (Alternate): Accept their terms, making the Rajputs self-governing military partners of the Sultanate.",
+          "consequence": "Rajput chieftains swear allegiance, uniting northern and central military power without further bloodshed.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Total Demolition (Alternate): Reject the truce, dig sapper tunnels under the rock walls, and ignite powder barrels.",
+          "consequence": "The stone bastions collapse, but the defenders fight to the last man, turning the fortress into a graveyard.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Your canals yield bumper harvests, but Mongol horse-archers strike across the Punjab border, aiming for the granaries.",
+      "options": {
+        "A": {
+          "text": "Grain Tribute (Alternate): Pay the Mongol khans a massive annual tribute of grain, silver, and silk to turn back.",
+          "consequence": "The Mongols depart without burning fields, but they learn that Delhi is willing to pay protection money.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Peasant Militia (Alternate): Distribute bows and spears to your prosperous canal farmers to defend their own river crossings.",
+          "consequence": "Millions of armed farmers form dense pike walls along every riverbank, outnumbering the raiders.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Monsoon rains turn the riverbanks to mud as Delhi's royal divisions face your Bengal coalition.",
+      "options": {
+        "A": {
+          "text": "The Elephant Trample (Alternate): Drive your 500 armored war elephants into the churning mud to crush Delhi's lines.",
+          "consequence": "The massive beasts lose footing in the deep silt, panicking under volleys of flaming arrows.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Floating Artillery (Alternate): Mount catapults and naphtha throwers on river barges to shell the opposing riverbank.",
+          "consequence": "Liquid fire cascades across the enemy camp, routing Delhi's army and clearing the road to the throne.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "You hold Delhi, but the inner citadel remains locked under Jalaluddin's stubborn royal bodyguard.",
+      "options": {
+        "A": {
+          "text": "Terms of Exile (Alternate): Offer safe passage to Mecca for the defenders and Jalaluddin's relatives in exchange for immediate surrender.",
+          "consequence": "The gates open peacefully; you take the imperial throne without shedding royal blood inside the palace.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Burn the Bastion (Alternate): Catapult pitch barrels onto the palace roofs to burn out the defenders.",
+          "consequence": "The fire consumes the inner keep, but winds carry the flames across the entire capital city.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Golden Zenith",
+      "story": "Malik Kafur returns with thousands of war elephants, mountain loads of southern gold, and the legendary Koh-i-Noor diamond. You forge the most centralized, wealthy, and feared military empire India has ever seen."
+    },
+    "ending_2": {
+      "title": "The Afghan Graveyard",
+      "story": "Sub-zero blizzards and mountain raiders wipe out your army in the Hindu Kush. Delhi's imperial treasury is depleted, leaving you broken and vulnerable to rebellions at home."
+    },
+    "ending_3": {
+      "title": "The Starving Realm",
+      "story": "The agrarian heartland never recovers from your cavalry's brutal suppression. Famine sweeps northern India, trade collapses, and provincial governors break away from a starving, bankrupt capital."
+    },
+    "ending_4": {
+      "title": "The Exhausted Administrator",
+      "story": "Distributing the royal gold pacified the countryside, but emptied the imperial vaults. You spend your remaining years reviewing tax ledgers and balancing budgets, surviving not as a conqueror, but as an exhausted accountant."
+    },
+    "ending_5": {
+      "title": "Lords of the Indian Ocean",
+      "story": "Your war galleys establish unchallenged dominance over the Arabian Sea. Customs duties fill Delhi with global wealth, turning your inland Sultanate into Asia's premier maritime empire."
+    },
+    "ending_6": {
+      "title": "The Iron Cavalry",
+      "story": "With thousands of Arabian mounts pouring in, your mobile divisions outmaneuver every adversary on the subcontinent. No local army can match your cavalry speed, securing total dominance over all Indian battlefields."
+    },
+    "ending_7": {
+      "title": "Death in the Armory",
+      "story": "You cut down a dozen traitors before falling to spear wounds in the palace armory. Your death leaves no clear heir, plunging the Delhi Sultanate into decades of chaotic civil war."
+    },
+    "ending_8": {
+      "title": "The Paranoid Fortress",
+      "story": "You recapture Siri Fort with your field legions and execute the conspirators, but the betrayal shatters your trust. You spend your remaining years locked inside your stone rooms, suspicious of your own shadow."
+    },
+    "ending_9": {
+      "title": "The Grand Confederation",
+      "story": "Rajput valor and Khalji steel combine under a unified imperial banner. Muslim and Hindu commanders lead campaigns side by side, creating a stable, diverse superpower centuries ahead of Akbar."
+    },
+    "ending_10": {
+      "title": "The Pyrrhic Victory",
+      "story": "Ranthambore falls as a pile of rubble, but the cost was catastrophic. Half your veteran commanders are dead, and Rajput clans unite in eternal rebellion, pinning your forces down in permanent desert skirmishes."
+    },
+    "ending_11": {
+      "title": "The Golden Leech",
+      "story": "The Mongol Khans return every winter demanding higher payments. Delhi's flourishing economy becomes nothing more than a resource mill for foreign warlords, reducing your Sultanate to a defenseless tributary state."
+    },
+    "ending_12": {
+      "title": "The Wall of Bows",
+      "story": "Your armed peasantry repels every Mongol breach along the frontier rivers. Realizing the Indian countryside is an impenetrable fortress of armed villages, the steppe khans abandon their southern invasions for good."
+    },
+    "ending_13": {
+      "title": "Death in the Silt",
+      "story": "Trapped in the river mud, your elephants turn on your own ranks, crushing your officers. Delhi's reserves encircle and destroy your army, ending your name and ambition in the muddy shallows of the Yamuna."
+    },
+    "ending_14": {
+      "title": "The Eastern Sun",
+      "story": "Your river artillery secures undisputed possession of Delhi. Blending the vast rice wealth of Bengal with northern military administration, you build an empire that rivals the richest dynasties of China."
+    },
+    "ending_15": {
+      "title": "The Uncontested King",
+      "story": "Sparing your predecessors grants you immediate legitimacy. You ascend the throne with the love of the populace and the respect of the nobles, inaugurating decades of rare internal peace and cultural revival."
+    },
+    "ending_16": {
+      "title": "Ashes of an Empire",
+      "story": "The palace fire sparks a citywide firestorm, gutting Delhi's grand libraries, bazaars, and residential wards. You take the crown of a scorched wasteland, remembered by history not as a great sovereign, but as the incendiary of your own capital."
+    }
+  }
+}

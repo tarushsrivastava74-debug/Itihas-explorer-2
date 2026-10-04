@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Chandragupta Maurya, advised by the master of realpolitik, Acharya Chanakya (Kautilya). Following the withdrawal of Alexander the Great from Punjab, you seek to overthrow the corrupt Nanda dynasty ruling the colossal empire of Magadha from Pataliputra. Dhana Nanda commands vast armies, but is despised by his subjects for oppressive taxation.",
+      "options": {
+        "A": {
+          "text": "The Periphery-First Strategy (Historical): Follow Chanakya’s counsel to avoid attacking the heavily fortified capital directly; mobilize northwestern frontier tribes, Greek garrisons, and Himalayan allies to roll up the border provinces before choking Pataliputra in an outer siege.",
+          "consequence": "Your forces dismantle Dhana Nanda's peripheral tax bases one by one; Pataliputra falls after a bitter siege, placing you on the imperial throne and founding the Mauryan Empire.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Direct Assault on Pataliputra (Alternate): Reject the slow encirclement; lead a direct, lightning amphibious strike straight down the Ganges River to storm the wooden ramparts of Pataliputra before the Nanda army can mass its full force.",
+          "consequence": "Your vanguard is trapped beneath the palisades and decimated by imperial archers; Chanakya’s covert network must extract you from the jaws of defeat into the Vindhya forests.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Seleucus I Nicator, successor to Alexander’s eastern empire, marches across the Indus River to reclaim Macedonia's Indian satrapies. You march west with a seasoned imperial army, including an armada of 500 armored war-elephants.",
+      "options": {
+        "A": {
+          "text": "The Diplomatic Elephant Treaty (Historical): Outmaneuver Seleucus's phalanx along the Indus, compelling him to sign a peace treaty ceding Gedrosia, Arachosia, Aria, and the Paropamisadae (modern Afghanistan and Balochistan), sealed with a dynastic marriage alliance and an exchange of 500 war-elephants.",
+          "consequence": "Your empire's borders reach the Hindu Kush, establishing formal diplomatic ties with the Hellenistic Mediterranean and securing an influx of Greek envoys like Megasthenes.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Total Destruction of the Greek Army (Alternate): Reject diplomatic marriages; surround the trapped Macedonian phalanx in the Indus gorges and crush them without quarter.",
+          "consequence": "Seleucus falls in battle, but Hellenistic kingdoms across Syria, Bactria, and Egypt unite in hostile opposition, cutting India off from Mediterranean trade routes.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Hiding in the dense forests of central India, you must rebuild your shattered rebellion while evading Nanda hunting parties.",
+      "options": {
+        "A": {
+          "text": "Form the Tribal Guerilla League (Alternate): Unite the Atavika (forest) tribes under an egalitarian charter, training woodland trackers into elite poison-dart skirmishers.",
+          "consequence": "Your irregular forces wage a devastating asymmetric war against Nanda tax convoys, gradually starving the capital's treasury.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Seek Royal Mercenaries in the South (Alternate): March south across the Narmada River to hire seasoned Deccan infantry and cavalry with your remaining gold reserves.",
+          "consequence": "You secure professional southern legions, but alienate northern peasants who view your forces as foreign invaders.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Two generations later, your grandson Ashoka the Great rules an empire spanning nearly the entire subcontinent. Only the maritime republic of Kalinga on the eastern seaboard maintains proud, defiant independence, controlling key trade ports to Southeast Asia.",
+      "options": {
+        "A": {
+          "text": "The War of Annexation & Moral Awakening (Historical): Launch an all-out invasion; breach Kalinga's defenses in a brutal war that leaves 100,000 dead and 150,000 exiled. Confounded by the horrific slaughter along the Daya River, renounce military conquest (Bherighosha) in favor of moral conquest (Dhammaghosha).",
+          "consequence": "Ashoka embraces Buddhism, carves humanitarian Major Rock Edicts across the subcontinent, establishes veterinary hospitals, and dispatches peace emissaries to Greece, Egypt, and Sri Lanka.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "The Unyielding Imperial Rajadharma (Alternate): Annex Kalinga ruthlessly, garrison its ports with iron-fisted governors, and celebrate the total subjugation of the coastline as an imperial military triumph.",
+          "consequence": "Kalinga’s overseas trade routes are directly integrated into the imperial exchequer, but coastal rebellions fester, requiring permanent military garrisons.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "With Greek alliances shattered, the Greco-Bactrian kingdom consolidates along your northwestern border, probing the Khyber Pass.",
+      "options": {
+        "A": {
+          "text": "Build the Great Stone Rampart of the Hindu Kush (Alternate): Divert imperial silver to construct a massive stone wall and fortress network across the mountain defiles of the northwest.",
+          "consequence": "The northern gateway into India is physically sealed against cavalry raiders, but defensive upkeep empties the central treasury.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Preventive Invasion of Bactria (Alternate): March an army of 100,000 across the mountains to sack Bactra and subjugate the Greek successor kingdoms in Central Asia.",
+          "consequence": "Mauryan supply trains stretch across freezing mountain passes, vulnerable to fierce ambushes by nomadic Saka horse-archers.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Your woodland guerrillas have crippled the Nanda economy. Dhana Nanda's ministers squabble over remaining grain reserves inside Pataliputra.",
+      "options": {
+        "A": {
+          "text": "Infiltrate the Spies of the Arthashastra (Historical Tactic): Deploy Chanakya’s undercover agents disguised as bards, ascetics, and merchants to turn the Nanda palace guard against their king.",
+          "consequence": "A bloodless palace coup deposes Dhana Nanda, crowning you emperor of Magadha with the army and civil administration intact.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Total Incendiary Assault (Alternate): Catapult burning naphtha and sulfur into the timber structures of Pataliputra to force the defenders out into the open plains.",
+          "consequence": "The Nanda army breaks, but three-quarters of the magnificent wooden city burns to ash, destroying imperial archives and grain reserves.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Backed by Deccan mercenaries, your forces reach the southern gates of Magadha, but southern chieftains demand independent sovereignty over the peninsula.",
+      "options": {
+        "A": {
+          "text": "Recognize Southern Federation Rights (Alternate): Sign treaties granting complete autonomy to the Cholas, Cheras, Pandyas, and Satavahanas in exchange for military backing in the north.",
+          "consequence": "You take Pataliputra with ease, but your imperial sovereignty remains permanently restricted north of the Tungabhadra River.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Betray the Southern Chieftains (Alternate): Disarm the mercenary contingents inside your camp before attacking Pataliputra to maintain absolute central authority.",
+          "consequence": "You crush potential mutineers, but a widespread uprising in the Deccan cuts off your southern trade routes.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Fifty years after Ashoka’s passing, the empire has fractured under weak successors. The state treasury is depleted by extensive religious endowments, while Demetrius of Bactria invades the Punjab. Brihadratha, the last Mauryan king, reviews his imperial guard outside Pataliputra alongside his Brahmin commander-in-chief, Pushyamitra Shunga.",
+      "options": {
+        "A": {
+          "text": "The Shunga Coup d'État (Historical): Commander-in-chief Pushyamitra Shunga assassinates Brihadratha on the parade ground, overthrows the Mauryan dynasty, and establishes the Shunga Empire to aggressively counter Greek incursions.",
+          "consequence": "The centralized Mauryan Empire comes to a definitive end; Pushyamitra repels Greek invaders, restores Vedic sacrifices (Ashvamedha), and fragments subcontinental rule into regional dynasties.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "The Royal Secret Guard Counter-Strike (Alternate): The Mauryan imperial spy network uncovers Shunga's plot; palace guards eliminate the rebellious general on the parade ground before he can draw his blade.",
+          "consequence": "The dynasty survives, and Brihadratha issues an emergency imperial mobilization to march northwest against the Greek phalanxes.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Having militarized Kalinga, Ashoka directs the imperial fleet toward the spice islands of Suvarnabhumi (Southeast Asia).",
+      "options": {
+        "A": {
+          "text": "Colonize the Straits of Malacca (Alternate): Establish fortified naval colonies along the Malacca Strait to tax all sea commerce passing between India and Han China.",
+          "consequence": "Immense maritime wealth fills the treasury, making the Mauryan Empire the undisputed naval hegemon of the Indian Ocean.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "The Great Coastal Canal (Alternate): Construct a vast inland canal system linking the Ganges delta directly to the southern ports of the Tamil coast.",
+          "consequence": "Domestic trade flourishes sheltered from sea storms, though peasant forced-labor revolts flare along the canal banks.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "The great stone fortresses of the Hindu Kush keep foreign raiders at bay, but the western provinces feel neglected by the distant court in Pataliputra.",
+      "options": {
+        "A": {
+          "text": "Decentralize into Dual Empires (Alternate): Formally divide the realm into a Western Empire ruled from Taxila and an Eastern Empire ruled from Pataliputra.",
+          "consequence": "Taxila flourishes as a fortified, cosmopolitan cultural hub, while Pataliputra oversees the rich agrarian basins of the east.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Impose Rigid Bureaucratic Standardization (Alternate): Dispatch imperial overseers (Mahamattas) with absolute powers to enforce uniform taxation across the western borderlands.",
+          "consequence": "The frontier cities rise in open rebellion against the heavy hand of distant imperial tax officials.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Your expeditionary army in Central Asia is encircled by nomadic horse-archers on the arid plains beyond the Oxus.",
+      "options": {
+        "A": {
+          "text": "The Shield-Wall Breakout (Alternate): Form your infantry into tight, bronze-plated shield formations and fight your way back through the mountain passes.",
+          "consequence": "You rescue your veteran core, but forfeit all territorial ambitions in Central Asia.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "The Fortified Oasis Network (Alternate): Establish fortified mud-brick outposts at waterholes, planting permanent garrisons across the Silk Road.",
+          "consequence": "Your outposts survive as isolated desert forts, constantly harassed by nomad bands.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Having taken Pataliputra peacefully, Chanakya organizes the state according to the strictest principles of the Arthashastra.",
+      "options": {
+        "A": {
+          "text": "The Total Surveillance Bureaucracy (Historical Practice): Deploy a sweeping network of undercover agents, courtesan-spies, and royal commissioners to monitor all guild treasuries, village elders, and ministers.",
+          "consequence": "The state runs with unmatched efficiency, completely insulated from domestic treason, corruption, or rebellion.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Liberalize the Craft Guilds (Alternate): Curtail state monopolies over salt, mining, and timber, allowing merchant guilds to operate without crown taxation.",
+          "consequence": "Private mercantile fortunes surge, but imperial state revenues fall, weakening the central army.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "The magnificent capital lies in smoking ruins, forcing you to govern from the ancient mountain stronghold of Rajagriha.",
+      "options": {
+        "A": {
+          "text": "Rebuild Pataliputra in Cut Stone (Alternate): Ban timber construction and rebuild the entire capital using dressed sandstone and granite, modeled after Persian palaces.",
+          "consequence": "Pataliputra rises from the ashes as a stone monument of imperial grandeur that defies fire and flood for millennia.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Relocate the Imperial Seat to Ujjain (Alternate): Permanently establish Ujjain as the new imperial capital to dominate the junction of all inland trade routes.",
+          "consequence": "Ujjain becomes the booming economic crossroads of central India, leaving the eastern Gangetic plains marginalized.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "North India is unified under your crown, while the southern kingdoms flourish under sovereign federation agreements.",
+      "options": {
+        "A": {
+          "text": "The Grand Commercial Highway (Alternate): Construct the Dakshinapatha (Great Southern Road) linking Pataliputra to Madurai, protected by joint imperial and regional patrols.",
+          "consequence": "Uninterrupted internal trade enriches both north and south, fostering a rich cultural synthesis without imperial subjugation.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Secret Infiltration of the Southern Courts (Alternate): Use espionage networks to destabilize the Chola and Pandya royal families from within.",
+          "consequence": "The southern kings uncover your spies and cut trade ties, creating a permanently hostile southern frontier.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The Satavahanas and southern tribes declare total war on your northern outposts to avenge their betrayed leaders.",
+      "options": {
+        "A": {
+          "text": "Fortify the Narmada River Line (Alternate): Pull back north of the Narmada River, constructing defensive bastions along the river crossings.",
+          "consequence": "The northern borders remain completely secure, but India is permanently divided into two distinct, competing cultural zones.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "The Scorched Plateau Campaign (Alternate): Send your elite elephant legions south to lay waste to rebellious Deccan towns and crush the uprising by force.",
+          "consequence": "The rebellion is put down, but the Deccan is left scorched and impoverished for generations.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Wheel and the Sword (Historical)",
+      "story": "The fall of the Mauryas marks the end of India's first unified continental empire. While Pushyamitra Shunga halts foreign invasions in the northwest and revives orthodox rituals, Ashoka’s legacy of Dhamma, the Lion Capital of Sarnath, and his timeless rock edicts become immortal symbols of enlightened governance that define Indian civilization forever."
+    },
+    "ending_2": {
+      "title": "The Resilient Tricolor",
+      "story": "Thwarting the military coup preserves the Mauryan line. Emperor Brihadratha marches his reorganized legions northwest, driving Demetrius's Indo-Greeks out of the Punjab and preserving a unified subcontinental empire for another century."
+    },
+    "ending_3": {
+      "title": "The Lords of the Eastern Seas",
+      "story": "Mauryan naval colonies across the Malacca Strait transform the empire into the supreme maritime superpower of the ancient world. Silk from Han China, spices from the Moluccas, and gold from Rome flow directly into Pataliputra, turning the Bay of Bengal into an imperial lake."
+    },
+    "ending_4": {
+      "title": "The Internal Canal",
+      "story": "The great coastal canal system shelters domestic shipping from oceanic storms and pirates. While costly in human labor, the inland waterway cements an unbreakable commercial bond between the Gangetic heartland and the far southern coasts."
+    },
+    "ending_5": {
+      "title": "The Twin Empires",
+      "story": "Dividing the empire creates two enduring sister civilizations: a Greco-Indian empire in the northwest centered on Gandhara's glittering art and philosophy, and a classical Gangetic empire in the east anchoring trade, literature, and monastic scholarship."
+    },
+    "ending_6": {
+      "title": "The Frontier Breakaway",
+      "story": "Oppressive centralized taxation triggers the permanent secession of the northwestern provinces. Taxila crowns its own monarch, leaving the core empire vulnerable to successive waves of Central Asian invaders."
+    },
+    "ending_7": {
+      "title": "The Mountain Redoubt",
+      "story": "The fighting retreat rescues your veteran legions, but permanently confines the empire south of the Hindu Kush. The Mauryan state shifts from outward expansion to guarding its rocky northern borders against steppe nomads."
+    },
+    "ending_8": {
+      "title": "The Desert Outposts",
+      "story": "Mauryan garrisons cling to isolated oasis citadels along the Silk Road. While enriching the state with caravan tolls, these remote bases act as an endless drain on imperial military manpower."
+    },
+    "ending_9": {
+      "title": "The Omniscient Eye of Chanakya (Historical Archetype)",
+      "story": "Guided by the iron doctrine of the Arthashastra, the centralized state becomes a marvel of administrative precision and espionage. With crime suppressed, taxes efficiently harvested, and corruption rooted out, the Mauryan state establishes the gold standard for imperial administration in antiquity."
+    },
+    "ending_10": {
+      "title": "The Bankrupt Crown",
+      "story": "Dismantling state monopolies enriches private merchant guilds, but starves the imperial treasury. When foreign invaders threaten the frontiers, the central state lacks the funds to mobilize its legendary elephant corps, leaving defense to fragmented private militias."
+    },
+    "ending_11": {
+      "title": "The Stone Colossus",
+      "story": "Rebuilt entirely in majestic dressed sandstone, Pataliputra becomes the architectural wonder of the ancient world. Its towering stone palaces, pillars, and broad avenues survive floods and sieges, standing proud as an eternal symbol of Mauryan might."
+    },
+    "ending_12": {
+      "title": "The Crossroads of Ujjain",
+      "story": "Shifting the capital to Ujjain transforms the empire from a riverine Gangetic monarchy into the bustling crossroads of the subcontinent. Merchants, astronomers, and philosophers from every corner of India converge on the new capital, inaugurating an early classical golden age."
+    },
+    "ending_13": {
+      "title": "The Southern Peace",
+      "story": "The Dakshinapatha highway binds the entire subcontinent in a thriving web of trade and cultural exchange without military conquest. Northern philosophy and southern maritime traditions merge harmoniously, laying the foundations for an interconnected pan-Indian civilization."
+    },
+    "ending_14": {
+      "title": "The Bitter Divide",
+      "story": "Espionage destroys diplomatic goodwill with the southern kingdoms. The Deccan and deep south form an impenetrable military alliance against Pataliputra, locking the subcontinent in two centuries of mutual hostility."
+    },
+    "ending_15": {
+      "title": "The River Frontier",
+      "story": "The Narmada River becomes an uncrossable boundary between northern and southern India. While the north turns its gaze toward Central Asia, the south builds independent oceanic trade networks with Rome and Southeast Asia."
+    },
+    "ending_16": {
+      "title": "The Desolate Plateau",
+      "story": "Brutal suppression of the Deccan revolt leaves central India a barren wasteland of smoking ruins. The enormous cost of the campaign bankrupts the Mauryan treasury, triggering regional revolts that bring down the dynasty from within."
+    }
+  }
+}

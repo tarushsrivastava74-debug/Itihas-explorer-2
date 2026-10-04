@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Allan Octavian Hume, a retired British civil servant sympathetic to Indian political aspirations. Along with leaders like Dadabhai Naoroji, Dinshaw Wacha, and W. C. Bonnerjee, you see growing discontent across the educated Indian middle class against the repressive policies of Lord Lytton. You must define the initial character of the newly formed Indian National Congress meeting at Gokuldas Tejpal Sanskrit College.",
+      "options": {
+        "A": {
+          "text": "The Safety-Valve & Constitutional Path (Historical): Position the Congress as a loyal, moderate body seeking reform through petitions, memorandums, and constitutional dialogue within the British Empire.",
+          "consequence": "Viceroy Lord Dufferin initially tolerates the gathering; 72 educated delegates establish a national network without facing immediate colonial bans or suppression.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Radical Mass Mobilization (Alternate): Bypass elite urban lawyers and draft an uncompromising manifesto calling on peasants, mill workers, and vernacular press editors to launch non-cooperation.",
+          "consequence": "Colonial authorities immediately declare the organization seditious, arrest the leadership under the Vernacular Press and Arms Acts, and drive the movement underground.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Dadabhai Naoroji formulates the \"Drain of Wealth\" theory, exposing how colonial economic mechanisms siphon Indian revenues abroad. Meanwhile, the Indian Councils Act 1892 offers limited representation.",
+      "options": {
+        "A": {
+          "text": "The 3Ps: Prayer, Petition, and Protest (Historical): Use the legislative floor and London public forums to expose economic exploitation, pressing Parliament for the expansion of provincial councils and simultaneous civil service exams.",
+          "consequence": "Political consciousness expands quietly among intellectuals, but younger radicals begin deriding the approach as \"political mendicancy.\"",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Imperial Boycott Resolution (Alternate): Introduce a formal resolution demanding an immediate national boycott of British textiles until the drain of wealth ceases.",
+          "consequence": "The moderate elder leadership splits as colonial magistrates ban political meetings in educational halls across Bombay and Calcutta.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Stripped of open assembly halls, nationalist cells operate through regional secret societies, akhadas, and underground printing presses.",
+      "options": {
+        "A": {
+          "text": "The Giti & Festival Strategy (Alternate): Channel political mobilization through religious and cultural festivals, using public Ganesh Utsavs and Shivaji festivals to spread nationalist fervor.",
+          "consequence": "Popular engagement surges among working-class youth, though it inadvertently deepens communal anxieties in mixed provinces.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Peasant Rent Strikes (Alternate): Organize the rural Ryotwari tenants of western India to withhold land revenues following devastating crop failures.",
+          "consequence": "Peasant defiance shakes the Bombay Presidency, but draconian police crackdowns seize farmlands and livestock.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Viceroy Lord Curzon partitions Bengal along communal lines to crush the nerve center of Indian nationalism. A massive public outcry erupts across the subcontinent.",
+      "options": {
+        "A": {
+          "text": "Launch the Swadeshi & Boycott Movement (Historical): Proclaim the Boycott Resolution at the Calcutta Town Hall, organizing bonfires of British cloth and promoting indigenous industries, schools, and national banks.",
+          "consequence": "Swadeshi ignites mass national politics for the first time; British cloth imports plummet, but internal tensions rise between Moderates and Extremists.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Limit Resistance to Parliamentary Appeals (Alternate): Oppose the boycott of foreign goods as unconstitutional; dispatch G. K. Gokhale to London to plead directly before the British Cabinet.",
+          "consequence": "The British government ignores the petitions, discrediting the Moderate leadership and handing full moral authority to radical youths.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "The plague strikes Pune, and harsh British quarantine measures provoke widespread fury, culminating in the assassination of Commissioner Rand by the Chapekar brothers.",
+      "options": {
+        "A": {
+          "text": "Defend the Press & Assert Rights (Alternate): Use public journals like Kesari to declare that sedition charges cannot silence genuine grievances, turning Bal Gangadhar Tilak into a national hero.",
+          "consequence": "Tilak is imprisoned, but his trials ignite popular protests that make \"Swaraj is my birthright\" the battle cry of the streets.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Condemn the Violent Act (Alternate): Distance Congress entirely from the Chapekar actions to preserve legal standing and avoid government retribution.",
+          "consequence": "The colonial administration spares the Congress organization, but the public views the body as detached from genuine public suffering.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Cultural organizing expands, and urban industrial workers strike in Bombay and Bengal against long working hours and low wages.",
+      "options": {
+        "A": {
+          "text": "Build the Swadeshi Trade Union (Alternate): Formally affiliate industrial trade unions to the nationalist movement, crippling British-owned jute and tea industries with mass general strikes.",
+          "consequence": "Industrial disruption forces factory owners to yield wage concessions, transforming labor into an active wing of the freedom movement.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Pivot to Armed Insurrection (Alternate): Channel youth organizations like Anushilan Samiti into covert production of bombs and weapons caches to target colonial governors.",
+          "consequence": "Targeted attacks shake British officials, but prompt the passage of the Explosive Substances Act and massive police sweeps.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Rural resistance spreads, threatening imperial land revenue across Gujarat and the Deccan.",
+      "options": {
+        "A": {
+          "text": "Institutionalize the Kisan Sabhas (Alternate): Establish permanent village assemblies to run autonomous arbitration courts and bypass colonial law courts entirely.",
+          "consequence": "Parallel rural administrative structures emerge across dozens of talukas, creating self-governing rural enclaves.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "March on the Provincial Capital (Alternate): Organize 50,000 peasants to march directly on the Governor's Council in Bombay to demand permanent tax remissions.",
+          "consequence": "Armed police disperse the unarmed march outside the city limits, sparking localized riots.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "At the Surat session of Congress on the banks of the Tapti River, tensions peak between the Moderates (Gokhale, Pherozeshah Mehta) and the Extremists (Tilak, Bipin Chandra Pal, Lala Lajpat Rai) over extending Swadeshi nationwide.",
+      "options": {
+        "A": {
+          "text": "The Complete Fracture (Historical): Fail to reach a compromise; the session descends into chaos and thrown chairs, causing the Moderates to expel the Extremists and dominate the party machinery.",
+          "consequence": "Congress loses its mass momentum and public prestige; the British exploit the division by jailing Tilak in Mandalay and passing the Morley-Minto Reforms of 1909 with separate electorates.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "The National Consensus Pact (Alternate): Draft an inclusive platform accepting Swadeshi, Boycott, Swaraj, and National Education as common goals while retaining Gokhale's constitutional leadership.",
+          "consequence": "Congress stays unified, confronting the British bureaucracy as an unbroken national front.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Moderate inaction leaves the streets rudderless, paving the way for secret revolutionary societies like Jugantar to take the lead.",
+      "options": {
+        "A": {
+          "text": "The Alipore Offensive (Alternate): Launch coordinated strikes on colonial magistrate courts across Bengal to paralyze provincial administration.",
+          "consequence": "Massive urban uprisings break out, leading to martial law and military trials that galvanize a new generation of martyrs.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Boycott of Government Schools (Alternate): Direct students across the nation to leave government colleges and establish independent National Councils of Education.",
+          "consequence": "An entire alternative education system emerges, creating a cadre of dedicated young organizers free from colonial curricula.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Tilak stands trial for his fiery editorials supporting revolutionary youths in Muzaffarpur, facing a hostile jury in the Bombay High Court.",
+      "options": {
+        "A": {
+          "text": "Unflinching Defiance in Court (Historical): Deliver a defiant courtroom statement affirming that higher powers dictate your destiny and that freedom will triumph through suffering.",
+          "consequence": "Tilak is sentenced to six years of hard labor in Mandalay, Burma, sparking a historic six-day general strike by the textile mill workers of Bombay.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Legalistic Technical Defense (Alternate): Rely on British barristers to challenge the translation of vernacular texts and secure an acquittal on procedural grounds.",
+          "consequence": "An acquittal keeps Tilak in active politics, but dulls the symbolic martyrdom that ignited mass working-class resistance.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Congress preserves its elite standing, meeting exclusively during Christmas weeks to deliver polite addresses to the Viceroy.",
+      "options": {
+        "A": {
+          "text": "The Bureaucratic Stalemate (Alternate): Continue drafting annual petitions, hoping progressive members of the British Parliament will sponsor private reform bills.",
+          "consequence": "Reforms remain minor and symbolic, while the younger generation turns en masse to revolutionary literature.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Establish Overseas Lobbies (Alternate): Shift primary focus to London and Washington, building the British Committee of the INC into an aggressive international press lobby.",
+          "consequence": "International awareness of Indian poverty grows, embarrassing colonial administrators in global diplomatic circles.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Unified industrial unions threaten a nationwide transport and dockworker stoppage across Calcutta, Bombay, and Madras.",
+      "options": {
+        "A": {
+          "text": "Total Transport Shutdown (Alternate): Halt all railway logistics, preventing British troops and manufactured imports from leaving coastal ports.",
+          "consequence": "The Raj faces complete economic paralysis, forcing colonial governors to negotiate directly with labor leaders.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Conditional Economic Demands (Alternate): Limit the strike strictly to wage hikes, shorter shifts, and factory safety standards.",
+          "consequence": "Mill owners yield economic concessions, but the labor movement is successfully depoliticized by colonial arbiters.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Khudiram Bose and Prafulla Chaki attempt to assassinate Kingsford, the notoriously brutal magistrate of Muzaffarpur.",
+      "options": {
+        "A": {
+          "text": "Embrace the Martyr's Scaffold (Historical): Prafulla shoots himself to avoid capture; Khudiram cheerfully mounts the gallows, clutching the Bhagavad Gita.",
+          "consequence": "Khudiram's sacrifice becomes folk poetry, inspiring thousands of teenagers across Bengal and Punjab to join revolutionary societies.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Underground Escape to French Chandernagore (Alternate): Smuggle the operatives across the border into French-controlled Chandernagore to establish a foreign revolutionary cell.",
+          "consequence": "A permanent exile base is secured, allowing revolutionaries to smuggle European pistols and chemistry manuals into British India.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "Village panchayats establish sovereign arbitration courts, settling all disputes outside colonial jurisdiction.",
+      "options": {
+        "A": {
+          "text": "Total Tax Non-Payment (Alternate): Issue a collective decree refusing all land taxes until the provincial administration rescinds water and revenue cess hikes.",
+          "consequence": "Village collectors resign en masse, leaving entire rural districts free from colonial control.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Form Village Defense Volunteers (Alternate): Organize lathi clubs to protect granaries and prevent police attachments of cattle and farming tools.",
+          "consequence": "Armed clashes erupt between village guards and colonial police, turning the rural heartland into a contested frontier.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Thousands of demonstrators surround the Bombay Secretariat demanding famine relief and agrarian land protection.",
+      "options": {
+        "A": {
+          "text": "Indefinite Sit-in (Alternate): Encircle the government buildings with peaceable assemblies, refusing to disperse under police batons.",
+          "consequence": "The visual spectacle of police brutality against peaceful citizens horrifies the international press, forcing official inquiries.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Disperse to the Districts (Alternate): Disperse peacefully to avoid direct confrontation, redirecting the crowds into establishing grain banks across famine-hit villages.",
+          "consequence": "Thousands of peasant lives are saved by grassroots food distribution, cementing unbreakable rural trust in local nationalist leadership.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Stalled Vanguard (Historical)",
+      "story": "The Surat Split cripples the Indian National Congress for nearly a decade. Divided into isolated Moderates and suppressed Extremists, the movement languishes under Morley-Minto communal electorates until Annie Besant, Tilak, and the Lucknow Pact of 1916 stitch the factions back together, paving the way for Mahatma Gandhi's mass era."
+    },
+    "ending_2": {
+      "title": "The United Front",
+      "story": "By averting the split at Surat, Congress presents an unbroken phalanx to the British Crown. The combined weight of Moderate constitutional skill and Extremist grassroots agitation forces the early annulment of the Bengal partition without communal electorates, securing self-governing dominion status decades ahead of schedule."
+    },
+    "ending_3": {
+      "title": "The Urban Insurrection",
+      "story": "Street barricades and secret societies turn Calcutta and Dhaka into armed conflict zones. Though brutally crushed by regular army battalions, the insurrection shatters the myth of colonial invincibility, turning Bengal into an unmanageable hotbed of perpetual rebellion."
+    },
+    "ending_4": {
+      "title": "The Sovereign Classrooms",
+      "story": "The National Education movement replaces British curricula across hundreds of autonomous institutions. An entire generation emerges educated in indigenous history, science, and crafts, creating a self-sufficient civil administration ready to govern a free India from the bottom up."
+    },
+    "ending_5": {
+      "title": "The Strike of the Proletariat (Historical)",
+      "story": "Tilak's imprisonment in Mandalay for six years unleashes India's first mass working-class political strike in Bombay. The fusion of nationalist grievance with industrial labor reveals a new, unstoppable force in Indian politics that reshapes the anti-colonial struggle."
+    },
+    "ending_6": {
+      "title": "The Paper Victory",
+      "story": "Tilak's legal acquittal protects him from the squalor of Mandalay, keeping him in active journalism. However, the legalistic compromise deprives the movement of a unifying martyr figure, channeling popular unrest back into endless legal challenges in imperial courts."
+    },
+    "ending_7": {
+      "title": "The Dormant Assembly",
+      "story": "Congress degenerates into an annual debating club for Westernized lawyers, entirely irrelevant to the common populace. Deprived of popular pressure, the British bureaucracy freezes all administrative reforms, leaving the subcontinent under direct autocracy."
+    },
+    "ending_8": {
+      "title": "The Global Indictment",
+      "story": "The overseas lobbies succeed in turning British colonial misrule into an international scandal. Under pressure from American and European journalists, the British Parliament is forced to grant equal administrative rights and simultaneous civil service exams across all presidencies."
+    },
+    "ending_9": {
+      "title": "The Wheels of Empire Halted",
+      "story": "The nationwide transport strike completely paralyzes imperial commerce and troop movements. Forced to its knees by an economic standstill, the colonial administration is compelled to concede representative provincial ministries to avert imperial bankruptcy."
+    },
+    "ending_10": {
+      "title": "The Pacified Unions",
+      "story": "Focusing solely on workplace concessions turns trade unions away from political agitation. While factory hands win eight-hour workdays and modest wage gains, the broad independence movement loses the vital power of general industrial strikes."
+    },
+    "ending_11": {
+      "title": "The Immortal Song of Bengal (Historical)",
+      "story": "Khudiram Bose's smile on the gallows ignites a revolutionary tradition that captivates young minds across the nation. The cult of revolutionary patriotism inspires future heroes like Bhagat Singh, Surya Sen, and Chandrashekhar Azad, writing an immortal chapter in the annals of Indian freedom."
+    },
+    "ending_12": {
+      "title": "The External Redoubt",
+      "story": "The Chandernagore safe haven evolves into an international revolutionary pipeline. French neutrality allows Indian radicals to coordinate weapon imports and global networks with Ghadar party leaders in America and European socialists."
+    },
+    "ending_13": {
+      "title": "The Tax-Free Commonwealth",
+      "story": "Total tax refusal in the rural heartlands hollows out imperial revenues. British collectors find no one willing to bid on confiscated land or collect dues, forcing the colonial government into a humiliating climbdown and restoring peasant land titles."
+    },
+    "ending_14": {
+      "title": "The Deccan Bastion",
+      "story": "Clashes between rural defense clubs and colonial authorities lock the countryside in permanent tension. The agrarian heartland becomes a heavily militarized territory, forcing the colonial government to divert significant troop reserves from frontier defense to internal pacification."
+    },
+    "ending_15": {
+      "title": "The Conscience of the World",
+      "story": "Photographs of imperial mounted police charging peaceful sit-ins in Bombay trigger outrage in the House of Commons. The resulting royal commission dismantles the most repressive public assembly laws, allowing open political agitation across the country."
+    },
+    "ending_16": {
+      "title": "The People's Granary",
+      "story": "Grassroots grain banks preserve millions of peasant lives during drought, creating an unshakeable bond between rural society and nationalist workers. The movement successfully establishes deep rural roots, ready to ignite nationwide non-violent campaigns the moment national leaders sound the call."
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Surendranath Banerjee, standing before a packed assembly inside the Calcutta Town Hall in August 1905. Viceroy Lord Curzon has formally announced the partition of Bengal along religious lines, cutting through the administrative, cultural, and political nerve center of Indian nationalism. The gathering is desperate for a unified counter-strategy.",
+      "options": {
+        "A": {
+          "text": "The Boycott & Swadeshi Declaration (Historical): Proclaim the formal Swadeshi Resolution, pledging to boycott British Manchester cloth, Liverpool salt, and foreign goods in favor of indigenous industries and national schools.",
+          "consequence": "Public bonfires of foreign textiles erupt across the streets; students, merchants, and women join the agitation in unprecedented numbers, kickstarting India's first mass economic boycott.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Constitutional Petition to Whitehall (Alternate): Reject mass economic boycotts as provocative; urge the assembly to send an elite legal delegation to London to appeal directly to the British Secretary of State.",
+          "consequence": "The British Parliament tables the petition indefinitely, leaving the public feeling betrayed and prompting militant students to look elsewhere for leadership.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Swadeshi spreads rapidly into Maharashtra, the Punjab, and Madras under the leadership of Bal Gangadhar Tilak, Lala Lajpat Rai, and Bipin Chandra Pal (Lal-Bal-Pal). The movement demands deeper tactical direction.",
+      "options": {
+        "A": {
+          "text": "Passive Resistance & National Education (Historical): Expand Swadeshi beyond cloth into passive resistance: establish the National Council of Education, boycott colonial courts, and set up swadeshi textile mills, banks, and soap factories.",
+          "consequence": "National institutions flourish (including the Bengal National College under Aurobindo Ghose), dramatically reducing reliance on colonial infrastructure.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Immediate Total Non-Cooperation (Alternate): Escalate immediately to total civil defiance: call for a complete stoppage of railway transport and an outright refusal to pay land revenue to the Raj.",
+          "consequence": "The British deploy the Indian Army to occupy railway stations and telegraph hubs, arresting senior organizers under the sedition laws.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "With constitutional channels dead, student societies lose patience with the moderate old guard and look to direct action.",
+      "options": {
+        "A": {
+          "text": "Form Revolutionary Secret Societies (Alternate): Channel student networks into covert revolutionary cadres like the Anushilan Samiti and Jugantar, establishing secret bomb factories and safe houses.",
+          "consequence": "Secret revolutionary cells spread across Bengal, targeting oppressive colonial police inspectors and district magistrates.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Vernacular Press Crusade (Alternate): Direct all resources toward underground pamphlets and newspapers like Bande Mataram and Sandhya to radicalize rural towns.",
+          "consequence": "Anti-colonial literature circulates through every village market, but colonial authorities respond with the Newspaper (Incitement to Offences) Act.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "At the 1907 Surat session of the Indian National Congress, ideological hostility between the Moderates (led by Pherozeshah Mehta and G. K. Gokhale) and Extremists (led by Tilak and Pal) reaches a boiling point over extending the Swadeshi boycott nationwide.",
+      "options": {
+        "A": {
+          "text": "The Surat Fracture (Historical): Let the session descend into open confrontation and thrown footwear, leading to the expulsion of Extremists and a fractured Congress.",
+          "consequence": "The nationalist front crumbles into two camps; the colonial government capitalizes by arresting Tilak, deporting Lala Lajpat Rai, and passing draconian public assembly bans.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "The Compromise Accord (Alternate): Forge a compromise by electing a consensus president and issuing an ambiguous declaration endorsing Swadeshi without formal schism.",
+          "consequence": "Congress maintains a united façade, denying the British the factional split they hoped to exploit.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "The transportation stoppage triggers a wave of solidarity walkouts in the cotton mills of Bombay and the jute mills of Calcutta.",
+      "options": {
+        "A": {
+          "text": "Institutionalize the Swadeshi Labor League (Alternate): Consolidate striking mill hands and dockworkers into India's first nationwide political trade union.",
+          "consequence": "Urban logistics ground to a halt, cutting corporate profits for British merchant firms operating along the eastern coastline.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Tactical Concession Settlement (Alternate): Advise mill workers to accept negotiated wage hikes and return to work, keeping focus solely on political agitation.",
+          "consequence": "Workers secure wage gains, but the industrial momentum dissipates, returning the struggle to middle-class debating clubs.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Secret societies operate across Bengal and Bihar, manufacturing picric acid explosives in suburban gardens like Maniktala.",
+      "options": {
+        "A": {
+          "text": "Targeted Assassination Campaign (Historical): Dispatch young volunteers like Khudiram Bose and Prafulla Chaki to eliminate notoriously brutal magistrates such as D. H. Kingsford.",
+          "consequence": "A bomb hits the wrong carriage in Muzaffarpur; Prafulla shoots himself, Khudiram is captured and sentenced to death, and the police raid the Maniktala garden.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Sabotage Imperial Rail Convoys (Alternate): Focus explosives strictly on derailing trains carrying military reinforcements and colonial tax silver.",
+          "consequence": "Imperial transport is disrupted, but the colonial authorities invoke martial law along all major eastern railway arteries.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Underground vernacular printing has radicalized the mofussil (hinterland), drawing rural schoolteachers and artisans into the movement.",
+      "options": {
+        "A": {
+          "text": "Organize Village Swadeshi Samitis (Alternate): Set up local volunteer bodies like the Swadesh Bandhab Samiti (led by Ashwini Kumar Dutta) to run grain banks and indigenous arbitration courts.",
+          "consequence": "Rural peasants bypass colonial law courts entirely, creating self-reliant, autonomous village units across Barisal.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Peasant Salt Rallies (Alternate): Mobilize peasants to openly extract and distribute untaxed indigenous sea salt along the Bengal coastline.",
+          "consequence": "Police detachments use lathi charges to disperse salt marches, sparking widespread rural unrest.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "With the Moderates isolated and Extremists expelled, the British administration moves to crush the movement entirely.",
+      "options": {
+        "A": {
+          "text": "The Mandalay Exile & Courtroom Defiance (Historical): Tilak stands trial for sedition in the Bombay High Court, delivering his defiant address before receiving six years of hard labor in Mandalay, Burma.",
+          "consequence": "Tilak's sentencing triggers a historic six-day general strike by Bombay mill workers, immortalizing his words on Swaraj.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Underground Dispersion (Alternate): Evade colonial warrants by going underground, smuggling leadership cadres abroad to London and Paris to establish external bases.",
+          "consequence": "The domestic movement slows to a crawl, but the international India House network in Europe takes root.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "A unified Congress continues to sponsor Swadeshi enterprises while pushing constitutional pressure in London.",
+      "options": {
+        "A": {
+          "text": "Demand Annulment as Condition for Talks (Alternate): Refuse all cooperation on the Morley-Minto council reforms until the partition of Bengal is completely revoked.",
+          "consequence": "Desperate to secure Indian collaboration, British administrators offer an early territorial reunification of Bengal.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Accept the Morley-Minto Councils (Alternate): Participate in the expanded legislative councils while maintaining the economic boycott in the bazaars.",
+          "consequence": "Separate communal electorates are institutionalized in 1909, planting long-term seeds of division despite economic boycott gains.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "The Swadeshi Labor League issues a joint strike call across railways, ports, and printing presses.",
+      "options": {
+        "A": {
+          "text": "General Strike Across All Presidencies (Alternate): Expand the strike simultaneously to the docks of Bombay, Madras, and Karachi, stopping all British imports.",
+          "consequence": "Colonial shipping collapses, forcing the Chamber of Commerce to lobby London for urgent political concessions.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Targeted Boycott of British Freight (Alternate): Order dockers to unload Indian and European non-British cargo while leaving British cargo ships rotting at anchor.",
+          "consequence": "British shipping lines take massive losses, but foreign shipping syndicates fill the vacuum.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "The movement relies on voluntary boycotts by indigenous merchants and Marwari trading houses.",
+      "options": {
+        "A": {
+          "text": "The Swadeshi Stamp of Quality (Alternate): Introduce an official certification system for swadeshi textiles, creating consumer loyalty for domestic handlooms and mills.",
+          "consequence": "Indigenous textile production booms, giving rise to long-lasting domestic industrial giants.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Picketing Foreign Warehouses (Alternate): Mobilize student picketers to physically block the entrances of foreign fabric wholesale godowns.",
+          "consequence": "Wholesale trade is halted, but picketers face brutal beatings and expulsions from government universities under the Carlyle Circular.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The police raid the Maniktala garden, arresting Barindra Ghose and Aurobindo Ghose. Celebrated barrister Chittaranjan Das takes up Aurobindo's legal defense.",
+      "options": {
+        "A": {
+          "text": "The Brilliant Court Acquittal (Historical): C. R. Das delivers an eloquent courtroom defense arguing that preaching patriotism is no crime; Aurobindo is acquitted, undergoes a spiritual awakening in jail, and retires to Pondicherry.",
+          "consequence": "Aurobindo withdraws from active politics to pursue spiritual philosophy, while Barindra and others receive life sentences in the Andaman Cellular Jail.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Unified Revolutionary Confession (Alternate): Instruct all accused to use the courtroom as an open propaganda platform, justifying armed revolt to overthrow colonial rule.",
+          "consequence": "The courtroom speeches inspire a generation of revolutionary youths, but the judges issue harsh mass executions across the leadership.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Armed revolutionary squads prepare to ambush the special train of the Lieutenant-Governor of Bengal outside Kharagpur.",
+      "options": {
+        "A": {
+          "text": "Detonate the Tracks (Alternate): Trigger dynamite charges under the imperial carriage to eliminate the head of the provincial administration.",
+          "consequence": "The blast derails the train; the Lieutenant-Governor escapes with minor injuries, triggering full-scale military rule across Midnapore.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Stand Down and Cache Arms (Alternate): Abort the rail ambush at the last minute to prevent collateral civilian deaths and safeguard the explosives cache.",
+          "consequence": "The cell survives intact, redirecting its arsenal toward defensive actions during mass political rallies.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The Swadesh Bandhab Samiti has turned Barisal into a virtually independent enclave run through voluntary arbitration courts and community grain depots.",
+      "options": {
+        "A": {
+          "text": "Declare Full District Autonomy (Alternate): Formally expel colonial revenue agents and refuse all recognition of British administrative offices in the district.",
+          "consequence": "British Gurkha regiments are deployed to reoccupy the district, arresting the samiti leaders and shuttering local schools.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Expand the Samiti Model to All Districts (Alternate): Dispatch trained volunteers across Bengal and Assam to replicate the Barisal samiti model in every subdivision.",
+          "consequence": "Parallel rural administrations emerge throughout eastern Bengal, depriving the colonial apparatus of its judicial revenues.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Police detachments clash with villagers processing illegal indigenous salt along the Bay of Bengal.",
+      "options": {
+        "A": {
+          "text": "The Satyagraha Line (Alternate): Instruct villagers to sit peacefully on the beaches and absorb police beatings without raising a hand in retaliation.",
+          "consequence": "Images and reports of unarmed peasants being struck down for making native salt evoke international outrage.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Drive the Constables from the Coast (Alternate): Use lathi-wielding volunteers to chase the small police squads off the beaches and safeguard the pans.",
+          "consequence": "The initial victory is short-lived as armed colonial infantry retakes the shoreline with rifle volleys.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Lion of Mandalay (Historical)",
+      "story": "Tilak's six-year exile in Burma and the heavy suppression of the Extremists temporarily dampens the active agitation. However, the Swadeshi Movement proves to be the true nursery of modern mass politics, sparking the revival of indigenous industries and paving the way for the Home Rule Movement and Mahatma Gandhi's non-cooperation campaigns."
+    },
+    "ending_2": {
+      "title": "The Paris-London Nexus",
+      "story": "Driven into overseas exile, Indian nationalists establish powerful revolutionary hubs in London, Paris, and Berlin. They smuggle modern Mauser pistols, chemistry manuals, and anti-colonial journals into Indian ports, internationalizing the freedom struggle decades ahead of World War I."
+    },
+    "ending_3": {
+      "title": "The Early Reunification",
+      "story": "A unified Indian National Congress forces the British Crown to abandon the partition of Bengal two years early. Reunited without communal concessions, Bengal reasserts itself as an undivided political power, establishing the Congress as an unassailable negotiating authority."
+    },
+    "ending_4": {
+      "title": "The Poisoned Reform",
+      "story": "Accepting the Morley-Minto framework while continuing the boycott blunts the movement's revolutionary edge. Though middle-class politicians win council seats, separate electorates divide the anti-colonial struggle along communal lines, frustrating the original goal of national unity."
+    },
+    "ending_5": {
+      "title": "The Merchant Capitulation",
+      "story": "The pan-Indian transport strike inflicts crippling losses on British commercial cartels. British manufacturers in Manchester lobby Parliament to end discriminatory import duties, sparking a surge of autonomous Indian capital and early industrial development."
+    },
+    "ending_6": {
+      "title": "The Divided Ports",
+      "story": "Targeting only British freighters gives foreign European companies an open door into Indian trade. While British revenues drop, foreign monopolies take their place, blunting the overall national objective of complete self-reliance (Atmasakti)."
+    },
+    "ending_7": {
+      "title": "The Swadeshi Industrial Renaissance",
+      "story": "The formal standardization of indigenous products sparks an industrial boom. The Tata Iron and Steel Company, indigenous banks, insurance houses, and textile mills establish permanent financial autonomy, ensuring the freedom struggle is backed by Indian capital."
+    },
+    "ending_8": {
+      "title": "The Academic Martyrs",
+      "story": "The brutal expulsion of thousands of students under the Carlyle Circular deprives an entire generation of degrees. These youth become lifelong, full-time political organizers, forming the vanguard of future peasant and worker movements across the subcontinent."
+    },
+    "ending_9": {
+      "title": "The Sage of Pondicherry (Historical)",
+      "story": "Aurobindo Ghose's dramatic acquittal by C. R. Das becomes a legal legend. Transformed by his spiritual experiences inside Alipore Jail, Aurobindo retreats to French Pondicherry, leaving behind an enduring legacy of spiritual nationalism that inspires the struggle from afar."
+    },
+    "ending_10": {
+      "title": "The Martyrdom of the Youth",
+      "story": "Mass executions following the Alipore confessions provoke widespread grief and outrage. The martyrs' names become household ballads, inspiring countless young men and women to join secret revolutionary societies like the Hindustan Republican Association."
+    },
+    "ending_11": {
+      "title": "The Garrison Province",
+      "story": "The attack on the Lieutenant-Governor prompts an iron-fisted military regime in Bengal. Checkpoints, curfews, and arbitrary arrests turn the province into a heavily policed zone, driving active resistance into deep underground exile networks."
+    },
+    "ending_12": {
+      "title": "The Hidden Arsenal",
+      "story": "Preserving the secret munitions enables underground societies to build an undetected, well-armed network. When the First World War breaks out, these hidden stockpiles provide the backbone for the planned Ghadar-backed mutinies across eastern India."
+    },
+    "ending_13": {
+      "title": "The Crushed Republic",
+      "story": "The Barisal autonomy experiment is drowned in police batons and military raids. While the physical institutions are destroyed, the memory of an independent, self-governing district serves as a working blueprint for future non-cooperation movements."
+    },
+    "ending_14": {
+      "title": "The Parallel Commonwealth",
+      "story": "Replicating autonomous samitis hollows out British judicial administration in Bengal. With disputes settled by local elders and grain secured in community banks, villagers demonstrate that Indian society can govern itself entirely without colonial bureaucracy."
+    },
+    "ending_15": {
+      "title": "The Conscience of the Empire",
+      "story": "Unarmed defiance on the beaches draws worldwide attention to colonial brutality over basic human necessities. Pressure from reformist factions in Britain forces the Viceroy to repeal emergency ordinances and restore public assembly rights."
+    },
+    "ending_16": {
+      "title": "The Armed Seaboard",
+      "story": "Violent clashes along the coast provide the colonial administration an excuse to deploy regular infantry. The resulting crackdowns scatter the local population, demonstrating the limitations of localized armed clashes against the industrial firepower of the Raj."
+    }
+  }
+}

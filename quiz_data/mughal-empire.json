@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Babur. You have 12,000 men. Ibrahim Lodi charges at you with 100,000 soldiers and 1,000 war elephants. What strategy do you choose?",
+      "options": {
+        "A": {
+          "text": "Chain 700 carts with cannons and send cavalry around their flanks.",
+          "consequence": "The roar of cannons terrifies their elephants—they turn and trample Lodi's own army. Delhi is yours!",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Dig trenches along the river and wait for his army to run out of food.",
+          "consequence": "Summer fever hits your camp first. You lose half your army and flee north. Lodi's army is still intact and you are defeated.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "You hold Agra, but Rana Sanga marches toward you with 80,000 Rajput warriors. Your men want to retreat to Kabul.",
+      "options": {
+        "A": {
+          "text": "Smash your gold wine cups, swear off alcohol forever, and rally your men for a death-match.",
+          "consequence": "Your fired-up artillery shatters Sanga’s charge at Khanwa. North India is yours.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Pack the royal treasury on camels and fall back to fortify Lahore.",
+          "consequence": "Sanga takes Delhi without a fight. You are rich, but trapped behind the Punjab border.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "You escaped Panipat with just 3,000 men. Back in Kabul, the Uzbek warlords prepare to wipe you out.",
+      "options": {
+        "A": {
+          "text": "Borrow Persian gold to buy muskets and raid into Punjab for supplies.",
+          "consequence": "You catch the Punjab governor off-guard and seize Lahore as your new base.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Abandon Hindustan forever and march northwest to reclaim your ancestral home: Samarkand.",
+          "consequence": "The surprise attack works. You reclaim the legendary Silk Road capital!",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Afghan lords assemble warboats on the Ghagra River to choke your eastern trade. What do you do?",
+      "options": {
+        "A": {
+          "text": "Put heavy cannons on wooden rafts and cross the river under smoke cover.",
+          "consequence": "You crush the Afghan fleet; Bengal submits to your rule.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Sign a peace pact granting them Bengal in exchange for annual gold.",
+          "consequence": "They use the gold to build a massive rebel army led by a genius named Sher Shah Suri.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Sanga rules Delhi, but his Rajput allies demand he push you completely out of Lahore.",
+      "options": {
+        "A": {
+          "text": "Turn Lahore into a giant artillery fortress and dare them to siege you.",
+          "consequence": "Sanga’s horses break against your stone walls; northern Punjab becomes an unbreachable wall.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Abandon Lahore city and use mountain horsemen to cut Sanga's long supply lines.",
+          "consequence": "You starve Sanga's army, but Delhi falls into pure chaos.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "You hold Lahore with your Persian guns, but Ibrahim Lodi sends 40,000 men north to finish you. What do you do?",
+      "options": {
+        "A": {
+          "text": "Lure Lodi's vanguard into a narrow river gorge and open fire with muskets.",
+          "consequence": "Lodi’s general is killed; your reputation as an invincible gun-master spreads.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Infiltrate Lodi's main encampment at midnight with 500 elite horsemen.",
+          "consequence": "You burn his powder stores, forcing his massive army into a chaotic retreat.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "You hold Samarkand, but the Uzbek khan surrounds the city with a 50,000-man cavalry horde. What do you do?",
+      "options": {
+        "A": {
+          "text": "Lock the city gates, ration the granaries, and prepare for a year-long siege.",
+          "consequence": "The Uzbeks tire of waiting and splinter into rival clans, leaving you undisputed King of the North.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Offer half your trade revenue to the Shah of Persia in exchange for 10,000 cavalry reinforcements.",
+          "consequence": "Persian troops relieve your city, but demand you convert your court to their customs.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "You rule an empire from Kabul to Bengal, but your heir Humayun is dying of an incurable fever in Agra. How do you secure the future of your dynasty?",
+      "options": {
+        "A": {
+          "text": "Walk around his bed praying that God takes your life instead of his.",
+          "consequence": "Humayun miraculously recovers as you weaken to the point of death",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Accept his death and name your ruthless, military-minded son Kamran as your successor.",
+          "consequence": "Kamran seizes power instantly, purging rivals with iron brutality.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Sher Shah Suri has mobilized the Afghan army you funded. He ambushes your forts and marches on Agra.",
+      "options": {
+        "A": {
+          "text": "Drag your aging body onto horseback and ride to meet him in a field duel.",
+          "consequence": "Your guns pierce his front lines, killing Sher Shah, but the battle drains your final breath.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Pull all garrisons behind Delhi's ancient walls for a survival siege.",
+          "consequence": "Sher Shah surrounds the city and cuts off the river water.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Rana Sanga's failed assault on Lahore forces him to ask for a permanent treaty.",
+      "options": {
+        "A": {
+          "text": "Sign a treaty recognizing him as Emperor of Delhi while you rule the Indus Valley and Kabul.",
+          "consequence": "North India permanently splits into two powerful superpower states.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Execute his envoys and launch a winter counter-offensive into Rajasthan.",
+          "consequence": "Your army gets lost in the Thar Desert sands and perishes.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Sanga retreats from your guerrilla raids, but northern India collapses into bandit states without a central king.",
+      "options": {
+        "A": {
+          "text": "Wall off the Khyber Pass and leave India to its chaos.",
+          "consequence": "Kabul flourishes as the supreme trading jewel of the mountains.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Use your swift raiders to rush down and seize an undefended Delhi.",
+          "consequence": "You claim the throne, but with no allies left to help you hold it.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Lodi is dead, but Delhi is wide open with local nobles fighting for the crown. What do you do?",
+      "options": {
+        "A": {
+          "text": "March your veteran riflemen down to take the capital once and for all.",
+          "consequence": "You finally take Delhi four years late, establishing a scarred, battle hardened dynasty.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Turn north into Kashmir and settle a peaceful mountain court instead.",
+          "consequence": "You establish a paradise kingdom away from the heat of the plains.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Lodi's army is fleeing in the dark, scattered across Punjab. You have a chance to strike at the khan's camp. What do you do?",
+      "options": {
+        "A": {
+          "text": "Send your fastest horsemen to hunt down Lodi before he reaches Delhi.",
+          "consequence": "You capture Lodi alive, forcing him to sign away the Delhi crown to you.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Stop to loot Lodi's abandoned gold trains and supply depots.",
+          "consequence": "Your soldiers mutiny over the stolen gold and abandon you.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The Uzbeks are broken; you hold Samarkand, the jewel of Asia. But the Shah of Persia demands you pay tribute for your trade routes. What do you do?",
+      "options": {
+        "A": {
+          "text": "Stop fighting and spend your remaining years building gardens, mosques, and poetry libraries.",
+          "consequence": "You control the greatest trade artery on earth, rivaling the Ming Empire.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Offer the remaining Uzbek generals a share of your trade revenue in exchange for their loyalty.",
+          "consequence": "Samarkand enters an unmatched golden age of art and literature.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Persian troops have saved you, but their Shah demands your complete submission as a royal vassal. What do you do?",
+      "options": {
+        "A": {
+          "text": "Bow to the Shah to preserve your throne and lineage in Samarkand.",
+          "consequence": "You survive as an autonomous province of the Persian Empire.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Poison the Persian commanders during a feast and seize their horses.",
+          "consequence": "The Shah sends an unstoppable imperial army that levels Samarkand to ash.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Historical Dawn",
+      "story": "You close your eyes peacefully in Agra, having given your life for your son. Humayun survives to inherit a vast, united realm, paving the way for your grandson Akbar to build one of the wealthiest empires in human history."
+    },
+    "ending_2": {
+      "title": "The Iron Sultanate",
+      "story": "Kamran Mirza ascends the throne with merciless brutality. Without diplomacy, violent succession wars erupt among your sons, fracturing northern India and leaving it defenseless against early foreign exploiters."
+    },
+    "ending_3": {
+      "title": "Lion's Duel",
+      "story": "You ride out in agony and defeat Sher Shah Suri in a brutal duel of artillery. Though the strain costs you your final breath on the battlefield, the Afghan rebellion dies with him, cementing Timurid rule uninterrupted."
+    },
+    "ending_4": {
+      "title": "The Fall of Delhi",
+      "story": "Sher Shah dams the river and starves your forces inside Delhi's ancient red sandstone walls. Your starving garrison surrenders, and your descendants are driven permanently back beyond the Indus River."
+    },
+    "ending_5": {
+      "title": "The Dual Empires",
+      "story": "The partition treaty holds for generations. India develops as two balanced superpowers: a flourishing Hindu Rajput federation in the south and your fortified Islamic gunpowder kingdom commanding the Indus trade routes."
+    },
+    "ending_6": {
+      "title": "The Desert Mirage",
+      "story": "Blinded by wrath, you lead your regiments into the scorched wastes of the Thar Desert. Water skins burst, dust storms swallow the supply trains, and your once-feared army vanishes into the shifting sands."
+    },
+    "ending_7": {
+      "title": "The Mountain Kingdom",
+      "story": "You seal the Khyber Pass and leave the chaotic plains of India to their fate. Kabul transforms into the premier citadel and trading jewel of Central Asia, untouched by external wars."
+    },
+    "ending_8": {
+      "title": "The Hollow Crown",
+      "story": "You seize an empty throne in Delhi without reliable allies to hold it. Within weeks of your coronation, court assassins strike in the shadows, bringing an abrupt and bloody end to your bloodline's reign."
+    },
+    "ending_9": {
+      "title": "The Late Conquest",
+      "story": "Four years behind schedule, your battle-hardened veterans storm the gates of Delhi. It was a longer and bloodier road, but your battle-tested cannons secure the foundations of the Mughal Empire."
+    },
+    "ending_10": {
+      "title": "The Valley Paradise",
+      "story": "Abandoning the sweltering plains, you lead your clan north into Kashmir. There you build terraced marble gardens and orchards, reigning over a peaceful mountain sanctuary for the rest of your days."
+    },
+    "ending_11": {
+      "title": "The Bloodless Dynasty",
+      "story": "Your cavalry captures Ibrahim Lodi on the run. Faced with defeat, he signs a formal abdication treaty, granting you undisputed legal right to the throne of Hindustan without another drop of blood spilled."
+    },
+    "ending_12": {
+      "title": "Greed's End",
+      "story": "While your soldiers butcher one another over Lodi's abandoned chests of jewels and gold, regional warlords regroup and counterattack. Your fractured army scatters to the wind, leaving you with nothing."
+    },
+    "ending_13": {
+      "title": "The Poet King",
+      "story": "You turn away from conquest and spend your golden years in Samarkand completing the Baburnama. The turquoise domes, lush charbagh gardens, and grand libraries you build inspire the entire Islamic world for centuries."
+    },
+    "ending_14": {
+      "title": "The Silk Confederacy",
+      "story": "By granting the Uzbek generals a share of your trade revenue, you forge an unbreakable northern coalition. Samarkand commands the Silk Road, extracting vast wealth from European and Ming merchants alike."
+    },
+    "ending_15": {
+      "title": "The Persian Vassal",
+      "story": "You bend the knee to the Shah, securing Samarkand under Persian imperial protection. Your family thrives as elite governors and patrons of the arts, trading absolute sovereignty for permanent security."
+    },
+    "ending_16": {
+      "title": "Ashes of Samarkand",
+      "story": "Your feast betrayal enrages the Shah of Persia, who unleashes the full might of his imperial host against you. Samarkand is reduced to smoking rubble, extinguishing your dynasty in fire and retribution."
+    }
+  }
+}

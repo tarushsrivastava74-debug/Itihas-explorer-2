@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Lord Louis Mountbatten, arriving as the last Viceroy in March 1947 with an imperial mandate to transfer power. Communal violence has erupted following Direct Action Day, the Interim Government under Jawaharlal Nehru and Liaquat Ali Khan is locked in paralysis, and British administrative control is rapidly unravelling across Punjab and Bengal.",
+      "options": {
+        "A": {
+          "text": "The June 3rd Partition Plan (Historical): Accelerate the British departure by ten months to August 15, 1947, conceding the creation of Pakistan while dividing Punjab and Bengal along religious majorities.",
+          "consequence": "Both the Indian National Congress and the Muslim League accept the plan, but the rushed ten-week timeline leaves provincial administrations completely unprepared for boundary demarcations and refugee flows.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The Cabinet Mission Federation (Alternate): Reject territorial partition; insist on enforcing the three-tiered federation with a weak center and autonomous provincial groupings.",
+          "consequence": "The Muslim League rejects the compromise as insufficient, while communal militias mobilize across northern cities, bringing civil administration to the brink of collapse.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Sir Cyril Radcliffe arrives in India to draw the boundary lines for Punjab and Bengal in just five weeks, using outdated census maps without visiting the borderlands.",
+      "options": {
+        "A": {
+          "text": "Withhold the Radcliffe Award until Independence (Historical): Keep the border award sealed until August 17, 1947, to ensure the British military avoids accountability for immediate communal outbreaks during independence ceremonies.",
+          "consequence": "Millions of citizens celebrate independence without knowing which country they belong to; sudden border announcements spark mass panic, ethnic expulsions, and catastrophic refugee columns.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Publish the Borders Weeks in Advance (Alternate): Release the proposed boundary maps immediately in July 1947, deploying joint military cordons along disputed districts to escort cross-border migrations.",
+          "consequence": "Advance notice allows thousands of families to relocate with police protection, though fierce political protests break out over contested canal colonies.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Without a partition agreement, communal riots spread into the countryside, and British troops prepare for an orderly unilateral evacuation to coastal ports.",
+      "options": {
+        "A": {
+          "text": "Form an All-Party Emergency Council (Alternate): Hand complete martial authority to a joint council of Congress and League leaders, backed by the veteran Indian Army under Indian generals.",
+          "consequence": "Indian military discipline restrains localized violence, but political leaders deadlock over the permanent distribution of army units and revenue.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Balkanization into Sovereign Provinces (Plan Balkan) (Alternate): Offer complete sovereign independence to each individual province and princely state, letting them negotiate separate regional pacts.",
+          "consequence": "Bengal and Hyderabad declare their desire for full sovereign statehood, threatening to splinter the subcontinent into dozens of independent countries.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Over 565 princely states must decide their accession before the British paramountcy lapses. Sardar Vallabhbhai Patel and V. P. Menon begin rapid diplomatic negotiations.",
+      "options": {
+        "A": {
+          "text": "The Instrument of Accession Drive (Historical): Use diplomatic persuasion, Privy Purses, and firm pressure to integrate states on defense, foreign affairs, and communications, keeping Junagadh, Hyderabad, and Kashmir under special scrutiny.",
+          "consequence": "Over 500 rulers sign before August 15, creating a unified geographical core for the newly independent Union of India.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Grant Total Sovereign Choice (Alternate): Allow princely rulers complete freedom to declare sovereign independence or join international alliances without diplomatic coercion.",
+          "consequence": "Rulers of Travancore, Bhopal, and Hyderabad hire foreign legal advisers and attempt to establish sovereign diplomatic ties with world powers.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Planned border corridors enable orderly population exchanges, but the question of dividing shared national assets and the central treasury threatens diplomatic relations.",
+      "options": {
+        "A": {
+          "text": "Strict Proportional Division of Assets (Historical Compromise): Divide all military hardware, currency reserves, railway rolling stock, and library books on an agreed 80:20 ratio.",
+          "consequence": "Both nations secure basic working machinery, but military splitting leaves newly created defense commands short of specialized equipment.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Hold Shared Assets in Joint Trust (Alternate): Keep the central bank, currency reserves, and telecommunication networks under a shared five-year transitional commission.",
+          "consequence": "Economic volatility is contained, though political disputes repeatedly stall monetary decisions and fiscal policy.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "The joint emergency military council restores civil peace, but regional factionalism deepens within the civil service.",
+      "options": {
+        "A": {
+          "text": "Convene a Fresh Constituent Assembly (Alternate): Dissolve old assemblies and hold direct elections for a constituent convention to draft a dual-state confederation.",
+          "consequence": "A complex federal compact is drafted, giving broad autonomy to regional zones while preserving a shared central defense council.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Establish a Military Custodian Regime (Alternate): Keep the veteran Indian Army in temporary executive command until economic normalcy and constitutional consensus are restored.",
+          "consequence": "Order is maintained across the subcontinent, but civilian political institutions lose public initiative and democratic legitimacy.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Faced with fragmented provinces, regional leaders attempt to forge sovereign statehoods across the subcontinent.",
+      "options": {
+        "A": {
+          "text": "The United Sovereign Bengal Proposal (Alternate): Support the joint initiative of H. S. Suhrawardy and Sarat Chandra Bose to create an independent, unified Bengal outside both India and Pakistan.",
+          "consequence": "A sovereign Bengali state emerges, preserving the linguistic unity of the delta while drastically reshaping subcontinent geopolitics.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Enforce Swift Congress-Led Reunification (Alternate): Launch an assertive nationwide political campaign to mobilize public referendums in splintering provinces to join the Indian Union.",
+          "consequence": "Popular sentiment overturns local elite secession plans, reuniting most contiguous provinces under a strong central republic.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "In October 1947, tribal raiders backed by Pakistani forces invade the Princely State of Jammu and Kashmir. Maharaja Hari Singh appeals to New Delhi for urgent military assistance.",
+      "options": {
+        "A": {
+          "text": "Airlift Troops Following Accession (Historical): Secure the signed Instrument of Accession, airlift Indian army battalions into Srinagar airport, and halt the raiders outside the valley.",
+          "consequence": "Indian forces save Srinagar and push the raiders back, establishing a contested ceasefire line across the mountains and prompting referral to the United Nations.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Immediate Tripartite Summit (Alternate): Delay the troop airlift to convene an immediate emergency summit in Lahore with Muhammad Ali Jinnah to negotiate a joint demilitarization pact.",
+          "consequence": "Tribal raiders seize Srinagar before diplomats finish discussions, triggering an intense mountain war without an agreed political framework.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "The Nizam of Hyderabad refuses to accede, declaring independent sovereignty while the Razakar militia under Kasim Razvi terrorizes local populations.",
+      "options": {
+        "A": {
+          "text": "Operation Polo (Historical Action): Launch a swift five-day police action led by the Indian Army to dismantle the Razakar militia and integrate Hyderabad into the Indian Union.",
+          "consequence": "The state capitulates quickly, securing the territorial integrity of central India and ending autocratic feudal rule across the Deccan.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Extend the Standstill Agreement (Alternate): Avoid armed intervention; maintain economic sanctions and blockade rail transit until Hyderabad's leadership yields peacefully.",
+          "consequence": "The Nizam attempts to airlift arms from foreign suppliers, turning the landlocked state into a hostile enclave in the heart of the peninsula.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Displaced refugee populations flood into Delhi, Punjab, and Bengal, overwhelming civic infrastructure and municipal resources.",
+      "options": {
+        "A": {
+          "text": "National Rehabilitation & Colony Construction (Historical Action): Mobilize state resources to build new townships (like Faridabad and Nilokheri), distribute evacuee property, and extend agricultural loans.",
+          "consequence": "Millions of displaced families successfully rebuild their lives, becoming key contributors to urban industrial growth across post-independence India.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Decentralized Village Resettlement (Alternate): Disperse refugees directly into interior agricultural districts without establishing dedicated suburban rehabilitation colonies.",
+          "consequence": "Refugees face prolonged economic displacement, slowing down northern India's industrial recovery.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Joint monetary management stumbles as border tensions flare, leading to disputes over releasing the central cash balances.",
+      "options": {
+        "A": {
+          "text": "Release Cash Balances on Moral Grounds (Historical Action): Follow Mahatma Gandhi's moral appeal to release 55 crore rupees to Pakistan despite military conflict in Kashmir.",
+          "consequence": "The gesture upholds international treaty commitments, but deepens communal and political fury among hardliners in the capital.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Freeze Central Reserves as War Collateral (Alternate): Withhold all financial transfers until all irregular forces withdraw entirely from the Kashmir valley.",
+          "consequence": "Bilateral relations collapse completely, triggering an early trade embargo that severs economic ties between the newly formed nations.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The confederation pact functions with autonomous regional tiers, but foreign powers attempt to exploit the decentralized center.",
+      "options": {
+        "A": {
+          "text": "Establish a Strict Non-Aligned Foreign Policy (Alternate): Enact constitutional guarantees keeping the entire confederation strictly out of Cold War power blocs.",
+          "consequence": "The subcontinent stays clear of foreign proxy conflicts, fostering regional trade corridors and shared water treaties.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Allow Regional Foreign Trade Treaties (Alternate): Permit autonomous zones to sign bilateral economic and defense pacts with Western and Soviet blocs independently.",
+          "consequence": "Competing superpower rivalries pit neighboring provinces against one another, undermining long-term regional stability.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "A military transitional council stabilizes civic life, but civilian political leaders demand an immediate return to democratic governance.",
+      "options": {
+        "A": {
+          "text": "Conduct Immediate General Elections (Alternate): Step down completely and oversee universal adult franchise elections for a sovereign constituent parliament.",
+          "consequence": "Democratic self-determination is established, creating a resilient constitutional republic rooted in popular representation.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Retain Executive Prerogatives (Alternate): Maintain a guided civilian-military coalition to supervise state governance and industrialization.",
+          "consequence": "State institutions become heavily centralized, setting a precedent that weakens grassroots democratic movements.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The sovereign United Bengal government navigates internal communal power balances and industrial development.",
+      "options": {
+        "A": {
+          "text": "Create a Equal-Power Joint Executive (Alternate): Build a permanent coalition cabinet alternating leadership between Hindu and Muslim representatives.",
+          "consequence": "United Bengal emerges as an economic powerhouse in the Bay of Bengal, combining Calcutta's industry with eastern agricultural wealth.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Align Economically with the Indian Union (Alternate): Form a comprehensive customs and currency union with the Indian republic.",
+          "consequence": "Free movement of jute, tea, and machinery preserves regional prosperity, turning Bengal into an indispensable trade hub.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The reunited national republic confronts the monumental task of framing a comprehensive constitution for a diverse populace.",
+      "options": {
+        "A": {
+          "text": "Enact the Democratic Republic Constitution (Historical Model): Adopt Dr. B. R. Ambedkar's draft enshrining universal adult franchise, fundamental rights, and the abolition of untouchability.",
+          "consequence": "India establishes the world's largest constitutional democracy, creating an enduring framework for social reform and secular governance.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Adopt a Unitary Centralized State (Alternate): Dissolve provincial boundaries entirely to enforce complete administrative uniformity from the national capital.",
+          "consequence": "Linguistic and cultural unrest erupts across southern and northeastern provinces, forcing the central government into administrative retreats.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Contested Frontier (Historical)",
+      "story": "The airlift saves Srinagar and secures the core of Jammu and Kashmir for the Union of India, but the war ends in a stalemate that formalizes the Line of Control. The territory remains a geopolitical flashpoint for decades, shaping the defense policies and nuclear postures of both South Asian nations."
+    },
+    "ending_2": {
+      "title": "The Valley Lost",
+      "story": "Hesitation in New Delhi allows irregular raiders to seize the Kashmir Valley before regular forces can land. The loss triggers political shockwaves across the capital, creating deep bitterness and establishing a heavily militarized boundary along the Pir Panjal mountains."
+    },
+    "ending_3": {
+      "title": "The Unified Deccan (Historical)",
+      "story": "Operation Polo swiftly integrates Hyderabad into the Union, ending centuries of Asaf Jahi rule and dismantling the Razakar forces. Sardar Patel's decisive action eliminates the threat of a hostile state in the heart of the country, cementing the geographical integrity of independent India."
+    },
+    "ending_4": {
+      "title": "The Besieged Enclave",
+      "story": "Avoiding military intervention turns Hyderabad into a fortified, hostile enclave in central India. Smuggled arms shipments and recurring border skirmishes drain national resources, keeping the Deccan under permanent military tension until internal revolts collapse the regime years later."
+    },
+    "ending_5": {
+      "title": "The Resilient Republic (Historical)",
+      "story": "The rapid rehabilitation and resettlement of millions of partition refugees becomes one of history's greatest feats of post-war recovery. Towns like Faridabad and dynamic new neighborhoods in Delhi emerge as centers of enterprise, driving the industrial and economic rise of northern India."
+    },
+    "ending_6": {
+      "title": "The Dispersed Generations",
+      "story": "Failing to build planned urban industrial townships leaves refugee communities scattered and impoverished across rural provinces. The economic shock slows the development of northern markets, delaying the expansion of post-independence urban commerce."
+    },
+    "ending_7": {
+      "title": "The Price of Principle (Historical)",
+      "story": "Releasing the 55 crore cash balance fulfills international treaty commitments and highlights Gandhi's unyielding moral authority. However, the decision sparks extreme communal resentment in Delhi, setting the tragic stage for the Mahatma's assassination in January 1948."
+    },
+    "ending_8": {
+      "title": "The Total Economic Rupture",
+      "story": "Freezing Pakistan's financial reserves triggers an immediate retaliatory trade embargo. The abrupt severance of historical supply chains in raw cotton, jute, and coal forces both nations to scramble for expensive global alternatives, permanently scarring subcontinent commerce."
+    },
+    "ending_9": {
+      "title": "The Sovereign Confederation",
+      "story": "A decentralized confederation spares the subcontinent from the horrors of partition and border bloodshed. While decision-making in the central council is slow and cautious, regional autonomy enables peaceful economic development and cooperative water-sharing."
+    },
+    "ending_10": {
+      "title": "The Cold War Crucible",
+      "story": "Allowing autonomous provinces to negotiate foreign alliances invites superpower rivalries directly into South Asian affairs. Competing foreign military bases undermine common defense, entangling the subcontinent in expensive regional proxy standoffs."
+    },
+    "ending_11": {
+      "title": "The Sovereign Ballot",
+      "story": "Surrendering emergency military authority to a freely elected parliament establishes the supremacy of civilian democracy. The new republic builds strong parliamentary checks and balances, earning global admiration as a self-governing constitutional model."
+    },
+    "ending_12": {
+      "title": "The Guided State",
+      "story": "Retaining military prerogatives in central governance produces an efficient but autocratic state machinery. Civic freedoms are subordinated to industrial quotas, eroding the democratic spirit and provoking widespread student and labor protests."
+    },
+    "ending_13": {
+      "title": "The Golden Delta",
+      "story": "The United Sovereign Bengal state preserves the cultural and linguistic unity of its people, avoiding the human misery of the eastern partition. The thriving port of Calcutta powers the agricultural interior, establishing a prosperous independent maritime democracy."
+    },
+    "ending_14": {
+      "title": "The Eastern Crossroads",
+      "story": "A customs union between United Bengal and India creates an uninterrupted industrial zone from the Gangetic plains to the sea. The seamless flow of raw materials fuels rapid industrial growth, turning the eastern seaboard into a global manufacturing center."
+    },
+    "ending_15": {
+      "title": "The Sovereign Republic (Historical)",
+      "story": "The enactment of the Constitution on January 26, 1950, establishes the sovereign, democratic Republic of India. Enshrining fundamental equality and adult franchise across a diverse populace, it stands as an enduring monument to democratic resilience and social justice."
+    },
+    "ending_16": {
+      "title": "The Fractured Center",
+      "story": "Attempting to enforce absolute administrative uniformity from the capital sparks massive linguistic protests across the south and east. The central government is forced to concede wide-ranging provincial powers, leaving the state apparatus politically exhausted."
+    }
+  }
+}

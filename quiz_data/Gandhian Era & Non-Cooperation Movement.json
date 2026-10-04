@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Mohandas Karamchand Gandhi, having recently led successful regional satyagrahas in Champaran, Kheda, and Ahmedabad. The imperial government passes the repressive Rowlatt Act, permitting detention without trial. In April 1919, General Reginald Dyer orders troops to fire on an unarmed peaceful gathering trapped inside Jallianwala Bagh in Amritsar, slaughtering hundreds. Simultaneously, Indian Muslims are enraged by the post-war dismemberment of the Ottoman Caliphate (the Khilafat issue).",
+      "options": {
+        "A": {
+          "text": "The Non-Cooperation & Khilafat Alliance (Historical): Merge the national struggle with the Khilafat cause, calling for a nationwide, non-violent Non-Cooperation Movement based on surrendering imperial titles, boycotting government schools, law courts, and foreign cloth.",
+          "consequence": "Millions of Hindus and Muslims unite under a single political banner; lawyers vacate colonial courts, students abandon state colleges, and massive bonfires of foreign textiles illuminate the streets.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Constitutional Non-Compliance (Alternate): Reject the religious fusion with Khilafat; confine the movement strictly to a civil petition campaign challenging the Rowlatt Act inside imperial legislative councils.",
+          "consequence": "The British easily manage council debates while mass outrage spills into uncoordinated, localized riots that colonial authorities crush with martial law.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "At the Nagpur session of the Indian National Congress in December 1920, you reorganize the party into a mass movement with a 15-member working committee and reach into distant villages. The Prince of Wales arrives in India to an eerie silence of deserted streets.",
+      "options": {
+        "A": {
+          "text": "Constructive Program & Charkha Drive (Historical): Promote national schools (Kashi Vidyapith, Jamia Millia Islamia), universal spinning with the charkha, khadi production, and the eradication of untouchability while enforcing strict non-violence.",
+          "consequence": "The nationalist movement achieves moral discipline and self-sufficiency; spinning wheels hum across millions of peasant huts, reducing Manchester imports by half.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Immediate Civil Disobedience Escalation (Alternate): Call for an immediate nationwide non-payment of land revenue, an open boycott of the police, and a total strike of all railway workers.",
+          "consequence": "British revenue dries up overnight, but widespread clashes erupt between rural peasants and armed police across the Gangetic plain.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Without unified national leadership, regional movements break out along local grievances, while Khilafat volunteers prepare for unilateral direct action.",
+      "options": {
+        "A": {
+          "text": "Regional Peasant Mobilization (Alternate): Align with agrarian leaders like Baba Ramchandra in Awadh to organize peasant kisan sabhas against exploitative taluqdars.",
+          "consequence": "Peasant rallies shake rural Awadh, challenging landlord rule and colonial tax collection in eastern Uttar Pradesh.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Legislative Council Boycott Only (Alternate): Instruct political elites to boycott the upcoming elections under the Montagu-Chelmsford Reforms without mobilizing the rural masses.",
+          "consequence": "Moderate loyalist parties contest uncontested seats, while millions of common citizens remain politically unrepresented.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Over 30,000 national leaders and satyagrahis, including Jawaharlal Nehru and C. R. Das, are arrested. The movement enters a decisive phase as you prepare to launch mass tax refusal from Bardoli in Gujarat.",
+      "options": {
+        "A": {
+          "text": "Bardoli Ultimatum to the Viceroy (Historical): Send a formal letter to Viceroy Lord Reading demanding the release of political prisoners and restoration of press freedoms within seven days, or face total civil disobedience.",
+          "consequence": "The British administration braces for a catastrophic breakdown of governance as the seven-day countdown begins.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Preemptive General Strike Call (Alternate): Coordinate with dockers, postmen, and mill workers across Bombay and Calcutta to launch an indefinite general strike before the Bardoli deadline expires.",
+          "consequence": "Imperial shipping and telegraph networks shut down, leaving the British Viceroy cut off from provincial governors.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "As tax defiance sweeps the countryside, tribal communities in the Madras Presidency rise against draconian colonial forest laws under the leadership of Alluri Sitarama Raju.",
+      "options": {
+        "A": {
+          "text": "The Manyam Guerilla Warfare (Alternate): Support tribal guerrilla tactics using traditional bows, arrows, and captured police rifles to liberate the Rampa forest belt.",
+          "consequence": "British police patrols are repeatedly ambushed in the hills, tying down several battalions of the Assam Rifles.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Enforce Strict Ahimsa on Tribal Cadres (Alternate): Send emissaries into the hills insisting on peaceful tree-hugging and non-violent picketing of forest offices instead of ambushes.",
+          "consequence": "Tribal leaders feel abandoned by urban congressmen, weakening the coordination between forest satyagrahis and the national front.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "The peasant revolt in Awadh expands under Madari Pasi through the Eka (Unity) Movement, demanding fixed rents, no forced labor (begar), and refusal to pay unauthorized exactions.",
+      "options": {
+        "A": {
+          "text": "Integrate Eka with Congress (Alternate): Fully endorse the Eka Movement's radical agrarian demands, merging peasant agitation with the national political struggle.",
+          "consequence": "The feudal landlord class panics and surrenders arbitrary rent collection, turning millions of tenants into disciplined nationalist cadres.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Condemn Landlord Boycotts (Alternate): Insist that tenants maintain cordial ties with zamindars to prevent class conflict from destabilizing national unity.",
+          "consequence": "Disillusioned tenant farmers turn away from the political leadership, fracturing the rural front into spontaneous, splintered revolts.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "In Punjab, the Gurdwara Reform Movement erupts as Sikh reformers (Akalis) launch non-violent satyagraha to liberate historic gurdwaras from corrupt, British-backed mahants.",
+      "options": {
+        "A": {
+          "text": "Endorse the Guru Ka Bagh Satyagraha (Alternate): Send Congress observers to witness and endorse the unarmed Akalis absorbing brutal police lathi blows without retaliation.",
+          "consequence": "The heroic discipline of the Akalis wins widespread national admiration, forcing the Punjab government to concede control of the shrines to the SGPC.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Keep Punjab Strictly Regional (Alternate): Discourage national entanglement in religious shrine management, keeping the Punjab satyagraha isolated from the broader nationalist cause.",
+          "consequence": "The British exploit the regional isolation to divide Punjabi political opinion, blunting the national anti-colonial momentum in the north.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "On February 4, 1922, an angry mob of peasants and volunteers, provoked by police firing on peaceful picketers, locks the police post at Chauri Chaura in Gorakhpur and sets it on fire, killing 22 policemen.",
+      "options": {
+        "A": {
+          "text": "Immediate Unconditional Withdrawal (Historical): Declare that India is not yet spiritually ready for mass non-violent struggle; withdraw the entire national Non-Cooperation Movement at the Bardoli Working Committee.",
+          "consequence": "The nationwide campaign halts abruptly; senior leaders like Subhas Chandra Bose and C. R. Das express deep despair, and the British seize the opportunity to arrest and sentence you to six years in prison.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Continue the Bardoli Civil Disobedience (Alternate): Condemn the violence at Chauri Chaura as an isolated tragedy, fast for penance, but refuse to call off the nationwide no-tax campaign.",
+          "consequence": "Peasant tax strikes expand across Gujarat and Uttar Pradesh, placing the imperial administration under unprecedented operational strain.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "The indefinite general strike paralyses major industrial and commercial ports across British India.",
+      "options": {
+        "A": {
+          "text": "Demand Immediate Dominion Status (Alternate): Leverage the economic standstill to demand immediate self-governing Dominion Status and release of all political prisoners.",
+          "consequence": "Facing severe mercantile panic in London, the British Cabinet agrees to open round-table negotiations with Congress representatives.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Maintain Indefinite Strike Action (Alternate): Reject negotiations; keep the industrial blockade in place until all British armed garrisons evacuate India entirely.",
+          "consequence": "Shortages of food and fuel grip urban centers, turning middle-class urban opinion against the indefinite strike.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Alluri Sitarama Raju's guerrilla squads hold off colonial forces across the Godavari agency tracts.",
+      "options": {
+        "A": {
+          "text": "Extend the Hill Front to Bastar (Alternate): Link the Rampa rebellion with tribal clans across the Central Provinces to build an impenetrable forest sanctuary.",
+          "consequence": "The central plateau transforms into an ungovernable guerrilla zone that imperial forces struggle to penetrate.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Negotiate Regional Forest Autonomy (Alternate): Offer a ceasefire to the Madras Governor in exchange for the total repeal of the 1882 Madras Forest Act.",
+          "consequence": "The colonial administration signs a historic regional charter granting traditional forest rights, averting further bloodshed.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Deprived of tribal alliances, the movement focuses strictly on picketing foreign liquor and cloth warehouses along the Coromandel coast.",
+      "options": {
+        "A": {
+          "text": "Organize Women's Picketing Brigades (Alternate): Mobilize thousands of women satyagrahis to blockade the entrances of foreign liquor shops and cloth bazaars.",
+          "consequence": "Excise revenues for the British administration drop by 80%, transforming picketing into an unassailable moral victory.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Boycott of Government Courts (Alternate): Direct all prominent pleaders and barristers to resign permanently from imperial judicial service.",
+          "consequence": "Elite lawyers withdraw, but lower magistrate courts continue functioning with junior loyalist clerks.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The fusion of the Eka Movement with Congress creates an unshakeable rural front across the United Provinces.",
+      "options": {
+        "A": {
+          "text": "Establish Parallel Kisan Courts (Alternate): Set up community panchayats to resolve all tenancy disputes and land boundaries without paying court fees.",
+          "consequence": "The British revenue collectorate is marginalized, and self-governing village republics take practical shape.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "March on the Governor's Mansion in Lucknow (Alternate): Lead 100,000 unarmed peasants to encircle the provincial seat of government demanding tenancy legislation.",
+          "consequence": "The sheer scale of the peaceful gathering forces the provincial council to enact the historic Oudh Rent Act with tenant security clauses.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Without central guidance, agrarian anger boils over into scattered riots and landlord estate lootings.",
+      "options": {
+        "A": {
+          "text": "Form Rural Peace Brigades (Alternate): Dispatch dedicated volunteers to mediate between tenants and landlords to restore local calm.",
+          "consequence": "Local stability is restored, but the political energy of the peasant surge dissipates into minor administrative compromises.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Stand Aside for Natural Resolution (Alternate): Allow the peasant unrest to run its course without formal Congress intervention.",
+          "consequence": "Landlords hire armed retainers to crush the uncoordinated peasant cells, silencing rural dissent for a decade.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The Punjab administration surrenders the keys of the Toshakhana of the Golden Temple to the Akali leadership, handing them a decisive non-violent victory.",
+      "options": {
+        "A": {
+          "text": "Proclaim the First Decisive Freedom (Alternate): Celebrate the Akali victory as the first triumph of India's non-violent freedom struggle and call for a joint national campaign.",
+          "consequence": "The alliance between Sikh reformers and Congress solidifies, forging an ironclad nationalist base across the Punjab.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Restrict the Victory to Temple Affairs (Alternate): Keep the SGPC focused strictly on shrine administration, preventing its merger into political movements.",
+          "consequence": "The gurdwaras are liberated and reformed, but the political weight of the Akali cadre remains isolated from national campaigns.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "British forces deploy mounted police to disperse Sikh satyagrahis outside Guru Ka Bagh.",
+      "options": {
+        "A": {
+          "text": "Unarmed March Across the Barricades (Alternate): Instruct volunteer jathas to walk continuously into police cordons, absorbing baton strikes without raising a hand.",
+          "consequence": "The sight of peaceful veterans being struck down sparks outrage among Indian soldiers in the British Indian Army.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Withdraw from the Shrines Temporarily (Alternate): Call off the jathas to avoid further physical injury to the volunteers.",
+          "consequence": "The British maintain custody of the shrines, leaving the reform movement demoralized and scattered.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Long Retreat & Awakening (Historical)",
+      "story": "The sudden withdrawal of Non-Cooperation following Chauri Chaura leaves the country stunned and disheartened. While critics question your decision, the movement permanently transforms the Indian National Congress from an elite debating club into a genuine mass phenomenon. Your subsequent six-year prison term provides time for deep reflection, setting the stage for the Swaraj Party's legislative challenges and the eventual rise of the historic Salt Satyagraha of 1930."
+    },
+    "ending_2": {
+      "title": "The Fire of Bardoli",
+      "story": "Refusing to call off the campaign turns the no-tax satyagraha into an unstoppable wildfire. Village after village resigns from imperial administration, leaving the British without tax collectors or local authority across western India and proving that sustained civil disobedience can paralyze the empire."
+    },
+    "ending_3": {
+      "title": "The Early Dominion",
+      "story": "The economic paralysis caused by the nationwide general strike forces London into concessions. Direct talks with Congress yield early self-governing Dominion Status under an expanded constitution, granting Indians administrative control over finances decades ahead of schedule."
+    },
+    "ending_4": {
+      "title": "The Exhausted Strike",
+      "story": "Without clear diplomatic off-ramps, the indefinite industrial strike runs out of momentum. Urban shortages alienate ordinary citizens, allowing the colonial government to declare martial law and arrest key union leaders without public backlash."
+    },
+    "ending_5": {
+      "title": "The Forest Republic",
+      "story": "The expansive tribal coalition turns the central plateau into an unassailable bastion of tribal self-rule. Traditional customs and forest lands are safeguarded, keeping colonial timber extraction and administrative taxes completely outside the forest borders."
+    },
+    "ending_6": {
+      "title": "The Rampa Compact",
+      "story": "The negotiated repeal of the draconian forest laws marks the first major indigenous victory for tribal rights in modern Indian history. The settlement becomes a legal benchmark for tribal autonomy and environmental stewardship across the subcontinent."
+    },
+    "ending_7": {
+      "title": "The Moral Triumph",
+      "story": "The mass participation of women satyagrahis brings an unprecedented moral power to the freedom movement. British excise revenues collapse, and the campaign firmly establishes women at the forefront of the national political struggle."
+    },
+    "ending_8": {
+      "title": "The Legal Deadlock",
+      "story": "Boycotting higher courts disrupts imperial justice, but fails to stop the lower colonial machinery. While prominent leaders win moral prestige, the colonial legal system continues functioning, blunting the overall strategic impact."
+    },
+    "ending_9": {
+      "title": "The Panchayat Commonwealth",
+      "story": "Parallel village courts strip the British judicial system of its authority in the rural interior. Millions of villagers settle their affairs through local consensus, embodying the foundational ideals of Gram Swaraj and rural self-reliance."
+    },
+    "ending_10": {
+      "title": "The Charter of Oudh",
+      "story": "The mass non-violent march on Lucknow secures tenancy rights and bans unlawful evictions across the province. Peasant families are freed from feudal harassment, cementing their lifelong dedication to the national freedom movement."
+    },
+    "ending_11": {
+      "title": "The Compromised Peace",
+      "story": "Mediation restores quiet to the countryside, but dilutes the radical energy of the agrarian revolt. While immediate landlord abuses are checked, the basic feudal land tenure system survives intact under colonial protection."
+    },
+    "ending_12": {
+      "title": "The Crushed Countryside",
+      "story": "Uncoordinated peasant cells are dismantled by landlord mercenaries and provincial police. The agrarian front falls silent, leaving rural tenants burdened by heavy exactions until the resurgence of left-wing peasant movements years later."
+    },
+    "ending_13": {
+      "title": "The Iron Phalanx of Punjab",
+      "story": "The victory of the Akalis and their alliance with Congress cements Punjab as an unyielding fortress of non-violent resistance. The unified front denies the British any foothold for communal division in the strategic northern heartland."
+    },
+    "ending_14": {
+      "title": "The Reformed Shrines",
+      "story": "The gurdwaras are successfully placed under democratic, transparent management through the SGPC. While religious reform achieves its goals, the nationalist movement loses the potential mobilization of a battle-tested volunteer cadre."
+    },
+    "ending_15": {
+      "title": "The Conscience of the Sepoys",
+      "story": "The spectacle of decorated Sikh military veterans enduring peaceful beatings sends shockwaves through the ranks of the British Indian Army. British generals warn the Viceroy that continuing such brutality will trigger widespread mutinies among imperial soldiers."
+    },
+    "ending_16": {
+      "title": "The Broken Crusade",
+      "story": "Calling off the shrine jathas allows British-backed mahants to retain control of historic institutions. The reform movement splinters into bitter rival factions, leaving the colonial administration with unchallenged control over the region's religious endowments."
+    }
+  }
+}

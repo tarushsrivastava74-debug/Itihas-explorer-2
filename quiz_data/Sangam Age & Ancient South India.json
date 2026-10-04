@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Karikala Chola, king of the early Cholas. You have ascended the throne after escaping palace intrigues and imprisonment in your youth. The allied kings of the Cheras and Pandyas, supported by eleven Velir chieftains, march to crush your realm at Venni (near Thanjavur). Meanwhile, the grand literary academy (Third Sangam) sits at Madurai under royal Pandyan patronage, compiling thousands of lyrical poems celebrating heroic love (Akam) and valorous war (Puram).",
+      "options": {
+        "A": {
+          "text": "The Decisive Charge at Venni (Historical): Form your shock infantry and war-elephants in a resolute wedge at Venni, break through the allied center, and pierce Chera King Peruncheralathan with your royal spear.",
+          "consequence": "Your victory crushes the confederacy; the humiliated Chera king starves himself to death by ritual fast (Vadakkiruthal). You establish Chola hegemony across the Kaveri basin and open grand trade avenues to Sri Lanka.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Defensive Entrenchment along the Kaveri (Alternate): Avoid open confrontation; dig entrenched earthworks along the Kaveri riverbank to wear down the allied forces through a grueling attritional siege.",
+          "consequence": "The allied kings bypass your river fortifications, laying waste to fertile Chola rice paddies and forcing you into a prolonged, costly guerrilla campaign.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "With the Chola heartland secure, the seasonal floods of the Kaveri River cause devastating erosion and crop loss, while the thriving port of Puhar (Kaveripoompattinam) receives Roman trade ships laden with wine, amphorae, and gold coins in exchange for black pepper and fine textiles.",
+      "options": {
+        "A": {
+          "text": "Construct the Kallanai (Grand Anicut) (Historical): Mobilize stonecutters and captured laborers to construct the monumental Kallanai across the Kaveri, diverting floodwaters into irrigation canals across the delta while fortifying the port of Puhar.",
+          "consequence": "The Kaveri delta becomes the granary of the southern peninsula; agricultural yields surge, fueling overseas commerce and turning Puhar into a bustling cosmopolitan maritime metropolis.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Focus Solely on Roman Maritime Hubs (Alternate): Neglect river irrigation; direct all state silver toward expanding dry docks and warehouse facilities at Puhar and Arikamedu to monopolize the Greco-Roman spice trade.",
+          "consequence": "Coastal merchant guilds flourish with vast inflows of Roman gold dinars, but agrarian inland regions remain impoverished and prone to seasonal famine.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Stripped of central power, you retreat into the hill forests, seeking the support of independent Velir chieftains like Pari of Parambu Nadu and Ay Andiran.",
+      "options": {
+        "A": {
+          "text": "Court the Patronage of Chieftain Pari (Historical Precedent): Forge a sacred alliance with Pari, the legendary patron of bards and poets who sheltered the Tamil poet Kapilar, promising regional autonomy in exchange for hill archers.",
+          "consequence": "Thousands of fierce hill archers join your ranks, turning the rocky forests of Parambu into an unassailable bastion of resistance against the lowland kings.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Forceful Subjugation of the Hills (Alternate): Use your remaining regular cavalry to raid the hill villages for grain and livestock, forcing the chieftains into submission.",
+          "consequence": "The proud Velir clans unite against you, cutting off your mountain passes and leaving your army trapped in the forested ravines.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Wealth flows into the Tamil kingdoms. In the Pandyan capital of Madurai, King Nedunchezhian's court rules on a fateful dispute involving the merchant Kovalan and his faithful wife Kannagi, who carries a jeweled anklet (Silambu). Meanwhile, Roman merchant settlements thrive along the coast at Muziris (Chera) and Korkai (Pandya).",
+      "options": {
+        "A": {
+          "text": "The Tragic Justice & The Apotheosis of Kannagi (Historical Pathway): The king mistakenly executes Kovalan on false charges of stealing the queen's anklet; Kannagi breaks her ruby-filled anklet in open court to prove his innocence, provoking the king's death from grief and the burning of Madurai.",
+          "consequence": "The epic Silappadikaram is born; the cult of the chaste goddess (Pattini) spreads across the Tamil world and Sri Lanka under Chera King Senguttuvan, cementing an immortal cultural and ethical legend.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Institute Rigorous Judicial Tribunals (Alternate): Establish a formal tribunal of senior Sangam bards and merchant guild elders to examine the anklet and evidence before any execution can take place.",
+          "consequence": "The merchant's innocence is demonstrated peacefully; royal justice is preserved, but the legendary catalyst for the southern epic and the Pattini cult is averted.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "On the Malabar coast, the Chera port of Muziris is packed with Roman galleys, housing a temple dedicated to Augustus and bustling warehouses of Malabar black pepper (\"black gold\").",
+      "options": {
+        "A": {
+          "text": "Imperial Protection of Roman Enclaves (Alternate): Grant exclusive trade enclaves and security detachments to Roman merchants, signing bilateral trade treaties with imperial Rome.",
+          "consequence": "Direct sea trade via monsoon winds reaches its zenith, making southern ports the richest transit hubs between the Mediterranean and China.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Nationalize Foreign Warehouses (Alternate): Seize Roman bullion and ships in harbor to assert indigenous control over maritime shipping lanes.",
+          "consequence": "Short-term wealth fills royal vaults, but Roman fleets redirect their trade routes toward the ports of the Red Sea and Ceylon.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "With Pari's support, famous Sangam poets like Avvaiyar act as diplomatic ambassadors between warring chieftains, using lyrical verses to negotiate truces and alliances.",
+      "options": {
+        "A": {
+          "text": "Diplomatic League of Chieftains (Historical Tactic): Deploy poets to mediate an expansive confederacy among the Velir chiefs, aligning them under your banner against tyrannical coastal monarchs.",
+          "consequence": "The poets unite thirty disparate clans without bloodshed, assembling a formidable combined army ready to reclaim the lowlands.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Arm the Hill Forts with Catapults (Alternate): Fortify Pari’s mountain strongholds with ballistas and stone-throwing engines, preparing for a long siege in the crags.",
+          "consequence": "The mountain citadels resist all assaults, but the chiefs remain isolated from the fertile agricultural plains.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Surrounded by hostile hill tribes, you must find a route back to the plains before your supplies run out.",
+      "options": {
+        "A": {
+          "text": "Night Breakout through the Palghat Gap (Alternate): Disperse into small squads under cover of mist and slip through the Palghat Gap toward the western coast.",
+          "consequence": "You reach the Malabar seaboard with your surviving troops, seeking sanctuary in the Chera kingdom.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "The Final Stand on the Slopes (Alternate): Array your remaining men on the hill slopes for a desperate final stand against the descending tribal warriors.",
+          "consequence": "Your forces are surrounded and cut down, ending your royal line in the rugged forests of the Western Ghats.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "The traditional three crowned kings (Muventhar—Chola, Chera, Pandya) face a sudden, sweeping invasion from the mysterious Kalabhras, who patronize Jainism and Buddhism, challenging the Brahminical and Vedic sacrificial order while suspending royal land grants (Brahmadeyas).",
+      "options": {
+        "A": {
+          "text": "Form the Joint Sovereign Resistance (Alternate): Unify the surviving Chola, Chera, and Pandya royal remnants into a joint liberation front to defend traditional Sangam civic culture and hereditary land rights.",
+          "consequence": "A protracted war of restoration erupts across the Tamil plains, checking the Kalabhra advance along the Kaveri River.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "The Cultural Accommodating Synthesis (Historical Reality): Yield to the socio-political shift; allow the Kalabhras to rule while channelizing literary talent into Jain and Buddhist didactic masterpieces like the Tirukkural, Naladiyar, and Manimekalai.",
+          "consequence": "The era becomes a golden age of ethical philosophy and universal moral literature, transforming southern social values before the resurgence of the Pallavas and Pandyas.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Peaceful administration under the merchant courts enables the Third Sangam at Madurai to systematically preserve the poetic heritage of ancient Tamilakam.",
+      "options": {
+        "A": {
+          "text": "Standardize the Eight Anthologies & Ten Idylls (Historical Achievement): Commission royal scribes to compile the Ettuthokai (Eight Anthologies) and Pattuppattu (Ten Idylls), categorizing poetry across the five sacred landscapes (Thinai: Kurinji, Mullai, Marudham, Neydhal, Palai).",
+          "consequence": "The supreme aesthetic and social archive of early southern India is preserved forever on palm-leaf manuscripts, immortalizing the ethos of classical Tamil civilization.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Limit Poetry to Royal Panegyrics (Alternate): Restrict state funding strictly to court poets who compose verses praising the king’s military expeditions and divine lineage.",
+          "consequence": "Poetry devolves into rigid, repetitive royal praise, causing the loss of vibrant folk traditions and emotional love lyrics.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Protected by royal charters, Tamil merchant guilds like the Manigramam and Ayyavole look eastward toward the spice kingdoms of Southeast Asia.",
+      "options": {
+        "A": {
+          "text": "Found Trans-Oceanic Merchant Colonies (Historical Precedent): Dispatch merchant navies across the Bay of Bengal to establish trading colonies in Malaya, Sumatra, and Funan, trading spices, silk, and camphor.",
+          "consequence": "The foundations of the \"Maritime Silk Road\" are anchored in Tamil ports, inaugurating centuries of deep cultural and commercial influence across Southeast Asia.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Fortify Coastal Harbors Against Pirates (Alternate): Invest maritime profits into building massive stone sea walls and patrolling warships along the Coromandel coast.",
+          "consequence": "Coastal piracy is eradicated, ensuring complete safety for regional shipping, though profits are consumed by naval defense budgets.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "With foreign trade cut off, your ports must depend on internal coastal barter and regional agricultural taxation.",
+      "options": {
+        "A": {
+          "text": "Revive Inland Agrarian Canals (Alternate): Reorient the displaced maritime workforce into clearing scrub forests and constructing irrigation stepwells across the dry Palai plains.",
+          "consequence": "Inland agriculture slowly recovers, creating self-sufficient farming communities insulated from international trade disruptions.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Build an Exclusive Domestic Flotilla (Alternate): Restrict all shipping along the peninsula to licensed domestic merchant barques.",
+          "consequence": "Domestic trade continues quietly, but the lack of high-value foreign luxury markets shrinks royal bullion reserves.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The Bardic League descends from the hills, sweeping through the lowlands to reclaim ancestral Chola towns.",
+      "options": {
+        "A": {
+          "text": "The Grand Restoration of Uraiyur (Alternate): Liberate the ancient Chola capital of Uraiyur, establishing a joint council of kings, Velir chiefs, and Sangam poets to govern the realm.",
+          "consequence": "A golden era of cooperative, decentralized governance emerges, celebrated in verses across the southern land.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Impose Centralized Royal Rule (Alternate): Betray your Velir allies immediately upon taking Uraiyur, declaring absolute royal supremacy over both hills and plains.",
+          "consequence": "The Velir chiefs withdraw in disgust, leaving your freshly restored throne exposed to Pandyan counter-attacks.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "The fortified hilltops of Parambu prove invincible, turning the mountain zone into an autonomous highland republic.",
+      "options": {
+        "A": {
+          "text": "Cultivate Highland Spices & Pepper Terraces (Alternate): Transform the mountain valleys into terraced spice gardens, producing world-renowned Malabar pepper and cardamom.",
+          "consequence": "The highland republic amasses immense wealth, trading spices directly with Arab and Roman merchants bypassing the lowland kings.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Launch Mountain Cavalry Raids (Alternate): Use agile mountain ponies to conduct swift night raids on the lowland granaries.",
+          "consequence": "You secure grain supplies, but provoke the combined armies of the lowlands into building a permanent blockade around the hills.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "You arrive in Chera territory, offering your seasoned tactical sword to the royal court at Karur.",
+      "options": {
+        "A": {
+          "text": "Command the Western Naval Guard (Alternate): Take command of the Chera naval squadron, patrolling the Arabian Sea coastline against pirates and rival fleets.",
+          "consequence": "You become a legendary naval admiral, protecting the lucrative spice exports of Muziris and rising to supreme honors.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Lead a Land Expedition over the Ghats (Alternate): Convince the Chera monarch to finance an expeditionary army to march back over the mountains and reclaim your throne.",
+          "consequence": "The Chera army is checked in the mountain defiles, locking both kingdoms in a draining border conflict.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "Your heroic final stand on the mountain slopes inspires wandering bards across the countryside.",
+      "options": {
+        "A": {
+          "text": "The Hero Stone Memorial (Historical Cultural Practice): The local populace carves your image upon an inscribed hero stone (Natukal), laying weapons and garlands at its base to honor supreme battlefield sacrifice.",
+          "consequence": "Your memory becomes immortalized in Sangam Puram poetry; the hero stone becomes a sacred shrine for generations of aspiring warriors.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "The Forgotten Burial Mound (Alternate): Your remains are interred in an unmarked megalithic urn burial (Mudhukkal Thazhi) deep in the forest.",
+          "consequence": "Your deeds fade from collective memory, leaving your story buried in the silent earth until unearthed by modern archaeologists.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Shield of the Kaveri",
+      "story": "The united resistance checks the Kalabhra expansion along the river plains. The ancient dynasties of the Cholas, Cheras, and Pandyas preserve their sovereign crowns, keeping the early classical traditions and ritual sacrifices of the Sangam era unbroken into the medieval age."
+    },
+    "ending_2": {
+      "title": "The Ethical Commonwealth (Historical Reality)",
+      "story": "The Kalabhra interregnum dismantles old feudal privileges, paving the way for the profound ethical and didactic renaissance of classical Tamil literature. The humanist philosophy of Thiruvalluvar's Tirukkural and the Jain epic Naladiyar become eternal guideposts of moral conduct that outlive all passing dynasties."
+    },
+    "ending_3": {
+      "title": "The Immortal Anthologies (Historical Cultural Peak)",
+      "story": "The comprehensive preservation of the Ettuthokai and Pattuppattu preserves the soul of early southern India. The vivid imagery of the five landscapes (Thinai), the romantic tenderness of Akam lyrics, and the heroic valor of Puram poetry stand across millennia as one of humanity’s greatest literary legacies."
+    },
+    "ending_4": {
+      "title": "The Silent Lyre",
+      "story": "Restricting verse to royal flattery snuffs out the creative genius of the Sangam academies. The rich social tapestry of fishers, weavers, farmers, and young lovers vanishes from the historical record, leaving behind only dull court chronicles of forgotten kings."
+    },
+    "ending_5": {
+      "title": "The Lords of the Eastern Waves (Historical Precedent)",
+      "story": "Founding overseas merchant settlements anchors ancient Tamilakam as the beating heart of Indian Ocean trade. Tamil maritime guilds establish trade connections from Rome to Guangzhou, laying the cultural and naval foundations for the great maritime empire of the Imperial Cholas centuries later."
+    },
+    "ending_6": {
+      "title": "The Walled Coastline",
+      "story": "Heavy sea walls and naval squadrons completely secure the Coromandel coast from seaborne raiders. Yet the astronomical expense of maintaining permanent coastal defenses hollows out royal treasuries, stifling domestic artistic and educational investments."
+    },
+    "ending_7": {
+      "title": "The Self-Sufficient Interior",
+      "story": "Turning inward from global trade fosters deep agricultural self-reliance. The dry lands are transformed through stepwells and tank irrigation, insulating the peasantry from international market crashes and building a durable agrarian society."
+    },
+    "ending_8": {
+      "title": "The Modest Horizon",
+      "story": "Confining trade to local vessels ensures steady internal stability, but cuts the region off from the wealth and cosmopolitan currents of world commerce. The ancient ports decline into sleepy fishing villages, forgotten by Mediterranean and Asian merchants."
+    },
+    "ending_9": {
+      "title": "The Golden Age of Uraiyur",
+      "story": "The shared administration of kings, chieftains, and bards creates an unprecedented era of civic harmony and prosperity. Power is balanced by poetic wisdom and local autonomy, turning ancient Tamilakam into an enduring beacon of enlightened governance."
+    },
+    "ending_10": {
+      "title": "The Fractured Crown",
+      "story": "Betraying the mountain chieftains isolates the Chola crown from its truest defenders. Pandyan armies sweep in to capture the throne, demonstrating that royal arrogance cannot survive without the trust of local clans."
+    },
+    "ending_11": {
+      "title": "The Pepper Republic",
+      "story": "The highland sanctuary flourishes as an independent mercantile haven. Monopolizing the finest black pepper in the world, the hill chiefs dictate trade terms to international merchants, remaining autonomous and wealthy in their mountain valleys."
+    },
+    "ending_12": {
+      "title": "The Besieged Crags",
+      "story": "Aggressive mountain raids prompt a total lowland counter-siege. Cut off from salt, iron, and grain, the highland settlements slowly decline, their independence crushed by economic isolation."
+    },
+    "ending_13": {
+      "title": "The Admiral of the Malabar",
+      "story": "Your stewardship of the western waters turns the Chera fleet into an invincible naval shield. The trade routes of Muziris flourish without disruption, establishing your reputation as the finest seafaring commander of the ancient southern seas."
+    },
+    "ending_14": {
+      "title": "The Mountain Trap",
+      "story": "The ill-fated mountain expedition drains the military resources of the Chera kingdom. Rival southern dynasties seize the opportunity to partition frontier territories, leaving both realms exhausted and vulnerable."
+    },
+    "ending_15": {
+      "title": "The Immortal Hero Stone (Historical Cultural Peak)",
+      "story": "Your inscribed hero stone stands beneath the shade of an ancient banyan tree, celebrated in verse by wandering panar bards. Generations of warriors offer prayers at your monument, keeping the eternal flame of Sangam bravery alive in the heart of the Tamil land."
+    },
+    "ending_16": {
+      "title": "The Silent Urn",
+      "story": "Laid to rest within a terracotta burial urn, your name and kingdom vanish beneath the forest loam. Centuries pass until modern archaeologists brush away the soil, piecing together the forgotten memory of an ancient king who gave his all on the battlefield."
+    }
+  }
+}

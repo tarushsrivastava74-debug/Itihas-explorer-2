@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Chandragupta I, ascending the imperial throne of Magadha. Northern India remains politically fragmented following the decline of the Kushans and the regional rule of the Nagas and Murundas. To legitimize your imperial claim and expand beyond a modest principality, you arrange a high-status matrimonial alliance with Princess Kumaradevi of the ancient Lichchhavi clan.",
+      "options": {
+        "A": {
+          "text": "The Lichchhavi Gold Alliance (Historical): Issue the famous joint gold dinars depicting yourself and Kumaradevi, adopting the title Maharajadhiraja (\"King of Kings\") and consolidating control over Magadha, Prayaga (Allahabad), and Saketa (Ayodhya).",
+          "consequence": "The alliance brings formidable political prestige and wealthy territories; you establish a centralized base in the fertile eastern Gangetic plain, setting the foundation for your son Samudragupta to expand imperial borders.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Unilateral Military March on the Western Satraps (Alternate): Reject matrimonial politics; assemble your local cavalry and march directly west to conquer the Saka Western Satraps in Gujarat to seize their wealthy Arabian Sea ports immediately.",
+          "consequence": "Your forces are checked by Saka heavy armored cavalry and arid supply shortages in Malwa; your overextended columns are forced to withdraw to defend Magadha against predatory Naga border raids.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Your son, Samudragupta, succeeds you as a consummate warrior-statesman and patron of arts (Kaviraja). He directs court poet Harishena to engrave his military triumphs upon the Ashokan pillar at Prayaga.",
+      "options": {
+        "A": {
+          "text": "The Digvijaya & Southern Liberation (Historical): Annihilate the nine kings of Aryavarta (unifying northern India under direct imperial rule) while enacting Dharmavijaya in the south: capture, liberate, and reinstate the twelve kings of Dakshinapatha (as far south as Kanchipuram) as paying tributary vassals.",
+          "consequence": "Northern India becomes a tightly administered core, while southern tributaries funnel immense gold and gemstone tributes into your vaults without burdening imperial administration.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Direct Annexation of the Deccan (Alternate): Refuse to release the southern kings; march your northern legions to permanently garrison the southern kingdoms, imposing direct provincial governors across the Krishna and Godavari basins.",
+          "consequence": "Prolonged guerrilla insurrections break out in the dense southern forests, tying down your veteran army thousands of miles from the imperial capital.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Having suffered a setback in the west, the powerful Naga rulers of Mathura and Padmavati mass their chariots and foot levies along your western frontier.",
+      "options": {
+        "A": {
+          "text": "Encircle with Mounted Iron Archers (Alternate): Deploy disciplined mounted archers armed with compound steel bows to outflank the dense Naga infantry lines in the open plains of the Doab.",
+          "consequence": "The Naga forces break under hail of arrows; you annex Mathura and restore imperial authority over the upper Yamuna.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Construct the Earthen Bastions of Saketa (Alternate): Pull back behind deep defensive earthworks and moats around Saketa, waging an attritional siege defense against the invaders.",
+          "consequence": "The city walls withstand the assault, but the surrounding agricultural fields are scorched, leaving the treasury depleted by famine relief.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Samudragupta's son, Chandragupta II 'Vikramaditya', seeks to eradicate the last foreign Saka rulers in Gujarat, securing the western seaports of Bharuch (Barygaza) and Sopara. He seals a crucial alliance with the Vakataka dynasty of the Deccan by marrying his daughter Prabhavatigupta to King Rudrasena II.",
+      "options": {
+        "A": {
+          "text": "The Western Campaign & Maritime Integration (Historical): Mobilize imperial infantry and cavalry through friendly Vakataka territory, crush Saka ruler Rudrasimha III, annex Malwa and Saurashtra, and establish Ujjain as your second imperial capital.",
+          "consequence": "Control of western coastal trade with the Roman Empire and the Mediterranean inundates the empire with silver and gold; Ujjain becomes a glittering metropolis of classical science, literature, and the \"Nine Jewels\" (Navaratnas), including Kalidasa.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Imperial Overland Expansion to Khotan (Alternate): Divert your grand armies north across the Karakoram passes to annex the Silk Road kingdom of Khotan and dominate Central Asian caravan revenues directly.",
+          "consequence": "Your troops struggle with freezing altitudes and mountain passes, losing thousands of draft oxen while leaving Gujarat under Saka dominance.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Direct rule over the Deccan sparks widespread rebellions among Pallava and Vakataka loyalists, threatening your supply lines across the Narmada River.",
+      "options": {
+        "A": {
+          "text": "The Scorched Plateau Sweep (Alternate): Deploy punitive columns to burn rebellious settlements and enforce total military disarmament across central India.",
+          "consequence": "The uprising is suppressed with brutal force, but the Deccan turns into an economic desert that yields zero tax revenue.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Strategic Retreat to the Narmada (Alternate): Voluntarily pull imperial garrisons back to the Narmada River, installing compliant local princes under lenient tribute treaties.",
+          "consequence": "You preserve your army and stabilize the southern frontier, restoring diplomatic peace across the central plateau.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Having stabilized northern India through Mathura, the powerful guild corporations (shrenis) offer to fund imperial expansion in exchange for extensive civic charters.",
+      "options": {
+        "A": {
+          "text": "Grant Civic Autonomy to the Shrenis (Historical Precedent): Grant merchant guilds the right to issue autonomous coinage, operate internal courts, and manage urban public works.",
+          "consequence": "Commerce booms along internal highways, funding grand civic brick temples and monastic university endowments at Sarnath and Nalanda.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Royal Imperial Monopoly on Crafts (Alternate): Reject corporate independence; nationalize silk weaving, iron smelting, and gem-cutting under imperial overseers.",
+          "consequence": "Immediate royal profits rise, but craft innovation slows as master artisans flee to independent kingdoms in the south.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "The weakened imperial center draws raiding expeditions from the Kidarite Huns into the plains of western Punjab.",
+      "options": {
+        "A": {
+          "text": "The Indus Line of Forts (Alternate): Construct a line of burnt-brick forts along the Indus and Chenab rivers, garrisoned by heavy infantry and siege ballistas.",
+          "consequence": "The fortified line repels seasonal nomad raids, transforming the northwest into an unshakeable barrier.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Pay Silver Tribute to the Chieftains (Alternate): Open the imperial vaults to pay an annual subsidy of gold and raw silk to buy off Kidarite warbands.",
+          "consequence": "Raids halt temporarily, but foreign chieftains realize the court is militarily frail, steadily demanding double tributes every winter.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "During the reign of Kumaragupta I and his successor Skandagupta, the terrifying Alchon Huns (Hephthalites) under Toramana breach the northwestern passes, laying waste to cities from Gandhara to the Punjab with lethal composite horse archery.",
+      "options": {
+        "A": {
+          "text": "Skandagupta's Heroic Counter-Offensive (Historical): Prince Skandagupta spends nights sleeping on bare earth among his soldiers, mobilizing the full military strength of the empire to confront the Huns on the western plains in a cataclysmic battle.",
+          "consequence": "Skandagupta shatters the Hun army, saving Indian civilization from devastation; however, the immense cost of the prolonged war drains the imperial treasury, forcing the debasement of the gold coinage.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Form a Central Asian Horse-Mercenary Shield (Alternate): Empty the vaults to hire rival Rouran and Kidarite nomad horse-archers to fight the Hephthalites on the northwestern steppes.",
+          "consequence": "The mercenaries defeat the invaders, but turn around and seize western Punjab as their independent fiefdom.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "Your northern expeditionary force captures the oasis of Khotan, but finds itself isolated amidst shifting desert dunes and hostile nomadic raiders.",
+      "options": {
+        "A": {
+          "text": "Establish Fortified Silk Road Monasteries (Alternate): Subsidize Buddhist stupas and fortified monasteries to serve as joint spiritual, banking, and military outposts along the Taklamakan rim.",
+          "consequence": "Khotan becomes a flourishing bastion of Sanskrit learning and Mahayana translation, radiating Indian culture into East Asia.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Evacuate South of the Passes (Alternate): Order an immediate strategic withdrawal of all imperial troops back into the Kashmir valley to preserve numbers.",
+          "consequence": "You rescue your army, but forfeit the vast trade revenues of the northern Silk Road forever.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Scorched-earth tactics have left central India simmering with resentment; a charismatic chieftain from the Kadamba dynasty declares an all-out holy war against Gupta rule.",
+      "options": {
+        "A": {
+          "text": "Concentrated Chariot Sortie (Alternate): Deploy traditional heavy royal chariots and war-elephants into the narrow Deccan ravines to crush the rebel headquarters.",
+          "consequence": "The massive beasts and chariots are trapped in boulder-strewn canyons, leading to a catastrophic imperial rout.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "The Strategic Fortification of the Passes (Alternate): Seal the mountain gaps of the Western Ghats with permanent masonry ramparts and let the rebels starve in the hills.",
+          "consequence": "The uprising is contained within the mountains, but imperial control remains confined strictly to coastal strips.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Peaceful relations with the southern kingdoms allow diplomatic influence to achieve what military force could not.",
+      "options": {
+        "A": {
+          "text": "Sponsor the Ajanta Cave Sanctuaries (Historical Cultural Flourishing): Funnel imperial and allied Vakataka silver into carving the monumental Buddhist rock-cut cave temples and painting the murals at Ajanta.",
+          "consequence": "Masterpieces of classical fresco art, sculpture, and spiritual architecture are immortalized, setting the benchmark for Asian art.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Joint Maritime Expedition to Sri Lanka (Alternate): Combine northern river fleets with Vakataka coastal vessels to establish commercial hegemony over the pearl fisheries of the Gulf of Mannar.",
+          "consequence": "Immense maritime wealth pours in, turning the southern trade emporia into joint economic protectorates.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Backed by wealthy shrenis and royal grants under Kumaragupta I, the intellectual and scientific vitality of the empire reaches its zenith.",
+      "options": {
+        "A": {
+          "text": "Found the Mahavihara of Nalanda (Historical): Grant the tax revenues of over one hundred villages to found the grand residential university of Nalanda, welcoming thousands of international scholars in astronomy, medicine, logic, and philosophy.",
+          "consequence": "India becomes the intellectual center of Asia; scholars like Aryabhata pioneer zero, trigonometry, and heliocentric planetary models, crystallizing India's \"Golden Age.\"",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Centralize Intellectual Production at the Imperial Palace (Alternate): Restrict high philosophical and scientific learning strictly to a royal court academy inside Pataliputra to protect technological secrets.",
+          "consequence": "The imperial court hoards advanced metallurgical and mathematical knowledge, preventing widespread diffusion throughout the provinces.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Oppressive royal monopolies over crafts drive master artisans in Varanasi and Mathura to declare an open strike, refusing to cast bronze or weave silk.",
+      "options": {
+        "A": {
+          "text": "Conciliatory Charter of Liberties (Alternate): Yield to the artisans; revoke state monopolies and restore guild self-governance with constitutional tax caps.",
+          "consequence": "Artisans return to their workshops, repairing the commercial fabric of northern India under guaranteed legal rights.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Replace Guilds with State Slave-Labor (Alternate): Imprison striking guild leaders and force apprentices to labor under military supervision inside royal armories.",
+          "consequence": "The quality of Indian steel and textiles plummets; foreign merchants turn away to buy goods from Persian and Byzantine markets.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The brick fortresses along the Indus successfully turn back waves of steppe nomad attacks, preserving the heartland.",
+      "options": {
+        "A": {
+          "text": "Settle Frontier Veteran Colonies (Alternate): Grant free agricultural lands along the Indus frontier to retired legionaries on the condition of hereditary border defense.",
+          "consequence": "A formidable martial class takes root, transforming the Punjab into an impenetrable, self-sufficient frontier shield.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Impose War Taxes on the Heartlands (Alternate): Levy a special frontier defense tax on the agricultural farmers of Bengal and Bihar to pay the border garrisons.",
+          "consequence": "The frontier stays armed, but rural farmers in the Gangetic core stage tax revolts that destabilize domestic food production.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The Kidarite Huns demand half the treasury of Pataliputra, threatening to burn the Gangetic cities to the ground.",
+      "options": {
+        "A": {
+          "text": "Desperate Night Sortie at the Crossing (Alternate): Mobilize every able-bodied citizen of Pataliputra to launch a daring night counter-attack against the overconfident Hun encampment.",
+          "consequence": "The element of surprise routes the invaders, liberating the empire from shameful tributary subservience.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Capitulate and Open the Treasury (Alternate): Pay the immense tribute in gold ingots, dismantling imperial palace treasures to meet the demand.",
+          "consequence": "The treasury is cleaned out; the empire fractures into impoverished, squabbling regional feudal estates (samantas).",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Golden Twilight (Historical)",
+      "story": "Skandagupta’s heroic victory saves northern India from being overrun by the Huns, preserving classical Hindu culture, art, and learning for another century. Though the staggering financial strain of the Hunnic wars gradually causes the centralized empire to dissolve into regional feudatories (Maukharis, Pushyabhutis, and Later Guptas), the era endures in collective memory as the Classical Golden Age of Indian civilization."
+    },
+    "ending_2": {
+      "title": "The Mercenary Usurpation",
+      "story": "Nomad mercenaries drive off the White Huns, but immediately claim the fertile lands of Punjab and Malwa for themselves. The Gupta dynasty is reduced to a minor eastern kingdom in Magadha, while foreign warrior-chiefs establish independent dynasties across the northwest."
+    },
+    "ending_3": {
+      "title": "The Northern Beacon",
+      "story": "Fortified monastic colleges transform Khotan into a permanent northern jewel of Sanskrit civilization. Across the Tarim Basin, Indian scripts, mathematical treatises, and Mahayana Buddhist philosophy take root, linking northern India directly to the intellectual courts of Tang China."
+    },
+    "ending_4": {
+      "title": "The Abandoned Steppe",
+      "story": "Withdrawing from Central Asia preserves your military ranks, but permanently surrenders the lucrative Silk Road caravan tolls to nomadic warlords. The empire turns entirely inward, relying strictly on agrarian Gangetic wealth while losing contact with Mediterranean trade."
+    },
+    "ending_5": {
+      "title": "The Canyon of Bones",
+      "story": "The catastrophic defeat in the Deccan ravines breaks the military prestige of Pataliputra. Southern dynasties unite under the Chalukyas and Kadambas to drive imperial garrisons out entirely, ensuring the Deccan remains a permanent, unassailable barrier against northern expansion."
+    },
+    "ending_6": {
+      "title": "The Walled Plateau",
+      "story": "Masonry ramparts across the Western Ghats seal the empire against southern counter-invasions, but permanently lock the northern kingdom out of southern trade networks. India settles into a permanent geopolitical division along the Vindhyas."
+    },
+    "ending_7": {
+      "title": "The Masterpieces of Ajanta (Historical Cultural Peak)",
+      "story": "The golden harmony between the Guptas and the Vakatakas yields the supreme artistic achievements of classical India. The vibrant murals of Ajanta and the rock-cut wonders of the Deccan stand across millennia as testaments to spiritual serenity and aesthetic mastery."
+    },
+    "ending_8": {
+      "title": "The Pearl Monarchy",
+      "story": "The joint naval dominance over Sri Lanka and the southern straits floods Pataliputra with maritime revenues. The empire evolves into a balanced land-and-sea power, commanding both Gangetic agriculture and Indian Ocean trade."
+    },
+    "ending_9": {
+      "title": "The Beacon of Nalanda (Historical Academic Golden Age)",
+      "story": "Nalanda University emerges as the greatest intellectual center of the ancient world. Attracting thinkers from China, Korea, Tibet, and Persia, its vast multi-story libraries (Dharmaganja) and debate halls preserve the pinnacle of Indian mathematics, medicine, grammar, and philosophy."
+    },
+    "ending_10": {
+      "title": "The Secret Academy",
+      "story": "Confining scientific discovery to the royal palace turns knowledge into a closely guarded state secret. While the emperor's circle produces wondrous mechanical toys and navigational charts, the wider population remains uneducated, stunting long-term societal advancement."
+    },
+    "ending_11": {
+      "title": "The Guild Commonwealth",
+      "story": "The restoration of civic rights turns merchant shrenis into the true engines of society. Governed by municipal laws and legal contracts, Indian mercantile towns flourish as self-governing urban communes where enterprise and craftsmanship outshine imperial decrees."
+    },
+    "ending_12": {
+      "title": "The Ruin of the Foundries",
+      "story": "Replacing free artisan guilds with forced state labor destroys the ancient metallurgy of the subcontinent. The famous rustless iron pillar technology and exquisite bronze casting techniques are lost to history as artisans take their craft secrets to their graves."
+    },
+    "ending_13": {
+      "title": "The Shield of the Indus",
+      "story": "Settling battle-hardened veterans along the Indus river creates an unbreachable defensive frontier. For two centuries, foreign nomadic hordes shatter against this armed agrarian wall, keeping the inner Gangetic heartland entirely sheltered from external devastation."
+    },
+    "ending_14": {
+      "title": "The Rebellion of the Granary",
+      "story": "Excessive border taxes spark massive peasant revolts across Bengal and Bihar. Driven to desperation by royal exactions, farming communes burn local tax offices, forcing the emperor to pull veteran border legions from the frontier to quell his own heartland."
+    },
+    "ending_15": {
+      "title": "The Deliverance of Pataliputra",
+      "story": "The desperate night charge routs the invading horse-nomads against all tactical odds. Pataliputra reclaims its sovereign honor, using captured nomad horses to build a fast mobile cavalry wing that protects northern India for decades."
+    },
+    "ending_16": {
+      "title": "The Samanta Decay",
+      "story": "Dismantling the treasury to pay gold ransoms leaves the monarchy entirely penniless. Provincial generals and landholders (samantas) declare absolute independence, reducing the once-proud Gupta Emperor to a titular monarch trapped inside an empty palace."
+    }
+  }
+}

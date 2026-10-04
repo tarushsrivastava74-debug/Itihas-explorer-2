@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Shivaji Bhonsle. General Afzal Khan marches from Bijapur with 10,000 elite troops and heavy cannons to extinguish your nascent Swarajya. He invites you to an unarmed diplomatic tent at the base of Pratapgad Fort. Spies warn you he plans treachery.",
+      "options": {
+        "A": {
+          "text": "The Concealed Baghnakh (Historical): Wear chainmail under your white robes, conceal steel tiger claws (baghnakh) in your palm, and hide your mavala infantry in the dense jawali forests.",
+          "consequence": "Afzal Khan attempts to strangle you during the embrace; you disembowel him with the steel claws. Your hidden mavala infantry ambushes and destroys his leaderless army. Swarajya establishes itself as a lethal military force.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "The Fortress Barricade (Alternate): Refuse the personal meeting; lock your gates at Pratapgad and subject his army to a prolonged monsoon siege from the stone battlements.",
+          "consequence": "Afzal Khan's cannons blast away your outer walls while his cavalry ravages the fertile valleys below, cutting off food supplies and trapping you in the hills.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Aurangzeb is outraged by Afzal Khan's demise and dispatches his maternal uncle, Shaista Khan, with 150,000 imperial troops. Shaista Khan occupies your childhood home, Lal Mahal in Pune, turning it into a fortified base.",
+      "options": {
+        "A": {
+          "text": "Midnight Infiltration (Historical): Disguise 400 elite commandos as a wedding party, infiltrate the palace kitchen walls at midnight, and assassinate the Mughal high command.",
+          "consequence": "You slice off three of Shaista Khan's fingers as he flees out a window, killing his son and elite guards. Humiliated, the Mughal Viceroy retreats to Bengal, proving your mastery of Ganimi Kava (guerrilla tactics).",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Open Field Retaliation (Alternate): Muster your entire 20,000-man light cavalry and engage Shaista Khan's massive imperial army in an open-field pitched battle on the plains of Pune.",
+          "consequence": "Massive Mughal artillery batteries tear through your lightly armored cavalry; your field commander falls, forcing you to withdraw into the Western Ghats with severe casualties.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Pratapgad's walls are cracking under Bijapuri siege cannons. You face slow starvation or total annihilation.",
+      "options": {
+        "A": {
+          "text": "Midnight Sottie through the Ghats (Alternate): Use a moonless, torrential rainy night to rappel down the sheer cliff face with your elite guards and flee toward Panhala Fort.",
+          "consequence": "You slip past the siege perimeter, but you are forced to abandon the central Sahyadri hills to enemy plunder.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Conditional Surrender to Bijapur (Alternate): Open the gates and sign an emergency treaty offering half your hill forts in exchange for being spared as an autonomous feudatory.",
+          "consequence": "Bijapur absorbs your territory, disarming your mavala infantry and turning your commanders into royal vassals.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Having humiliated the Mughals, your treasury is drained from constant campaigning. Surat, the wealthiest Mughal port on the Arabian Sea, sits virtually unguarded by heavy imperial troops.",
+      "options": {
+        "A": {
+          "text": "The Grand Economic Blitz (Historical): Launch a lightning raid across 300 miles of rugged terrain to sack Surat's Mughal customs houses and seize immense gold, silver, and pearls.",
+          "consequence": "Millions in bullion flow into your treasury, funding the construction of sea forts like Sindhudurg, but an infuriated Aurangzeb sends his deadliest general, Mirza Raja Jai Singh, with unlimited troops.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Maritime Piracy Focus (Alternate): Bypass Surat city; use your newly constructed naval warboats to seize Mughal pilgrim and trade ships out in the Arabian Sea.",
+          "consequence": "You capture rich oceanic cargo, but the English, Portuguese, and Siddi navies unite to blockade your coastline.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Weakened by the plains defeat, you pull your remaining warriors to the sheer plateau fortress of Raigad. Imperial columns sweep the lowlands.",
+      "options": {
+        "A": {
+          "text": "Scorched Earth Mountain War (Alternate): Burn all low-valley crops, poison mountain wells, and cut every mountain pass with boulder blockades to starve the invaders.",
+          "consequence": "The Mughal columns run out of grain and retreat in exhaustion, leaving you in uncontested control of the mountain spine.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Seek Alliance with the Deccan Sultans (Alternate): Send gold and diplomats to Bijapur and Golconda, proposing a united southern coalition against the northern Mughal menace.",
+          "consequence": "Golconda provides loans and artillery, but Bijapur betrays your troop movements directly to Delhi.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "You arrive at Panhala Fort, but Siddi Jauhar's army rapidly surrounds the mountain stronghold with an unyielding siege cordon.",
+      "options": {
+        "A": {
+          "text": "The Decoy Sacrifice (Alternate): Use a brave barber lookalike, Shiva Kashid, to draw enemy pursuers while Baji Prabhu Deshpande holds Ghodkhind pass to the death.",
+          "consequence": "The heroic rear-guard defense allows you to escape into the impenetrable safety of Vishalgad, rallying thousands to your banner.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Desperate Breakout Charge (Alternate): Assemble your entire remaining garrison for a direct dawn cavalry charge straight through the siege lines.",
+          "consequence": "The enemy heavy musketeers inflict devastating casualties; your general staff is captured, leaving your army scattered.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "You serve as a nominal vassal of Bijapur, but the court is decadent and dying from internal power struggles.",
+      "options": {
+        "A": {
+          "text": "Coup at the Capital (Alternate): March your personal detachment into the capital of Bijapur under the guise of paying tribute, then seize the royal palace.",
+          "consequence": "You capture the heart of the Sultanate, declaring yourself ruler of both Maratha and Adil Shahi territories.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Gradual Fort Re-acquisition (Alternate): Bribe corrupted Bijapuri governors one by one using local taxation money to secretly reclaim your mountain outposts.",
+          "consequence": "You quietly rebuild your domain fort by fort without sparking a major regional war.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "After Jai Singh corners you at Purandar, you sign a temporary truce and travel to Agra to negotiate with Aurangzeb. The Emperor insults your status and places you under armed house arrest.",
+      "options": {
+        "A": {
+          "text": "The Sweetmeat Basket Escape (Historical): Feign grave illness, donate massive baskets of sweets to Brahmins and the poor daily, and slip out hidden inside the baskets alongside your son Sambhaji.",
+          "consequence": "You escape right under Aurangzeb's nose, trek disguised across India as ascetics, and return to Raigad to liberate all lost territory.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Imperial Submission (Alternate): Accept Aurangzeb's terms: become an imperial Mughal Mansabdar and lead Mughal armies north into Kandahar and Central Asia.",
+          "consequence": "You become the most celebrated general of the Mughal Empire, securing riches abroad while Swarajya dissolves at home.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "The combined Siddi and European naval fleet lays siege to your coastal island fortress of Sindhudurg.",
+      "options": {
+        "A": {
+          "text": "Night Fire-Ship Attack (Alternate): Load wooden merchant vessels with sulphur, pitch, and oil, setting them ablaze and drifting them into the anchored enemy armada.",
+          "consequence": "The enemy fleet burns in the bay; your Maratha Navy claims undisputed control of the Konkan coastline.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Surrender Sea Claims (Alternate): Dismantle your offshore navy and cede island forts to the Portuguese in exchange for guaranteed inland trade routes.",
+          "consequence": "You preserve your land forces, but forfeit control of the seas to European colonial trading corporations.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "The Mughals have evacuated the valleys. Your mountain kingdom is starving, but geographically impregnable.",
+      "options": {
+        "A": {
+          "text": "Coronation as Sovereign Chhatrapati (Alternate): Construct monumental water reservoirs and declare yourself Chhatrapati, establishing permanent sovereign laws and tax structures.",
+          "consequence": "You institutionalize the Maratha state; an impenetrable mountain republic that outlives all imperial invasions.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Permanent Guerrilla Raider State (Alternate): Refuse formal administrative statehood; keep your entire population permanently mobilized as lightning hit-and-run raiders.",
+          "consequence": "You ravage imperial territories for decades, but fail to build civil governance, schools, or enduring architecture.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Bijapur's betrayal exposed your southern flank, leaving Golconda as your sole reliable ally.",
+      "options": {
+        "A": {
+          "text": "Preemptive Strike on Bijapur (Alternate): Unleash your entire military force to conquer Bijapur's remaining forts and depose the untrustworthy Adil Shahi dynasty.",
+          "consequence": "You absorb Bijapur's territory, creating a southern superpower capable of standing toe-to-toe with Delhi.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Secure Golconda Protection (Alternate): Sign a permanent military pact with the Qutb Shahi Sultan of Golconda, stationing joint garrisons across Karnataka.",
+          "consequence": "The joint coalition holds the border, but internal religious and administrative tensions fracture your command.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "Safe at Vishalgad, you rally 30,000 veterans. The western Deccan rises in open revolt against foreign occupiers.",
+      "options": {
+        "A": {
+          "text": "The Grand Konkan Reclamation (Alternate): Launch a lightning campaign across the coastal lowlands, expelling foreign garrisons from Kalyan down to Goa.",
+          "consequence": "You re-establish a wealthy coastal maritime realm, filling your war chest through oceanic export revenues.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Fortress Network Construction (Alternate): Consolidate all resources into modernizing 300 mountain forts with double stone ramparts, grain silos, and spring-water wells.",
+          "consequence": "You transform the Sahyadri mountains into an unbreachable stone labyrinth that no army on earth can subdue.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Surrounded outside Panhala, you and a handful of surviving mavala guards are cornered against a river bend.",
+      "options": {
+        "A": {
+          "text": "Heroic Cavalry Death Charge (Alternate): Draw your Bhavani sword, refuse terms of quarter, and lead a final fatal charge straight into the enemy vanguard.",
+          "consequence": "You fall in glorious combat; your death sparks a spontaneous, subcontinent-wide Maratha rebellion that lasts a century.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Surrender for Clemency (Alternate): Surrender your sword to the Bijapuri commander to spare the lives of your surviving loyal soldiers.",
+          "consequence": "You spend your remaining years under house arrest; Swarajya dies as a noble, brief dream in the Sahyadri hills.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "You hold the palace of Bijapur, but traditional nobles refuse to take orders from a Hindu ruler.",
+      "options": {
+        "A": {
+          "text": "Establish a Pluralistic Royal Council (Alternate): Appoint a joint council of Hindu and Muslim ministers, guaranteeing freedom of religion and equal land rights across the realm.",
+          "consequence": "You forge an unshakeable, unified Deccan Sultanate-Empire that completely blocks northern imperial expansion.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Ruthless Purge of the Old Nobility (Alternate): Execute the resisting aristocrats and replace all administrative heads with trusted Maratha hill commanders.",
+          "consequence": "Constant civil insurrections consume your resources, leaving the southern cities vulnerable to external collapse.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "You have secretly bought back your hill forts, accumulating private wealth while Bijapur decays from within.",
+      "options": {
+        "A": {
+          "text": "Proclaim Independent Hindavi Swarajya (Alternate): Tear up your vassal documents, raise the saffron flag, and declare open sovereignty over the Western Ghats.",
+          "consequence": "A fully restored, heavily fortified Maratha kingdom emerges without having suffered massive casualties.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Remain the Puppet Master (Alternate): Keep the child-sultan on the throne of Bijapur as a figurehead while ruling the entirety of southern India from behind the curtain.",
+          "consequence": "You control the wealth of the south with zero external scrutiny, amassing power quietly for future generations.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Hindavi Swarajya Zenith (Historical)",
+      "story": "You successfully escape Agra, return to Raigad, and are crowned Chhatrapati in 1674. You establish a formal cabinet (Ashta Pradhan), create the Maratha Navy, and lay the unshakeable foundation for an empire that ultimately breaks the Mughals and dominates India from Attock to Cuttack."
+    },
+    "ending_2": {
+      "title": "The Imperial Sword",
+      "story": "You become the Grand Marshal of the Mughal Empire, leading cavalry across the deserts of Persia and Afghanistan. You die covered in imperial honors, but the dream of an independent self-ruled Maratha homeland vanishes forever."
+    },
+    "ending_3": {
+      "title": "Masters of the Arabian Sea",
+      "story": "Your victory over the combined fleet establishes Maratha naval supremacy from Gujarat to Malabar. Admiral Kanhoji Angre transforms your coastline into a maritime fortress, completely shutting European colonial navies out of western India."
+    },
+    "ending_4": {
+      "title": "The Continental Buffer",
+      "story": "By surrendering the sea, you protect your mountain valleys but allow the English and Portuguese to fortify Bombay and Goa into unshakeable naval bastions that will eventually conquer the mainland."
+    },
+    "ending_5": {
+      "title": "The Citadel Republic",
+      "story": "Raigad becomes the capital of an impregnable mountain civilization. Generations of kings rule safely from the mist-covered peaks, thriving in defensive luxury while northern wars rage far below."
+    },
+    "ending_6": {
+      "title": "The Nomadic Warlords",
+      "story": "Without fixed cities, law codes, or institutions, the Marathas survive as a fearless culture of permanent horse-raiders, dreaded across India but unable to establish an enduring civilization."
+    },
+    "ending_7": {
+      "title": "The Unified Deccan Empire",
+      "story": "Absorbing Bijapur gives you the manpower and artillery to halt the Mughals at the Narmada River. Southern India enters an era of unmatched commercial and military self-determination."
+    },
+    "ending_8": {
+      "title": "The Shattered Axis",
+      "story": "The alliance with Golconda breaks down over administrative squabbles. Aurangzeb marches south and picks off the divided kingdoms one by one, absorbing all of southern India into the Mughal realm."
+    },
+    "ending_9": {
+      "title": "The Konkan Trading Empire",
+      "story": "Your reclaimed coastline blossoms with commercial prosperity. Custom duties on spices, textiles, and timber fund a formidable standing army that permanently keeps the northern empires at bay."
+    },
+    "ending_10": {
+      "title": "The Stone Labyrinth",
+      "story": "Your 300 mountain fortresses prove completely unassailable. When Aurangzeb eventually brings his entire army south, he wastes 27 years and his entire imperial treasury failing to breach your stone peaks."
+    },
+    "ending_11": {
+      "title": "The Spark of Martyrdom",
+      "story": "Your heroic death on the battlefield transforms you into an eternal symbol of resistance. Inspired by your sacrifice, the common peasants rise as a million-man insurgency, crushing foreign rule through pure guerrilla fury."
+    },
+    "ending_12": {
+      "title": "The Forgotten Rebellion",
+      "story": "You live out your remaining days under comfortable confinement in a southern citadel. Without your tactical genius, the scattered guerrilla bands dissolve, and your rebellion is remembered only as a regional uprising."
+    },
+    "ending_13": {
+      "title": "The Pluralistic Dynasty",
+      "story": "Your joint council becomes a marvel of medieval governance. By uniting the martial valor of the Marathas with the bureaucratic machinery of the Deccan, you forge a tolerant, prosperous superpower that rivals the Ming Empire."
+    },
+    "ending_14": {
+      "title": "The Fractured Sultanate",
+      "story": "Purging the old aristocracy creates a permanent underground insurgency in every city. Your forces are worn out fighting internal rebellions, paving the way for European trading companies to step in as peacekeepers."
+    },
+    "ending_15": {
+      "title": "The Resurgent Lion",
+      "story": "Having conserved your armies and resources, your declaration of Swarajya shocks India. You field fresh, well-funded divisions that sweep across the plains, establishing Maratha supremacy decades ahead of historical time."
+    },
+    "ending_16": {
+      "title": "The Shadow King",
+      "story": "You rule the southern peninsula from the shadows through a puppet sultan. Gold flows secretly into your mountain vaults, ensuring your family controls the real power and finance of India without ever fighting a major battle."
+    }
+  }
+}

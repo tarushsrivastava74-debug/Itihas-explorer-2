@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Robert Clive, Lieutenant-Colonel of the British East India Company. Nawab Siraj-ud-Daulah of Bengal confronts your small force of 3,000 British and sepoy troops with an army of 50,000 soldiers, heavy cavalry, and French artillery. You have made a secret pact with the Nawab’s ambitious army chief, Mir Jafar, promising him the throne if he holds back his divisions. A sudden, violent monsoon downpour drenches the battlefield?",
+      "options": {
+        "A": {
+          "text": "The Tarpaulin Trap (Historical): Cover your powder and artillery with tarpaulins to keep them dry; when the Nawab’s soaked cavalry charges assuming your guns are useless, unleash point-blank grape-shot.",
+          "consequence": "Mir Jafar holds back two-thirds of the Bengal army; the Nawab panics and flees. You install Mir Jafar as a puppet ruler and seize the Bengal treasury, transforming the Company from a humble merchant firm into a territorial sovereign.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Entrenched River Stand (Alternate): Refuse to rely on treacherous conspirators; withdraw inside the fortified hunting lodge and brick walls along the Bhagirathi River for a defensive duel.",
+          "consequence": "Siraj-ud-Daulah’s French artillerymen bombard your positions until your walls crack, forcing your battered expedition to retreat onto Company gunboats toward Calcutta.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "Following the Battle of Buxar, the defeated Mughal Emperor Shah Alam II and the Nawab of Awadh are in Company custody. You have the leverage to shape the governance of northern India?",
+      "options": {
+        "A": {
+          "text": "Acquire the Diwani Rights (Historical): Demand the imperial Diwani (the sole right to collect land revenues and taxes) over Bengal, Bihar, and Orissa, leaving criminal law to a puppet Nawab.",
+          "consequence": "Vast agricultural wealth flows directly into Company vaults without the expense of running civil administration, funding an army of 100,000 sepoys.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Direct Imperial Conquest (Alternate): March Company columns directly into Delhi, dethrone the Mughal dynasty, and declare British parliamentary rule over northern India immediately.",
+          "consequence": "A massive backlash erupts; the Maratha Confederacy and northern Afghan warlords unite in an emergency holy war to throw the Company out of the Gangetic plain.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Mir Jafar’s betrayal failed, Siraj-ud-Daulah holds Bengal, and the Company is penned into Fort William in Calcutta with dwindling provisions?",
+      "options": {
+        "A": {
+          "text": "Call the Royal Navy (Alternate): Dispatch swift dispatch sloops to Madras requesting Admiral Watson’s full naval squadron to shell Hooghly and enforce a maritime blockade.",
+          "consequence": "Royal warships silence the river forts and burn Bengal's grain convoys, forcing the Nawab to negotiate trade terms.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Southern Mercenary Alliance (Alternate): Offer half of your Bengal factories to the Maratha Empire if their cavalry invades Bengal from the west.",
+          "consequence": "The Maratha Bargi raiders swarm Bengal, devastating the countryside and creating chaos on both sides.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "Funded by Bengal’s revenues, Governor-General Richard Wellesley confronts Tipu Sultan, the \"Tiger of Mysore.\" Tipu has modernized his army with iron-cased Mysorean rockets and opened diplomatic channels with Napoleon Bonaparte?",
+      "options": {
+        "A": {
+          "text": "Storming of Srirangapatna (Historical): Encircle Tipu’s island capital, breach the western stone ramparts with siege guns, and order an all-out bayonet assault through the breach.",
+          "consequence": "Tipu Sultan falls fighting at the Water Gate; Mysore’s territories are partitioned, and the Subsidiary Alliance system locks southern India under Company control.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Naval Blockade and Starvation (Alternate): Avoid assaulting the fortified island; seize Mysore's Malabar ports and wait for French intervention to fail.",
+          "consequence": "Tipu launches rocket artillery raids against your supply trains, stalling your campaign while French privateers land reinforcements on the coast.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Your march on Delhi has united the Maratha Peshwa and Rohilla Afghans against your overextended British battalions?",
+      "options": {
+        "A": {
+          "text": "Concentrated Sepoy Line Defense (Alternate): Form tight defensive infantry squares bristling with bayonets and quick-firing field guns.",
+          "consequence": "Massed Maratha cavalry charges break against your disciplined volley fire, but you remain besieged in Delhi without supply lines.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Tactical Retreat to the Bengal Border (Alternate): Abandon Delhi by night and pull back to the fortified perimeter of Chunar and Benares.",
+          "consequence": "You preserve your army and draw the coalition into a long pursuit that fractures their fragile alliance.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "The Royal Navy blockades the Bay of Bengal, but French warships arrive under the Comte de Lally to contest the Coromandel coast?",
+      "options": {
+        "A": {
+          "text": "Decisive Fleet Action (Alternate): Engage the French navy in a line-of-battle fleet clash off the coast of Pondicherry.",
+          "consequence": "The French fleet is driven off, severing European help to Indian rulers and securing British naval supremacy along the eastern seaboard.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Coastal Fortress Defense (Alternate): Anchor under the protective guns of Fort St. George in Madras and avoid risky sea battles.",
+          "consequence": "The French land their siege trains and besiege Madras, pinning down Company forces in the south.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "The Maratha horsemen defeat Siraj-ud-Daulah, but their generals demand the Company surrender all commercial revenue from Calcutta as payment?",
+      "options": {
+        "A": {
+          "text": "Stand at the Maratha Ditch (Alternate): Refuse extortion; man the defensive trench and palisades around Calcutta with heavy naval guns.",
+          "consequence": "Your cannons hold the perimeter, but the city is choked of food and inland commerce.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Pay the Chauth Tribute (Alternate): Hand over 25% of all customs duties (Chauth) to the Marathas to secure unmolested inland trade routes.",
+          "consequence": "The Marathas depart peacefully, leaving the Company as a paying tributary of the Peshwa.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "Governor-General Lord Dalhousie oversees an empire stretching across the subcontinent. Hindu principalities lack direct male heirs, and rich provinces like Awadh suffer administrative breakdown?",
+      "options": {
+        "A": {
+          "text": "Aggressive Imperial Annexation (Historical): Enforce the Doctrine of Lapse to annex Satara, Jhansi, and Nagpur, and depose the Nawab of Awadh citing misgovernance.",
+          "consequence": "The Company absorbs vast tax lands and rail corridors, but disinherits traditional aristocrats, disbands royal armies, and breeds explosive discontent among high-caste sepoys.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Preserve Princely Autonomy (Alternate): Ban further annexations; permit traditional adoptions and govern indirectly through resident British advisors and trade monopolies.",
+          "consequence": "Princely rulers remain loyal buffers, stabilizing the frontier and eliminating the domestic triggers of military rebellion.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "French troops under General Decaen slip through the blockade and link up with Tipu's rocketeers in the Deccan?",
+      "options": {
+        "A": {
+          "text": "Preemptive Night Assault (Alternate): March through the hills to surprise the combined Franco-Mysorean camp before they coordinate their command.",
+          "consequence": "You rout the French camp in the dark, capturing their artillery and forcing Tipu to accept terms of partition.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Fortified Coastal Retreat (Alternate): Pull back to the Malabar coast and request an emergency fleet from Britain.",
+          "consequence": "Tipu consolidates southern India, pushing Company power out of the interior and establishing a French-backed industrial sultanate.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Trapped inside Delhi's walls, your ammunition is nearly gone as Maratha siege batteries shell the Kashmiri Gate?",
+      "options": {
+        "A": {
+          "text": "Midnight Sapper Strike (Alternate): Send sepoy sappers under cover of fog to spike the enemy's siege guns with iron nails.",
+          "consequence": "The raid succeeds; the enemy artillery is silenced, allowing your garrison to negotiate an orderly retreat back to Bihar.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Total Death Charge (Alternate): Lead your remaining European battalions and sepoy grenadiers out the gates in a desperate bayonet charge.",
+          "consequence": "Overwhelmed by superior numbers, the British garrison in Delhi is annihilated, ending direct expansion into the north.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "The Maratha and Afghan coalition divides its forces to loot the rich pilgrim city of Benares, opening a window of vulnerability?",
+      "options": {
+        "A": {
+          "text": "Divide and Conquer Diplomacy (Alternate): Offer the Afghan Rohillas sovereign recognition in exchange for breaking their pact with the Marathas.",
+          "consequence": "The coalition collapses into civil war; you reclaim the northern plains and secure Awadh as a buffer state.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Artillery Ambush at the River (Alternate): Conceal heavy field guns along the riverbanks to devastate their crossing divisions.",
+          "consequence": "The enemy vanguard is decimated in the water, breaking their offensive will and securing the Bengal frontier.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The French fleet has fled, leaving the grand French fortress of Pondicherry isolated under your naval guns?",
+      "options": {
+        "A": {
+          "text": "Total Demolition (Alternate): Bombard the fortress into surrender, raze its fortifications to the foundation, and expel French authorities from India forever.",
+          "consequence": "France's colonial ambitions in India are permanently eliminated, giving the British an unassailable European monopoly.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Merchant Settlement (Alternate): Permit the French to keep unfortified trading factories in exchange for an indemnity of two million livres.",
+          "consequence": "French merchant houses remain operational, secretly funneling arms and technical advice to hostile Indian princes.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "French guns breach the outer bastions of Fort St. George in Madras; your commanders prepare for an imminent breach?",
+      "options": {
+        "A": {
+          "text": "Counter-Battery Duel (Alternate): Concentrate all surviving fort cannons on the French powder magazines to trigger an explosion.",
+          "consequence": "The magazine detonates, shattering the French siege lines and forcing an immediate withdrawal.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Surrender Under Terms (Alternate): Surrender Fort St. George under terms of parole, evacuating Company personnel to Bombay.",
+          "consequence": "The British lose their primary southern base, leaving the Coromandel coast in French hands.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The Maratha blockade of Calcutta enters its second month; scurvy and starvation spread through the British settlement?",
+      "options": {
+        "A": {
+          "text": "River Gunboat Breakout (Alternate): Mount heavy 32-pounder guns on river sloops to bombard the Maratha shore camps from the Hooghly.",
+          "consequence": "The shore camps are obliterated by naval fire; the Marathas withdraw into the interior, lifting the siege.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Capitulation of Bengal (Alternate): Sign an unconditional surrender, ceding Calcutta to the Maratha Empire and leaving India.",
+          "consequence": "British corporate rule in Bengal is extinguished; the Company disbands its private armies and returns to peaceful coastal trade.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "You operate as a tributary of the Maratha Empire, running profitable textile factories while paying annual tributes?",
+      "options": {
+        "A": {
+          "text": "Quiet Commercial Expansion (Alternate): Focus entirely on exporting Indian textiles, opium, and tea to China without maintaining private armies.",
+          "consequence": "The Company becomes the world's most profitable commercial entity, free from the crushing military debt of territorial wars.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Secret Armament (Alternate): Use commercial profits to covertly manufacture modern rifles and field guns inside your factory warehouses.",
+          "consequence": "Maratha spies discover the illicit weapons factories; your warehouses are seized, and British merchants are expelled.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Crown Raj (Historical)",
+      "story": "Dalhousie's aggressive annexations and the introduction of greased cartridges spark the Great Revolt of 1857. After brutal fighting, the British Parliament dissolves the East India Company via the Government of India Act 1858, transferring direct sovereignty to the British Crown and inaugurating the British Raj under Queen Victoria."
+    },
+    "ending_2": {
+      "title": "The Princely Commonwealth",
+      "story": "Halting annexations preserves traditional Indian monarchies. The Company governs a stable federation of cooperative Princely States through indirect rule, avoiding major military rebellion and maintaining lucrative commercial dominance with minimal administrative overhead."
+    },
+    "ending_3": {
+      "title": "The Southern Settlement",
+      "story": "The night assault breaks French influence in Mysore. Tipu accepts a truncated kingdom, leaving the Company as the undisputed master of southern Indian trade corridors and ports."
+    },
+    "ending_4": {
+      "title": "The Franco-Mysorean Empire",
+      "story": "French-backed Mysore drives the British out of the southern interior. Tipu Sultan founds a modern industrialized state that dominates southern Indian trade, permanently halting British territorial ambitions south of the Deccan."
+    },
+    "ending_5": {
+      "title": "The Master of Bihar",
+      "story": "Your sappers save the garrison from destruction, executing an orderly withdrawal to Patna. The Company abandons northern expansion, fortifying Bengal and Bihar as an impregnable, wealthy commercial fortress."
+    },
+    "ending_6": {
+      "title": "The Annihilation of Delhi",
+      "story": "The destruction of your army in Delhi ends Company military expansion in the north. The Marathas and northern sultans partition the Gangetic plain, leaving the British confined to isolated coastal trading ports."
+    },
+    "ending_7": {
+      "title": "The Awadh Shield",
+      "story": "Diplomacy fractures the northern coalition. Awadh becomes a loyal, permanent buffer state protecting Bengal, allowing the Company to dominate northern Indian commerce without the cost of policing hostile frontiers."
+    },
+    "ending_8": {
+      "title": "The River of Grape-Shot",
+      "story": "The artillery ambush on the river shatters the coalition's fighting strength. The northern princes sue for peace, leaving the Company in uncontested command of the trade arteries of the Ganges."
+    },
+    "ending_9": {
+      "title": "The Exclusive Monopoly",
+      "story": "Razing Pondicherry removes the French from the Indian chessboard. The British East India Company operates without European competition, dictating terms and prices across all major Indian ports."
+    },
+    "ending_10": {
+      "title": "The Secret Intrigues",
+      "story": "Permitting French factories to remain fuels decades of proxy wars. French officers continuously arm and drill rival regional armies, bogging the Company down in expensive brushfire conflicts across the Deccan."
+    },
+    "ending_11": {
+      "title": "The Deliverance of Madras",
+      "story": "The explosion of the French siege train breaks the siege of Fort St. George. Madras recovers, growing into the undisputed administrative and military headquarters of the Company’s southern operations."
+    },
+    "ending_12": {
+      "title": "French Ascendancy",
+      "story": "The fall of Madras hands southern India to France. French governors dominate southern trade routes, relegating the British to a secondary mercantile presence confined to western India."
+    },
+    "ending_13": {
+      "title": "The Konkan-Hooghly Axis",
+      "story": "Naval gunfire lifts the siege of Calcutta. The Company modernizes its river gunboat flotillas, securing the delta against all cavalry armies and cementing Bengal as an unassailable bastion of corporate power."
+    },
+    "ending_14": {
+      "title": "The Merchant Guild Return",
+      "story": "Expelled from Bengal, the Company abandons empire-building. It returns to its founding charter as an unarmed trading corporation, operating under the patronage of sovereign Indian rulers."
+    },
+    "ending_15": {
+      "title": "The Golden Balance Sheet",
+      "story": "Without territorial wars or mercenary army payrolls, Company balance sheets explode with profits. Operating as commercial suppliers to the Maratha Empire, the Company pays vast dividends to London investors without firing a shot."
+    },
+    "ending_16": {
+      "title": "The Great Expulsion",
+      "story": "Discovered arming illicit garrisons, the Company loses all imperial credibility. The Marathas confiscate all British assets in western and eastern India, ending British corporate presence on the subcontinent for a century."
+    }
+  }
+}

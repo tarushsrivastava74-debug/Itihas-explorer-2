@@ -1,0 +1,295 @@
+{
+  "rounds": {
+    "round1": {
+      "question": "You are Krishnadevaraya. You have just ascended the throne of the Vijayanagara Empire in Hampi. Your prime minister, Timmarusu, warns you that the Bahmani successor sultanates are massing troops along your northern border, while Portuguese emissaries arrive offering exclusive horse-trade contracts in exchange for coastal bases.",
+      "options": {
+        "A": {
+          "text": "The Portuguese Alliance (Historical): Grant the Portuguese governor Afonso de Albuquerque trade privileges in Bhatkal and Goa in exchange for an exclusive supply of Arabian warhorses.",
+          "consequence": "Superior cavalry pours into your stables, giving your army unmatched tactical speed. However, the northern Sultanates view this alliance as an imminent threat and declare a joint offensive against you.",
+          "next": "round2_A"
+        },
+        "B": {
+          "text": "Self-Reliant Isolation (Alternate): Refuse European influence, banish the Portuguese envoys, and rely entirely on indigenous cavalry and elephant battalions.",
+          "consequence": "The Portuguese blockade your western ports in retaliation, cutting off imports. You conserve state treasury bullion, but face the northern sultans with an infantry-heavy force.",
+          "next": "round2_B"
+        }
+      }
+    },
+    "round2_A": {
+      "question": "With thousands of Arabian warhorses, you march toward the disputed, fertile Raichur Doab. Ismail Adil Shah of Bijapur sets up camp across the Krishna River with heavy artillery.",
+      "options": {
+        "A": {
+          "text": "Frontal Cavalry Charge (Historical): Wait for dawn and launch an aggressive multi-division assault straight across the river shallows.",
+          "consequence": "Bijapur artillery tears into your vanguard initially, but your cavalry outflanks their lines. You capture Raichur Fort, sending shockwaves across southern India.",
+          "next": "round3_A1"
+        },
+        "B": {
+          "text": "Nighttime Flank Maneuver (Alternate): Divert your vanguard miles downstream under cover of darkness to encircle and capture their artillery park from the rear.",
+          "consequence": "You capture Bijapur's siege cannons intact without massive infantry losses, leaving Adil Shah's shattered army fleeing back to his capital.",
+          "next": "round3_A2"
+        }
+      }
+    },
+    "round2_B": {
+      "question": "Facing Bijapur without foreign horses, your commander relies heavily on war elephants and foot-archers to dispute the Raichur border.",
+      "options": {
+        "A": {
+          "text": "Elephant Phalanx (Alternate): Place armored war elephants at the front line with spiked tusks to trample Bijapur's horsemen.",
+          "consequence": "Bijapur's field cannons spook your elephants, which turn back into your own infantry lines, forcing a costly retreat back to the Tungabhadra River.",
+          "next": "round3_B1"
+        },
+        "B": {
+          "text": "Mountain Skirmish Defense (Alternate): Lure Bijapur's advancing forces into the rocky granite ravines surrounding Hampi and ambush their flanks.",
+          "consequence": "The rugged terrain neutralizes their cavalry; you slaughter their vanguard in the narrow gorges, protecting your capital.",
+          "next": "round3_B2"
+        }
+      }
+    },
+    "round3_A1": {
+      "question": "With Raichur secured, Prataparudra Deva, King of the Gajapatis of Odisha, threatens your eastern border and raids your Krishna delta outposts.",
+      "options": {
+        "A": {
+          "text": "Siege of Kondavidu (Historical): Personally march east, besiege the mountain fortress of Kondavidu, and construct wooden siege platforms overlooking the walls.",
+          "consequence": "Kondavidu falls after months of engineering warfare. The Gajapati king sues for peace, offering his daughter's hand in marriage to seal an alliance.",
+          "next": "round4_A1"
+        },
+        "B": {
+          "text": "Scorched Earth Defense (Alternate): Evacuate the border populations, burn the coastal paddies, and wait for the eastern monsoons to drown the Gajapati logistics.",
+          "consequence": "The Gajapati army starves and retreats, but your fertile eastern provinces suffer severe depopulation and lost tax revenue.",
+          "next": "round4_A2"
+        }
+      }
+    },
+    "round3_A2": {
+      "question": "Having captured Bijapur's elite artillery park, you possess fire support capable of leveling the strongest stone walls in India.",
+      "options": {
+        "A": {
+          "text": "March on Bijapur (Alternate): Push your advantage immediately into the Deccan and lay siege to the citadel of Bijapur itself.",
+          "consequence": "You breach the outer gates of Bijapur, putting the sultanate on the brink of total destruction.",
+          "next": "round4_A3"
+        },
+        "B": {
+          "text": "Fortify Hampi (Alternate): Drag the captured cannons back to your capital to construct a ring of artillery bastions around Hampi's temples and royal palaces.",
+          "consequence": "Hampi becomes an impenetrable citadel, deterring all foreign invasions for decades.",
+          "next": "round4_A4"
+        }
+      }
+    },
+    "round3_B1": {
+      "question": "Hearing of your retreat at Raichur, the rebellious chieftain of Ummattur in the southern Kaveri basin declares independence and seizes royal lands.",
+      "options": {
+        "A": {
+          "text": "River Island Assault (Alternate): Build temporary timber pontoon bridges across the roaring Kaveri River to assault his island citadel of Shivanasamudra.",
+          "consequence": "You breach the island fortress, execute the rebel leader, and re-establish iron imperial control over the southern kingdoms.",
+          "next": "round4_B1"
+        },
+        "B": {
+          "text": "Diplomatic Concession (Alternate): Grant the chieftain local autonomous rights in exchange for emergency war levies and fresh troops.",
+          "consequence": "The rebellion dissolves, but other regional governors take note of the crown's weakness and begin withholding imperial taxes.",
+          "next": "round4_B2"
+        }
+      }
+    },
+    "round3_B2": {
+      "question": "Your gorge ambush protected Hampi, but northern raiders continue pillaging the surrounding agrarian valleys.",
+      "options": {
+        "A": {
+          "text": "Frontier Wall Construction (Alternate): Mobilize 100,000 workers to construct a continuous chain of stone fortresses across the northern border.",
+          "consequence": "Border raids cease entirely, but the enormous cost drains the royal treasury and stretches the empire's labor force thin.",
+          "next": "round4_B3"
+        },
+        "B": {
+          "text": "Holy War Mobilization (Alternate): Rally all regional temples and local palegars (warlords) into a massive, decentralized frontier militia.",
+          "consequence": "A furious popular militia throws the raiders out of your territory, turning the border into a permanent martial zone.",
+          "next": "round4_B4"
+        }
+      }
+    },
+    "round4_A1": {
+      "question": "The Gajapatis are pacified and Raichur is yours. Your empire sits at its historical peak of prosperity, arts, and military prestige.",
+      "options": {
+        "A": {
+          "text": "Cultural & Temple Renaissance (Historical): Commission the Vittala Temple's stone chariot, expand irrigation canals, and write literary masterworks like Amuktamalyada.",
+          "consequence": "Hampi blossoms into the second-largest city in the world, inaugurating the golden age of south Indian literature and architecture.",
+          "next": "ending_1"
+        },
+        "B": {
+          "text": "Complete Annexation of the Deccan (Alternate): Break all existing treaties and mobilize your entire military to eradicate all remaining Deccan Sultanates once and for all.",
+          "consequence": "The terrified Sultanates drop their rivalries and unite into a desperate, fanatical defensive coalition.",
+          "next": "ending_2"
+        }
+      }
+    },
+    "round4_A2": {
+      "question": "The Gajapatis were repelled, but the scorched eastern delta faces widespread rebellion due to exorbitant taxation.",
+      "options": {
+        "A": {
+          "text": "Open the Royal Granaries (Alternate): Empty the imperial reserves in Hampi to feed the eastern peasantry and cancel all coastal tax obligations.",
+          "consequence": "The peasantry remains fiercely loyal, though your central treasury is left nearly destitute.",
+          "next": "ending_3"
+        },
+        "B": {
+          "text": "Iron-Handed Military Rule (Alternate): Station your veteran mercenary regiments along the coast to forcibly collect revenue.",
+          "consequence": "Riots erupt across the east, severing your connection to the Coromandel coast's maritime trade routes.",
+          "next": "ending_4"
+        }
+      }
+    },
+    "round4_A3": {
+      "question": "Bijapur's citadel is on the verge of collapsing under your siege cannons; the Sultan offers to become your permanent vassal.",
+      "options": {
+        "A": {
+          "text": "Accept Vassalage (Alternate): Spare the city, install an imperial garrison, and demand half of their annual tax revenue as tribute.",
+          "consequence": "Bijapur becomes a buffer state protecting your northern frontier from external invasion.",
+          "next": "ending_5"
+        },
+        "B": {
+          "text": "Total Raze (Alternate): Burn Bijapur to the ground, dismantle its royal palaces, and annex the territory directly.",
+          "consequence": "You eliminate your rival, but your army is bogged down trying to suppress permanent local guerrilla rebellions.",
+          "next": "ending_6"
+        }
+      }
+    },
+    "round4_A4": {
+      "question": "Hampi is heavily fortified with modern artillery bastions. Foreign travelers describe it as the world's most unassailable mountain fortress.",
+      "options": {
+        "A": {
+          "text": "Focus on Maritime Trade (Alternate): Use your secure capital base to direct state focus outward, building merchant fleets to trade with China and the Middle East.",
+          "consequence": "Gold, porcelain, and silk flood into the empire, turning coastal ports into thriving international trade centers.",
+          "next": "ending_7"
+        },
+        "B": {
+          "text": "Crown Immortality (Alternate): Turn inward, closing the city to outsiders to preserve the wealth and religious sanctity of Hampi.",
+          "consequence": "The empire grows culturally brilliant but administratively isolated from changing world politics.",
+          "next": "ending_8"
+        }
+      }
+    },
+    "round4_B1": {
+      "question": "The Kaveri basin is subdued, bringing hundreds of rich temples and delta lands back under your direct authority.",
+      "options": {
+        "A": {
+          "text": "Royal Temple Trust (Alternate): Channel all southern wealth into revitalizing the great temple cities of Madurai, Srirangam, and Chidambaram.",
+          "consequence": "You win the absolute devotion of the southern populace, cementing an enduring southern religious and cultural identity.",
+          "next": "ending_9"
+        },
+        "B": {
+          "text": "Southern War Levy (Alternate): Strip the southern provinces of their grain and wealth to finance an overwhelming march against the northern sultans.",
+          "consequence": "The south is drained dry, provoking passive resistance and boycotts across every trading guild.",
+          "next": "ending_10"
+        }
+      }
+    },
+    "round4_B2": {
+      "question": "Regional warlords refuse to send tax tributes to Hampi, functioning as de facto independent kingdoms.",
+      "options": {
+        "A": {
+          "text": "The Royal Audit (Alternate): Dispatch trusted imperial inquisitors and small strike divisions to arrest and replace corrupt palegars.",
+          "consequence": "You systematically regain control of regional administration, restoring royal authority province by province.",
+          "next": "ending_11"
+        },
+        "B": {
+          "text": "Decentralized Feudalism (Alternate): Formally sign over local sovereignty to the warlords in exchange for binding wartime treaties.",
+          "consequence": "The central crown becomes a ceremonial figurehead, leaving the empire hopelessly divided.",
+          "next": "ending_12"
+        }
+      }
+    },
+    "round4_B3": {
+      "question": "The stone border rampart is complete, shutting the Deccan armies out of your territory permanently.",
+      "options": {
+        "A": {
+          "text": "Settle Frontier Veterans (Alternate): Grant farmland along the border wall to retired soldiers and their families to maintain the defenses.",
+          "consequence": "A self-sustaining military caste develops along your border, repelling all invaders with zero imperial upkeep cost.",
+          "next": "ending_13"
+        },
+        "B": {
+          "text": "Excessive Toll Taxes (Alternate): Place heavy taxes on every merchant caravan and traveler passing through the border gates.",
+          "consequence": "Trade caravans bypass your kingdom entirely, causing local markets to wither away.",
+          "next": "ending_14"
+        }
+      }
+    },
+    "round4_B4": {
+      "question": "The northern frontier is controlled by your aggressive temple-militias, who now raid across the border without waiting for royal orders.",
+      "options": {
+        "A": {
+          "text": "Reassert Imperial Command (Alternate): Issue strict decrees banning unauthorized border raids on penalty of execution.",
+          "consequence": "The border stabilizes into an uneasy peace, though your frontier commanders resent royal interference.",
+          "next": "ending_15"
+        },
+        "B": {
+          "text": "Unleash the Raiders (Alternate): Officially authorize the militias to raid deep into the Deccan Sultanates for plunder.",
+          "consequence": "The raids inflame the entire Deccan region, uniting the Sultanates in an all-out war of survival against you.",
+          "next": "ending_16"
+        }
+      }
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "title": "The Golden Age of Vijayanagara",
+      "story": "Your reign becomes the legendary zenith of South Indian history. Hampi's bazaars trade in rubies and emeralds by the bushel, the Tungabhadra canals turn the scrubland green, and your administrative legacy guards the south for generations."
+    },
+    "ending_2": {
+      "title": "The Deccan Trap",
+      "story": "Your aggressive total conquest backfires as the Sultanates unite ahead of their time. Caught deep in hostile northern territory, your overstretched armies are surrounded and crushed, prematurely exhausting Vijayanagara's military might."
+    },
+    "ending_3": {
+      "title": "The Pious Protector",
+      "story": "Emptying the imperial vaults saved millions from famine. While you lack the resources for further military campaigns, your subjects revere you as a compassionate, saintly monarch whose memory endures in local folksongs."
+    },
+    "ending_4": {
+      "title": "The Severed Coast",
+      "story": "Your harsh military governors spark open rebellion along the Coromandel coast. The eastern ports declare independence, cutting your inland empire off from international maritime spice trade permanently."
+    },
+    "ending_5": {
+      "title": "Master of the Deccan",
+      "story": "With Bijapur as your subordinate client state, you control the balance of power across the peninsula. Northern sultans compete for your favor, securing Vijayanagara as the undisputed hegemon of central and southern India."
+    },
+    "ending_6": {
+      "title": "The Guerrilla Quagmire",
+      "story": "Annexing Bijapur's scorched ruins proves a fatal mistake. Decades of unending insurgency bleed your field legions dry, draining the wealth of Hampi to police a rebellious, ruined northern frontier."
+    },
+    "ending_7": {
+      "title": "The Maritime Empire",
+      "story": "Vijayanagara becomes a premier naval power in the Indian Ocean. Guarded behind Hampi's artillery walls, your merchants dominate the spice and silk routes, building wealth that rivals Renaissance Venice."
+    },
+    "ending_8": {
+      "title": "The Gilded Cocoon",
+      "story": "Hampi turns inward, becoming a magnificent museum-city of temples, courtyards, and philosophy. The city remains extraordinarily wealthy, but loses touch with external military developments, leaving it vulnerable to future powers."
+    },
+    "ending_9": {
+      "title": "The Dravidian Renaissance",
+      "story": "Your patronage of the great southern temple complexes cements an enduring cultural synthesis. The Dravidian architectural style reaches its absolute pinnacle, ensuring Tamil, Telugu, and Kannada heritage endures for centuries."
+    },
+    "ending_10": {
+      "title": "The Hollow Victory",
+      "story": "Draining the south funded a massive military engine, but hollowed out your tax base. Your mercenary forces mutiny when salaries run dry, fracturing your kingdom into petty, bickering statelets."
+    },
+    "ending_11": {
+      "title": "The Reconstructed Crown",
+      "story": "Your swift administrative purge eliminates internal corruption. You restore a disciplined bureaucracy across the southern districts, ensuring the central throne in Hampi collects its taxes and commands absolute obedience."
+    },
+    "ending_12": {
+      "title": "The Feudal Splinter",
+      "story": "Granting sovereignty away leaves the emperor powerless. When external enemies eventually strike, the selfish palegars refuse to ride to Hampi's defense, leaving the historic capital to face its enemies alone."
+    },
+    "ending_13": {
+      "title": "The Living Shield",
+      "story": "Your frontier settlements create an unbreachable martial barrier. Generations of self-sufficient farmer-soldiers guard the northern border, preserving decades of unbroken peace and prosperity across southern India."
+    },
+    "ending_14": {
+      "title": "The Dead Highway",
+      "story": "High border tolls choke off the commercial lifeblood of your kingdom. Trade caravans redirect their journeys to northern routes, leaving your market squares deserted and your gold reserves stagnant."
+    },
+    "ending_15": {
+      "title": "The Disciplined Border",
+      "story": "Reining in the rogue militias prevents an unnecessary major war. You maintain an armed, stable border with the Sultanates, preserving your kingdom's resources to focus on domestic development and agricultural works."
+    },
+    "ending_16": {
+      "title": "The Gathering Storm",
+      "story": "Unchecked border plundering forces the divided Deccan Sultanates into a united, vengeful coalition decades early. A massive combined northern army marches south, threatening the very survival of the Vijayanagara Empire."
+    }
+  }
+}
