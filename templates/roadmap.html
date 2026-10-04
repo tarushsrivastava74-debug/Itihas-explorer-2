@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITIHAS — Tree Flowchart Roadmap</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-dark: #070a12;
+      --panel-dark: #0d1424;
+      --card-inner: #131d33;
+      --surface-card: #0f172a;
+      --nav-bg: #050811;
+      --border-subtle: #1e293b;
+      --border-hover: #334155;
+
+      --amber-500: #f59e0b;
+      --amber-600: #d97706;
+      --amber-glow: rgba(245, 158, 11, 0.3);
+      --sky-400: #38bdf8;
+      --emerald-400: #10b981;
+      --purple-400: #c084fc;
+
+      --text-white: #ffffff;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+
+      --line-color: #334155;
+      --radial-1: rgba(217, 119, 6, 0.08);
+      --radial-2: rgba(56, 189, 248, 0.06);
+
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg-dark: #f8fafc;
+      --panel-dark: #ffffff;
+      --card-inner: #f1f5f9;
+      --surface-card: #e2e8f0;
+      --nav-bg: #e2e8f0;
+      --border-subtle: #cbd5e1;
+      --border-hover: #94a3b8;
+
+      --text-white: #0f172a;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+
+      --line-color: #cbd5e1;
+      --radial-1: rgba(245, 158, 11, 0.12);
+      --radial-2: rgba(56, 189, 248, 0.08);
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(circle at 15% 20%, var(--radial-1) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, var(--radial-2) 0%, transparent 45%);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: auto;
+    }
+
+    /* =========================================================
+       1. GLOBAL UNIFIED HEADER
+       ========================================================= */
+    header {
+      width: 100%;
+      height: 64px;
+      background: var(--panel-dark);
+      border-bottom: 1px solid var(--border-subtle);
+      backdrop-filter: blur(12px);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-badge {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--amber-500), var(--amber-600));
+      color: #fff;
+      font-size: 15px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px var(--amber-glow);
+    }
+
+    .brand-text {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+    }
+
+    .brand-text span {
+      color: var(--amber-500);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-left: 5px;
+    }
+
+    nav.nav-bar {
+      display: flex;
+      background: var(--nav-bg);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      gap: 2px;
+      opacity: 30%;
+      transition: all 0.3 ease;
+    }
+    nav.nav-bar:hover{
+        opacity: 100%;
+        transform: scale(1.04);
+    }
+
+    .nav-item {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-item:hover {
+      color: var(--text-white);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-item.active {
+      background: var(--amber-600);
+      color: #ffffff;
+      box-shadow: 0 2px 8px var(--amber-glow);
+    }
+
+    .header-user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .theme-pill {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .theme-pill:hover {
+      border-color: var(--amber-500);
+      color: var(--text-white);
+    }
+
+    .user-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-left: 12px;
+      border-left: 1px solid var(--border-subtle);
+    }
+
+    .user-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--amber-500), #ef4444);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .user-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* =========================================================
+       2. TOP PROGRESS DASHBOARD
+       ========================================================= */
+    .progress-strip-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 24px auto 0 auto;
+      padding: 0 24px;
+    }
+
+    .progress-banner {
+      background: var(--panel-dark);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 18px 24px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .progress-heading h1 {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--text-white);
+    }
+
+    .progress-heading p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .progress-percent {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--amber-500);
+      font-family: monospace;
+    }
+
+    .progress-count {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    .progress-bar-track {
+      width: 100%;
+      height: 8px;
+      background: var(--surface-card);
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .progress-bar-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--amber-600), var(--amber-500), var(--emerald-400));
+      border-radius: 6px;
+      transition: width 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* =========================================================
+       3. HIERARCHICAL TREE FLOWCHART CANVAS
+       ========================================================= */
+    .flowchart-viewport {
+      flex: 1;
+      width: 100%;
+      min-width: 1140px;
+      padding: 40px 24px 80px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    /* LEVEL 0: ROOT NODE */
+    .tree-root-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .root-node-card {
+      background: linear-gradient(135deg, #b45309, #78350f);
+      border: 2px solid var(--amber-500);
+      border-radius: 14px;
+      padding: 16px 36px;
+      text-align: center;
+      box-shadow: 0 0 25px var(--amber-glow);
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      z-index: 10;
+    }
+
+    .root-node-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 35px rgba(245, 158, 11, 0.5);
+    }
+
+    .root-node-card span {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #fef08a;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .root-node-card h2 {
+      font-size: 20px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+    }
+
+    /* STEM LINE LEADING FROM ROOT */
+    .root-trunk-line {
+      width: 2px;
+      height: 40px;
+      background: var(--line-color);
+    }
+
+    /* LEVEL 1: THE 3 MAIN EPOCHS (HORIZONTAL DISTRIBUTION) */
+    .tree-branches-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+      width: 100%;
+      max-width: 1280px;
+      position: relative;
+    }
+
+    /* SVG Crossbar connector between the 3 eras */
+    .branch-connector-svg {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      pointer-events: none;
+    }
+
+    .branch-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    /* ERA TRUNK CARDS */
+    .era-trunk-card {
+      width: 100%;
+      max-width: 320px;
+      background: var(--panel-dark);
+      border: 2px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px 18px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 5;
+    }
+
+    .era-ancient { border-color: rgba(56, 189, 248, 0.4); }
+    .era-medieval { border-color: rgba(245, 158, 11, 0.4); }
+    .era-modern { border-color: rgba(16, 185, 129, 0.4); }
+
+    .era-tag-badge {
+      font-size: 9.5px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+
+    .era-ancient .era-tag-badge { color: var(--sky-400); }
+    .era-medieval .era-tag-badge { color: var(--amber-500); }
+    .era-modern .era-tag-badge { color: var(--emerald-400); }
+
+    .era-trunk-card h3 {
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--text-white);
+      margin-bottom: 2px;
+    }
+
+    .era-trunk-card p {
+      font-size: 11px;
+      font-family: monospace;
+      color: var(--text-dim);
+    }
+
+    /* STEM FROM ERA TRUNK DOWN TO SUB-TOPICS */
+    .era-stem-line {
+      width: 2px;
+      height: 28px;
+      background: var(--line-color);
+    }
+
+    /* LEVEL 2: 7 CHAPTER BOXES IN VERTICAL FLOW */
+    .subtopics-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 340px;
+      position: relative;
+    }
+
+    /* Connecting vertical rail */
+    .subtopics-flow::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      bottom: 20px;
+      width: 2px;
+      background: var(--border-subtle);
+      z-index: 1;
+    }
+
+    /* INDIVIDUAL TOPIC CHAPTER NODE */
+    .flow-node-box {
+      background: var(--panel-dark);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 12px 14px 12px 42px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 2;
+    }
+
+    .flow-node-box:hover {
+      transform: translateX(4px);
+      border-color: var(--amber-500);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Node sequence circle */
+    .node-pin {
+      position: absolute;
+      left: 11px;
+      top: 15px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--surface-card);
+      border: 2px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      font-weight: 800;
+      color: var(--text-dim);
+      transition: all 0.2s;
+    }
+
+    /* COMPLETED STATE */
+    .flow-node-box.completed {
+      border-color: rgba(16, 185, 129, 0.45);
+      background: linear-gradient(90deg, rgba(16, 185, 129, 0.06) 0%, var(--panel-dark) 100%);
+    }
+
+    .flow-node-box.completed .node-pin {
+      background: var(--emerald-400);
+      border-color: var(--emerald-400);
+      color: #000000;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+    }
+
+    .node-year-tag {
+      font-size: 10px;
+      font-family: monospace;
+      font-weight: 700;
+      color: var(--amber-500);
+      margin-bottom: 2px;
+    }
+
+    .node-title-text {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-white);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .node-summary-text {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .node-action-cue {
+      margin-top: 6px;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--sky-400);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- ================= 1. GLOBAL HEADER ================= -->
+  <header>
+    <a href="/" class="brand-group">
+      <div class="brand-badge">इ</div>
+      <div class="brand-text">ITIHAS<span>Flowchart Roadmap</span></div>
+    </a>
+
+    <nav class="nav-bar">
+      <a href="/" class="nav-item">Home</a>
+      <a href="universe.html" class="nav-item">Guided Journey</a>
+      <a href="map_explorer.html" class="nav-item">Map Explorer</a>
+      <a href="mysteries.html" class="nav-item">Mysteries of India</a>
+      <a href="roadmap.html" class="nav-item active">Roadmap</a>
+    </nav>
+
+    <div class="header-user">
+      <button class="theme-pill" id="theme-toggle-btn" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark</span>
+      </button>
+      <div class="user-pill">
+        <div class="user-avatar">T</div>
+        <span class="user-name">Tejas Pal</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. PROGRESS BANNER ================= -->
+  <div class="progress-strip-container">
+    <div class="progress-banner">
+      <div class="progress-header">
+        <div class="progress-heading">
+          <h1>Civilizational Mastery Matrix</h1>
+          <p>Follow the historical tree flowchart. Click any box to launch its chronicle narrative.</p>
+        </div>
+        <div style="text-align: right;">
+          <div class="progress-percent" id="progress-percent">0%</div>
+          <div class="progress-count" id="progress-count">0 of 21 Pillars Mastered</div>
+        </div>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= 3. HIERARCHICAL TREE FLOWCHART ================= -->
+  <div class="flowchart-viewport">
+    
+    <!-- LEVEL 0: ROOT ORIGIN NODE -->
+    <div class="tree-root-container">
+      <div class="root-node-card" onclick="window.location.href='universe.html'">
+        <span>ORIGIN ROOT</span>
+        <h2>INDIAN HISTORY</h2>
+      </div>
+      <div class="root-trunk-line"></div>
+    </div>
+
+    <!-- LEVEL 1 & 2: THE THREE TRUNKS SPLITTING INTO 7 BOXES EACH -->
+    <div class="tree-branches-row">
+      
+      <!-- SVG Connecting Crossbar -->
+      <svg class="branch-connector-svg" preserveAspectRatio="none" viewBox="0 0 100 40">
+        <path d="M 50,0 L 50,18 M 16.6,18 L 83.3,18 M 16.6,18 L 16.6,40 M 50,18 L 50,40 M 83.3,18 L 83.3,40" 
+              fill="none" stroke="currentColor" stroke-width="1.2" style="color: var(--line-color);" />
+      </svg>
+
+      <!-- BRANCH 1: ANCIENT ERA -->
+      <div class="branch-column">
+        <div class="era-trunk-card era-ancient">
+          <span class="era-tag-badge">Epoch I</span>
+          <h3>Ancient Civilizations</h3>
+          <p>c. 2500 BCE – 650 CE</p>
+        </div>
+        <div class="era-stem-line"></div>
+        <div class="subtopics-flow" id="ancient-flow"></div>
+      </div>
+
+      <!-- BRANCH 2: MEDIEVAL ERA -->
+      <div class="branch-column">
+        <div class="era-trunk-card era-medieval">
+          <span class="era-tag-badge">Epoch II</span>
+          <h3>Medieval Empires</h3>
+          <p>c. 650 – 1757 CE</p>
+        </div>
+        <div class="era-stem-line"></div>
+        <div class="subtopics-flow" id="medieval-flow"></div>
+      </div>
+
+      <!-- BRANCH 3: MODERN ERA -->
+      <div class="branch-column">
+        <div class="era-trunk-card era-modern">
+          <span class="era-tag-badge">Epoch III</span>
+          <h3>Modern Freedom Movement</h3>
+          <p>c. 1757 – 1947 CE</p>
+        </div>
+        <div class="era-stem-line"></div>
+        <div class="subtopics-flow" id="modern-flow"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================= 4. FLOWCHART DATA & LOGIC ================= -->
+  <script src="/static/progress.js"></script>
+  <script>
+    function updateThemeUI(theme) {
+      document.body.setAttribute('data-theme', theme);
+      const icon = document.getElementById('theme-icon');
+      const text = document.getElementById('theme-text');
+      if (theme === 'light') {
+        icon.textContent = '☀️';
+        text.textContent = 'Light';
+      } else {
+        icon.textContent = '🌙';
+        text.textContent = 'Dark';
+      }
+    }
+
+    function toggleTheme() {
+      const currentTheme = document.body.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('itihas_theme', newTheme);
+      updateThemeUI(newTheme);
+    }
+
+    // Exact 21 canonical chapters matching universe.html & allHistoryData.js
+    const HIERARCHICAL_DATA = {
+      ancient: [
+        { id: "indus-valley", span: "c. 2500 BCE", title: "Indus Valley Civilization", desc: "Urban town planning, dockyards, and trade seals." },
+        { id: "vedic-period", span: "c. 1500 BCE", title: "Vedic Period", desc: "Rigvedic hymns, Janapadas, and philosophical evolution." },
+        { id: "mahajanapadas", span: "c. 600 BCE", title: "Mahajanapadas", desc: "Urbanization of Gangetic plains and Magadha's hegemony." },
+        { id: "buddhism-jainism", span: "c. 540 BCE", title: "Buddhism & Jainism", desc: "Shramana awakening, non-violence, and monastic orders." },
+        { id: "maurya-empire", span: "c. 321 BCE", title: "Maurya Empire", desc: "Ashoka's moral edicts and subcontinental unification." },
+        { id: "sangam-age", span: "c. 300 BCE", title: "Sangam Age", desc: "The three crowned kings (Chera, Chola, Pandya) of the south." },
+        { id: "gupta-empire", span: "c. 320 CE", title: "Gupta Classical Empire", desc: "Golden age of mathematics, literature, and temple art." }
+      ],
+      medieval: [
+        { id: "chola-empire", span: "c. 850 CE", title: "Imperial Chola Empire", desc: "Brihadisvara architecture and maritime naval expeditions." },
+        { id: "rajput-kingdoms", span: "c. 900 CE", title: "Rajput Dynasties", desc: "Fortress chivalry of Mewar, Ajmer, and Chittor." },
+        { id: "delhi-sultanate", span: "c. 1206 CE", title: "Delhi Sultanate", desc: "Mamluk, Khalji, and Tughlaq administrative centralizations." },
+        { id: "vijayanagara-empire", span: "c. 1336 CE", title: "Vijayanagara Empire", desc: "Splendor of Hampi and defense of southern culture." },
+        { id: "mughal-empire", span: "c. 1526 CE", title: "Mughal Empire", desc: "Gunpowder tactics, architectural zeniths, and administration." },
+        { id: "maratha-empire", span: "c. 1674 CE", title: "Maratha Swarajya", desc: "Shivaji Maharaj's guerrilla warfare and confederacy." },
+        { id: "sikh-empire", span: "c. 1799 CE", title: "Sikh Empire", desc: "Maharaja Ranjit Singh and northwestern frontier defense." }
+      ],
+      modern: [
+        { id: "east-india-company", span: "c. 1757 CE", title: "British East India Company", desc: "Battle of Plassey, Diwani rights, and colonial drain." },
+        { id: "revolt-1857", span: "c. 1857 CE", title: "Revolt of 1857", desc: "First nationwide war of independence and Crown accession." },
+        { id: "early-nationalism", span: "c. 1885 CE", title: "Early Nationalism & Congress", desc: "Formation of INC, moderates, and anti-partition protests." },
+        { id: "swadeshi-movement", span: "c. 1905 CE", title: "Swadeshi Movement", desc: "Indigenous economic boycott and national education." },
+        { id: "gandhian-era", span: "c. 1915 CE", title: "Gandhian Satyagraha", desc: "Non-cooperation, Salt March, and mass mobilization." },
+        { id: "civil-disobedience", span: "c. 1942 CE", title: "Quit India & INA", desc: "Subhas Chandra Bose and mass civil revolts." },
+        { id: "independence-partition", span: "c. 1947 CE", title: "Independence & Republic", desc: "Partition tragedy, princely integration, and Constitution." }
+      ]
+    };
+
+    // Progress now comes from the database (via /api/progress), not localStorage
+    async function renderTreeFlowchart() {
+      await ItihasProgress.ensureLogin();
+      const completed = await ItihasProgress.getCompleted();
+      let totalNodes = 0;
+
+      ["ancient", "medieval", "modern"].forEach(eraKey => {
+        const container = document.getElementById(`${eraKey}-flow`);
+        container.innerHTML = "";
+
+        HIERARCHICAL_DATA[eraKey].forEach((node, index) => {
+          totalNodes++;
+          const isDone = completed.includes(node.id);
+
+          const card = document.createElement("a");
+          card.href = `timeline.html?topic=${node.id}`;
+          card.className = `flow-node-box ${isDone ? "completed" : ""}`;
+
+          card.innerHTML = `
+            <div class="node-pin">${isDone ? "✓" : (index + 1)}</div>
+            <span class="node-year-tag">${node.span}</span>
+            <div class="node-title-text">${node.title}</div>
+            <div class="node-summary-text">${node.desc}</div>
+            <div class="node-action-cue">${isDone ? "Revisit Topic ➔" : "Explore Narrative ➔"}</div>
+          `;
+
+          container.appendChild(card);
+        });
+      });
+
+      // Update Top Progress Bar
+      const count = completed.length;
+      const percent = totalNodes > 0 ? Math.round((count / totalNodes) * 100) : 0;
+      document.getElementById("progress-percent").textContent = `${percent}%`;
+      document.getElementById("progress-count").textContent = `${count} of ${totalNodes} Pillars Mastered`;
+      document.getElementById("progress-bar-fill").style.width = `${percent}%`;
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem('itihas_theme') || 'dark';
+      updateThemeUI(savedTheme);
+      renderTreeFlowchart();
+    });
+  </script>
+</body>
+</html>

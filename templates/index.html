@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITIHAS — Interactive Indian History Engine</title>
+  <style>
+    /* =========================================================
+       1. SYSTEM RESET & DESIGN TOKENS (DARK & LIGHT MODE)
+       ========================================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #transition-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: transparent;
+      mix-blend-mode: screen; 
+    }
+
+    .video-overlay-stage {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(6, 8, 14, 0.92); 
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+    }
+
+    .video-overlay-stage.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    :root {
+      --bg-canvas: #06080e;
+      --bg-surface: #0b101a;
+      --bg-elevated: #121826;
+      --header-glass: rgba(6, 8, 14, 0.85);
+
+      --amber-500: #f59e0b;
+      --amber-600: #d97706;
+      --amber-glow: rgba(245, 158, 11, 0.22);
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(245, 158, 11, 0.45);
+
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-faint: #64748b;
+
+      --btn-primary-bg: #f8fafc;
+      --btn-primary-text: #06080e;
+
+      --spring-curve: cubic-bezier(0.16, 1, 0.3, 1);
+      --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg-canvas: #fafaf9;
+      --bg-surface: #ffffff;
+      --bg-elevated: #f4f4f5;
+      --header-glass: rgba(250, 250, 249, 0.9);
+
+      --amber-500: #d97706;
+      --amber-600: #b45309;
+      --amber-glow: rgba(217, 119, 6, 0.15);
+
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --border-hover: rgba(217, 119, 6, 0.4);
+
+      --text-main: #18181b;
+      --text-muted: #52525b;
+      --text-faint: #a1a1aa;
+
+      --btn-primary-bg: #18181b;
+      --btn-primary-text: #ffffff;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background-color 0.4s var(--spring-curve), color 0.4s var(--spring-curve);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* =========================================================
+       2. MINIMAL HEADER
+       ========================================================= */
+    header {
+      width: 100%;
+      height: 64px;
+      background: var(--header-glass);
+      border-bottom: 1px solid var(--border-subtle);
+      backdrop-filter: saturate(180%) blur(16px);
+      -webkit-backdrop-filter: saturate(180%) blur(16px);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: background-color 0.4s var(--spring-curve);
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-glyph {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--amber-500), var(--amber-600));
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 800;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-title {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    nav.nav-bar {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-item {
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-item:hover, .nav-item.active {
+      color: var(--text-main);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .theme-toggle-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .theme-toggle-btn:hover {
+      border-color: var(--amber-500);
+      color: var(--text-main);
+    }
+
+    /* =========================================================
+       3. HERO SECTION (TWO-COLUMN ENTRANCE)
+       ========================================================= */
+    main.homepage-stage {
+      max-width: 1160px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 96px 40px 60px 40px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-editorial {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .hero-eyebrow {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    h1.hero-headline {
+      font-size: clamp(42px, 5.2vw, 68px);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      margin-bottom: 22px;
+      color: rgb(241, 184, 77);
+    }
+    
+    .hero-thought {
+      color: #ffa303;
+    }
+
+    p.hero-subtext {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    p.hero-description {
+      font-size: 15px;
+      color: var(--text-faint);
+      line-height: 1.6;
+      max-width: 520px;
+      margin-bottom: 36px;
+    }
+
+    .hero-action-hub {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    .btn-primary-start {
+      background: var(--btn-primary-bg);
+      color: var(--btn-primary-text);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 28px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      box-shadow: 0 8px 24px var(--amber-glow);
+      transition: transform 0.2s var(--spring-curve), opacity 0.2s;
+    }
+
+    .btn-primary-start:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .map-action-wrapper {
+      position: relative;
+    }
+
+    .btn-secondary-map {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 14px 24px;
+      border-radius: 14px;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary-map:hover {
+      background: var(--bg-elevated);
+      border-color: var(--border-hover);
+    }
+
+    .map-tooltip {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 0;
+      right: 0;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-hover);
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: all 0.25s var(--spring-curve);
+      pointer-events: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .map-action-wrapper:hover .map-tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .btn-tertiary-intro {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      font-weight: 500;
+      text-align: left;
+      padding: 4px 0;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .btn-tertiary-intro:hover {
+      color: var(--amber-500);
+    }
+
+    /* =========================================================
+       4. PHILOSOPHY BAR
+       ========================================================= */
+    .philosophy-section {
+      max-width: 1160px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 40px 80px 40px;
+    }
+
+    .philosophy-card {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--amber-500);
+      border-top: 1px solid var(--border-subtle);
+      border-right: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 32px 40px;
+      border-radius: 0 16px 16px 0;
+    }
+
+    .philosophy-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--amber-500);
+      margin-bottom: 8px;
+    }
+
+    .philosophy-text {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text-main);
+      max-width: 800px;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+    }
+
+    /* =========================================================
+       5. EXPERIENCE PREVIEWS
+       ========================================================= */
+    .previews-section {
+      max-width: 1160px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 40px 100px 40px;
+    }
+
+    .previews-header {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-faint);
+      margin-bottom: 24px;
+    }
+
+    .previews-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .preview-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s var(--spring-curve);
+    }
+
+    .preview-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .preview-card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .preview-card-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .preview-card-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--amber-500);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    @media (max-width: 960px) {
+      main.homepage-stage { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px; }
+      header { padding: 0 24px; }
+      nav.nav-bar { display: none; }
+      .previews-grid { grid-template-columns: 1fr 1fr; }
+      .philosophy-section, .previews-section { padding-left: 24px; padding-right: 24px; }
+    }
+
+    @media (max-width: 580px) {
+      .previews-grid { grid-template-columns: 1fr; }
+    }
+
+    .user-pill {
+    padding-left: 14px;
+    border-left: 1px solid rgba(128, 128, 128, 0.35);
+ }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- ================= TRANSPARENT OVERLAY STAGE ================= -->
+  <div id="video-overlay" class="video-overlay-stage">
+    <video id="transition-video" playsinline muted preload="auto">
+      <source src="{{ url_for('static', filename='transition.webm') }}" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- ================= 1. HEADER ================= -->
+  <header>
+    <a href="/" class="brand-link">
+      <div class="brand-glyph">इ</div>
+      <div class="brand-title">ITIHAS</div>
+    </a>
+
+    <nav class="nav-bar">
+      <a href="/universe.html" class="nav-item">Explore</a>
+      <a href="/map_explorer.html" class="nav-item">Map Explorer</a>
+      <a href="/mysteries.html" class="nav-item">Mysteries of India</a>
+      <a href="/roadmap.html" class="nav-item">Roadmap</a>
+    </nav>
+
+    <div class="header-controls">
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+      <span id="theme-icon">🌙</span>
+      <span id="theme-label">Dark</span>
+    </button>
+    <div class="user-pill">
+      <script src="/static/progress.js"></script>
+<script>ItihasProgress.ensureLogin();</script>
+      <div class="user-avatar">T</div>
+      <span class="user-name">Guest</span>
+    </div>
+  </div>
+</header>
+</body>
+</html>
+  <!-- ================= 2. HERO SECTION ================= -->
+  <main class="homepage-stage">
+    
+    <div class="hero-editorial">
+      <div class="hero-eyebrow">ITIHAS — Interactive History Engine</div>
+      <h1 class="hero-headline">
+        You think history is boring?<br />
+        <span class="hero-thought">We'd like to change that.</span>
+      </h1>
+      <p class="hero-subtext">Learn history in a completely new way.</p>
+      <p class="hero-description">
+        ITIHAS lets you explore India's past not through static textbooks, but through shifting geographic boundaries, high-stakes political decisions, and immersive narratives connected across time.
+      </p>
+    </div>
+
+    <div class="hero-action-hub">
+      
+      <!-- Button 1: Start the Journey (Triggers Transparent Video Overlay) -->
+      <button class="btn-primary-start" onclick="playTransparentTransition('universe.html')">
+        <span>Start the Journey</span>
+        <span>➔</span>
+      </button>
+
+      <div class="map-action-wrapper">
+        <div class="map-tooltip">
+          Explore India's history through maps and time. Watch borders shift across centuries.
+        </div>
+        <button class="btn-secondary-map" onclick="playTransparentTransition('map_explorer.html')">
+          <span>Map Explorer</span>
+          <span>🗺</span>
+        </button>
+      </div>
+
+      <a href="intro.html" class="btn-tertiary-intro">
+        <span>Why is India's history special?</span>
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </main>
+
+  <!-- ================= 4. CENTRAL PHILOSOPHY BAR ================= -->
+  <section class="philosophy-section">
+    <div class="philosophy-card">
+      <div class="philosophy-title">The Core Philosophy</div>
+      <p class="philosophy-text">
+        History is not just a collection of dates. It is time, geography, people, events and consequences connected together.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 5. EXPERIENCE PREVIEWS ================= -->
+  <section class="previews-section">
+    <div class="previews-header">Explore Specific Dimensions</div>
+    
+    <div class="previews-grid">
+      <a href="map_explorer.html" class="preview-card">
+        <div>
+          <div class="preview-card-title">Map Explorer <span>🗺</span></div>
+          <div class="preview-card-desc">Geopolitical boundaries shifting across centuries of empire and change.</div>
+        </div>
+        <div class="preview-card-link">Launch Atlas →</div>
+      </a>
+
+      <a href="simulation.html" class="preview-card">
+        <div>
+          <div class="preview-card-title">Roleplay Simulation <span>⚔️</span></div>
+          <div class="preview-card-desc">Step into pivotal historical turning points and weigh command decisions.</div>
+        </div>
+        <div class="preview-card-link">Enter Council →</div>
+      </a>
+
+      <a href="mysteries.html" class="preview-card">
+        <div>
+          <div class="preview-card-title">Mysteries of India <span>🏛️</span></div>
+          <div class="preview-card-desc">Inspect architectural anomalies and unwritten engineering feats.</div>
+        </div>
+        <div class="preview-card-link">View Sanctums →</div>
+      </a>
+
+      <a href="roadmap.html" class="preview-card">
+        <div>
+          <div class="preview-card-title">Chronicle Roadmap <span>📊</span></div>
+          <div class="preview-card-desc">Track your mastery progress across epochs and historical modules.</div>
+        </div>
+        <div class="preview-card-link">View Progress →</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= 6. SCRIPT HANDLERS ================= -->
+  <script>
+    function updateThemeUI(theme) {
+      document.body.setAttribute('data-theme', theme);
+      const icon = document.getElementById('theme-icon');
+      const label = document.getElementById('theme-label');
+      if (theme === 'light') {
+        icon.textContent = '☀️';
+        label.textContent = 'Light';
+      } else {
+        icon.textContent = '🌙';
+        label.textContent = 'Dark';
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.body.getAttribute('data-theme') || 'dark';
+      const next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('itihas_theme', next);
+      updateThemeUI(next);
+    }
+
+    // Pure video-length transition: plays to the absolute end, with manual click-to-skip enabled.
+    function playTransparentTransition(destinationUrl) {
+      const overlay = document.getElementById("video-overlay");
+      const video = document.getElementById("transition-video");
+
+      let hasNavigated = false;
+
+      function executeNavigation() {
+        if (hasNavigated) return;
+        hasNavigated = true;
+        window.location.href = destinationUrl;
+      }
+
+      // 1. Activate visual stage
+      overlay.classList.add("active");
+      video.currentTime = 0;
+
+      // 2. Play video safely
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.warn("Autoplay blocked video, redirecting immediately.");
+          executeNavigation();
+        });
+      }
+
+      // 3. Click anywhere on the screen to instantly skip the video if desired
+      overlay.onclick = () => {
+        executeNavigation();
+      };
+
+      // 4. Navigate ONLY when the video reaches its natural end
+      video.onended = () => {
+        executeNavigation();
+      };
+
+      // 5. Fallback only if the video file fails to load at all
+      video.onerror = () => {
+        console.warn("Video file error, redirecting...");
+        executeNavigation();
+      };
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('itihas_theme') || 'dark';
+      updateThemeUI(savedTheme);
+    });
+  </script>
+</body>
+</html>

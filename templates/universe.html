@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITIHAS — The Chronological Axis of Time</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-void: #020408;
+      --surface-glass: rgba(10, 14, 24, 0.75);
+      --surface-card: rgba(16, 22, 36, 0.6);
+      --border-line: rgba(245, 158, 11, 0.18);
+      --border-active: rgba(245, 158, 11, 0.8);
+      
+      --gold-primary: #f59e0b;
+      --gold-bright: #fde68a;
+      --gold-deep: #78350f;
+      --gold-glow: rgba(245, 158, 11, 0.3);
+
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+
+      --spring-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+      --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+    }
+
+    [data-theme="light"] {
+      --bg-void: #f4f4f6;
+      --surface-glass: rgba(255, 255, 255, 0.85);
+      --surface-card: rgba(255, 255, 255, 0.7);
+      --border-line: rgba(180, 83, 9, 0.2);
+      --border-active: rgba(180, 83, 9, 0.8);
+      
+      --gold-primary: #d97706;
+      --gold-bright: #b45309;
+      --gold-deep: #451a03;
+      --gold-glow: rgba(217, 119, 6, 0.15);
+
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #94a3b8;
+    }
+
+    body {
+      background-color: var(--bg-void);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      transition: background-color 0.5s ease;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Ambient Axis Glow */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1000px;
+      height: 600px;
+      background: radial-gradient(circle, var(--gold-glow) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* =========================================================
+       1. HEADER
+       ========================================================= */
+    header {
+      width: 100%;
+      height: 60px;
+      background: var(--surface-glass);
+      border-bottom: 1px solid var(--border-line);
+      backdrop-filter: blur(20px);
+      padding: 0 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-glyph {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--gold-primary), var(--gold-deep));
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 900;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px var(--gold-glow);
+    }
+
+    .brand-title {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-title span {
+      color: var(--gold-primary);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-left: 6px;
+    }
+
+    nav.nav-bar {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-item {
+      color: var(--text-muted);
+      font-size: 12.5px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-item:hover, .nav-item.active {
+      color: var(--gold-primary);
+      font-weight: 700;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .theme-pill {
+      background: var(--surface-glass);
+      border: 1px solid var(--border-line);
+      color: var(--text-muted);
+      font-size: 11.5px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .theme-pill:hover {
+      border-color: var(--gold-primary);
+      color: var(--text-main);
+    }
+
+    /* =========================================================
+       2. AXIS OF TIME STAGE
+       ========================================================= */
+    main.axis-stage {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px 24px 100px 24px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .axis-eyebrow {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--gold-primary);
+      margin-bottom: 10px;
+    }
+
+    h1.axis-heading {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.axis-subtitle {
+      font-size: 15.5px;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 580px;
+      margin-bottom: 50px;
+    }
+
+    /* Breadcrumb / Return Control */
+    .axis-controls-bar {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .return-btn {
+      background: var(--surface-glass);
+      border: 1px solid var(--border-line);
+      color: var(--text-main);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(10px);
+      transition: all 0.25s var(--spring-smooth);
+    }
+
+    .return-btn:hover {
+      border-color: var(--gold-primary);
+      transform: translateX(-3px);
+      box-shadow: 0 4px 15px var(--gold-glow);
+    }
+
+    /* =========================================================
+       3. THE INFINITE VERTICAL TIMELINE AXIS
+       ========================================================= */
+    .axis-line-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      padding: 20px 0;
+    }
+
+    /* The glowing vertical timeline wire */
+    .axis-line-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 32px;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--gold-deep), var(--gold-primary), var(--gold-deep));
+      box-shadow: 0 0 15px var(--gold-glow);
+    }
+
+    .axis-node {
+      position: relative;
+      margin-bottom: 36px;
+      padding-left: 80px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: revealNode 0.6s var(--spring-smooth) forwards;
+    }
+
+    @keyframes revealNode {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Timeline Node Pulsing Anchor Point */
+    .axis-node::before {
+      content: '';
+      position: absolute;
+      left: 24px;
+      top: 24px;
+      width: 19px;
+      height: 19px;
+      background: var(--bg-void);
+      border: 3px solid var(--gold-primary);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--gold-glow);
+      z-index: 2;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .axis-node:hover::before {
+      background: var(--gold-primary);
+      transform: scale(1.25);
+    }
+
+    /* The Glassmorphic Content Card */
+    .axis-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-line);
+      border-radius: 20px;
+      padding: 30px 36px;
+      cursor: pointer;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+      transition: all 0.35s var(--spring-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .axis-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, var(--gold-glow), transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .axis-card:hover {
+      border-color: var(--border-active);
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 22px 50px var(--gold-glow);
+    }
+
+    .axis-card:hover::after {
+      opacity: 1;
+    }
+
+    .card-meta-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--gold-primary);
+      margin-bottom: 6px;
+    }
+
+    .card-main-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .card-explore-trigger {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.2s ease;
+    }
+
+    .axis-card:hover .card-explore-trigger {
+      gap: 12px;
+    }
+
+        .user-pill {
+      padding-left: 14px;
+      border-left: 1px solid rgba(128, 128, 128, 0.35);
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- ================= HEADER ================= -->
+  <header>
+    <a href="/" class="brand-link">
+      <div class="brand-glyph">इ</div>
+      <div class="brand-title">ITIHAS<span>Axis of Time</span></div>
+    </a>
+
+    <nav class="nav-bar">
+      <a href="/" class="nav-item">Home</a>
+      <a href="/universe.html" class="nav-item active">Guided Journey</a>
+      <a href="/map_explorer.html" class="nav-item">Map Explorer</a>
+      <a href="/mysteries.html" class="nav-item">Mysteries of India</a>
+      <a href="/roadmap.html" class="nav-item">Roadmap</a>
+    </nav>
+
+    <div class="header-user">
+      <button class="theme-pill" id="theme-toggle-btn" onclick="toggleTheme()">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark</span>
+      </button>
+      <div class="user-pill">
+        <script src="/static/progress.js"></script>
+  <script>ItihasProgress.ensureLogin();</script>
+        <div class="user-avatar">S</div>
+        <span class="user-name">Syntax Squad</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= STAGE ================= -->
+  <main class="axis-stage">
+    
+    <div class="axis-eyebrow" id="axis-eyebrow">The Continuum</div>
+    <h1 class="axis-heading" id="axis-heading">Axis of Indian History</h1>
+    <p class="axis-subtitle" id="axis-subtitle">
+      Traverse down the vertical continuum of time where epochs flow seamlessly into one another.
+    </p>
+
+    <!-- Return Breadcrumb -->
+    <div class="axis-controls-bar" id="axis-controls-bar" style="display: none;">
+      <button class="return-btn" onclick="renderEpochsAxis()">← Return to Epoch Continuum</button>
+    </div>
+
+    <!-- Infinite Vertical Timeline Axis -->
+    <div class="axis-line-container" id="axis-stream">
+      <!-- Injected dynamically -->
+    </div>
+
+  </main>
+
+  <!-- ================= ENGINE ================= -->
+  <script>
+    function updateThemeUI(theme) {
+      document.body.setAttribute('data-theme', theme);
+      document.getElementById('theme-icon').textContent = theme === 'light' ? '☀️' : '🌙';
+      document.getElementById('theme-text').textContent = theme === 'light' ? 'Light' : 'Dark';
+    }
+
+    function toggleTheme() {
+      const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('itihas_theme', next);
+      updateThemeUI(next);
+    }
+
+    // LEVEL 1: The 3 Master Eras along the Axis
+    const AXIS_EPOCHS = [
+      {
+        id: 'ancient',
+        span: 'c. 2500 BCE – 650 CE',
+        title: 'Ancient Axis',
+        desc: 'The foundational dawn along the Indus valley river systems, the crystallization of Vedic philosophy, the grand statecraft of Magadha, and the zenith of classical Gupta art and science.'
+      },
+      {
+        id: 'medieval',
+        span: 'c. 650 – 1757 CE',
+        title: 'Medieval Axis',
+        desc: 'An era of magnificent architectural synthesis, maritime Chola dominance across Southeast Asia, shifting Sultanate courts, and the expansive administration of the Mughal empire.'
+      },
+      {
+        id: 'modern',
+        span: 'c. 1757 – 1947 CE',
+        title: 'Modern Axis',
+        desc: 'The dramatic friction of colonial trade expansion, the crucible of the 1857 uprising, nationwide Satyagraha mass movements, and the historic birth of the modern Republic.'
+      }
+    ];
+
+    // LEVEL 2: The 7 Core Pillars per Epoch
+    const AXIS_PILLARS = {
+      ancient: [
+        { id: 'buddhism-jainism', meta: 'Ethical Revolution', title: 'Buddhism & Jainism', desc: 'The rise of ascetic reform movements challenging orthodox ritualism, preaching absolute non-violence, karma, and liberation across the Gangetic plains.' },
+        { id: 'gupta-empire', meta: 'Classical Golden Age', title: 'Gupta Empire', desc: 'A period of supreme artistic refinement, groundbreaking mathematical discoveries (zero and decimal systems), Sanskrit literature, and astronomical mastery.' },
+        { id: 'indus-valley', meta: 'Urban Origins', title: 'Indus Valley Civilization', desc: 'Advanced grid-town planning, sophisticated drainage systems, standardized weights, and seals testifying to ancient proto-literate commerce.' },
+        { id: 'mahajanapadas', meta: 'State Craft & Magadha', title: 'Mahajanapadas & Magadha', desc: 'The consolidation of sixteen powerful territorial states leading to centralized imperial dominance under ambitious rulers in Northern India.' },
+        { id: 'maurya-empire', meta: 'Imperial Unification', title: 'Maurya Empire', desc: 'Chandragupta and Ashoka unifying the subcontinent under a vast administrative apparatus, spreading moral edicts of Dhamma across rock pillars.' },
+        { id: 'sangam-age', meta: 'Classical Deep South', title: 'Sangam Age & Maritime Trade', desc: 'Thriving academy literature in Tamil, royal patronage of the Chera, Chola, and Pandya dynasties, and booming Roman-Indian maritime trade.' },
+        { id: 'vedic-period', meta: 'Cosmic Order & Ritual', title: 'Vedic Period', desc: 'The composition of sacred Samhitas, Upanishadic philosophical inquiries into Brahman and Atman, and the evolution of social structures.' }
+      ],
+      medieval: [
+        { id: 'chola-empire', meta: 'Maritime & Temple Mastery', title: 'Chola Empire', desc: 'Rajaraja and Rajendra projecting naval power across the Indian Ocean to Southeast Asia while engineering monumental granite temples like Thanjavur.' },
+        { id: 'delhi-sultanate', meta: 'Indo-Islamic Synthesis', title: 'Delhi Sultanate', desc: 'Five successive dynasties introducing Persian administration, military innovations, Qutb Minar architecture, and urban monetary reforms.' },
+        { id: 'maratha-empire', meta: 'Swaraj & Confederacy', title: 'Maratha Empire', desc: 'Chhatrapati Shivaji Maharaj establishing sovereign Swaraj through guerrilla hill fort tactics, later expanding into an expansive confederacy.' },
+        { id: 'mughal-empire', meta: 'Grandeur & Administration', title: 'Mughal Empire', desc: 'Akbar’s religious pluralism, revenue systematization, exquisite miniature painting, architectural wonders like the Taj Mahal, and vast territorial rule.' },
+        { id: 'rajput-kingdoms', meta: 'Valor & Hill Forts', title: 'Rajput Kingdoms', desc: 'Clans bound by strict codes of chivalry (Dharma and Jauhar), defending formidable hilltop fortresses across Mewar, Marwar, and Amber.' },
+        { id: 'sikh-empire', meta: 'Punjab Sovereignty', title: 'Sikh Empire', desc: 'Maharaja Ranjit Singh unifying the Punjab region into a secular, formidable military power fostering cultural and administrative autonomy.' },
+        { id: 'vijayanagara-empire', meta: 'Deccan Cultural Bulwark', title: 'Vijayanagara Empire', desc: 'The City of Victory patronizing music, Kannada and Telugu literature, and erecting breathtaking stone chariot temples at Hampi.' }
+      ],
+      modern: [
+        { id: 'east-india-company', meta: 'Mercantilism to Hegemony', title: 'British East India Company', desc: 'The gradual corporate takeover beginning with Plassey and Buxar in 1757, transforming trading posts into territorial sovereignty.' },
+        { id: 'civil-disobedience', meta: 'Mass Non-Cooperation', title: 'Civil Disobedience & Quit India', desc: 'The Dandi salt march, nationwide boycotts, and the ultimate 1942 call compelling imperial administrative withdrawal.' },
+        { id: 'gandhian-era', meta: 'Satyagraha & Ahimsa', title: 'Gandhian Era & Non-Cooperation', desc: 'Mahatma Gandhi transforming India’s freedom struggle into a mass spiritual and political movement rooted in truth and non-violent resistance.' },
+        { id: 'independence-partition', meta: 'Sovereign Birth & Trauma', title: 'Independence & Partition', desc: 'August 15, 1947 marking the midnight birth of a sovereign democratic republic alongside the profound human tragedy of territorial partition.' },
+        { id: 'early-nationalism', meta: 'Political Awakening', title: 'Early Nationalism & Congress', desc: 'The founding of the Indian National Congress in 1885, early constitutional petitions, and the rise of assertive Swadeshi nationalism.' },
+        { id: 'revolt-1857', meta: 'The First War of Freedom', title: 'Revolt of 1857', desc: 'The monumental sepoy and civilian uprising spreading across Northern India, shaking British imperial rule to its core.' },
+        { id: 'swadeshi-movement', meta: 'Economic Self-Reliance', title: 'Swadeshi Movement', desc: 'Protesting the partition of Bengal by boycotting foreign goods, fostering indigenous industries, national education, and cultural awakening.' }
+      ]
+    };
+
+    function renderEpochsAxis() {
+      document.getElementById('axis-eyebrow').textContent = 'The Continuum';
+      document.getElementById('axis-heading').textContent = 'Axis of Indian History';
+      document.getElementById('axis-subtitle').textContent = 'Traverse down the vertical continuum of time where epochs flow seamlessly into one another.';
+      document.getElementById('axis-controls-bar').style.display = 'none';
+
+      const stream = document.getElementById('axis-stream');
+      stream.innerHTML = '';
+
+      AXIS_EPOCHS.forEach((epoch, idx) => {
+        const node = document.createElement('div');
+        node.className = 'axis-node';
+        node.style.animationDelay = `${idx * 0.15}s`;
+        node.onclick = () => renderPillarsAxis(epoch.id, epoch.title);
+
+        node.innerHTML = `
+          <div class="axis-card">
+            <div class="card-meta-tag">${epoch.span}</div>
+            <div class="card-main-title">${epoch.title}</div>
+            <div class="card-description">${epoch.desc}</div>
+            <div class="card-explore-trigger">Explore Axis Epoch ➔</div>
+          </div>
+        `;
+        stream.appendChild(node);
+      });
+    }
+
+    function renderPillarsAxis(epochId, epochTitle) {
+      document.getElementById('axis-eyebrow').textContent = `Active Dimension • ${epochTitle}`;
+      document.getElementById('axis-heading').textContent = epochTitle;
+      document.getElementById('axis-subtitle').textContent = 'Select any chronological anchor along this axis to launch its interactive timeline study.';
+      document.getElementById('axis-controls-bar').style.display = 'flex';
+
+      const stream = document.getElementById('axis-stream');
+      stream.innerHTML = '';
+
+      const pillars = AXIS_PILLARS[epochId];
+      pillars.forEach((pillar, idx) => {
+        const node = document.createElement('div');
+        node.className = 'axis-node';
+        node.style.animationDelay = `${idx * 0.08}s`;
+        node.onclick = () => {
+          window.location.href = `timeline.html?topic=${pillar.id}`;
+        };
+
+        node.innerHTML = `
+          <div class="axis-card">
+            <div class="card-meta-tag">${pillar.meta}</div>
+            <div class="card-main-title">${pillar.title}</div>
+            <div class="card-description">${pillar.desc}</div>
+            <div class="card-explore-trigger" style="color: var(--gold-primary);">Launch Chronology Timeline ➔</div>
+          </div>
+        `;
+        stream.appendChild(node);
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('itihas_theme') || 'dark';
+      updateThemeUI(savedTheme);
+
+      const params = new URLSearchParams(window.location.search);
+      const era = params.get('era');
+      if (era && AXIS_PILLARS[era]) {
+        renderPillarsAxis(era, era.toUpperCase() + ' AXIS');
+      } else {
+        renderEpochsAxis();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Know India — ITIHAS</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden}
+body{background:#070707;color:#eee7da;font-family:Georgia,"Times New Roman",serif}
+.page{position:relative;width:100vw;height:100vh;overflow:hidden;background:radial-gradient(circle at 72% 48%,rgba(185,145,82,.10),transparent 26%),radial-gradient(circle at 20% 80%,rgba(255,255,255,.025),transparent 25%),#070707}
+.page:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.055;background:repeating-linear-gradient(0deg,transparent 0,transparent 2px,rgba(255,255,255,.14) 3px);mix-blend-mode:overlay;z-index:30}
+.top{position:absolute;top:28px;left:34px;right:34px;display:flex;justify-content:space-between;align-items:center;font:11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:rgba(238,231,218,.48);z-index:40}
+.brand{color:#c9ad79}.hint{color:rgba(238,231,218,.3)}
+.layout{position:absolute;inset:0;display:grid;grid-template-columns:42% 58%;align-items:center;padding:70px 7vw 55px}
+.copy{position:relative;z-index:10;max-width:570px}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:#a89472;margin-bottom:24px}
+h1{font-size:clamp(3rem,6vw,6.4rem);font-weight:400;line-height:.96;letter-spacing:-.035em}
+h1 span{color:#c8aa73}
+.lead{margin-top:28px;min-height:120px;max-width:520px;font:17px/1.75 Arial,sans-serif;color:rgba(238,231,218,.64)}
+.cursor{display:inline-block;width:7px;height:1em;background:#c8aa73;vertical-align:-.14em;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.facts{margin-top:26px;display:flex;flex-direction:column;gap:12px;opacity:0;transform:translateY(18px);transition:1s ease}.facts.show{opacity:1;transform:translateY(0)}
+.fact{font:11px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(238,231,218,.42);display:flex;gap:14px}.fact b{font-weight:400;color:#c8aa73}
+.map-area{position:relative;height:100%;min-height:500px;display:flex;align-items:center;justify-content:center}
+.map-stage{position:relative;width:min(42vw,570px);height:min(76vh,690px);transform:translateY(20px) scale(.94);opacity:0;transition:1.8s cubic-bezier(.16,.8,.25,1)}
+.map-stage.loaded{opacity:1;transform:translateY(0) scale(1)}
+.map-aura{position:absolute;inset:7%;border-radius:50%;background:radial-gradient(circle,rgba(199,170,118,.12),transparent 62%);filter:blur(12px)}
+.orbit{position:absolute;inset:13%;border:1px solid rgba(199,170,118,.10);border-radius:50%;transform:rotate(-18deg) scaleX(.74);animation:spin 22s linear infinite}
+.orbit.two{inset:20%;transform:rotate(37deg) scaleX(.62);animation-duration:31s;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(342deg) scaleX(.74)}}
+.map-wrap{position:absolute;inset:8%;display:flex;align-items:center;justify-content:center}
+.map-wrap img{width:78%;height:88%;object-fit:contain;filter:brightness(.48) sepia(.16) saturate(.75) drop-shadow(0 20px 50px rgba(0,0,0,.8));opacity:.92;transition:filter 1s ease,transform 1.4s cubic-bezier(.16,.8,.25,1)}
+.map-stage.active img{filter:brightness(.68) sepia(.18) saturate(.8) drop-shadow(0 20px 50px rgba(0,0,0,.8));transform:scale(1.015)}
+.scan{position:absolute;left:14%;right:14%;height:1px;background:linear-gradient(90deg,transparent,rgba(199,170,118,.55),transparent);opacity:0;animation:scan 4.5s ease-in-out infinite}
+@keyframes scan{0%,100%{top:18%;opacity:0}20%{opacity:.8}80%{opacity:.8}50%{top:82%}}
+.dot{position:absolute;width:5px;height:5px;border-radius:50%;background:#c8aa73;box-shadow:0 0 14px rgba(200,170,115,.7);opacity:0;transition:opacity .7s ease}.dot.show{opacity:.85}
+.d1{left:46%;top:37%}.d2{left:54%;top:50%}.d3{left:43%;top:59%}.d4{left:61%;top:65%}.d5{left:38%;top:47%}
+.loading{position:absolute;bottom:12%;right:5%;font:10px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:rgba(238,231,218,.32)}
+.progress{position:absolute;bottom:12%;right:5%;height:1px;width:55px;background:#c8aa73;transform:scaleX(0);transform-origin:left;transition:3s ease}.progress.go{transform:scaleX(1)}
+.bottom{position:absolute;left:7vw;right:7vw;bottom:32px;display:flex;justify-content:space-between;align-items:center;z-index:40}
+.status{font:10px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(238,231,218,.28)}
+.enter{border:1px solid rgba(199,170,118,.45);background:transparent;color:#e8dcc7;padding:13px 25px;font:10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;opacity:0;pointer-events:none;transition:.35s}.enter.show{opacity:1;pointer-events:auto}.enter:hover{background:#c8aa73;color:#090909;border-color:#c8aa73}
+.back{position:absolute;top:27px;left:50%;transform:translateX(-50%);border:0;background:transparent;color:rgba(238,231,218,.24);font:10px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;z-index:45}.back:hover{color:rgba(238,231,218,.65)}
+@media(max-width:850px){.layout{grid-template-columns:1fr;padding:75px 9vw 65px}.copy{align-self:start}.map-area{height:48vh;min-height:300px}.map-stage{width:72vw;height:46vh}.lead{font-size:14px;min-height:90px}h1{font-size:clamp(2.7rem,12vw,5rem)}.facts{display:none}.bottom{bottom:18px}.loading,.progress{display:none}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="top"><div class="brand">ITIHAS</div><div class="hint">A closer look at India</div></div>
+<button class="back" onclick="history.back()">Back</button>
+<div class="layout">
+<section class="copy">
+<div class="eyebrow">Know India</div>
+<h1>First,<br>understand <span>India.</span></h1>
+<div class="lead"><span id="typed"></span><span class="cursor"></span></div>
+<div class="facts" id="facts">
+<div class="fact"><b>01</b> A civilisation shaped by geography.</div>
+<div class="fact"><b>02</b> A place where cultures continuously met.</div>
+<div class="fact"><b>03</b> Ideas travelled across centuries.</div>
+<div class="fact"><b>04</b> The past still lives in the present.</div>
+</div>
+</section>
+<section class="map-area">
+<div class="map-stage" id="mapStage">
+<div class="map-aura"></div><div class="orbit"></div><div class="orbit two"></div>
+<div class="map-wrap"><img id="indiaMap" alt="Outline map of India" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/India_outline.svg"></div>
+<div class="scan"></div>
+<div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><div class="dot d4"></div><div class="dot d5"></div>
+</div>
+<div class="loading" id="loading">Loading India</div><div class="progress" id="progress"></div>
+</section>
+</div>
+<div class="bottom"><div class="status" id="status">Geography • People • Ideas • Time</div><button class="enter" id="enter">Enter ITIHAS</button></div>
+</div>
+<script>
+const mapStage=document.getElementById("mapStage"),map=document.getElementById("indiaMap"),typed=document.getElementById("typed"),facts=document.getElementById("facts"),loading=document.getElementById("loading"),progress=document.getElementById("progress"),enter=document.getElementById("enter"),status=document.getElementById("status"),dots=[...document.querySelectorAll(".dot")];
+const lines=["India is not one story. It is thousands of stories occupying the same space across time.","Mountains, rivers, coasts and plains shaped where people lived, travelled, traded and fought.","Languages, religions, art, science and political ideas crossed boundaries again and again.","What survives today is not separate from the past. It is one of the layers that history left behind."];
+function typeLine(text,speed=28){return new Promise(resolve=>{typed.textContent="";let i=0;const t=setInterval(()=>{typed.textContent+=text[i++]||"";if(i>text.length){clearInterval(t);resolve()}},speed)})}
+async function run(){
+await new Promise(r=>setTimeout(r,500));mapStage.classList.add("loaded");progress.classList.add("go");await new Promise(r=>setTimeout(r,900));
+dots.forEach((d,i)=>setTimeout(()=>d.classList.add("show"),i*350));
+for(let i=0;i<lines.length;i++){await typeLine(lines[i]);await new Promise(r=>setTimeout(r,1100))}
+loading.textContent="India";facts.classList.add("show");enter.classList.add("show");mapStage.classList.add("active");
+}
+map.addEventListener("error",()=>loading.textContent="Map unavailable");
+enter.addEventListener("click",()=>window.location.href="universe.html");
+run();
+</script>
+</body>
+</html>
