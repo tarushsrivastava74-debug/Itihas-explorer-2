@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ITIHAS — Interactive Empire Timeline & Narrative Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#07090f; --surface:rgba(14,19,31,.62); --elevated:#121826;
+  --amber:#f5a524; --amber-deep:#d97706; --glow:rgba(245,158,11,.25);
+  --line:rgba(255,255,255,.1); --line-hot:rgba(245,158,11,.5);
+  --text:#f8fafc; --muted:#a3b0c4; --faint:#6b7a90;
+  --btn-bg:#f8fafc; --btn-text:#07090f;
+  --sky:#38bdf8; --ok:#10b981;
+  --era-hue:38;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+[data-theme="light"]{
+  --bg:#faf7f2; --surface:rgba(255,255,255,.7); --elevated:#f1ede6;
+  --amber:#c2660a; --amber-deep:#9a4d05; --glow:rgba(194,102,10,.18);
+  --line:rgba(0,0,0,.1); --line-hot:rgba(194,102,10,.5);
+  --text:#1c1917; --muted:#57534e; --faint:#a8a29e;
+  --btn-bg:#1c1917; --btn-text:#fff;
+  --sky:#0369a1; --ok:#047857;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;
+  height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased;overflow:hidden;
+  transition:background-color .5s var(--ease),color .5s var(--ease)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+
+/* ---------- animated backdrop (same family as the home page) ---------- */
+.backdrop{position:fixed;inset:0;z-index:-3;overflow:hidden;pointer-events:none}
+.aurora{position:absolute;inset:0;filter:blur(70px);opacity:.9;mix-blend-mode:screen}
+.blob{position:absolute;border-radius:50%;transition:background 1.2s ease}
+.b1{width:55vw;height:55vw;left:-10%;top:-20%;background:hsl(var(--era-hue) 90% 45% / .30);animation:drift1 22s ease-in-out infinite alternate}
+.b2{width:45vw;height:45vw;right:-8%;top:10%;background:hsl(calc(var(--era-hue) + 220) 70% 40% / .26);animation:drift2 26s ease-in-out infinite alternate}
+.b3{width:40vw;height:40vw;left:30%;bottom:-25%;background:hsl(calc(var(--era-hue) - 15) 95% 50% / .18);animation:drift1 30s ease-in-out infinite alternate-reverse}
+@keyframes drift1{to{transform:translate(12vw,8vh) scale(1.2)}}
+@keyframes drift2{to{transform:translate(-10vw,12vh) scale(.85)}}
+[data-theme="light"] .aurora{mix-blend-mode:multiply;opacity:.45}
+.scrim{position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(ellipse at 30% 40%,transparent 0,color-mix(in srgb,var(--bg) 55%,transparent) 75%)}
+.grain{position:fixed;inset:0;z-index:-1;opacity:.07;pointer-events:none;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#dust{position:fixed;inset:0;z-index:-1;width:100%;height:100%;pointer-events:none}
+
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;padding:0 40px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.brand-link{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-glyph{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:800;
+  background:linear-gradient(135deg,var(--amber),var(--amber-deep));box-shadow:0 0 24px var(--glow)}
+.brand-title{font-family:var(--serif);font-size:18px;font-weight:700;letter-spacing:.04em}
+nav.nav-bar{display:flex;gap:30px}
+.nav-item{position:relative;color:var(--muted);font-size:13.5px;font-weight:500;text-decoration:none;padding:4px 0;transition:color .2s}
+.nav-item::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:100%;background:var(--amber);
+  transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav-item:hover,.nav-item.active{color:var(--text)}
+.nav-item:hover::after,.nav-item.active::after{transform:scaleX(1)}
+.header-controls{display:flex;align-items:center;gap:16px}
+.theme-toggle-btn{background:var(--surface);border:1px solid var(--line);color:var(--muted);padding:6px 14px;border-radius:20px;
+  font:500 12px var(--sans);cursor:pointer;display:inline-flex;gap:6px;align-items:center;transition:border-color .2s,color .2s}
+.theme-toggle-btn:hover{border-color:var(--amber);color:var(--text)}
+.user-pill{display:flex;align-items:center;gap:8px;padding-left:14px;border-left:1px solid var(--line);font-size:13px;color:var(--muted)}
+.user-avatar{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:12px;
+  color:#fff;background:linear-gradient(135deg,var(--amber),var(--amber-deep))}
+
+/* ---------- right-side scroll capsule ---------- */
+.screen-slider-track{position:fixed;top:92px;bottom:24px;right:10px;width:4px;background:var(--line);border-radius:4px;
+  z-index:1000;cursor:pointer;user-select:none;transition:background .2s}
+.screen-slider-track:hover{background:var(--line-hot)}
+.screen-slider-capsule{position:absolute;top:0;left:50%;transform:translateX(-50%);width:14px;height:38px;
+  background:var(--btn-bg);border:1px solid var(--line);border-radius:20px;
+  box-shadow:0 2px 10px rgba(0,0,0,.4),0 0 10px var(--glow);cursor:grab;transition:background-color .2s}
+.screen-slider-capsule:active{cursor:grabbing;background:var(--amber)}
+.screen-slider-capsule::after{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:4px;height:12px;border-top:2px solid var(--faint);border-bottom:2px solid var(--faint)}
+
+/* ---------- workspace ---------- */
+.workspace-container{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:22px;
+  padding:92px 36px 24px 40px;max-width:1500px;width:100%;margin:0 auto}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px;
+  display:flex;flex-direction:column;min-height:0;position:relative;overflow:hidden;
+  backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);
+  box-shadow:0 30px 60px rgba(0,0,0,.28);
+  opacity:0;transform:translateY(14px);animation:fadeUp .9s var(--ease) forwards}
+.panel.right{animation-delay:.15s}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* left: story */
+.stream-meta-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;
+  border-bottom:1px solid var(--line);margin-bottom:18px;gap:12px}
+.stream-badge-pill{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  background:color-mix(in srgb,var(--ok) 14%,transparent);border:1px solid color-mix(in srgb,var(--ok) 40%,transparent);
+  color:var(--ok);padding:4px 12px;border-radius:20px;display:inline-flex;align-items:center;gap:6px}
+.stream-badge-pill::before{content:"";width:6px;height:6px;background:var(--ok);border-radius:50%;animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.latency-indicator{font-size:13px;font-weight:600;color:var(--faint)}
+.story-content-body{flex:1;overflow-y:auto;padding-right:8px;scroll-behavior:smooth;scrollbar-width:none}
+.story-content-body::-webkit-scrollbar{display:none}
+.story-event-year{font-size:13px;font-weight:600;color:var(--amber);letter-spacing:.06em;margin-bottom:8px;
+  display:flex;align-items:center;gap:10px}
+.story-event-year:empty{display:none}
+.story-event-year::before{content:"";width:28px;height:1px;background:var(--amber)}
+.story-event-title{font-family:var(--serif);font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.02em;
+  line-height:1.1;margin-bottom:16px}
+.stream-text-terminal{font-size:15.5px;line-height:1.8;color:var(--muted);white-space:pre-wrap}
+.terminal-cursor{display:inline-block;width:2px;height:16px;background:var(--amber);margin-left:3px;
+  vertical-align:middle;animation:blink .75s infinite}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+
+.story-footer-interactive{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}
+.interactive-label{font-size:12px;font-weight:600;color:var(--muted);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.interactive-label::before{content:"";width:28px;height:1px;background:var(--amber)}
+.context-pill-group{display:flex;flex-wrap:wrap;gap:8px}
+.context-pill{background:transparent;border:1px solid var(--line);color:var(--muted);font:500 12.5px var(--sans);
+  padding:8px 14px;border-radius:20px;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .3s var(--ease)}
+.context-pill:hover{background:var(--elevated);color:var(--text);border-color:var(--line-hot);transform:translateY(-1px)}
+
+/* right: timeline */
+.timeline-panel-header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  margin-bottom:18px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.timeline-panel-header h2{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:-.01em}
+.timeline-panel-header span{font-size:12px;color:var(--faint);white-space:nowrap}
+.timeline-track-viewport{flex:1;overflow-y:auto;padding:10px 12px 20px 4px;position:relative;scrollbar-width:none}
+.timeline-track-viewport::-webkit-scrollbar{display:none}
+.timeline-vertical-ruler{position:absolute;left:104px;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,var(--amber) 0%,var(--line) 70%,transparent 100%);box-shadow:0 0 12px var(--glow)}
+#milestones-container{position:relative}
+.milestone-item{position:relative;display:flex;align-items:flex-start;margin-bottom:22px;cursor:default}
+.milestone-year-anchor{width:84px;text-align:right;font-family:var(--serif);font-size:13px;font-weight:700;
+  color:var(--amber);padding-right:16px;padding-top:12px;font-variant-numeric:tabular-nums}
+.milestone-bullet-node{width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--faint);
+  position:absolute;left:97px;top:13px;z-index:2;transition:border-color .3s,transform .3s var(--ease),background .3s,box-shadow .3s}
+.milestone-item:hover .milestone-bullet-node{transform:scale(1.3);border-color:var(--amber)}
+.milestone-item.active .milestone-bullet-node{background:var(--amber);border-color:var(--amber);transform:scale(1.3);box-shadow:0 0 0 6px var(--glow)}
+.milestone-preview-card{margin-left:38px;flex:1;background:var(--elevated);border:1px solid var(--line);border-radius:16px;
+  padding:14px 18px;transition:border-color .3s,transform .4s var(--ease)}
+.milestone-item:hover .milestone-preview-card{transform:translateX(4px);border-color:var(--line-hot)}
+.milestone-item.active .milestone-preview-card{border-color:var(--line-hot);box-shadow:0 0 0 1px var(--line-hot) inset,0 10px 30px var(--glow)}
+.milestone-name{font-family:var(--serif);font-size:16px;font-weight:700;margin-bottom:3px}
+.milestone-brief{font-size:13px;color:var(--muted);line-height:1.5}
+.milestone-drawer-details{max-height:0;overflow:hidden;opacity:0;font-size:12.5px;color:var(--sky);
+  border-top:1px dashed var(--line);transition:max-height .35s ease,opacity .25s ease,margin-top .25s ease}
+.milestone-item:hover .milestone-drawer-details{max-height:140px;opacity:1;margin-top:10px;padding-top:8px}
+.milestone-drawer-details ul{padding-left:16px;margin:0}
+
+.roleplay-action-dock{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;
+  padding-top:16px;border-top:1px solid var(--line)}
+.btn-start-roleplay,.btn-complete{position:relative;overflow:hidden;font:700 13.5px var(--sans);padding:13px 24px;border-radius:14px;
+  cursor:pointer;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;transition:transform .25s var(--ease),background .2s,border-color .2s}
+.btn-start-roleplay{background:var(--btn-bg);color:var(--btn-text);border:0;box-shadow:0 10px 30px var(--glow)}
+.btn-start-roleplay::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(245,158,11,.45) 50%,transparent 70%);
+  transform:translateX(-120%);animation:glint 4.5s ease-in-out 2s infinite}
+@keyframes glint{60%,100%{transform:translateX(120%)}}
+.btn-start-roleplay:hover{transform:translateY(-2px)}
+.btn-complete{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn-complete:hover{background:var(--elevated);border-color:var(--line-hot);transform:translateY(-2px)}
+
+@media(max-width:960px){
+  body{height:auto;min-height:100vh;overflow:auto}
+  header{padding:0 20px}nav.nav-bar{display:none}
+  .workspace-container{grid-template-columns:1fr;padding:88px 20px 24px;gap:18px}
+  .panel{min-height:70vh}
+  .screen-slider-track{display:none}
+  .user-name{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .panel{opacity:1;transform:none}
+}
+</style>
+</head>
+<body data-theme="dark">
+
+<div class="backdrop"><div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div></div>
+<div class="scrim"></div>
+<div class="grain"></div>
+<canvas id="dust"></canvas>
+
+<!-- ================= HEADER ================= -->
+<header id="site-header">
+  <a href="/" class="brand-link"><div class="brand-glyph">इ</div><div class="brand-title">ITIHAS</div></a>
+  <nav class="nav-bar">
+    <a href="/universe.html" class="nav-item">Explore</a>
+    <a href="/map_explorer.html" class="nav-item">Map Explorer</a>
+    <a href="/mysteries.html" class="nav-item">Mysteries of India</a>
+    <a href="/roadmap.html" class="nav-item">Roadmap</a>
+  </nav>
+  <div class="header-controls">
+    <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+      <span id="theme-icon">🌙</span><span id="theme-text">Dark</span>
+    </button>
+    <div class="user-pill">
+      <script src="/static/progress.js"></script>
+      <script>ItihasProgress.ensureLogin();</script>
+      <div class="user-avatar">T</div>
+      <span class="user-name">Guest</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= SCROLL CAPSULE ================= -->
+<div class="screen-slider-track" id="screen-slider-track" title="Left-click and drag up/down to scroll the story">
+  <div class="screen-slider-capsule" id="screen-slider-capsule"></div>
+</div>
+
+<!-- ================= WORKSPACE ================= -->
+<div class="workspace-container">
+
+  <!-- LEFT: story -->
+  <div class="panel left-story-panel">
+    <div style="display:flex;flex-direction:column;flex:1;overflow:hidden;min-height:0">
+      <div class="stream-meta-header">
+        <span class="stream-badge-pill">PRE-CACHED STREAM READY</span>
+        <span class="latency-indicator" id="display-topic-name">Topic</span>
+      </div>
+      <div class="story-content-body" id="story-scroll-container">
+        <div class="story-event-year" id="display-event-year">--</div>
+        <h1 class="story-event-title" id="display-event-title">Loading...</h1>
+        <div class="stream-text-terminal" id="typewriter-stream"></div>
+      </div>
+    </div>
+
+    <div class="story-footer-interactive">
+      <span class="interactive-label">Contextual inquiries — ask history</span>
+      <div class="context-pill-group">
+        <button class="context-pill" onclick="promptFollowUp('Causes')">💬 Why did this happen?</button>
+        <button class="context-pill" onclick="promptFollowUp('Strategy')">💬 Tactical Significance</button>
+        <button class="context-pill" onclick="promptFollowUp('Consequences')">💬 Long-term Consequences</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: timeline -->
+  <div class="panel right right-timeline-panel">
+    <div class="timeline-panel-header">
+      <h2 id="timeline-header-title">Historical Timeline</h2>
+      <span>Hover for details</span>
+    </div>
+
+    <div class="timeline-track-viewport" id="timeline-scroll-container">
+      <div class="timeline-vertical-ruler"></div>
+      <div id="milestones-container"></div>
+    </div>
+
+    <div class="roleplay-action-dock">
+      <button class="btn-start-roleplay" onclick="launchRoleplayModal()">⚡ Start Historical Roleplay</button>
+      <button id="btn-toggle-completion" class="btn-complete" onclick="toggleChapterCompletion()">✓ Mark Chapter Completed</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- CENTRAL DATA FILE -->
+<script src="/static/allHistoryData.js"></script>
+
+<script>
+  const TOPIC_DISPLAY_NAME = {{ topic_display_name | tojson }};
+</script>
+
+<script>
+  /* strips leftover citation markers like [cite: 4] from any text we show */
+  function clean(t){ return String(t == null ? "" : t).replace(/\s*\[cite:[^\]]*\]/gi, ""); }
+
+  /* ---------- theme ---------- */
+  function updateThemeUI(theme) {
+    document.body.setAttribute('data-theme', theme);
+    document.getElementById('theme-icon').textContent = theme === 'light' ? '☀️' : '🌙';
+    document.getElementById('theme-text').textContent = theme === 'light' ? 'Light' : 'Dark';
+  }
+  function toggleTheme() {
+    const next = (document.body.getAttribute('data-theme') || 'dark') === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('itihas_theme', next); } catch (e) {}
+    updateThemeUI(next);
+  }
+
+  let activeTopicKey = "";
+  let activeEventId = "";
+  let typewriterTimer = null;
+
+  /* ---------- right-side capsule (scrolls the story) ---------- */
+  function setupScreenSlider() {
+    const track = document.getElementById("screen-slider-track");
+    const capsule = document.getElementById("screen-slider-capsule");
+    const storyContainer = document.getElementById("story-scroll-container");
+    if (!track || !capsule || !storyContainer) return;
+
+    let isDragging = false;
+
+    function updateCapsulePosition() {
+      const maxScroll = storyContainer.scrollHeight - storyContainer.clientHeight;
+      const trackHeight = track.clientHeight - capsule.clientHeight;
+      const ratio = maxScroll > 0 ? storyContainer.scrollTop / maxScroll : 0;
+      capsule.style.top = Math.max(0, Math.min(trackHeight, ratio * trackHeight)) + "px";
+    }
+    function handleDrag(clientY) {
+      const rect = track.getBoundingClientRect();
+      const trackHeight = rect.height - capsule.clientHeight;
+      const offsetY = clientY - rect.top - capsule.clientHeight / 2;
+      const ratio = Math.max(0, Math.min(1, offsetY / trackHeight));
+      const storyMax = storyContainer.scrollHeight - storyContainer.clientHeight;
+      if (storyMax > 0) storyContainer.scrollTop = ratio * storyMax;
+      capsule.style.top = ratio * trackHeight + "px";
+    }
+
+    track.addEventListener("mousedown", (e) => {
+      if (e.button !== 0) return;
+      isDragging = true;
+      handleDrag(e.clientY);
+      e.preventDefault();
+    });
+    window.addEventListener("mousemove", (e) => { if (isDragging) handleDrag(e.clientY); });
+    window.addEventListener("mouseup", () => { isDragging = false; });
+    storyContainer.addEventListener("scroll", updateCapsulePosition);
+    new MutationObserver(updateCapsulePosition)
+      .observe(storyContainer, { childList: true, subtree: true, characterData: true });
+  }
+
+  /* ---------- chapter completion ---------- */
+  async function updateCompletionButtonState() {
+    const btn = document.getElementById("btn-toggle-completion");
+    if (!btn) return;
+    const completed = await ItihasProgress.getCompleted();
+    btn.textContent = completed.includes(activeTopicKey) ? "↺ Mark as Not Completed" : "✓ Mark Chapter Completed";
+  }
+  async function toggleChapterCompletion() {
+    try {
+      const completed = await ItihasProgress.getCompleted();
+      if (completed.includes(activeTopicKey)) {
+        await ItihasProgress.unmarkDone(activeTopicKey);
+        updateCompletionButtonState();
+      } else {
+        await ItihasProgress.markDone(activeTopicKey);
+        window.location.href = "roadmap.html";
+      }
+    } catch (err) {
+      alert("Progress could not be saved: " + err.message);
+    }
+  }
+
+  /* ---------- topic from URL ---------- */
+  function getTopicFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const requestedTopic = urlParams.get("topic");
+    const requestedEra = urlParams.get("era");
+
+    if (requestedTopic && typeof ALL_HISTORY_DATA !== 'undefined' && ALL_HISTORY_DATA[requestedTopic]) {
+      return requestedTopic;
+    }
+    if (requestedEra === "modern") return "east-india-company";
+    if (requestedEra === "ancient") return "maurya-empire";
+    if (requestedEra === "medieval") return "chola-empire";
+    return "east-india-company";
+  }
+
+  /* ---------- typewriter ---------- */
+  function typeTextSmooth(element, text, speed = 8) {
+    if (typewriterTimer) { clearInterval(typewriterTimer); typewriterTimer = null; }
+    element.textContent = "";
+    text = clean(text);
+    let index = 0;
+
+    const cursor = document.createElement("span");
+    cursor.className = "terminal-cursor";
+    element.appendChild(cursor);
+
+    const container = document.getElementById("story-scroll-container");
+    if (container) container.scrollTop = 0;
+
+    typewriterTimer = setInterval(() => {
+      if (index < text.length) {
+        cursor.insertAdjacentText("beforebegin", text.charAt(index));
+        index++;
+      } else {
+        clearInterval(typewriterTimer);
+        typewriterTimer = null;
+      }
+    }, speed);
+  }
+
+  function selectMilestone(id) {
+    activeEventId = id;
+    const topicData = ALL_HISTORY_DATA[activeTopicKey];
+    if (!topicData) return;
+    const target = topicData.events.find(item => item.id === id);
+    if (!target) return;
+
+    document.getElementById("display-event-year").textContent = clean(target.year);
+    document.getElementById("display-event-title").textContent = clean(target.title);
+    typeTextSmooth(document.getElementById("typewriter-stream"), target.fullStory, 8);
+
+    document.querySelectorAll(".milestone-item").forEach(el => {
+      el.classList.toggle("active", el.dataset.id === id);
+    });
+  }
+
+  function loadTopicTimeline(topicKey) {
+    activeTopicKey = topicKey;
+    const topicData = ALL_HISTORY_DATA[topicKey];
+
+    if (!topicData) {
+      document.getElementById("timeline-header-title").textContent = "Section Not Found";
+      document.getElementById("display-event-title").textContent = `Topic "${topicKey}" not found`;
+      document.getElementById("typewriter-stream").textContent = "Please return to Universe Hub and select an era.";
+      return;
+    }
+
+    document.getElementById("timeline-header-title").textContent = clean(topicData.title);
+    document.getElementById("display-topic-name").textContent = clean(topicData.title).split("(")[0].trim();
+
+    const container = document.getElementById("milestones-container");
+    container.innerHTML = "";
+
+    topicData.events.forEach((item, index) => {
+      const row = document.createElement("div");
+      row.className = `milestone-item ${index === 0 ? "active" : ""}`;
+      row.dataset.id = item.id;
+      row.innerHTML = `
+        <div class="milestone-year-anchor">${clean(item.year)}</div>
+        <div class="milestone-bullet-node"></div>
+        <div class="milestone-preview-card">
+          <div class="milestone-name">${clean(item.title)}</div>
+          <div class="milestone-brief">${clean(item.brief)}</div>
+          <div class="milestone-drawer-details">
+            <ul>${item.details.map(d => `<li>${clean(d)}</li>`).join("")}</ul>
+          </div>
+        </div>`;
+      container.appendChild(row);
+    });
+
+    if (topicData.events.length > 0) selectMilestone(topicData.events[0].id);
+  }
+
+  async function generateAIStory(topicKey) {
+    const badge = document.querySelector(".stream-badge-pill");
+    const yearEl = document.getElementById("display-event-year");
+    const titleEl = document.getElementById("display-event-title");
+    const streamContainer = document.getElementById("typewriter-stream");
+
+    if (!TOPIC_DISPLAY_NAME) return;
+
+    badge.textContent = "GENERATING AI STORY...";
+    yearEl.textContent = "";
+    titleEl.textContent = TOPIC_DISPLAY_NAME;
+    streamContainer.textContent = "Contacting the story engine...";
+
+    try {
+      const res = await fetch("/generate-story", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ topic: TOPIC_DISPLAY_NAME }),
+      });
+      const data = await res.json();
+      if (!res.ok || data.error) throw new Error(data.error || "Story generation failed");
+
+      badge.textContent = "AI STREAM READY";
+      typeTextSmooth(streamContainer, data.story, 8);
+    } catch (err) {
+      console.error("generateAIStory failed:", err);
+      badge.textContent = "OFFLINE — SHOWING TIMELINE INSTEAD";
+      const topicData2 = ALL_HISTORY_DATA[topicKey];
+      if (topicData2 && topicData2.events.length > 0) selectMilestone(topicData2.events[0].id);
+    }
+  }
+
+  function launchRoleplayModal() {
+    const topicData = ALL_HISTORY_DATA[activeTopicKey];
+    const current = topicData ? topicData.events.find(item => item.id === activeEventId) : null;
+    const eventParam = current ? encodeURIComponent(current.id) : "";
+    const topicParam = activeTopicKey ? encodeURIComponent(activeTopicKey) : "";
+    window.location.href = `simulation.html?topic=${topicParam}&event=${eventParam}`;
+  }
+
+  function promptFollowUp(questionType) {
+    const streamContainer = document.getElementById("typewriter-stream");
+    const topicData = ALL_HISTORY_DATA[activeTopicKey];
+    const current = topicData && topicData.events.find(item => item.id === activeEventId);
+    if (!current) return;
+
+    const followUpText = `\n\n[CURATED AI CONTEXT — ${questionType.toUpperCase()}]:\n` +
+      `Regarding ${clean(current.title)} in ${clean(current.year)}: Primary records show this event significantly influenced subsequent political, economic, and military alignments.`;
+    typeTextSmooth(streamContainer, streamContainer.textContent + followUpText, 6);
+  }
+
+  /* ---------- drifting embers (same as home page) ---------- */
+  (function(){
+    const c = document.getElementById('dust'), ctx = c.getContext('2d');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let w, h, dpr = Math.min(devicePixelRatio || 1, 2), P = [];
+    function size(){ w = c.width = innerWidth * dpr; h = c.height = innerHeight * dpr; }
+    size(); addEventListener('resize', size);
+    const count = innerWidth < 700 ? 25 : 55;
+    for (let i = 0; i < count; i++) P.push({x:Math.random(),y:Math.random(),r:Math.random()*1.8+.4,s:Math.random()*.00025+.00008,a:Math.random()*.6+.2,p:Math.random()*6.28});
+    (function loop(t){
+      ctx.clearRect(0, 0, w, h);
+      P.forEach(o => {
+        o.y -= o.s * 16; o.x += Math.sin(t/2500 + o.p) * .0004;
+        if (o.y < -.02) { o.y = 1.02; o.x = Math.random(); }
+        const tw = .5 + .5 * Math.sin(t/900 + o.p);
+        ctx.beginPath(); ctx.arc(o.x*w, o.y*h, o.r*dpr, 0, 6.28);
+        ctx.fillStyle = 'hsla(38,95%,65%,' + (o.a*tw) + ')';
+        ctx.shadowColor = 'hsla(38,95%,60%,.9)'; ctx.shadowBlur = 8*dpr; ctx.fill();
+      });
+      requestAnimationFrame(loop);
+    })(0);
+  })();
+
+  /* ---------- init ---------- */
+  window.addEventListener("DOMContentLoaded", () => {
+    let savedTheme = 'dark';
+    try { savedTheme = localStorage.getItem('itihas_theme') || 'dark'; } catch (e) {}
+    updateThemeUI(savedTheme);
+
+    setupScreenSlider();
+
+    const topic = getTopicFromURL();
+    loadTopicTimeline(topic);
+    generateAIStory(topic);
+
+    ItihasProgress.ensureLogin().then(updateCompletionButtonState);
+  });
+</script>
+</body>
+</html>
