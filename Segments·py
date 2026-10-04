@@ -1,0 +1,159 @@
+import json
+import os
+import re
+
+SEGMENTS_DIR = "segments"
+CLEANED_DIR = "cleaned_topics"
+
+
+def load_existing(topic_file: str) -> dict:
+    if os.path.exists(topic_file):
+        with open(topic_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"topic": None, "segments": []}
+
+
+def save(topic_file: str, data: dict):
+    os.makedirs(SEGMENTS_DIR, exist_ok=True)
+    with open(topic_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"\nSaved -> {topic_file} ({len(data['segments'])} segment(s) total)\n")
+
+
+def load_paragraphs(txt_file: str) -> list:
+    with open(txt_file, "r", encoding="utf-8") as f:
+        raw = f.read()
+    paras = re.split(r"\n\s*\n", raw)
+    paras = [p.strip() for p in paras if p.strip()]
+    return paras
+
+
+def show_paragraphs(paragraphs: list, start: int = 0, count: int = 15):
+    end = min(start + count, len(paragraphs))
+    for i in range(start, end):
+        preview = paragraphs[i][:100].replace("\n", " ")
+        print(f"[{i}] {preview}{'...' if len(paragraphs[i]) > 100 else ''}")
+    print(f"\n(Showing paragraphs {start}-{end - 1} of {len(paragraphs) - 1} total)")
+
+
+def find_matching_files(search_name: str) -> list:
+    """
+    Recursively searches CLEANED_DIR for .txt files whose name matches
+    (or contains) the search term. Handles topics organized into
+    era subfolders and/or dynasty sub-subfolders.
+    """
+    search_name_normalized = search_name.strip().lower().replace(" ", "_").replace("&", "and")
+    matches = []
+    for root, _dirs, files in os.walk(CLEANED_DIR):
+        for fname in files:
+            if not fname.lower().endswith(".txt"):
+                continue
+            fname_normalized = fname[:-4].lower()
+            if search_name_normalized in fname_normalized or fname_normalized in search_name_normalized:
+                matches.append(os.path.join(root, fname))
+    return matches
+
+
+def pick_file_from_matches(matches: list) -> str:
+    if len(matches) == 1:
+        return matches[0]
+
+    print(f"\nFound {len(matches)} matching files:")
+    for i, path in enumerate(matches):
+        print(f"[{i}] {path}")
+    while True:
+        try:
+            choice = int(input("\nWhich one do you want to segment? (number): ").strip())
+            if 0 <= choice < len(matches):
+                return matches[choice]
+        except ValueError:
+            pass
+        print("Please enter a valid number from the list.")
+
+
+def main():
+    print("=== Year-wise Segment Helper (auto-read version) ===\n")
+
+    search_name = input("Topic or file name to search for (e.g. Akbar, Delhi Sultanate): ").strip()
+
+    matches = find_matching_files(search_name)
+    if not matches:
+        print(f"\nNo files found matching '{search_name}' anywhere inside '{CLEANED_DIR}'.")
+        print("Check the spelling, or make sure the file has been fetched already.")
+        return
+
+    txt_file = pick_file_from_matches(matches)
+    file_label = os.path.splitext(os.path.basename(txt_file))[0]
+    safe_name = file_label.replace(" ", "_").replace("&", "and")
+
+    paragraphs = load_paragraphs(txt_file)
+    print(f"\nLoaded {len(paragraphs)} paragraphs from {txt_file}\n")
+
+    topic_file = os.path.join(SEGMENTS_DIR, f"{safe_name}_segments.json")
+    data = load_existing(topic_file)
+    data["topic"] = file_label
+
+    if data["segments"]:
+        print(f"Found {len(data['segments'])} existing segment(s) for this file. Adding more.\n")
+
+    window_start = 0
+
+    while True:
+        print(f"\n--- New segment for '{file_label}' ---")
+        show_paragraphs(paragraphs, window_start)
+
+        nav = input(
+            "\nType 'n' to see next paragraphs, 'p' for previous, "
+            "or press Enter to pick a range now: "
+        ).strip().lower()
+
+        if nav == "n":
+            window_start = min(window_start + 15, max(0, len(paragraphs) - 1))
+            continue
+        elif nav == "p":
+            window_start = max(0, window_start - 15)
+            continue
+
+        try:
+            start_idx = int(input("Start paragraph number for this segment: ").strip())
+            end_idx = int(input("End paragraph number (inclusive): ").strip())
+        except ValueError:
+            print("Please enter valid paragraph numbers.")
+            continue
+
+        if not (0 <= start_idx <= end_idx < len(paragraphs)):
+            print("That range is out of bounds, try again.")
+            continue
+
+        segment_text = "\n\n".join(paragraphs[start_idx:end_idx + 1])
+
+        label = input("Segment label (e.g. Akbar's Reign): ").strip()
+
+        while True:
+            try:
+                start_year = int(input("Start year (negative for BCE, e.g. -321): ").strip())
+                end_year = int(input("End year: ").strip())
+                break
+            except ValueError:
+                print("Please enter whole numbers only.")
+
+        segment_id = f"{safe_name.lower()}_{len(data['segments']) + 1}"
+        data["segments"].append({
+            "id": segment_id,
+            "label": label,
+            "year_range": [start_year, end_year],
+            "text": segment_text
+        })
+
+        save(topic_file, data)
+
+        print(f"Segment saved ({len(segment_text)} chars).")
+        again = input("Add another segment for this file? (y/n): ").strip().lower()
+        if again != "y":
+            break
+
+    print(f"\nDone. All segments for '{file_label}' are saved in {topic_file}")
+
+
+if __name__ == "__main__":
+    main()
